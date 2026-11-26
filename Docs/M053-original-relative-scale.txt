@@ -1,0 +1,5 @@
+Class | SourceModelHeight | RuntimeModelHeight | RuntimeScale | SourcePrefabScale | FXScaleBasedOnSourceRig
+Warrior|0,4163|1,8000|0,8138|1.0000|0,8138
+Assassin|0,5190|1,8000|0,8036|1.0000|0,8036
+Mage|0,8514|1,8000|0,8350|1.0000|0,8350
+Archer|0,6554|1,8000|0,8338|1.0000|0,8338

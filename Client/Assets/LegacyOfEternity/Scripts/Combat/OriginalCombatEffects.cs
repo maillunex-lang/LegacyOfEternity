@@ -63,6 +63,14 @@ namespace LegacyOfEternity.Combat
             Quaternion facing = transform.rotation;
             GameObject instance = Instantiate(prefab, spawn, facing);
             instance.name = "Original FX " + prefab.name;
+            // The imported heroes are normalized to 1.8 world units high by FourClassesBuilder.
+            // Original FX authored for the original character rig must preserve their scale
+            // relative to that same rig. The visual's original scale factor varies by class.
+            // Never modify the source particle size/shape curves or original prefabs.
+            float originalRigScale = visual != null ? visual.lossyScale.x : 1f;
+            if (originalRigScale <= 0.001f || originalRigScale > 10f)
+                originalRigScale = 1f;
+            instance.transform.localScale = prefab.transform.localScale * originalRigScale;
             // All imported prefab assets were cleaned of missing legacy MonoBehaviours.
             foreach (var system in instance.GetComponentsInChildren<ParticleSystem>(true))
                 system.Play(true);
