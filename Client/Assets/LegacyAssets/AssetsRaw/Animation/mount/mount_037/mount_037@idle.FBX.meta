@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 64019b19b6a1b9742ae8d4814c200c9f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: Horse_Bone000
+    100004: Horse_Bone001
+    100006: Horse_Bone002
+    100008: Horse_Bone003
+    100010: Horse_Bone004
+    100012: Horse_Bone005
+    100014: Horse_Bone006
+    100016: Horse_Bone007
+    100018: Horse_Bone008
+    100020: Horse_Bone009
+    100022: Horse_Bone010
+    100024: Horse_Bone011
+    100026: Horse_Bone012
+    100028: Horse_Bone013
+    100030: Horse_Bone014
+    100032: Horse_Bone015
+    100034: Horse_Bone016
+    100036: Horse_Bone017
+    100038: Horse_Bone018
+    100040: Horse_Bone019
+    100042: Horse_Bone020
+    100044: Horse_Bone021
+    100046: Horse_Bone022
+    100048: Horse_Bone023
+    100050: Horse_Bone024
+    100052: Horse_Bone025
+    100054: Horse_Bone026
+    100056: Horse_Bone027
+    100058: Horse_Bone028
+    100060: Horse_Bone029
+    100062: Horse_Bone030
+    100064: Horse_Bone031
+    100066: Horse_Bone032
+    100068: Horse_Bone033
+    100070: Horse_Bone034
+    100072: Horse_Bone035
+    100074: Horse_Bone036
+    100076: Horse_Bone037
+    100078: Horse_Bone038
+    100080: Horse_Bone039
+    100082: Horse_Bone040
+    100084: Horse_Bone041
+    100086: Horse_Bone042
+    100088: Horse_Bone043
+    100090: Horse_Bone044
+    100092: Horse_Bone045
+    100094: Horse_Bone046
+    100096: Horse_Bone047
+    100098: Horse_Bone048
+    100100: Horse_Bone049
+    100102: Horse_Bone050
+    100104: Horse_E_back
+    100106: Horse_E_Spine
+    100108: //RootNode
+    400000: body
+    400002: Horse_Bone000
+    400004: Horse_Bone001
+    400006: Horse_Bone002
+    400008: Horse_Bone003
+    400010: Horse_Bone004
+    400012: Horse_Bone005
+    400014: Horse_Bone006
+    400016: Horse_Bone007
+    400018: Horse_Bone008
+    400020: Horse_Bone009
+    400022: Horse_Bone010
+    400024: Horse_Bone011
+    400026: Horse_Bone012
+    400028: Horse_Bone013
+    400030: Horse_Bone014
+    400032: Horse_Bone015
+    400034: Horse_Bone016
+    400036: Horse_Bone017
+    400038: Horse_Bone018
+    400040: Horse_Bone019
+    400042: Horse_Bone020
+    400044: Horse_Bone021
+    400046: Horse_Bone022
+    400048: Horse_Bone023
+    400050: Horse_Bone024
+    400052: Horse_Bone025
+    400054: Horse_Bone026
+    400056: Horse_Bone027
+    400058: Horse_Bone028
+    400060: Horse_Bone029
+    400062: Horse_Bone030
+    400064: Horse_Bone031
+    400066: Horse_Bone032
+    400068: Horse_Bone033
+    400070: Horse_Bone034
+    400072: Horse_Bone035
+    400074: Horse_Bone036
+    400076: Horse_Bone037
+    400078: Horse_Bone038
+    400080: Horse_Bone039
+    400082: Horse_Bone040
+    400084: Horse_Bone041
+    400086: Horse_Bone042
+    400088: Horse_Bone043
+    400090: Horse_Bone044
+    400092: Horse_Bone045
+    400094: Horse_Bone046
+    400096: Horse_Bone047
+    400098: Horse_Bone048
+    400100: Horse_Bone049
+    400102: Horse_Bone050
+    400104: Horse_E_back
+    400106: Horse_E_Spine
+    400108: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

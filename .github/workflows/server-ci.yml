@@ -1,0 +1,24 @@
+name: Server smoke
+on:
+  push:
+    paths:
+      - "Server/**"
+      - ".github/workflows/server-ci.yml"
+  pull_request:
+    paths:
+      - "Server/**"
+      - ".github/workflows/server-ci.yml"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: Server/go.mod
+      - name: Go tests
+        working-directory: Server
+        run: go test ./...
+      - name: Go build
+        working-directory: Server
+        run: go build ./cmd/server

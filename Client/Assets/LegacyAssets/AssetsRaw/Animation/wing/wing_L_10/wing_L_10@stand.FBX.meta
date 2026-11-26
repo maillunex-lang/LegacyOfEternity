@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 5442598519438704e97b72a035607d3e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: DM_wing
+    100004: Plane01
+    100006: //RootNode
+    100008: xx_L_018_Bone000
+    100010: xx_L_018_Bone001
+    100012: xx_L_018_Bone002
+    100014: xx_L_018_Bone003
+    100016: xx_L_018_Bone004
+    100018: xx_L_018_Bone005
+    100020: xx_L_018_Bone006
+    100022: xx_L_018_Bone007
+    100024: xx_L_018_Bone008
+    100026: xx_L_018_Bone009
+    100028: xx_L_018_Bone01
+    100030: xx_L_018_Bone010
+    100032: xx_L_018_Bone011
+    100034: xx_L_018_Bone012
+    100036: xx_L_018_Bone013
+    100038: xx_L_018_Bone014
+    100040: xx_L_018_Bone015
+    100042: xx_L_018_Bone016
+    100044: xx_L_018_Bone017
+    100046: xx_L_018_Bone018
+    100048: xx_L_018_Bone019
+    100050: xx_L_018_Bone02
+    100052: xx_L_018_Bone020
+    100054: xx_L_018_Bone021
+    100056: xx_L_018_Bone022
+    100058: xx_L_018_Bone023
+    100060: xx_L_018_Bone024
+    100062: xx_L_018_Bone025
+    100064: xx_L_018_Bone026
+    100066: xx_L_018_Bone027
+    100068: xx_L_018_Bone028
+    100070: xx_L_018_Bone029
+    100072: xx_L_018_Bone030
+    100074: xx_L_018_Bone031
+    100076: xx_L_018_Bone032
+    100078: xx_L_018_Bone033
+    100080: xx_L_018_Bone034
+    100082: xx_L_018_Bone035
+    400000: body
+    400002: DM_wing
+    400004: Plane01
+    400006: //RootNode
+    400008: xx_L_018_Bone000
+    400010: xx_L_018_Bone001
+    400012: xx_L_018_Bone002
+    400014: xx_L_018_Bone003
+    400016: xx_L_018_Bone004
+    400018: xx_L_018_Bone005
+    400020: xx_L_018_Bone006
+    400022: xx_L_018_Bone007
+    400024: xx_L_018_Bone008
+    400026: xx_L_018_Bone009
+    400028: xx_L_018_Bone01
+    400030: xx_L_018_Bone010
+    400032: xx_L_018_Bone011
+    400034: xx_L_018_Bone012
+    400036: xx_L_018_Bone013
+    400038: xx_L_018_Bone014
+    400040: xx_L_018_Bone015
+    400042: xx_L_018_Bone016
+    400044: xx_L_018_Bone017
+    400046: xx_L_018_Bone018
+    400048: xx_L_018_Bone019
+    400050: xx_L_018_Bone02
+    400052: xx_L_018_Bone020
+    400054: xx_L_018_Bone021
+    400056: xx_L_018_Bone022
+    400058: xx_L_018_Bone023
+    400060: xx_L_018_Bone024
+    400062: xx_L_018_Bone025
+    400064: xx_L_018_Bone026
+    400066: xx_L_018_Bone027
+    400068: xx_L_018_Bone028
+    400070: xx_L_018_Bone029
+    400072: xx_L_018_Bone030
+    400074: xx_L_018_Bone031
+    400076: xx_L_018_Bone032
+    400078: xx_L_018_Bone033
+    400080: xx_L_018_Bone034
+    400082: xx_L_018_Bone035
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

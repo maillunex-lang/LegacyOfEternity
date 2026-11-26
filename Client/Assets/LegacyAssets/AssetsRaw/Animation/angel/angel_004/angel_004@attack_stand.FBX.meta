@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 37715e51abb3a704bb7d9d04ec4c1276
+timeCreated: 1543044025
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bip001
+    100004: Bip001 Head
+    100006: Bip001 L Calf
+    100008: Bip001 L Clavicle
+    100010: Bip001 L Finger0
+    100012: Bip001 L Foot
+    100014: Bip001 L Forearm
+    100016: Bip001 L Hand
+    100018: Bip001 L Thigh
+    100020: Bip001 L Toe0
+    100022: Bip001 L UpperArm
+    100024: Bip001 Neck
+    100026: Bip001 Pelvis
+    100028: Bip001 Prop1
+    100030: Bip001 R Calf
+    100032: Bip001 R Clavicle
+    100034: Bip001 R Finger0
+    100036: Bip001 R Foot
+    100038: Bip001 R Forearm
+    100040: Bip001 R Hand
+    100042: Bip001 R Thigh
+    100044: Bip001 R Toe0
+    100046: Bip001 R UpperArm
+    100048: Bip001 Spine
+    100050: Bip001 Spine1
+    100052: Bip001 Xtra01
+    100054: Bip001 Xtra01Opp
+    100056: body
+    100058: body 1
+    100060: body01
+    100062: Bone024
+    100064: Bone025
+    100066: Bone026
+    100068: Bone027
+    100070: Bone028
+    100072: Bone029
+    100074: Bone030
+    100076: Bone031
+    100078: Bone032
+    100080: Bone033
+    100082: Bone034
+    100084: Bone035
+    100086: Bone036
+    100088: Bone037
+    100090: Bone038
+    100092: Bone039
+    100094: Bone040
+    100096: Bone041
+    100098: Bone042
+    100100: Bone043
+    100102: Bone044
+    100104: Bone045
+    100106: Bone046
+    100108: Bone047
+    100110: Bone048
+    100112: Bone049
+    100114: Bone050
+    100116: Bone051
+    100118: Bone052
+    100120: Bone053
+    100122: Particle View 001
+    100124: wing_07_glow
+    100126: wing_07_guang
+    100128: wing_07_liuguang
+    100130: Wing_Bone001
+    100132: Wing_Bone002
+    100134: Wing_Bone003
+    100136: Wing_Bone004
+    100138: Wing_Bone005
+    100140: Wing_Bone006
+    100142: Wing_Bone007
+    100144: Wing_Bone008
+    100146: Wing_Bone009
+    100148: Wing_Bone010
+    100150: Wing_Bone011
+    100152: Wing_Bone017
+    100154: Wing_Bone018
+    100156: Wing_Bone019
+    100158: Wing_Bone020
+    100160: Wing_Bone021
+    100162: Wing_Bone022
+    100164: Wing_Bone023
+    100166: Wing_Bone024
+    100168: Wing_Bone025
+    100170: Wing_Bone026
+    100172: Wing_Bone027
+    100174: Wing_Bone028
+    100176: Wing_Bone029
+    100178: Wing_Bone030
+    100180: Wing_Bone031
+    100182: Wing_Bone032
+    100184: Wing_Bone033
+    100186: Wing_Bone034
+    100188: Wing_Bone035
+    100190: Wing_Bone036
+    100192: Wing_Bone037
+    100194: Wing_Bone038
+    100196: Wing_Bone039
+    400000: //RootNode
+    400002: Bip001
+    400004: Bip001 Head
+    400006: Bip001 L Calf
+    400008: Bip001 L Clavicle
+    400010: Bip001 L Finger0
+    400012: Bip001 L Foot
+    400014: Bip001 L Forearm
+    400016: Bip001 L Hand
+    400018: Bip001 L Thigh
+    400020: Bip001 L Toe0
+    400022: Bip001 L UpperArm
+    400024: Bip001 Neck
+    400026: Bip001 Pelvis
+    400028: Bip001 Prop1
+    400030: Bip001 R Calf
+    400032: Bip001 R Clavicle
+    400034: Bip001 R Finger0
+    400036: Bip001 R Foot
+    400038: Bip001 R Forearm
+    400040: Bip001 R Hand
+    400042: Bip001 R Thigh
+    400044: Bip001 R Toe0
+    400046: Bip001 R UpperArm
+    400048: Bip001 Spine
+    400050: Bip001 Spine1
+    400052: Bip001 Xtra01
+    400054: Bip001 Xtra01Opp
+    400056: body
+    400058: body 1
+    400060: body01
+    400062: Bone024
+    400064: Bone025
+    400066: Bone026
+    400068: Bone027
+    400070: Bone028
+    400072: Bone029
+    400074: Bone030
+    400076: Bone031
+    400078: Bone032
+    400080: Bone033
+    400082: Bone034
+    400084: Bone035
+    400086: Bone036
+    400088: Bone037
+    400090: Bone038
+    400092: Bone039
+    400094: Bone040
+    400096: Bone041
+    400098: Bone042
+    400100: Bone043
+    400102: Bone044
+    400104: Bone045
+    400106: Bone046
+    400108: Bone047
+    400110: Bone048
+    400112: Bone049
+    400114: Bone050
+    400116: Bone051
+    400118: Bone052
+    400120: Bone053
+    400122: Particle View 001
+    400124: wing_07_glow
+    400126: wing_07_guang
+    400128: wing_07_liuguang
+    400130: Wing_Bone001
+    400132: Wing_Bone002
+    400134: Wing_Bone003
+    400136: Wing_Bone004
+    400138: Wing_Bone005
+    400140: Wing_Bone006
+    400142: Wing_Bone007
+    400144: Wing_Bone008
+    400146: Wing_Bone009
+    400148: Wing_Bone010
+    400150: Wing_Bone011
+    400152: Wing_Bone017
+    400154: Wing_Bone018
+    400156: Wing_Bone019
+    400158: Wing_Bone020
+    400160: Wing_Bone021
+    400162: Wing_Bone022
+    400164: Wing_Bone023
+    400166: Wing_Bone024
+    400168: Wing_Bone025
+    400170: Wing_Bone026
+    400172: Wing_Bone027
+    400174: Wing_Bone028
+    400176: Wing_Bone029
+    400178: Wing_Bone030
+    400180: Wing_Bone031
+    400182: Wing_Bone032
+    400184: Wing_Bone033
+    400186: Wing_Bone034
+    400188: Wing_Bone035
+    400190: Wing_Bone036
+    400192: Wing_Bone037
+    400194: Wing_Bone038
+    400196: Wing_Bone039
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

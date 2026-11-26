@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 854a09db99a52304faf5fe7685c3833e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "??\xD7y\xD7?"
+    100002: "??\xD7y\xD7? 1"
+    100004: "??\xD7y\xD7? 2"
+    100006: "??\xD7y\xD7? 3"
+    100008: "??\xD7y\xD7? 4"
+    100010: "??\xD7y\xD7? 5"
+    100012: "??\xD7y\xD7? 6"
+    100014: "??\xD7y\xD7? 7"
+    100016: "??\xD7y\xD7? 8"
+    100018: Bip001 Head
+    100020: Bip001 L Calf
+    100022: Bip001 L Clavicle
+    100024: Bip001 L Finger0
+    100026: Bip001 L Foot
+    100028: Bip001 L Forearm
+    100030: Bip001 L Hand
+    100032: Bip001 L HorseLink
+    100034: Bip001 L Thigh
+    100036: Bip001 L Toe0
+    100038: Bip001 L UpperArm
+    100040: Bip001 Neck
+    100042: Bip001 Pelvis
+    100044: Bip001 R Calf
+    100046: Bip001 R Clavicle
+    100048: Bip001 R Finger0
+    100050: Bip001 R Foot
+    100052: Bip001 R Forearm
+    100054: Bip001 R Hand
+    100056: Bip001 R HorseLink
+    100058: Bip001 R Thigh
+    100060: Bip001 R Toe0
+    100062: Bip001 R UpperArm
+    100064: Bip001 Spine
+    100066: Bip001 Spine1
+    100068: Bip01
+    100070: Horse_E_back
+    100072: Horse_E_Spine
+    100074: wx_mount_79
+    100076: //RootNode
+    100078: ZQ_Bone79_00
+    100080: ZQ_Bone79_01
+    100082: ZQ_Bone79_02
+    100084: ZQ_Bone79_03
+    100086: ZQ_Bone79_04
+    100088: ZQ_Bone79_05
+    100090: ZQ_Bone79_06
+    100092: ZQ_Bone79_07
+    100094: ZQ_Bone79_08
+    100096: ZQ_Bone79_09
+    100098: ZQ_Bone79_10
+    100100: ZQ_Bone79_11
+    100102: ZQ_Bone79_12
+    100104: ZQ_Bone79_13
+    100106: ZQ_Bone79_14
+    100108: ZQ_Bone79_15
+    100110: ZQ_Bone79_16
+    100112: ZQ_Bone79_17
+    100114: ZQ_Bone79_18
+    100116: ZQ_Bone79_19
+    100118: ZQ_Bone79_20
+    100120: ZQ_Bone79_21
+    100122: ZQ_Bone79_22
+    100124: ZQ_Bone79_23
+    100126: ZQ_Bone79_24
+    100128: ZQ_Bone79_25
+    100130: ZQ_Bone79_26
+    100132: ZQ_Bone79_27
+    100134: ZQ_Bone79_28
+    100136: ZQ_Bone79_29
+    100138: ZQ_Bone79_30
+    100140: ZQ_Bone79_31
+    100142: ZQ_Bone79_32
+    100144: ZQ_Bone79_33
+    100146: ZQ_Bone79_34
+    100148: ZQ_Bone79_35
+    100150: ZQ_Bone79_36
+    100152: "\xD7t\xD7\xFC"
+    100154: "\xD7t\xD7\xFC 1"
+    100156: "\xD7t\xD7\xFC 2"
+    100158: "\xD7t\xD7\xFC 3"
+    100160: "\xD7t\xD7\xFC 4"
+    100162: "\xD7t\xD7\xFC 5"
+    100164: "\xD7t\xD7\xFC 6"
+    100166: "\xD7t\xD7\xFC 7"
+    100168: "\xD7t\xD7\xFC 8"
+    100170: "\xD7\xFE\xD7\xFC"
+    100172: "\u5BF9\u8C61001"
+    100174: "\u5BF9\u8C61001 1"
+    100176: "\u5BF9\u8C61006"
+    100178: "\u5BF9\u8C61011"
+    100180: "\u5BF9\u8C61014"
+    100182: "\u5BF9\u8C61015"
+    100184: "\u5BF9\u8C61027"
+    100186: "\u5BF9\u8C61029"
+    100188: "\u5BF9\u8C61035"
+    100190: "\u5BF9\u8C61036"
+    100192: "\u5BF9\u8C61041"
+    100194: "\u5BF9\u8C61058"
+    100196: "\u5E7F\u5BD2\u7389\u5154\u5750\u9A91_1"
+    100198: Bip001 Footsteps
+    100200: Bip001 HeadNub
+    100202: Bip001 L Finger0Nub
+    100204: Bip001 L Toe0Nub
+    100206: Bip001 R Finger0Nub
+    100208: Bip001 R Toe0Nub
+    100210: body
+    400000: "??\xD7y\xD7?"
+    400002: "??\xD7y\xD7? 1"
+    400004: "??\xD7y\xD7? 2"
+    400006: "??\xD7y\xD7? 3"
+    400008: "??\xD7y\xD7? 4"
+    400010: "??\xD7y\xD7? 5"
+    400012: "??\xD7y\xD7? 6"
+    400014: "??\xD7y\xD7? 7"
+    400016: "??\xD7y\xD7? 8"
+    400018: Bip001 Head
+    400020: Bip001 L Calf
+    400022: Bip001 L Clavicle
+    400024: Bip001 L Finger0
+    400026: Bip001 L Foot
+    400028: Bip001 L Forearm
+    400030: Bip001 L Hand
+    400032: Bip001 L HorseLink
+    400034: Bip001 L Thigh
+    400036: Bip001 L Toe0
+    400038: Bip001 L UpperArm
+    400040: Bip001 Neck
+    400042: Bip001 Pelvis
+    400044: Bip001 R Calf
+    400046: Bip001 R Clavicle
+    400048: Bip001 R Finger0
+    400050: Bip001 R Foot
+    400052: Bip001 R Forearm
+    400054: Bip001 R Hand
+    400056: Bip001 R HorseLink
+    400058: Bip001 R Thigh
+    400060: Bip001 R Toe0
+    400062: Bip001 R UpperArm
+    400064: Bip001 Spine
+    400066: Bip001 Spine1
+    400068: Bip01
+    400070: Horse_E_back
+    400072: Horse_E_Spine
+    400074: wx_mount_79
+    400076: //RootNode
+    400078: ZQ_Bone79_00
+    400080: ZQ_Bone79_01
+    400082: ZQ_Bone79_02
+    400084: ZQ_Bone79_03
+    400086: ZQ_Bone79_04
+    400088: ZQ_Bone79_05
+    400090: ZQ_Bone79_06
+    400092: ZQ_Bone79_07
+    400094: ZQ_Bone79_08
+    400096: ZQ_Bone79_09
+    400098: ZQ_Bone79_10
+    400100: ZQ_Bone79_11
+    400102: ZQ_Bone79_12
+    400104: ZQ_Bone79_13
+    400106: ZQ_Bone79_14
+    400108: ZQ_Bone79_15
+    400110: ZQ_Bone79_16
+    400112: ZQ_Bone79_17
+    400114: ZQ_Bone79_18
+    400116: ZQ_Bone79_19
+    400118: ZQ_Bone79_20
+    400120: ZQ_Bone79_21
+    400122: ZQ_Bone79_22
+    400124: ZQ_Bone79_23
+    400126: ZQ_Bone79_24
+    400128: ZQ_Bone79_25
+    400130: ZQ_Bone79_26
+    400132: ZQ_Bone79_27
+    400134: ZQ_Bone79_28
+    400136: ZQ_Bone79_29
+    400138: ZQ_Bone79_30
+    400140: ZQ_Bone79_31
+    400142: ZQ_Bone79_32
+    400144: ZQ_Bone79_33
+    400146: ZQ_Bone79_34
+    400148: ZQ_Bone79_35
+    400150: ZQ_Bone79_36
+    400152: "\xD7t\xD7\xFC"
+    400154: "\xD7t\xD7\xFC 1"
+    400156: "\xD7t\xD7\xFC 2"
+    400158: "\xD7t\xD7\xFC 3"
+    400160: "\xD7t\xD7\xFC 4"
+    400162: "\xD7t\xD7\xFC 5"
+    400164: "\xD7t\xD7\xFC 6"
+    400166: "\xD7t\xD7\xFC 7"
+    400168: "\xD7t\xD7\xFC 8"
+    400170: "\xD7\xFE\xD7\xFC"
+    400172: "\u5BF9\u8C61001"
+    400174: "\u5BF9\u8C61001 1"
+    400176: "\u5BF9\u8C61006"
+    400178: "\u5BF9\u8C61011"
+    400180: "\u5BF9\u8C61014"
+    400182: "\u5BF9\u8C61015"
+    400184: "\u5BF9\u8C61027"
+    400186: "\u5BF9\u8C61029"
+    400188: "\u5BF9\u8C61035"
+    400190: "\u5BF9\u8C61036"
+    400192: "\u5BF9\u8C61041"
+    400194: "\u5BF9\u8C61058"
+    400196: "\u5E7F\u5BD2\u7389\u5154\u5750\u9A91_1"
+    400198: Bip001 Footsteps
+    400200: Bip001 HeadNub
+    400202: Bip001 L Finger0Nub
+    400204: Bip001 L Toe0Nub
+    400206: Bip001 R Finger0Nub
+    400208: Bip001 R Toe0Nub
+    400210: body
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

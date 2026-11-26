@@ -1,0 +1,137 @@
+fileFormatVersion: 2
+guid: 8b8d46ba31433334ca952599613d4915
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: E_Root
+    100004: E_top
+    100006: Horse_E_back
+    100008: Horse_E_Foot_L
+    100010: Horse_E_Foot_L1
+    100012: Horse_E_Foot_R
+    100014: Horse_E_Foot_R1
+    100016: Horse_E_head
+    100018: Horse_E_Tail
+    100020: //RootNode
+    100022: ZQ_Bone39_00
+    100024: ZQ_Bone39_01
+    100026: ZQ_Bone39_02
+    100028: ZQ_Bone39_03
+    100030: ZQ_Bone39_04
+    100032: zq_pc_45
+    100034: zq_pc_45_toutie
+    100036: Bip
+    100038: Dummy001
+    100040: ZQ_Bone39_05
+    100042: ZQ_Bone39_06
+    100044: ZQ_Bone39_07
+    100046: ZQ_Bone39_08
+    400000: body
+    400002: E_Root
+    400004: E_top
+    400006: Horse_E_back
+    400008: Horse_E_Foot_L
+    400010: Horse_E_Foot_L1
+    400012: Horse_E_Foot_R
+    400014: Horse_E_Foot_R1
+    400016: Horse_E_head
+    400018: Horse_E_Tail
+    400020: //RootNode
+    400022: ZQ_Bone39_00
+    400024: ZQ_Bone39_01
+    400026: ZQ_Bone39_02
+    400028: ZQ_Bone39_03
+    400030: ZQ_Bone39_04
+    400032: zq_pc_45
+    400034: zq_pc_45_toutie
+    400036: Bip
+    400038: Dummy001
+    400040: ZQ_Bone39_05
+    400042: ZQ_Bone39_06
+    400044: ZQ_Bone39_07
+    400046: ZQ_Bone39_08
+    4300000: body
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: body
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

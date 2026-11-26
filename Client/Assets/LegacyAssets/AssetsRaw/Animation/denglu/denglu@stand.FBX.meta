@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 62d1bc1f761558341b8bd67603f32942
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone000
+    100002: Bone001
+    100004: Bone002
+    100006: Bone003
+    100008: Bone004
+    100010: Bone005
+    100012: Bone006
+    100014: Bone007
+    100016: Bone008
+    100018: Bone009
+    100020: Bone010
+    100022: Bone011
+    100024: Bone012
+    100026: Bone013
+    100028: Bone014
+    100030: Bone015
+    100032: Bone016
+    100034: Bone017
+    100036: Bone018
+    100038: //RootNode
+    100040: nanzhan
+    100042: Dummy001
+    100044: NZ_Bone0
+    100046: NZ_Bone000
+    100048: NZ_Bone001
+    100050: NZ_Bone002
+    100052: NZ_Bone003
+    100054: NZ_Bone004
+    100056: NZ_Bone005
+    100058: NZ_Bone006
+    100060: NZ_Bone007
+    100062: NZ_Bone008
+    100064: NZ_Bone009
+    100066: NZ_Bone010
+    100068: NZ_Bone011
+    100070: NZ_Bone012
+    100072: NZ_Bone013
+    100074: NZ_Bone014
+    100076: NZ_Bone015
+    400000: Bone000
+    400002: Bone001
+    400004: Bone002
+    400006: Bone003
+    400008: Bone004
+    400010: Bone005
+    400012: Bone006
+    400014: Bone007
+    400016: Bone008
+    400018: Bone009
+    400020: Bone010
+    400022: Bone011
+    400024: Bone012
+    400026: Bone013
+    400028: Bone014
+    400030: Bone015
+    400032: Bone016
+    400034: Bone017
+    400036: Bone018
+    400038: //RootNode
+    400040: nanzhan
+    400042: Dummy001
+    400044: NZ_Bone0
+    400046: NZ_Bone000
+    400048: NZ_Bone001
+    400050: NZ_Bone002
+    400052: NZ_Bone003
+    400054: NZ_Bone004
+    400056: NZ_Bone005
+    400058: NZ_Bone006
+    400060: NZ_Bone007
+    400062: NZ_Bone008
+    400064: NZ_Bone009
+    400066: NZ_Bone010
+    400068: NZ_Bone011
+    400070: NZ_Bone012
+    400072: NZ_Bone013
+    400074: NZ_Bone014
+    400076: NZ_Bone015
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

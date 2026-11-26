@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: b40eef87eb09fc742b110d27f22851c0
+timeCreated: 1543320267
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: Bone001
+    100004: Bone002
+    100006: DM_wing
+    100008: Effect_glow
+    100010: Wing_Bone000
+    100012: Wing_Bone001
+    100014: Wing_Bone002
+    100016: Wing_Bone003
+    100018: Wing_Bone004
+    100020: Wing_Bone005
+    100022: Wing_Bone006
+    100024: Wing_Bone007
+    100026: Wing_Bone008
+    100028: Wing_Bone009
+    100030: Wing_Bone010
+    100032: //RootNode
+    400000: body
+    400002: Bone001
+    400004: Bone002
+    400006: DM_wing
+    400008: Effect_glow
+    400010: Wing_Bone000
+    400012: Wing_Bone001
+    400014: Wing_Bone002
+    400016: Wing_Bone003
+    400018: Wing_Bone004
+    400020: Wing_Bone005
+    400022: Wing_Bone006
+    400024: Wing_Bone007
+    400026: Wing_Bone008
+    400028: Wing_Bone009
+    400030: Wing_Bone010
+    400032: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

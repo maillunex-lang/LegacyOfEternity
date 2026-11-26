@@ -1,0 +1,10 @@
+﻿{
+    "M00":  "Unity 6000.3.27f1 created project; verified editor batchmode exit 0",
+    "M01":  "Coastal level dependency copy: 204 assets/58.3MB, 7 scripts deliberately excluded, 12 missing GUIDs. Unity import exit 0; FBCamera missing component. URP not installed, visual scene validation pending",
+    "M02":  "1788 animation assets migrated, catalog created. 0.1.1: 4 stand clips + 4 looped run clips validated via Unity editor, physical Android QA pending.",
+    "M03":  "CoastalPrototype scene, active renderers, sunlight, mobile HUD; Unity D3D12 camera screenshot Docs/coastal-preview.png visually verified 2026-11-26. Sky/shadows and shader quality still need polish.",
+    "M04":  "Four classes integrated with model/texture and animation. Unity Windows runtime GUI confirmed live class switching among Warrior, Assassin, Mage, Archer. Android touch/device QA pending.",
+    "M05":  "4 classes x 7 combat action clips preview; local HP and death/respawn, no online combat; Android 0.1.0 and 0.1.1 built. Mobile visual QA ongoing.",
+    "M06":  "Go health endpoint + Docker Compose PostgreSQL 16 scaffold only; MMO gameplay endpoints not implemented.",
+    "M00_GitHub":  "Public repository maillunex-lang/LegacyOfEternity, roadmap, assets using Git LFS. Full clone validation pending."
+}

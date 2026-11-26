@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 0078679baada540419f74067d165e251
+timeCreated: 1542892347
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Horse_Bip001
+    100002: Horse_Bip001 Head
+    100004: Horse_Bip001 L Calf
+    100006: Horse_Bip001 L Clavicle
+    100008: Horse_Bip001 L Finger0
+    100010: Horse_Bip001 L Finger01
+    100012: Horse_Bip001 L Finger1
+    100014: Horse_Bip001 L Finger11
+    100016: Horse_Bip001 L Finger2
+    100018: Horse_Bip001 L Finger21
+    100020: Horse_Bip001 L Finger3
+    100022: Horse_Bip001 L Finger31
+    100024: Horse_Bip001 L Foot
+    100026: Horse_Bip001 L Forearm
+    100028: Horse_Bip001 L Hand
+    100030: Horse_Bip001 L HorseLink
+    100032: Horse_Bip001 L Thigh
+    100034: Horse_Bip001 L Toe0
+    100036: Horse_Bip001 L Toe01
+    100038: Horse_Bip001 L Toe1
+    100040: Horse_Bip001 L Toe11
+    100042: Horse_Bip001 L Toe2
+    100044: Horse_Bip001 L Toe21
+    100046: Horse_Bip001 L Toe3
+    100048: Horse_Bip001 L Toe31
+    100050: Horse_Bip001 L UpperArm
+    100052: Horse_Bip001 Neck
+    100054: Horse_Bip001 Neck1
+    100056: Horse_Bip001 Neck2
+    100058: Horse_Bip001 Neck3
+    100060: Horse_Bip001 Neck4
+    100062: Horse_Bip001 Pelvis
+    100064: Horse_Bip001 R Calf
+    100066: Horse_Bip001 R Clavicle
+    100068: Horse_Bip001 R Finger0
+    100070: Horse_Bip001 R Finger01
+    100072: Horse_Bip001 R Finger1
+    100074: Horse_Bip001 R Finger11
+    100076: Horse_Bip001 R Finger2
+    100078: Horse_Bip001 R Finger21
+    100080: Horse_Bip001 R Finger3
+    100082: Horse_Bip001 R Finger31
+    100084: Horse_Bip001 R Foot
+    100086: Horse_Bip001 R Forearm
+    100088: Horse_Bip001 R Hand
+    100090: Horse_Bip001 R HorseLink
+    100092: Horse_Bip001 R Thigh
+    100094: Horse_Bip001 R Toe0
+    100096: Horse_Bip001 R Toe01
+    100098: Horse_Bip001 R Toe1
+    100100: Horse_Bip001 R Toe11
+    100102: Horse_Bip001 R Toe2
+    100104: Horse_Bip001 R Toe21
+    100106: Horse_Bip001 R Toe3
+    100108: Horse_Bip001 R Toe31
+    100110: Horse_Bip001 R UpperArm
+    100112: Horse_Bip001 Spine
+    100114: Horse_Bip001 Spine1
+    100116: Horse_Bip001 Spine2
+    100118: Horse_Bip001 Spine3
+    100120: Horse_Bip001 Spine4
+    100122: Horse_Bip001 Xtra01
+    100124: Horse_Bip001 Xtra02
+    100126: Horse_Bip001 Xtra0202
+    100128: Horse_Bip001 Xtra0203
+    100130: Horse_Bip001 Xtra02Opp
+    100132: Horse_Bip001 Xtra02Opp02
+    100134: Horse_Bip001 Xtra02Opp03
+    100136: Horse_bone_00
+    100138: Horse_bone_01
+    100140: Horse_bone_02
+    100142: Horse_bone_03
+    100144: Horse_bone_04
+    100146: Horse_bone_05
+    100148: Horse_bone_06
+    100150: Horse_bone_07
+    100152: Horse_bone_08
+    100154: Horse_bone_09
+    100156: Horse_bone_10
+    100158: Horse_bone_11
+    100160: Horse_bone_12
+    100162: Horse_bone_13
+    100164: Horse_bone_14
+    100166: Horse_bone_15
+    100168: Horse_bone_16
+    100170: Horse_bone_17
+    100172: Horse_bone_18
+    100174: Horse_bone_19
+    100176: Horse_bone_20
+    100178: Horse_bone_21
+    100180: Horse_bone_22
+    100182: Horse_bone_23
+    100184: Horse_bone_24
+    100186: Horse_bone_25
+    100188: Horse_bone_26
+    100190: Horse_bone_27
+    100192: Horse_bone_28
+    100194: Horse_E_back
+    100196: Horse_E_head
+    100198: Horse_E_Spine
+    100200: Horse_E_top
+    100202: Horse_nub_00
+    100204: Horse_nub_01
+    100206: Horse_nub_02
+    100208: Horse_nub_03
+    100210: Horse_nub_04
+    100212: Horse_nub_05
+    100214: Horse_nub_06
+    100216: mount_012
+    100218: //RootNode
+    400000: Horse_Bip001
+    400002: Horse_Bip001 Head
+    400004: Horse_Bip001 L Calf
+    400006: Horse_Bip001 L Clavicle
+    400008: Horse_Bip001 L Finger0
+    400010: Horse_Bip001 L Finger01
+    400012: Horse_Bip001 L Finger1
+    400014: Horse_Bip001 L Finger11
+    400016: Horse_Bip001 L Finger2
+    400018: Horse_Bip001 L Finger21
+    400020: Horse_Bip001 L Finger3
+    400022: Horse_Bip001 L Finger31
+    400024: Horse_Bip001 L Foot
+    400026: Horse_Bip001 L Forearm
+    400028: Horse_Bip001 L Hand
+    400030: Horse_Bip001 L HorseLink
+    400032: Horse_Bip001 L Thigh
+    400034: Horse_Bip001 L Toe0
+    400036: Horse_Bip001 L Toe01
+    400038: Horse_Bip001 L Toe1
+    400040: Horse_Bip001 L Toe11
+    400042: Horse_Bip001 L Toe2
+    400044: Horse_Bip001 L Toe21
+    400046: Horse_Bip001 L Toe3
+    400048: Horse_Bip001 L Toe31
+    400050: Horse_Bip001 L UpperArm
+    400052: Horse_Bip001 Neck
+    400054: Horse_Bip001 Neck1
+    400056: Horse_Bip001 Neck2
+    400058: Horse_Bip001 Neck3
+    400060: Horse_Bip001 Neck4
+    400062: Horse_Bip001 Pelvis
+    400064: Horse_Bip001 R Calf
+    400066: Horse_Bip001 R Clavicle
+    400068: Horse_Bip001 R Finger0
+    400070: Horse_Bip001 R Finger01
+    400072: Horse_Bip001 R Finger1
+    400074: Horse_Bip001 R Finger11
+    400076: Horse_Bip001 R Finger2
+    400078: Horse_Bip001 R Finger21
+    400080: Horse_Bip001 R Finger3
+    400082: Horse_Bip001 R Finger31
+    400084: Horse_Bip001 R Foot
+    400086: Horse_Bip001 R Forearm
+    400088: Horse_Bip001 R Hand
+    400090: Horse_Bip001 R HorseLink
+    400092: Horse_Bip001 R Thigh
+    400094: Horse_Bip001 R Toe0
+    400096: Horse_Bip001 R Toe01
+    400098: Horse_Bip001 R Toe1
+    400100: Horse_Bip001 R Toe11
+    400102: Horse_Bip001 R Toe2
+    400104: Horse_Bip001 R Toe21
+    400106: Horse_Bip001 R Toe3
+    400108: Horse_Bip001 R Toe31
+    400110: Horse_Bip001 R UpperArm
+    400112: Horse_Bip001 Spine
+    400114: Horse_Bip001 Spine1
+    400116: Horse_Bip001 Spine2
+    400118: Horse_Bip001 Spine3
+    400120: Horse_Bip001 Spine4
+    400122: Horse_Bip001 Xtra01
+    400124: Horse_Bip001 Xtra02
+    400126: Horse_Bip001 Xtra0202
+    400128: Horse_Bip001 Xtra0203
+    400130: Horse_Bip001 Xtra02Opp
+    400132: Horse_Bip001 Xtra02Opp02
+    400134: Horse_Bip001 Xtra02Opp03
+    400136: Horse_bone_00
+    400138: Horse_bone_01
+    400140: Horse_bone_02
+    400142: Horse_bone_03
+    400144: Horse_bone_04
+    400146: Horse_bone_05
+    400148: Horse_bone_06
+    400150: Horse_bone_07
+    400152: Horse_bone_08
+    400154: Horse_bone_09
+    400156: Horse_bone_10
+    400158: Horse_bone_11
+    400160: Horse_bone_12
+    400162: Horse_bone_13
+    400164: Horse_bone_14
+    400166: Horse_bone_15
+    400168: Horse_bone_16
+    400170: Horse_bone_17
+    400172: Horse_bone_18
+    400174: Horse_bone_19
+    400176: Horse_bone_20
+    400178: Horse_bone_21
+    400180: Horse_bone_22
+    400182: Horse_bone_23
+    400184: Horse_bone_24
+    400186: Horse_bone_25
+    400188: Horse_bone_26
+    400190: Horse_bone_27
+    400192: Horse_bone_28
+    400194: Horse_E_back
+    400196: Horse_E_head
+    400198: Horse_E_Spine
+    400200: Horse_E_top
+    400202: Horse_nub_00
+    400204: Horse_nub_01
+    400206: Horse_nub_02
+    400208: Horse_nub_03
+    400210: Horse_nub_04
+    400212: Horse_nub_05
+    400214: Horse_nub_06
+    400216: mount_012
+    400218: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

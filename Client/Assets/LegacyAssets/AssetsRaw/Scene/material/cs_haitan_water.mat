@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: cs_haitan_water
+  m_Shader: {fileID: 4800000, guid: dcedba1ed17598d4687eb1eed29047a5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 6001
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 92a6d0b4d3d251e4baa800ff336dfa22, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 185c19517ce8ae14ea467be74a887439, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 2800000, guid: b577aea7f6772194b99f755b80969942, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _liuguang:
+        m_Texture: {fileID: 2800000, guid: a6e3d8bd4107d7745a3808a00b08eff5, type: 3}
+        m_Scale: {x: 2, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _liuguang01:
+        m_Texture: {fileID: 2800000, guid: 2d47d6e5cda12d948937f142c4229594, type: 3}
+        m_Scale: {x: 3, y: 3}
+        m_Offset: {x: 0, y: 0}
+    - _wenli:
+        m_Texture: {fileID: 2800000, guid: 2d47d6e5cda12d948937f142c4229594, type: 3}
+        m_Scale: {x: 5, y: 5}
+        m_Offset: {x: 0, y: 1}
+    m_Floats:
+    - _Alpha: 1
+    - _Cutoff: 0.5
+    - _DarkenDegree: 1
+    - _FogShininess: 3.51
+    - _FogStrength: 1
+    - _InvFadeParemeter: 7.63
+    - _MainAlpha: 0.528
+    - _ReflectionAlpha: 0.676
+    - _ReflectionBias: 1.33
+    - _Shininess: 23
+    - _u: -0.07
+    - _u_copy: -0.04
+    - _v: 0
+    - _v_copy: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DirectionUv: {r: 2, g: 2, b: 0, a: -2}
+    - _FogColor: {r: 0.10845588, g: 0.39642477, b: 0.86764705, a: 1}
+    - _MainColor: {r: 0.008326122, g: 0.00938431, b: 0.16176468, a: 1}
+    - _SunPos: {r: 0, g: 72.3, b: 205.3, a: -12.37}
+    - _TexAtlasTiling: {r: 20, g: 100, b: 15, a: 14}
+    - _liuguang_color: {r: 0.13813798, g: 0.22282171, b: 0.25735295, a: 1}
+    - _wenli_color: {r: 0.13246109, g: 0.2005056, b: 0.25735295, a: 1}

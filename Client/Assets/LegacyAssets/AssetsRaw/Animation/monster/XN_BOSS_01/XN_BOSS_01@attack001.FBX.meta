@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: 61f1fb1ad26f8be448f91d6e176721e7
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bip001 Head
+    100002: Bip001 L Calf
+    100004: Bip001 L Clavicle
+    100006: Bip001 L Finger0
+    100008: Bip001 L Foot
+    100010: Bip001 L Forearm
+    100012: Bip001 L Hand
+    100014: Bip001 L HorseLink
+    100016: Bip001 L Thigh
+    100018: Bip001 L Toe0
+    100020: Bip001 L UpperArm
+    100022: Bip001 Neck
+    100024: Bip001 Pelvis
+    100026: Bip001 R Calf
+    100028: Bip001 R Clavicle
+    100030: Bip001 R Finger0
+    100032: Bip001 R Foot
+    100034: Bip001 R Forearm
+    100036: Bip001 R Hand
+    100038: Bip001 R HorseLink
+    100040: Bip001 R Thigh
+    100042: Bip001 R Toe0
+    100044: Bip001 R UpperArm
+    100046: Bip001 Spine
+    100048: Bip001 Spine1
+    100050: Bip01
+    100052: body
+    100054: Horse_E_back
+    100056: Horse_E_Spine
+    100058: //RootNode
+    100060: ZQ_Bone79_00
+    100062: ZQ_Bone79_01
+    100064: ZQ_Bone79_02
+    100066: ZQ_Bone79_03
+    100068: ZQ_Bone79_04
+    100070: ZQ_Bone79_05
+    100072: ZQ_Bone79_06
+    100074: ZQ_Bone79_07
+    100076: ZQ_Bone79_08
+    100078: ZQ_Bone79_09
+    100080: ZQ_Bone79_10
+    100082: ZQ_Bone79_11
+    100084: ZQ_Bone79_12
+    100086: ZQ_Bone79_13
+    100088: ZQ_Bone79_14
+    100090: ZQ_Bone79_15
+    100092: ZQ_Bone79_16
+    100094: ZQ_Bone79_17
+    100096: ZQ_Bone79_18
+    100098: ZQ_Bone79_19
+    100100: ZQ_Bone79_20
+    100102: ZQ_Bone79_21
+    100104: ZQ_Bone79_22
+    100106: ZQ_Bone79_23
+    100108: ZQ_Bone79_24
+    100110: ZQ_Bone79_25
+    100112: ZQ_Bone79_26
+    100114: ZQ_Bone79_27
+    100116: ZQ_Bone79_28
+    100118: ZQ_Bone79_29
+    100120: ZQ_Bone79_30
+    100122: ZQ_Bone79_31
+    100124: ZQ_Bone79_32
+    100126: ZQ_Bone79_33
+    100128: ZQ_Bone79_34
+    100130: ZQ_Bone79_35
+    100132: ZQ_Bone79_36
+    100134: Bip001 HeadNub
+    100136: Bip001 L Finger0Nub
+    100138: Bip001 L Toe0Nub
+    100140: Bip001 R Finger0Nub
+    100142: Bip001 R Toe0Nub
+    400000: Bip001 Head
+    400002: Bip001 L Calf
+    400004: Bip001 L Clavicle
+    400006: Bip001 L Finger0
+    400008: Bip001 L Foot
+    400010: Bip001 L Forearm
+    400012: Bip001 L Hand
+    400014: Bip001 L HorseLink
+    400016: Bip001 L Thigh
+    400018: Bip001 L Toe0
+    400020: Bip001 L UpperArm
+    400022: Bip001 Neck
+    400024: Bip001 Pelvis
+    400026: Bip001 R Calf
+    400028: Bip001 R Clavicle
+    400030: Bip001 R Finger0
+    400032: Bip001 R Foot
+    400034: Bip001 R Forearm
+    400036: Bip001 R Hand
+    400038: Bip001 R HorseLink
+    400040: Bip001 R Thigh
+    400042: Bip001 R Toe0
+    400044: Bip001 R UpperArm
+    400046: Bip001 Spine
+    400048: Bip001 Spine1
+    400050: Bip01
+    400052: body
+    400054: Horse_E_back
+    400056: Horse_E_Spine
+    400058: //RootNode
+    400060: ZQ_Bone79_00
+    400062: ZQ_Bone79_01
+    400064: ZQ_Bone79_02
+    400066: ZQ_Bone79_03
+    400068: ZQ_Bone79_04
+    400070: ZQ_Bone79_05
+    400072: ZQ_Bone79_06
+    400074: ZQ_Bone79_07
+    400076: ZQ_Bone79_08
+    400078: ZQ_Bone79_09
+    400080: ZQ_Bone79_10
+    400082: ZQ_Bone79_11
+    400084: ZQ_Bone79_12
+    400086: ZQ_Bone79_13
+    400088: ZQ_Bone79_14
+    400090: ZQ_Bone79_15
+    400092: ZQ_Bone79_16
+    400094: ZQ_Bone79_17
+    400096: ZQ_Bone79_18
+    400098: ZQ_Bone79_19
+    400100: ZQ_Bone79_20
+    400102: ZQ_Bone79_21
+    400104: ZQ_Bone79_22
+    400106: ZQ_Bone79_23
+    400108: ZQ_Bone79_24
+    400110: ZQ_Bone79_25
+    400112: ZQ_Bone79_26
+    400114: ZQ_Bone79_27
+    400116: ZQ_Bone79_28
+    400118: ZQ_Bone79_29
+    400120: ZQ_Bone79_30
+    400122: ZQ_Bone79_31
+    400124: ZQ_Bone79_32
+    400126: ZQ_Bone79_33
+    400128: ZQ_Bone79_34
+    400130: ZQ_Bone79_35
+    400132: ZQ_Bone79_36
+    400134: Bip001 HeadNub
+    400136: Bip001 L Finger0Nub
+    400138: Bip001 L Toe0Nub
+    400140: Bip001 R Finger0Nub
+    400142: Bip001 R Toe0Nub
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

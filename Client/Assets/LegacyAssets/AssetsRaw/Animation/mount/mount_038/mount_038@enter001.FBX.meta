@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: c32873c7ef63c9f47886dc89f1069eb4
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: horse_Bip001 Head
+    100004: horse_Bip001 L_Calf
+    100006: horse_Bip001 L_Clavicle
+    100008: horse_Bip001 L_Finger0
+    100010: horse_Bip001 L_Foot
+    100012: horse_Bip001 L_Forearm
+    100014: horse_Bip001 L_Hand
+    100016: horse_Bip001 L_HorseLink
+    100018: horse_Bip001 L_Thigh
+    100020: horse_Bip001 L_Toe0
+    100022: horse_Bip001 L_UpperArm
+    100024: horse_Bip001 Neck
+    100026: horse_Bip001 Pelvis
+    100028: horse_Bip001 R_Calf
+    100030: horse_Bip001 R_Clavicle
+    100032: horse_Bip001 R_Finger0
+    100034: horse_Bip001 R_Foot
+    100036: horse_Bip001 R_Forearm
+    100038: horse_Bip001 R_Hand
+    100040: horse_Bip001 R_HorseLink
+    100042: horse_Bip001 R_Thigh
+    100044: horse_Bip001 R_Toe0
+    100046: horse_Bip001 R_UpperArm
+    100048: horse_Bip001 root
+    100050: horse_Bip001 Spine
+    100052: horse_Bip001 Spine1
+    100054: //RootNode
+    100056: ZQ_Bone035_00
+    100058: ZQ_Bone035_01
+    100060: ZQ_Bone035_02
+    100062: ZQ_Bone035_03
+    100064: ZQ_Bone035_04
+    100066: ZQ_Bone035_05
+    100068: ZQ_Bone035_06
+    100070: ZQ_Bone035_07
+    100072: ZQ_Bone035_08
+    100074: ZQ_Bone035_09
+    100076: ZQ_Bone035_10
+    100078: ZQ_Bone035_11
+    100080: ZQ_Bone035_12
+    100082: ZQ_Bone035_13
+    100084: ZQ_Bone035_14
+    100086: ZQ_Bone035_15
+    100088: ZQ_Bone035_16
+    100090: ZQ_Bone035_17
+    100092: ZQ_Bone035_18
+    100094: ZQ_Bone035_19
+    100096: ZQ_Bone035_20
+    100098: ZQ_Bone035_21
+    100100: ZQ_Bone035_22
+    100102: ZQ_Bone035_23
+    100104: ZQ_Bone035_24
+    100106: ZQ_Bone035_25
+    100108: ZQ_Bone035_26
+    100110: ZQ_Bone035_27
+    100112: ZQ_Bone035_28
+    100114: ZQ_Bone035_29
+    100116: ZQ_Bone035_30
+    100118: ZQ_Bone035_31
+    100120: ZQ_Bone035_32
+    100122: ZQ_Bone035_33
+    100124: ZQ_Bone035_34
+    100126: ZQ_Bone035_35
+    100128: ZQ_Bone035_36
+    100130: ZQ_Bone035_37
+    100132: ZQ_Bone035_38
+    100134: ZQ_Bone035_39
+    100136: ZQ_Bone035_40
+    100138: ZQ_Bone035_41
+    100140: ZQ_Bone035_42
+    100142: ZQ_Bone035_43
+    100144: ZQ_Bone035_44
+    100146: ZQ_Bone035_45
+    100148: horse_Bip001
+    400000: body
+    400002: horse_Bip001 Head
+    400004: horse_Bip001 L_Calf
+    400006: horse_Bip001 L_Clavicle
+    400008: horse_Bip001 L_Finger0
+    400010: horse_Bip001 L_Foot
+    400012: horse_Bip001 L_Forearm
+    400014: horse_Bip001 L_Hand
+    400016: horse_Bip001 L_HorseLink
+    400018: horse_Bip001 L_Thigh
+    400020: horse_Bip001 L_Toe0
+    400022: horse_Bip001 L_UpperArm
+    400024: horse_Bip001 Neck
+    400026: horse_Bip001 Pelvis
+    400028: horse_Bip001 R_Calf
+    400030: horse_Bip001 R_Clavicle
+    400032: horse_Bip001 R_Finger0
+    400034: horse_Bip001 R_Foot
+    400036: horse_Bip001 R_Forearm
+    400038: horse_Bip001 R_Hand
+    400040: horse_Bip001 R_HorseLink
+    400042: horse_Bip001 R_Thigh
+    400044: horse_Bip001 R_Toe0
+    400046: horse_Bip001 R_UpperArm
+    400048: horse_Bip001 root
+    400050: horse_Bip001 Spine
+    400052: horse_Bip001 Spine1
+    400054: //RootNode
+    400056: ZQ_Bone035_00
+    400058: ZQ_Bone035_01
+    400060: ZQ_Bone035_02
+    400062: ZQ_Bone035_03
+    400064: ZQ_Bone035_04
+    400066: ZQ_Bone035_05
+    400068: ZQ_Bone035_06
+    400070: ZQ_Bone035_07
+    400072: ZQ_Bone035_08
+    400074: ZQ_Bone035_09
+    400076: ZQ_Bone035_10
+    400078: ZQ_Bone035_11
+    400080: ZQ_Bone035_12
+    400082: ZQ_Bone035_13
+    400084: ZQ_Bone035_14
+    400086: ZQ_Bone035_15
+    400088: ZQ_Bone035_16
+    400090: ZQ_Bone035_17
+    400092: ZQ_Bone035_18
+    400094: ZQ_Bone035_19
+    400096: ZQ_Bone035_20
+    400098: ZQ_Bone035_21
+    400100: ZQ_Bone035_22
+    400102: ZQ_Bone035_23
+    400104: ZQ_Bone035_24
+    400106: ZQ_Bone035_25
+    400108: ZQ_Bone035_26
+    400110: ZQ_Bone035_27
+    400112: ZQ_Bone035_28
+    400114: ZQ_Bone035_29
+    400116: ZQ_Bone035_30
+    400118: ZQ_Bone035_31
+    400120: ZQ_Bone035_32
+    400122: ZQ_Bone035_33
+    400124: ZQ_Bone035_34
+    400126: ZQ_Bone035_35
+    400128: ZQ_Bone035_36
+    400130: ZQ_Bone035_37
+    400132: ZQ_Bone035_38
+    400134: ZQ_Bone035_39
+    400136: ZQ_Bone035_40
+    400138: ZQ_Bone035_41
+    400140: ZQ_Bone035_42
+    400142: ZQ_Bone035_43
+    400144: ZQ_Bone035_44
+    400146: ZQ_Bone035_45
+    400148: horse_Bip001
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

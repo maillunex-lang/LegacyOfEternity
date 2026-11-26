@@ -1,0 +1,731 @@
+fileFormatVersion: 2
+guid: 5b75797b1a7511a4b8237fd36cd9e730
+ModelImporter:
+  serializedVersion: 24300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Bip001
+  - first:
+      1: 100004
+    second: Bip001 Head
+  - first:
+      1: 100006
+    second: Bip001 L Calf
+  - first:
+      1: 100008
+    second: Bip001 L Clavicle
+  - first:
+      1: 100010
+    second: Bip001 L Finger0
+  - first:
+      1: 100012
+    second: Bip001 L Foot
+  - first:
+      1: 100014
+    second: Bip001 L Forearm
+  - first:
+      1: 100016
+    second: Bip001 L Hand
+  - first:
+      1: 100018
+    second: Bip001 L Thigh
+  - first:
+      1: 100020
+    second: Bip001 L Toe0
+  - first:
+      1: 100022
+    second: Bip001 L UpperArm
+  - first:
+      1: 100024
+    second: Bip001 Neck
+  - first:
+      1: 100026
+    second: Bip001 Pelvis
+  - first:
+      1: 100028
+    second: Bip001 Prop1
+  - first:
+      1: 100030
+    second: Bip001 R Calf
+  - first:
+      1: 100032
+    second: Bip001 R Clavicle
+  - first:
+      1: 100034
+    second: Bip001 R Finger0
+  - first:
+      1: 100036
+    second: Bip001 R Foot
+  - first:
+      1: 100038
+    second: Bip001 R Forearm
+  - first:
+      1: 100040
+    second: Bip001 R Hand
+  - first:
+      1: 100042
+    second: Bip001 R Thigh
+  - first:
+      1: 100044
+    second: Bip001 R Toe0
+  - first:
+      1: 100046
+    second: Bip001 R UpperArm
+  - first:
+      1: 100048
+    second: Bip001 Spine
+  - first:
+      1: 100050
+    second: Bip001 Spine1
+  - first:
+      1: 100052
+    second: Bip001 Xtra01
+  - first:
+      1: 100054
+    second: Bip001 Xtra01Opp
+  - first:
+      1: 100056
+    second: body
+  - first:
+      1: 100058
+    second: body 1
+  - first:
+      1: 100060
+    second: body01
+  - first:
+      1: 100062
+    second: Bone024
+  - first:
+      1: 100064
+    second: Bone025
+  - first:
+      1: 100066
+    second: Bone026
+  - first:
+      1: 100068
+    second: Bone027
+  - first:
+      1: 100070
+    second: Bone028
+  - first:
+      1: 100072
+    second: Bone029
+  - first:
+      1: 100074
+    second: Bone030
+  - first:
+      1: 100076
+    second: Bone031
+  - first:
+      1: 100078
+    second: Bone032
+  - first:
+      1: 100080
+    second: Bone033
+  - first:
+      1: 100082
+    second: Bone034
+  - first:
+      1: 100084
+    second: Bone035
+  - first:
+      1: 100086
+    second: Bone036
+  - first:
+      1: 100088
+    second: Bone037
+  - first:
+      1: 100090
+    second: Bone038
+  - first:
+      1: 100092
+    second: Bone039
+  - first:
+      1: 100094
+    second: Bone040
+  - first:
+      1: 100096
+    second: Bone041
+  - first:
+      1: 100098
+    second: Bone042
+  - first:
+      1: 100100
+    second: Bone043
+  - first:
+      1: 100102
+    second: E_Hand_L
+  - first:
+      1: 100104
+    second: E_Hand_R
+  - first:
+      1: 100106
+    second: E_Root
+  - first:
+      1: 100108
+    second: E_Spine
+  - first:
+      1: 100110
+    second: E_top
+  - first:
+      1: 100112
+    second: E_wq
+  - first:
+      1: 100114
+    second: Particle View 001
+  - first:
+      1: 100116
+    second: wing_07_glow
+  - first:
+      1: 100118
+    second: wing_07_guang
+  - first:
+      1: 100120
+    second: wing_07_liuguang
+  - first:
+      1: 100122
+    second: Wing_Bone001
+  - first:
+      1: 100124
+    second: Wing_Bone002
+  - first:
+      1: 100126
+    second: Wing_Bone003
+  - first:
+      1: 100128
+    second: Wing_Bone004
+  - first:
+      1: 100130
+    second: Wing_Bone005
+  - first:
+      1: 100132
+    second: Wing_Bone006
+  - first:
+      1: 100134
+    second: Wing_Bone007
+  - first:
+      1: 100136
+    second: Wing_Bone008
+  - first:
+      1: 100138
+    second: Wing_Bone009
+  - first:
+      1: 100140
+    second: Wing_Bone010
+  - first:
+      1: 100142
+    second: Wing_Bone011
+  - first:
+      1: 100144
+    second: Wing_Bone017
+  - first:
+      1: 100146
+    second: Wing_Bone018
+  - first:
+      1: 100148
+    second: Wing_Bone019
+  - first:
+      1: 100150
+    second: Wing_Bone020
+  - first:
+      1: 100152
+    second: Wing_Bone021
+  - first:
+      1: 100154
+    second: Wing_Bone022
+  - first:
+      1: 100156
+    second: Wing_Bone023
+  - first:
+      1: 100158
+    second: Wing_Bone024
+  - first:
+      1: 100160
+    second: Wing_Bone025
+  - first:
+      1: 100162
+    second: Wing_Bone026
+  - first:
+      1: 100164
+    second: Wing_Bone027
+  - first:
+      1: 100166
+    second: Wing_Bone028
+  - first:
+      1: 100168
+    second: Wing_Bone029
+  - first:
+      1: 100170
+    second: Wing_Bone030
+  - first:
+      1: 100172
+    second: Wing_Bone031
+  - first:
+      1: 100174
+    second: Wing_Bone032
+  - first:
+      1: 100176
+    second: Wing_Bone033
+  - first:
+      1: 100178
+    second: Wing_Bone034
+  - first:
+      1: 100180
+    second: Wing_Bone035
+  - first:
+      1: 100182
+    second: Wing_Bone036
+  - first:
+      1: 100184
+    second: Wing_Bone037
+  - first:
+      1: 100186
+    second: Wing_Bone038
+  - first:
+      1: 100188
+    second: Wing_Bone039
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Bip001
+  - first:
+      4: 400004
+    second: Bip001 Head
+  - first:
+      4: 400006
+    second: Bip001 L Calf
+  - first:
+      4: 400008
+    second: Bip001 L Clavicle
+  - first:
+      4: 400010
+    second: Bip001 L Finger0
+  - first:
+      4: 400012
+    second: Bip001 L Foot
+  - first:
+      4: 400014
+    second: Bip001 L Forearm
+  - first:
+      4: 400016
+    second: Bip001 L Hand
+  - first:
+      4: 400018
+    second: Bip001 L Thigh
+  - first:
+      4: 400020
+    second: Bip001 L Toe0
+  - first:
+      4: 400022
+    second: Bip001 L UpperArm
+  - first:
+      4: 400024
+    second: Bip001 Neck
+  - first:
+      4: 400026
+    second: Bip001 Pelvis
+  - first:
+      4: 400028
+    second: Bip001 Prop1
+  - first:
+      4: 400030
+    second: Bip001 R Calf
+  - first:
+      4: 400032
+    second: Bip001 R Clavicle
+  - first:
+      4: 400034
+    second: Bip001 R Finger0
+  - first:
+      4: 400036
+    second: Bip001 R Foot
+  - first:
+      4: 400038
+    second: Bip001 R Forearm
+  - first:
+      4: 400040
+    second: Bip001 R Hand
+  - first:
+      4: 400042
+    second: Bip001 R Thigh
+  - first:
+      4: 400044
+    second: Bip001 R Toe0
+  - first:
+      4: 400046
+    second: Bip001 R UpperArm
+  - first:
+      4: 400048
+    second: Bip001 Spine
+  - first:
+      4: 400050
+    second: Bip001 Spine1
+  - first:
+      4: 400052
+    second: Bip001 Xtra01
+  - first:
+      4: 400054
+    second: Bip001 Xtra01Opp
+  - first:
+      4: 400056
+    second: body
+  - first:
+      4: 400058
+    second: body 1
+  - first:
+      4: 400060
+    second: body01
+  - first:
+      4: 400062
+    second: Bone024
+  - first:
+      4: 400064
+    second: Bone025
+  - first:
+      4: 400066
+    second: Bone026
+  - first:
+      4: 400068
+    second: Bone027
+  - first:
+      4: 400070
+    second: Bone028
+  - first:
+      4: 400072
+    second: Bone029
+  - first:
+      4: 400074
+    second: Bone030
+  - first:
+      4: 400076
+    second: Bone031
+  - first:
+      4: 400078
+    second: Bone032
+  - first:
+      4: 400080
+    second: Bone033
+  - first:
+      4: 400082
+    second: Bone034
+  - first:
+      4: 400084
+    second: Bone035
+  - first:
+      4: 400086
+    second: Bone036
+  - first:
+      4: 400088
+    second: Bone037
+  - first:
+      4: 400090
+    second: Bone038
+  - first:
+      4: 400092
+    second: Bone039
+  - first:
+      4: 400094
+    second: Bone040
+  - first:
+      4: 400096
+    second: Bone041
+  - first:
+      4: 400098
+    second: Bone042
+  - first:
+      4: 400100
+    second: Bone043
+  - first:
+      4: 400102
+    second: E_Hand_L
+  - first:
+      4: 400104
+    second: E_Hand_R
+  - first:
+      4: 400106
+    second: E_Root
+  - first:
+      4: 400108
+    second: E_Spine
+  - first:
+      4: 400110
+    second: E_top
+  - first:
+      4: 400112
+    second: E_wq
+  - first:
+      4: 400114
+    second: Particle View 001
+  - first:
+      4: 400116
+    second: wing_07_glow
+  - first:
+      4: 400118
+    second: wing_07_guang
+  - first:
+      4: 400120
+    second: wing_07_liuguang
+  - first:
+      4: 400122
+    second: Wing_Bone001
+  - first:
+      4: 400124
+    second: Wing_Bone002
+  - first:
+      4: 400126
+    second: Wing_Bone003
+  - first:
+      4: 400128
+    second: Wing_Bone004
+  - first:
+      4: 400130
+    second: Wing_Bone005
+  - first:
+      4: 400132
+    second: Wing_Bone006
+  - first:
+      4: 400134
+    second: Wing_Bone007
+  - first:
+      4: 400136
+    second: Wing_Bone008
+  - first:
+      4: 400138
+    second: Wing_Bone009
+  - first:
+      4: 400140
+    second: Wing_Bone010
+  - first:
+      4: 400142
+    second: Wing_Bone011
+  - first:
+      4: 400144
+    second: Wing_Bone017
+  - first:
+      4: 400146
+    second: Wing_Bone018
+  - first:
+      4: 400148
+    second: Wing_Bone019
+  - first:
+      4: 400150
+    second: Wing_Bone020
+  - first:
+      4: 400152
+    second: Wing_Bone021
+  - first:
+      4: 400154
+    second: Wing_Bone022
+  - first:
+      4: 400156
+    second: Wing_Bone023
+  - first:
+      4: 400158
+    second: Wing_Bone024
+  - first:
+      4: 400160
+    second: Wing_Bone025
+  - first:
+      4: 400162
+    second: Wing_Bone026
+  - first:
+      4: 400164
+    second: Wing_Bone027
+  - first:
+      4: 400166
+    second: Wing_Bone028
+  - first:
+      4: 400168
+    second: Wing_Bone029
+  - first:
+      4: 400170
+    second: Wing_Bone030
+  - first:
+      4: 400172
+    second: Wing_Bone031
+  - first:
+      4: 400174
+    second: Wing_Bone032
+  - first:
+      4: 400176
+    second: Wing_Bone033
+  - first:
+      4: 400178
+    second: Wing_Bone034
+  - first:
+      4: 400180
+    second: Wing_Bone035
+  - first:
+      4: 400182
+    second: Wing_Bone036
+  - first:
+      4: 400184
+    second: Wing_Bone037
+  - first:
+      4: 400186
+    second: Wing_Bone038
+  - first:
+      4: 400188
+    second: Wing_Bone039
+  - first:
+      43: 4300000
+    second: body01
+  - first:
+      43: 4300002
+    second: body
+  - first:
+      43: 4300004
+    second: wing_07_guang
+  - first:
+      43: 4300006
+    second: wing_07_liuguang
+  - first:
+      43: 4300008
+    second: wing_07_glow
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      111: 11100000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: body
+  - first:
+      137: 13700002
+    second: body01
+  - first:
+      137: 13700004
+    second: wing_07_glow
+  - first:
+      137: 13700006
+    second: wing_07_guang
+  - first:
+      137: 13700008
+    second: wing_07_liuguang
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+    searchTexturesGlobally: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 1e7a715ae0e1aa64cab3b646df1d976a
+  - 3ff7491027716c2489485d6efc25622c
+  - e8c6f171b994301438767f615d1118fc
+  - 206db846a4c2d654e9cc5e54d3fd2912
+  - 5e737199b41b4d743b5cce6f0efbd5ff
+  - cc72a41ae2607834bbd9445f8b21024b
+  - edad5f91d71f8e14a8f825d96855dc4d
+  - 6d697daa78439854f8e990b5f3afa994
+  - 08896567352bc524bb2a4a63c7fedb6d
+  - 37715e51abb3a704bb7d9d04ec4c1276
+  - a111170e085ec3b46b259870cb9ab7c6
+  - c023915b6e1b51345b3b4980a0a9cb4b
+  - 82acfba5eff5e204ba616f3d11abe15d
+  - 570d0b6e4182071409f55933d15cbffe
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 1
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

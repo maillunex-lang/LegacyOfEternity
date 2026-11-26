@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 3aa82d8d8be202a4f8341165173caf15
+timeCreated: 1555074674
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Biped
+    100002: Biped Head
+    100004: Biped L Calf
+    100006: Biped L Clavicle
+    100008: Biped L Finger0
+    100010: Biped L Finger01
+    100012: Biped L Foot
+    100014: Biped L Forearm
+    100016: Biped L Hand
+    100018: Biped L HorseLink
+    100020: Biped L Thigh
+    100022: Biped L Toe0
+    100024: Biped L UpperArm
+    100026: Biped Neck
+    100028: Biped Pelvis
+    100030: Biped Prop1
+    100032: Biped R Calf
+    100034: Biped R Clavicle
+    100036: Biped R Finger0
+    100038: Biped R Finger01
+    100040: Biped R Foot
+    100042: Biped R Forearm
+    100044: Biped R Hand
+    100046: Biped R HorseLink
+    100048: Biped R Thigh
+    100050: Biped R Toe0
+    100052: Biped R UpperArm
+    100054: Biped Spine
+    100056: Biped Spine1
+    100058: body
+    100060: Bone001
+    100062: Bone002
+    100064: Bone003
+    100066: Bone004
+    100068: Bone010
+    100070: Bone011
+    100072: Bone012
+    100074: Bone013
+    100076: Bone014
+    100078: Bone015
+    100080: Bone016
+    100082: //RootNode
+    400000: Biped
+    400002: Biped Head
+    400004: Biped L Calf
+    400006: Biped L Clavicle
+    400008: Biped L Finger0
+    400010: Biped L Finger01
+    400012: Biped L Foot
+    400014: Biped L Forearm
+    400016: Biped L Hand
+    400018: Biped L HorseLink
+    400020: Biped L Thigh
+    400022: Biped L Toe0
+    400024: Biped L UpperArm
+    400026: Biped Neck
+    400028: Biped Pelvis
+    400030: Biped Prop1
+    400032: Biped R Calf
+    400034: Biped R Clavicle
+    400036: Biped R Finger0
+    400038: Biped R Finger01
+    400040: Biped R Foot
+    400042: Biped R Forearm
+    400044: Biped R Hand
+    400046: Biped R HorseLink
+    400048: Biped R Thigh
+    400050: Biped R Toe0
+    400052: Biped R UpperArm
+    400054: Biped Spine
+    400056: Biped Spine1
+    400058: body
+    400060: Bone001
+    400062: Bone002
+    400064: Bone003
+    400066: Bone004
+    400068: Bone010
+    400070: Bone011
+    400072: Bone012
+    400074: Bone013
+    400076: Bone014
+    400078: Bone015
+    400080: Bone016
+    400082: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

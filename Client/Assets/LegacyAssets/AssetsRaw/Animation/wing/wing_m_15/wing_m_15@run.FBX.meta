@@ -1,0 +1,178 @@
+fileFormatVersion: 2
+guid: d467bb11e69880f4b9f7854b85a196d2
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: body
+    100002: Bone005
+    100004: Bone006
+    100006: Bone007
+    100008: Bone008
+    100010: Bone009
+    100012: Bone010
+    100014: Bone011
+    100016: Bone012
+    100018: Bone013
+    100020: Bone014
+    100022: DM_wing
+    100024: Dummy001
+    100026: Dummy002
+    100028: effect_liuguang001
+    100030: Wing_Bone000
+    100032: Wing_Bone001
+    100034: Wing_Bone0010
+    100036: Wing_Bone0011
+    100038: Wing_Bone002
+    100040: Wing_Bone003
+    100042: Wing_Bone004
+    100044: Wing_Bone005
+    100046: Wing_Bone006
+    100048: Wing_Bone007
+    100050: Wing_Bone008
+    100052: Wing_Bone009
+    100054: Wing_Bone012
+    100056: Wing_Bone013
+    100058: Wing_Bone014
+    100060: Wing_Bone015
+    100062: Wing_Bone016
+    100064: Wing_Bone017
+    100066: Wing_Bone018
+    100068: Wing_Bone019
+    100070: Wing_Bone020
+    100072: Wing_Bone021
+    100074: Wing_Bone022
+    100076: //RootNode
+    100078: wing_Bone005
+    100080: wing_Bone006
+    100082: wing_Bone007
+    100084: wing_Bone008
+    100086: wing_Dummy001
+    100088: wing_Dummy002
+    400000: body
+    400002: Bone005
+    400004: Bone006
+    400006: Bone007
+    400008: Bone008
+    400010: Bone009
+    400012: Bone010
+    400014: Bone011
+    400016: Bone012
+    400018: Bone013
+    400020: Bone014
+    400022: DM_wing
+    400024: Dummy001
+    400026: Dummy002
+    400028: effect_liuguang001
+    400030: Wing_Bone000
+    400032: Wing_Bone001
+    400034: Wing_Bone0010
+    400036: Wing_Bone0011
+    400038: Wing_Bone002
+    400040: Wing_Bone003
+    400042: Wing_Bone004
+    400044: Wing_Bone005
+    400046: Wing_Bone006
+    400048: Wing_Bone007
+    400050: Wing_Bone008
+    400052: Wing_Bone009
+    400054: Wing_Bone012
+    400056: Wing_Bone013
+    400058: Wing_Bone014
+    400060: Wing_Bone015
+    400062: Wing_Bone016
+    400064: Wing_Bone017
+    400066: Wing_Bone018
+    400068: Wing_Bone019
+    400070: Wing_Bone020
+    400072: Wing_Bone021
+    400074: Wing_Bone022
+    400076: //RootNode
+    400078: wing_Bone005
+    400080: wing_Bone006
+    400082: wing_Bone007
+    400084: wing_Bone008
+    400086: wing_Dummy001
+    400088: wing_Dummy002
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

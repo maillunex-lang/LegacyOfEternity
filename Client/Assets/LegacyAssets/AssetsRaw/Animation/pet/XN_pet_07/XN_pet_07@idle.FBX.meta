@@ -1,0 +1,274 @@
+fileFormatVersion: 2
+guid: c8675d4ca0254024ea78464b21038a8f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bip001
+    100002: Bip001 Head
+    100004: Bip001 L Calf
+    100006: Bip001 L Clavicle
+    100008: Bip001 L Finger0
+    100010: Bip001 L Foot
+    100012: Bip001 L Forearm
+    100014: Bip001 L Hand
+    100016: Bip001 L Thigh
+    100018: Bip001 L Toe0
+    100020: Bip001 L UpperArm
+    100022: Bip001 Neck
+    100024: Bip001 Pelvis
+    100026: Bip001 Prop1
+    100028: Bip001 R Calf
+    100030: Bip001 R Clavicle
+    100032: Bip001 R Finger0
+    100034: Bip001 R Foot
+    100036: Bip001 R Forearm
+    100038: Bip001 R Hand
+    100040: Bip001 R Thigh
+    100042: Bip001 R Toe0
+    100044: Bip001 R UpperArm
+    100046: Bip001 Spine
+    100048: Bip001 Spine1
+    100050: body
+    100052: XN_LS07_00
+    100054: XN_LS07_01
+    100056: XN_LS07_02
+    100058: XN_LS07_03
+    100060: XN_LS07_04
+    100062: XN_LS07_05
+    100064: XN_LS07_06
+    100066: XN_LS07_07
+    100068: XN_LS07_08
+    100070: XN_LS07_09
+    100072: XN_LS07_10
+    100074: XN_LS07_11
+    100076: XN_LS07_12
+    100078: XN_LS07_13
+    100080: XN_LS07_14
+    100082: XN_LS07_15
+    100084: XN_LS07_16
+    100086: XN_LS07_17
+    100088: XN_LS07_18
+    100090: XN_LS07_19
+    100092: XN_LS07_20
+    100094: XN_LS07_21
+    100096: XN_LS07_22
+    100098: XN_LS07_23
+    100100: XN_LS07_24
+    100102: XN_LS07_25
+    100104: XN_LS07_26
+    100106: XN_LS07_27
+    100108: XN_LS07_28
+    100110: XN_LS07_29
+    100112: XN_LS07_30
+    100114: XN_LS07_31
+    100116: XN_LS07_32
+    100118: XN_LS07_33
+    100120: XN_LS07_34
+    100122: XN_LS07_35
+    100124: XN_LS07_36
+    100126: XN_LS07_37
+    100128: XN_LS07_38
+    100130: XN_LS07_39
+    100132: XN_LS07_40
+    100134: XN_LS07_41
+    100136: XN_LS07_42
+    100138: XN_LS07_43
+    100140: XN_LS07_44
+    100142: XN_LS07_45
+    100144: XN_LS07_46
+    100146: XN_LS07_47
+    100148: XN_LS07_48
+    100150: XN_LS07_49
+    100152: XN_LS07_50
+    100154: XN_LS07_51
+    100156: XN_LS07_52
+    100158: XN_LS07_53
+    100160: XN_LS07_54
+    100162: XN_LS07_55
+    100164: XN_LS07_56
+    100166: XN_LS07_57
+    100168: XN_LS07_58
+    100170: XN_LS07_59
+    100172: XN_LS07_60
+    100174: XN_LS07_61
+    100176: XN_LS07_62
+    100178: XN_LS07_63
+    100180: //RootNode
+    100182: "\uE810\uE810"
+    100184: "\uE811\uE810\uE811"
+    400000: Bip001
+    400002: Bip001 Head
+    400004: Bip001 L Calf
+    400006: Bip001 L Clavicle
+    400008: Bip001 L Finger0
+    400010: Bip001 L Foot
+    400012: Bip001 L Forearm
+    400014: Bip001 L Hand
+    400016: Bip001 L Thigh
+    400018: Bip001 L Toe0
+    400020: Bip001 L UpperArm
+    400022: Bip001 Neck
+    400024: Bip001 Pelvis
+    400026: Bip001 Prop1
+    400028: Bip001 R Calf
+    400030: Bip001 R Clavicle
+    400032: Bip001 R Finger0
+    400034: Bip001 R Foot
+    400036: Bip001 R Forearm
+    400038: Bip001 R Hand
+    400040: Bip001 R Thigh
+    400042: Bip001 R Toe0
+    400044: Bip001 R UpperArm
+    400046: Bip001 Spine
+    400048: Bip001 Spine1
+    400050: body
+    400052: XN_LS07_00
+    400054: XN_LS07_01
+    400056: XN_LS07_02
+    400058: XN_LS07_03
+    400060: XN_LS07_04
+    400062: XN_LS07_05
+    400064: XN_LS07_06
+    400066: XN_LS07_07
+    400068: XN_LS07_08
+    400070: XN_LS07_09
+    400072: XN_LS07_10
+    400074: XN_LS07_11
+    400076: XN_LS07_12
+    400078: XN_LS07_13
+    400080: XN_LS07_14
+    400082: XN_LS07_15
+    400084: XN_LS07_16
+    400086: XN_LS07_17
+    400088: XN_LS07_18
+    400090: XN_LS07_19
+    400092: XN_LS07_20
+    400094: XN_LS07_21
+    400096: XN_LS07_22
+    400098: XN_LS07_23
+    400100: XN_LS07_24
+    400102: XN_LS07_25
+    400104: XN_LS07_26
+    400106: XN_LS07_27
+    400108: XN_LS07_28
+    400110: XN_LS07_29
+    400112: XN_LS07_30
+    400114: XN_LS07_31
+    400116: XN_LS07_32
+    400118: XN_LS07_33
+    400120: XN_LS07_34
+    400122: XN_LS07_35
+    400124: XN_LS07_36
+    400126: XN_LS07_37
+    400128: XN_LS07_38
+    400130: XN_LS07_39
+    400132: XN_LS07_40
+    400134: XN_LS07_41
+    400136: XN_LS07_42
+    400138: XN_LS07_43
+    400140: XN_LS07_44
+    400142: XN_LS07_45
+    400144: XN_LS07_46
+    400146: XN_LS07_47
+    400148: XN_LS07_48
+    400150: XN_LS07_49
+    400152: XN_LS07_50
+    400154: XN_LS07_51
+    400156: XN_LS07_52
+    400158: XN_LS07_53
+    400160: XN_LS07_54
+    400162: XN_LS07_55
+    400164: XN_LS07_56
+    400166: XN_LS07_57
+    400168: XN_LS07_58
+    400170: XN_LS07_59
+    400172: XN_LS07_60
+    400174: XN_LS07_61
+    400176: XN_LS07_62
+    400178: XN_LS07_63
+    400180: //RootNode
+    400182: "\uE810\uE810"
+    400184: "\uE811\uE810\uE811"
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

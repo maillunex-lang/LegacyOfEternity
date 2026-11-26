@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: b939cc27ad092cb42aea29745ac8ec5c
+timeCreated: 1608542538
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: CB_Bonem22_00
+    100004: CB_Bonem22_01
+    100006: CB_Bonem22_02
+    100008: CB_Bonem22_03
+    100010: CB_Bonem22_04
+    100012: CB_Bonem22_05
+    100014: CB_Bonem22_06
+    100016: CB_Bonem22_07
+    100018: CB_Bonem22_08
+    100020: CB_Bonem22_09
+    100022: CB_Bonem22_10
+    100024: CB_Bonem22_11
+    100026: CB_Bonem22_12
+    100028: CB_Bonem22_13
+    100030: CB_Bonem22_14
+    100032: CB_Bonem22_15
+    100034: CB_Bonem22_16
+    100036: CB_Bonem22_17
+    100038: CB_Bonem22_18
+    100040: CB_Bonem22_19
+    100042: CB_Bonem22_20
+    100044: CB_Bonem22_21
+    100046: CB_Bonem22_22
+    100048: CB_Bonem22_23
+    100050: CB_Bonem22_24
+    100052: CB_Bonem22_25
+    100054: CB_Bonem22_26
+    100056: CB_Bonem22_27
+    100058: CB_Bonem22_28
+    100060: CB_Bonem22_29
+    100062: CB_Bonem22_30
+    100064: CB_Bonem22_31
+    100066: CB_Bonem22_32
+    100068: CB_Bonem22_33
+    100070: CB_Bonem22_34
+    100072: CB_Bonem22_35
+    100074: CB_Bonem22_36
+    100076: CB_Bonem22_37
+    100078: CB_Bonem22_38
+    100080: CB_Bonem22_39
+    100082: CB_Bonem22_40
+    100084: CB_Bonem22_41
+    100086: CB_Bonem22_42
+    100088: CB_Bonem22_43
+    100090: CB_Bonem22_44
+    100092: CB_Bonem22_45
+    100094: CB_Bonem22_46
+    100096: CB_Bonem22_47
+    100098: CB_Bonem22_48
+    100100: CB_Bonem22_49
+    100102: CB_Bonem22_50
+    100104: CB_Bonem22_51
+    100106: CB_Bonem22_52
+    100108: CB_Bonem22_53
+    100110: DM_wing
+    100112: //RootNode
+    400000: body
+    400002: CB_Bonem22_00
+    400004: CB_Bonem22_01
+    400006: CB_Bonem22_02
+    400008: CB_Bonem22_03
+    400010: CB_Bonem22_04
+    400012: CB_Bonem22_05
+    400014: CB_Bonem22_06
+    400016: CB_Bonem22_07
+    400018: CB_Bonem22_08
+    400020: CB_Bonem22_09
+    400022: CB_Bonem22_10
+    400024: CB_Bonem22_11
+    400026: CB_Bonem22_12
+    400028: CB_Bonem22_13
+    400030: CB_Bonem22_14
+    400032: CB_Bonem22_15
+    400034: CB_Bonem22_16
+    400036: CB_Bonem22_17
+    400038: CB_Bonem22_18
+    400040: CB_Bonem22_19
+    400042: CB_Bonem22_20
+    400044: CB_Bonem22_21
+    400046: CB_Bonem22_22
+    400048: CB_Bonem22_23
+    400050: CB_Bonem22_24
+    400052: CB_Bonem22_25
+    400054: CB_Bonem22_26
+    400056: CB_Bonem22_27
+    400058: CB_Bonem22_28
+    400060: CB_Bonem22_29
+    400062: CB_Bonem22_30
+    400064: CB_Bonem22_31
+    400066: CB_Bonem22_32
+    400068: CB_Bonem22_33
+    400070: CB_Bonem22_34
+    400072: CB_Bonem22_35
+    400074: CB_Bonem22_36
+    400076: CB_Bonem22_37
+    400078: CB_Bonem22_38
+    400080: CB_Bonem22_39
+    400082: CB_Bonem22_40
+    400084: CB_Bonem22_41
+    400086: CB_Bonem22_42
+    400088: CB_Bonem22_43
+    400090: CB_Bonem22_44
+    400092: CB_Bonem22_45
+    400094: CB_Bonem22_46
+    400096: CB_Bonem22_47
+    400098: CB_Bonem22_48
+    400100: CB_Bonem22_49
+    400102: CB_Bonem22_50
+    400104: CB_Bonem22_51
+    400106: CB_Bonem22_52
+    400108: CB_Bonem22_53
+    400110: DM_wing
+    400112: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

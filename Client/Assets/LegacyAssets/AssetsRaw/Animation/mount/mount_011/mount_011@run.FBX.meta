@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 9cdf81bb69047d147bd241f6881ae4dc
+timeCreated: 1543308899
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: Bone009
+    100004: Bone009(mirrored)
+    100006: Bone009_wei
+    100008: Bone010
+    100010: Bone010(mirrored)
+    100012: Bone011
+    100014: Bone011(mirrored)
+    100016: Bone012
+    100018: Bone012(mirrored)
+    100020: Bone013
+    100022: Bone013(mirrored)
+    100024: Bone014(mirrored)_wei
+    100026: Bone014_wei
+    100028: Bone015
+    100030: Bone015(mirrored)
+    100032: Bone016
+    100034: Bone016(mirrored)
+    100036: Bone017(mirrored)_wei
+    100038: Bone017_wei
+    100040: Bone018
+    100042: Bone018(mirrored)
+    100044: Bone019(mirrored)_wei
+    100046: Bone019_wei
+    100048: Bone020
+    100050: Bone020(mirrored)
+    100052: Bone021(mirrored)_wei
+    100054: Bone021_wei
+    100056: Bone05
+    100058: Bone06
+    100060: Bone07
+    100062: Bone08
+    100064: connectBone001
+    100066: connectBone001(mirrored)
+    100068: connectBone002
+    100070: connectBone002(mirrored)
+    100072: connectBone003
+    100074: connectBone003(mirrored)
+    100076: horse_Bip001
+    100078: horse_Bip001 Head
+    100080: horse_Bip001 L Calf
+    100082: horse_Bip001 L Clavicle
+    100084: horse_Bip001 L Finger0
+    100086: horse_Bip001 L Foot
+    100088: horse_Bip001 L Forearm
+    100090: horse_Bip001 L Hand
+    100092: horse_Bip001 L HorseLink
+    100094: horse_Bip001 L Thigh
+    100096: horse_Bip001 L Toe0
+    100098: horse_Bip001 L UpperArm
+    100100: horse_Bip001 Neck
+    100102: horse_Bip001 Neck1
+    100104: horse_Bip001 Pelvis
+    100106: horse_Bip001 R Calf
+    100108: horse_Bip001 R Clavicle
+    100110: horse_Bip001 R Finger0
+    100112: horse_Bip001 R Foot
+    100114: horse_Bip001 R Forearm
+    100116: horse_Bip001 R Hand
+    100118: horse_Bip001 R HorseLink
+    100120: horse_Bip001 R Thigh
+    100122: horse_Bip001 R Toe0
+    100124: horse_Bip001 R UpperArm
+    100126: horse_Bip001 Spine
+    100128: horse_Bip001 Spine1
+    100130: Horse_E_back
+    100132: Horse_E_Foot_L
+    100134: Horse_E_Foot_L1
+    100136: Horse_E_Foot_R
+    100138: Horse_E_Foot_R1
+    100140: Horse_E_head
+    100142: Horse_E_Spine
+    100144: Horse_E_Tail
+    100146: Horse_E_top
+    100148: //RootNode
+    100150: zui
+    100152: horse_Bone001
+    100154: horse_Bone001(mirrored)
+    100156: horse_Bone002
+    100158: horse_Bone002(mirrored)
+    100160: horse_Bone003
+    100162: horse_Bone003(mirrored)
+    100164: horse_Bone009
+    100166: horse_Bone009(mirrored)
+    100168: horse_Bone010
+    100170: horse_Bone010(mirrored)
+    100172: horse_Bone011
+    100174: horse_Bone011(mirrored)
+    100176: horse_Bone012
+    100178: horse_Bone012(mirrored)
+    100180: horse_Bone013
+    100182: horse_Bone013(mirrored)
+    100184: horse_Bone015
+    100186: horse_Bone015(mirrored)
+    100188: horse_Bone016
+    100190: horse_Bone016(mirrored)
+    100192: horse_Bone018
+    100194: horse_Bone018(mirrored)
+    100196: horse_Bone020
+    100198: horse_Bone020(mirrored)
+    400000: body
+    400002: Bone009
+    400004: Bone009(mirrored)
+    400006: Bone009_wei
+    400008: Bone010
+    400010: Bone010(mirrored)
+    400012: Bone011
+    400014: Bone011(mirrored)
+    400016: Bone012
+    400018: Bone012(mirrored)
+    400020: Bone013
+    400022: Bone013(mirrored)
+    400024: Bone014(mirrored)_wei
+    400026: Bone014_wei
+    400028: Bone015
+    400030: Bone015(mirrored)
+    400032: Bone016
+    400034: Bone016(mirrored)
+    400036: Bone017(mirrored)_wei
+    400038: Bone017_wei
+    400040: Bone018
+    400042: Bone018(mirrored)
+    400044: Bone019(mirrored)_wei
+    400046: Bone019_wei
+    400048: Bone020
+    400050: Bone020(mirrored)
+    400052: Bone021(mirrored)_wei
+    400054: Bone021_wei
+    400056: Bone05
+    400058: Bone06
+    400060: Bone07
+    400062: Bone08
+    400064: connectBone001
+    400066: connectBone001(mirrored)
+    400068: connectBone002
+    400070: connectBone002(mirrored)
+    400072: connectBone003
+    400074: connectBone003(mirrored)
+    400076: horse_Bip001
+    400078: horse_Bip001 Head
+    400080: horse_Bip001 L Calf
+    400082: horse_Bip001 L Clavicle
+    400084: horse_Bip001 L Finger0
+    400086: horse_Bip001 L Foot
+    400088: horse_Bip001 L Forearm
+    400090: horse_Bip001 L Hand
+    400092: horse_Bip001 L HorseLink
+    400094: horse_Bip001 L Thigh
+    400096: horse_Bip001 L Toe0
+    400098: horse_Bip001 L UpperArm
+    400100: horse_Bip001 Neck
+    400102: horse_Bip001 Neck1
+    400104: horse_Bip001 Pelvis
+    400106: horse_Bip001 R Calf
+    400108: horse_Bip001 R Clavicle
+    400110: horse_Bip001 R Finger0
+    400112: horse_Bip001 R Foot
+    400114: horse_Bip001 R Forearm
+    400116: horse_Bip001 R Hand
+    400118: horse_Bip001 R HorseLink
+    400120: horse_Bip001 R Thigh
+    400122: horse_Bip001 R Toe0
+    400124: horse_Bip001 R UpperArm
+    400126: horse_Bip001 Spine
+    400128: horse_Bip001 Spine1
+    400130: Horse_E_back
+    400132: Horse_E_Foot_L
+    400134: Horse_E_Foot_L1
+    400136: Horse_E_Foot_R
+    400138: Horse_E_Foot_R1
+    400140: Horse_E_head
+    400142: Horse_E_Spine
+    400144: Horse_E_Tail
+    400146: Horse_E_top
+    400148: //RootNode
+    400150: zui
+    400152: horse_Bone001
+    400154: horse_Bone001(mirrored)
+    400156: horse_Bone002
+    400158: horse_Bone002(mirrored)
+    400160: horse_Bone003
+    400162: horse_Bone003(mirrored)
+    400164: horse_Bone009
+    400166: horse_Bone009(mirrored)
+    400168: horse_Bone010
+    400170: horse_Bone010(mirrored)
+    400172: horse_Bone011
+    400174: horse_Bone011(mirrored)
+    400176: horse_Bone012
+    400178: horse_Bone012(mirrored)
+    400180: horse_Bone013
+    400182: horse_Bone013(mirrored)
+    400184: horse_Bone015
+    400186: horse_Bone015(mirrored)
+    400188: horse_Bone016
+    400190: horse_Bone016(mirrored)
+    400192: horse_Bone018
+    400194: horse_Bone018(mirrored)
+    400196: horse_Bone020
+    400198: horse_Bone020(mirrored)
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

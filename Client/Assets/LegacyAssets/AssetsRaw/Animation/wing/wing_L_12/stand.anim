@@ -1,0 +1,1521 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: stand
+  serializedVersion: 6
+  m_Legacy: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.00000014123546, y: 0.7071067, z: -0.00000014123543, w: 0.7071069}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.00000014123546, y: 0.7071067, z: -0.00000014123543, w: 0.7071069}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.5898941, y: -0.45836824, z: 0.3937814, w: 0.53559285}
+        inSlope: {x: 0.023224352, y: 0.0042682886, z: -0.022219418, w: -0.005623698}
+        outSlope: {x: 0.023224352, y: 0.0042682886, z: -0.022219418, w: -0.005623698}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.4666667
+        value: {x: 0.68929136, y: -0.47247824, z: 0.28879023, w: 0.46716374}
+        inSlope: {x: 0.27867004, y: -0.15762278, z: -0.33175054, w: -0.36586022}
+        outSlope: {x: 0.27867004, y: -0.15762278, z: -0.33175054, w: -0.36586022}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.86666673
+        value: {x: 0.74549705, y: -0.5599863, z: 0.20159578, w: 0.3000145}
+        inSlope: {x: 0.014613565, y: -0.15904069, z: -0.07538504, w: -0.2812649}
+        outSlope: {x: 0.014613565, y: -0.15904069, z: -0.07538504, w: -0.2812649}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.2333333
+        value: {x: 0.7420346, y: -0.5400864, z: 0.2125153, w: 0.335453}
+        inSlope: {x: -0.061689846, y: 0.22921512, z: 0.14585167, w: 0.41204906}
+        outSlope: {x: -0.061689846, y: 0.22921512, z: 0.14585167, w: 0.41204906}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6333334
+        value: {x: 0.6599733, y: -0.46051776, z: 0.32218394, w: 0.49855402}
+        inSlope: {x: -0.29806346, y: 0.08166082, z: 0.32676756, w: 0.25933498}
+        outSlope: {x: -0.29806346, y: 0.08166082, z: 0.32676756, w: 0.25933498}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.5898941, y: -0.45836824, z: 0.3937814, w: 0.53559285}
+        inSlope: {x: -0.02322267, y: -0.004267414, z: 0.022216838, w: 0.005623724}
+        outSlope: {x: -0.02322267, y: -0.004267414, z: 0.022216838, w: 0.005623724}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.024380108, y: -0.093639016, z: -0.2864339, w: 0.9532015}
+        inSlope: {x: 0.009629353, y: 0.05404852, z: 0.06940037, w: 0.026260613}
+        outSlope: {x: 0.009629353, y: 0.05404852, z: 0.06940037, w: 0.026260613}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.018470366, y: -0.061570298, z: -0.28048342, w: 0.957704}
+        inSlope: {x: 0.0035351226, y: 0.006500719, z: -0.067275174, w: -0.019217135}
+        outSlope: {x: 0.0035351226, y: 0.006500719, z: -0.067275174, w: -0.019217135}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.1
+        value: {x: -0.023706367, y: -0.09630255, z: -0.27998868, w: 0.9548666}
+        inSlope: {x: -0.015190316, y: -0.100338005, z: 0.059225813, w: 0.0068843337}
+        outSlope: {x: -0.015190316, y: -0.100338005, z: 0.059225813, w: 0.0068843337}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.7
+        value: {x: -0.026116937, y: -0.11658897, z: -0.2977227, w: 0.94714636}
+        inSlope: {x: 0.008490358, y: 0.060285166, z: -0.030291066, w: -0.0018668202}
+        outSlope: {x: 0.008490358, y: 0.060285166, z: -0.030291066, w: -0.0018668202}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.024397083, y: -0.09430147, z: -0.2872145, w: 0.95290077}
+        inSlope: {x: 0.0057237484, y: 0.06334066, z: 0.073221065, w: 0.028664004}
+        outSlope: {x: 0.0057237484, y: 0.06334066, z: 0.073221065, w: 0.028664004}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0038643521, y: -0.100091636, z: 0.20020235, w: 0.9746208}
+        inSlope: {x: -0.036171976, y: 0.10374627, z: 0.12866378, w: -0.01612544}
+        outSlope: {x: -0.036171976, y: 0.10374627, z: 0.12866378, w: -0.01612544}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: -0.012860171, y: -0.04238364, z: 0.23049968, w: 0.9720639}
+        inSlope: {x: -0.009547204, y: 0.065417685, z: -0.086795315, w: 0.023308378}
+        outSlope: {x: -0.009547204, y: 0.065417685, z: -0.086795315, w: 0.023308378}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: -0.0008639415, y: -0.078709364, z: 0.20631741, w: 0.9753139}
+        inSlope: {x: 0.042141546, y: -0.16726634, z: 0.06369974, w: -0.026974063}
+        outSlope: {x: 0.042141546, y: -0.16726634, z: 0.06369974, w: -0.026974063}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5333334
+        value: {x: 0.013677143, y: -0.13827628, z: 0.20091695, w: 0.9697036}
+        inSlope: {x: 0.0057193693, y: -0.009923065, z: -0.093967035, w: 0.017977972}
+        outSlope: {x: 0.0057193693, y: -0.009923065, z: -0.093967035, w: 0.017977972}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.0042098854, y: -0.101258725, z: 0.19881758, w: 0.9747823}
+        inSlope: {x: -0.03378727, y: 0.10579619, z: 0.115714595, w: -0.012023503}
+        outSlope: {x: -0.03378727, y: 0.10579619, z: 0.115714595, w: -0.012023503}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.05082384, y: -0.18865333, z: 0.093301244, w: 0.97627956}
+        inSlope: {x: -0.03047861, y: 0.13971582, z: 0.12241288, w: 0.016275644}
+        outSlope: {x: -0.03047861, y: 0.13971582, z: 0.12241288, w: 0.016275644}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: 0.03407182, y: -0.10891584, z: 0.14568695, w: 0.9827267}
+        inSlope: {x: -0.009829338, y: 0.12371802, z: -0.05606505, w: 0.022377651}
+        outSlope: {x: -0.009829338, y: 0.12371802, z: -0.05606505, w: 0.022377651}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: 0.04709101, y: -0.14659953, z: 0.104516104, w: 0.98253113}
+        inSlope: {x: 0.03445083, y: -0.21522848, z: 0.033374198, w: -0.03734801}
+        outSlope: {x: 0.03445083, y: -0.21522848, z: 0.033374198, w: -0.03734801}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5666667
+        value: {x: 0.055663235, y: -0.2232927, z: 0.10043961, w: 0.96796376}
+        inSlope: {x: 0.0048112655, y: -0.032656558, z: -0.08450493, w: 0.00096737844}
+        outSlope: {x: 0.0048112655, y: -0.032656558, z: -0.08450493, w: 0.00096737844}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.051116228, y: -0.19017564, z: 0.0920987, w: 0.9760831}
+        inSlope: {x: -0.026066607, y: 0.13481961, z: 0.09311778, w: 0.019322721}
+        outSlope: {x: -0.026066607, y: 0.13481961, z: 0.09311778, w: 0.019322721}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003/wing_Bone004
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.029438328, y: -0.12744121, z: 0.0991887, w: 0.9864349}
+        inSlope: {x: -0.010795555, y: 0.16892931, z: 0.07666803, w: 0.013850926}
+        outSlope: {x: -0.010795555, y: 0.16892931, z: 0.07666803, w: 0.013850926}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6
+        value: {x: 0.01717837, y: -0.0061861514, z: 0.16945192, w: 0.9853693}
+        inSlope: {x: -0.020462353, y: 0.17317614, z: -0.054750357, w: 0.010895131}
+        outSlope: {x: -0.020462353, y: 0.17317614, z: -0.054750357, w: 0.010895131}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: 0.027173435, y: -0.03926565, z: 0.11216114, w: 0.992542}
+        inSlope: {x: 0.05845218, y: -0.28464562, z: -0.035616975, w: -0.008887955}
+        outSlope: {x: 0.05845218, y: -0.28464562, z: -0.035616975, w: -0.008887955}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5333334
+        value: {x: 0.037296765, y: -0.14735033, z: 0.11812398, w: 0.9812969}
+        inSlope: {x: -0.011496518, y: -0.106571645, z: -0.046544194, w: -0.0099349115}
+        outSlope: {x: -0.011496518, y: -0.106571645, z: -0.046544194, w: -0.0099349115}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.02957331, y: -0.12923099, z: 0.09854689, w: 0.9862623}
+        inSlope: {x: -0.013027548, y: 0.15439044, z: 0.04129816, w: 0.016933756}
+        outSlope: {x: -0.013027548, y: 0.15439044, z: 0.04129816, w: 0.016933756}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003/wing_Bone004/wing_Bone005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.20643087, y: -0.12597537, z: 0.457968, w: 0.85544246}
+        inSlope: {x: -0.1521389, y: 0.29384446, z: 0.25362343, w: -0.059246417}
+        outSlope: {x: -0.1521389, y: 0.29384446, z: 0.25362343, w: -0.059246417}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.23333335
+        value: {x: 0.18564169, y: -0.091910675, z: 0.48542562, w: 0.84938306}
+        inSlope: {x: -0.07739224, y: 0.12774345, z: 0.07291541, w: -0.010908545}
+        outSlope: {x: -0.07739224, y: 0.12774345, z: 0.07291541, w: -0.010908545}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.8000001
+        value: {x: 0.17477772, y: -0.06236586, z: 0.46333072, w: 0.86653787}
+        inSlope: {x: 0.06302477, y: -0.100634426, z: -0.052173432, w: 0.007915194}
+        outSlope: {x: 0.06302477, y: -0.100634426, z: -0.052173432, w: 0.007915194}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4333334
+        value: {x: 0.21943693, y: -0.15659243, z: 0.474437, w: 0.8379951}
+        inSlope: {x: 0.036522113, y: -0.07158912, z: -0.050497998, w: 0.0056666187}
+        outSlope: {x: 0.036522113, y: -0.07158912, z: -0.050497998, w: 0.0056666187}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.8333334
+        value: {x: 0.21653251, y: -0.1424205, z: 0.45315653, w: 0.8529239}
+        inSlope: {x: -0.068535976, y: 0.13325003, z: 0.022241747, w: 0.027869029}
+        outSlope: {x: -0.068535976, y: 0.13325003, z: 0.022241747, w: 0.027869029}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.2050816, y: -0.12192099, z: 0.4618835, w: 0.85424846}
+        inSlope: {x: -0.070495926, y: 0.122759454, z: 0.08102275, w: -0.008842389}
+        outSlope: {x: -0.070495926, y: 0.122759454, z: 0.08102275, w: -0.008842389}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone007
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.014933997, y: -0.0843465, z: 0.22889014, w: 0.96967626}
+        inSlope: {x: 0.023492265, y: 0.100544386, z: 0.0006370246, w: 0.008048415}
+        outSlope: {x: 0.023492265, y: 0.100544386, z: 0.0006370246, w: 0.008048415}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.40000004
+        value: {x: 0.007386099, y: -0.0077191414, z: 0.25479925, w: 0.966935}
+        inSlope: {x: -0.02480029, y: 0.18834215, z: 0.008169554, w: -0.00043541082}
+        outSlope: {x: -0.02480029, y: 0.18834215, z: 0.008169554, w: -0.00043541082}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.9333334
+        value: {x: 0.0058379862, y: -0.0004839141, z: 0.21659385, w: 0.9762442}
+        inSlope: {x: 0.039952397, y: -0.22006755, z: -0.0030541313, w: 0.00023781927}
+        outSlope: {x: 0.039952397, y: -0.22006755, z: -0.0030541313, w: 0.00023781927}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4333334
+        value: {x: 0.022226267, y: -0.11199621, z: 0.25148773, w: 0.9611019}
+        inSlope: {x: 0.0005122744, y: -0.121906295, z: 0.0049370574, w: -0.015471891}
+        outSlope: {x: 0.0005122744, y: -0.121906295, z: 0.0049370574, w: -0.015471891}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.8333334
+        value: {x: 0.018729754, y: -0.115789406, z: 0.2291101, w: 0.9663077}
+        inSlope: {x: -0.009970792, y: 0.11892655, z: -0.049818654, w: 0.026179232}
+        outSlope: {x: -0.009970792, y: 0.11892655, z: -0.049818654, w: 0.026179232}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.016112307, y: -0.08853003, z: 0.22729456, w: 0.96965975}
+        inSlope: {x: -0.018468881, y: 0.17899758, z: 0.02142603, w: 0.012193377}
+        outSlope: {x: -0.018468881, y: 0.17899758, z: 0.02142603, w: 0.012193377}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone007/wing_Bone008
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.018699352, y: -0.12732862, z: 0.72774416, w: 0.67366624}
+        inSlope: {x: -0.034023542, y: 0.03633588, z: 0.0512284, w: -0.04960477}
+        outSlope: {x: -0.034023542, y: 0.03633588, z: 0.0512284, w: -0.04960477}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.03681497, y: -0.103655204, z: 0.7327335, w: 0.67156684}
+        inSlope: {x: -0.02191063, y: 0.029659644, z: -0.047680736, w: 0.055404607}
+        outSlope: {x: -0.02191063, y: 0.029659644, z: -0.047680736, w: 0.055404607}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.020092713, y: -0.12830994, z: 0.7308589, w: 0.67005837}
+        inSlope: {x: 0.08110776, y: -0.115205795, z: 0.050242294, w: -0.07440634}
+        outSlope: {x: 0.08110776, y: -0.115205795, z: 0.050242294, w: -0.07440634}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6333334
+        value: {x: -0.007897241, y: -0.14777906, z: 0.723343, w: 0.6744435}
+        inSlope: {x: -0.020567667, y: 0.04143525, z: -0.04522209, w: 0.05734568}
+        outSlope: {x: -0.020567667, y: 0.04143525, z: -0.04522209, w: 0.05734568}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.01822856, y: -0.12768121, z: 0.72717786, w: 0.6742237}
+        inSlope: {x: -0.037705604, y: 0.042711243, z: 0.053982385, w: -0.05093717}
+        outSlope: {x: -0.037705604, y: 0.042711243, z: 0.053982385, w: -0.05093717}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone014
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0009186977, y: -0.00696783, z: 0.02619902, w: 0.99963206}
+        inSlope: {x: 0.030270658, y: 0.05852978, z: 0.11174272, w: -0.002773404}
+        outSlope: {x: 0.030270658, y: 0.05852978, z: 0.11174272, w: -0.002773404}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: 0.014115432, y: 0.025953911, z: 0.05208865, w: 0.99820536}
+        inSlope: {x: 0.0059640543, y: 0.08848955, z: -0.08346765, w: 0.0019544347}
+        outSlope: {x: 0.0059640543, y: 0.08848955, z: -0.08346765, w: 0.0019544347}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: 0.00017497146, y: 0.01673496, z: 0.030768434, w: 0.9993864}
+        inSlope: {x: -0.047889963, y: -0.18704376, z: 0.09629303, w: 0.00009029929}
+        outSlope: {x: -0.047889963, y: -0.18704376, z: 0.09629303, w: 0.00009029929}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4666667
+        value: {x: -0.013590209, y: -0.0355959, z: 0.05264048, w: 0.99788636}
+        inSlope: {x: -0.009283541, y: -0.0075388574, z: -0.073350176, w: 0.003454681}
+        outSlope: {x: -0.009283541, y: -0.0075388574, z: -0.073350176, w: 0.003454681}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9666668
+        value: {x: -0.0025615662, y: -0.009710578, z: 0.021996645, w: 0.99970764}
+        inSlope: {x: 0.0359123, y: 0.06338524, z: 0.0795417, w: -0.00106931}
+        outSlope: {x: 0.0359123, y: 0.06338524, z: 0.0795417, w: -0.00106931}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.0013554044, y: -0.0076511377, z: 0.025029058, w: 0.99965656}
+        inSlope: {x: 0.03618502, y: 0.061783496, z: 0.09097278, w: -0.0015324424}
+        outSlope: {x: 0.03618502, y: 0.061783496, z: 0.09097278, w: -0.0015324424}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone014/wing_Bone015
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.040207874, y: -0.16447489, z: 0.32905757, w: 0.92900616}
+        inSlope: {x: -0.033805333, y: 0.07768347, z: 0.069612265, w: -0.00965774}
+        outSlope: {x: -0.033805333, y: 0.07768347, z: 0.069612265, w: -0.00965774}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: 0.025132647, y: -0.11982631, z: 0.3342294, w: 0.9345056}
+        inSlope: {x: 0.000034870696, y: 0.029539835, z: -0.07137537, w: 0.029321909}
+        outSlope: {x: 0.000034870696, y: 0.029539835, z: -0.07137537, w: 0.029321909}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: 0.03922008, y: -0.16362943, z: 0.33357343, w: 0.92758614}
+        inSlope: {x: 0.0437804, y: -0.16924666, z: 0.07722087, w: -0.059450325}
+        outSlope: {x: 0.0437804, y: -0.16924666, z: 0.07722087, w: -0.059450325}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: 0.04998611, y: -0.19812106, z: 0.32194418, w: 0.9244465}
+        inSlope: {x: -0.01266138, y: 0.07099769, z: -0.053585224, w: 0.034557614}
+        outSlope: {x: -0.01266138, y: 0.07099769, z: -0.053585224, w: 0.034557614}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9666668
+        value: {x: 0.04206838, y: -0.16826288, z: 0.32589447, w: 0.92936033}
+        inSlope: {x: -0.040125784, y: 0.086569056, z: 0.06627568, w: -0.00576855}
+        outSlope: {x: -0.040125784, y: 0.086569056, z: 0.06627568, w: -0.00576855}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.040639266, y: -0.16536984, z: 0.3282798, w: 0.9291037}
+        inSlope: {x: -0.04287363, y: 0.08679176, z: 0.071559876, w: -0.007699763}
+        outSlope: {x: -0.04287363, y: 0.08679176, z: 0.071559876, w: -0.007699763}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.002590832, y: -0.015739478, z: 0.17806444, w: 0.9838896}
+        inSlope: {x: -0.019206505, y: 0.15516628, z: 0.10673269, w: -0.017396808}
+        outSlope: {x: -0.019206505, y: 0.15516628, z: 0.10673269, w: -0.017396808}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: -0.008330476, y: 0.06349803, z: 0.20287678, w: 0.9771078}
+        inSlope: {x: -0.023197513, y: 0.11777877, z: -0.0924094, w: 0.011343947}
+        outSlope: {x: -0.023197513, y: 0.11777877, z: -0.0924094, w: 0.011343947}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: -0.0037146339, y: 0.021817086, z: 0.17994852, w: 0.98342705}
+        inSlope: {x: 0.046887, y: -0.2865163, z: 0.10407366, w: -0.012614423}
+        outSlope: {x: 0.046887, y: -0.2865163, z: 0.10407366, w: -0.012614423}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4666667
+        value: {x: 0.008944623, y: -0.06565904, z: 0.20238423, w: 0.9770617}
+        inSlope: {x: 0.004627326, y: -0.057396118, z: -0.065125756, w: 0.009595144}
+        outSlope: {x: 0.004627326, y: -0.057396118, z: -0.065125756, w: 0.009595144}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.0028114477, y: -0.017511776, z: 0.17695396, w: 0.98405933}
+        inSlope: {x: -0.016342536, y: 0.15759155, z: 0.08540505, w: -0.011955554}
+        outSlope: {x: -0.016342536, y: 0.15759155, z: 0.08540505, w: -0.011955554}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010/wing_Bone011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.0026217946, y: -0.034307234, z: 0.19424002, w: 0.98035043}
+        inSlope: {x: -0.0033814341, y: 0.1891706, z: 0.0713177, w: -0.008196831}
+        outSlope: {x: -0.0033814341, y: 0.1891706, z: 0.0713177, w: -0.008196831}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.0022943276, y: 0.0663647, z: 0.23384443, w: 0.9700037}
+        inSlope: {x: -0.02528977, y: 0.17928624, z: -0.07028507, w: 0.0046205544}
+        outSlope: {x: -0.02528977, y: 0.17928624, z: -0.07028507, w: 0.0046205544}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: -0.004886916, y: 0.05242975, z: 0.1968564, w: 0.97901726}
+        inSlope: {x: 0.03197348, y: -0.31779736, z: 0.047102034, w: 0.007487821}
+        outSlope: {x: 0.03197348, y: -0.31779736, z: 0.047102034, w: 0.007487821}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4000001
+        value: {x: 0.0030930822, y: -0.058959756, z: 0.22938997, w: 0.9715423}
+        inSlope: {x: 0.0011955993, y: -0.16266674, z: 0.025215695, w: -0.015742794}
+        outSlope: {x: 0.0011955993, y: -0.16266674, z: 0.025215695, w: -0.015742794}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.0026186334, y: -0.036345087, z: 0.193683, w: 0.9803872}
+        inSlope: {x: 0.0012650654, y: 0.17899792, z: 0.028853994, w: 0.0014895268}
+        outSlope: {x: 0.0012650654, y: 0.17899792, z: 0.028853994, w: 0.0014895268}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010/wing_Bone011/wing_Bone012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.5355928, y: 0.3937814, z: -0.45836854, w: 0.58989394}
+        inSlope: {x: -0.005629062, y: -0.02200037, z: 0.0041547418, w: 0.02299547}
+        outSlope: {x: -0.005629062, y: -0.02200037, z: 0.0041547418, w: 0.02299547}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: 0.45513925, y: 0.2790618, z: -0.47820777, w: 0.697345}
+        inSlope: {x: -0.39227802, y: -0.31987488, z: -0.18011928, w: 0.26035044}
+        outSlope: {x: -0.39227802, y: -0.31987488, z: -0.18011928, w: 0.26035044}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.90000004
+        value: {x: 0.2941031, y: 0.2014499, z: -0.564117, w: 0.7447774}
+        inSlope: {x: -0.21890764, y: -0.05470411, z: -0.124475084, w: 0.0073912772}
+        outSlope: {x: -0.21890764, y: -0.05470411, z: -0.124475084, w: 0.0073912772}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.3333334
+        value: {x: 0.38164055, y: 0.23275387, z: -0.5153992, w: 0.73112226}
+        inSlope: {x: 0.45974857, y: 0.22228876, z: 0.24723867, w: -0.13671564}
+        outSlope: {x: 0.45974857, y: 0.22228876, z: 0.24723867, w: -0.13671564}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.7666668
+        value: {x: 0.5237711, y: 0.36203587, z: -0.45557553, w: 0.62212926}
+        inSlope: {x: 0.12360883, y: 0.2505597, z: 0.003539625, w: -0.24686539}
+        outSlope: {x: 0.12360883, y: 0.2505597, z: 0.003539625, w: -0.24686539}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.5355928, y: 0.3937814, z: -0.45836854, w: 0.58989394}
+        inSlope: {x: 0.0056290883, y: 0.021998685, z: -0.0041547604, w: -0.022995576}
+        outSlope: {x: 0.0056290883, y: 0.021998685, z: -0.0041547604, w: -0.022995576}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.024384076, y: -0.09361995, z: 0.2863954, w: 0.95321476}
+        inSlope: {x: -0.009728315, y: 0.053912397, z: -0.06885052, w: 0.026083587}
+        outSlope: {x: -0.009728315, y: 0.053912397, z: -0.06885052, w: 0.026083587}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: 0.01851622, y: -0.06184592, z: 0.28050867, w: 0.95767796}
+        inSlope: {x: -0.0035193646, y: 0.006541176, z: 0.06640882, w: -0.018960537}
+        outSlope: {x: -0.0035193646, y: 0.006541176, z: 0.06640882, w: -0.018960537}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.1
+        value: {x: 0.023709903, y: -0.09626171, z: 0.28002876, w: 0.9548589}
+        inSlope: {x: 0.015274693, y: -0.09962085, z: -0.05855571, w: 0.006764528}
+        outSlope: {x: 0.015274693, y: -0.09962085, z: -0.05855571, w: 0.006764528}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.7
+        value: {x: 0.026103714, y: -0.116367966, z: 0.29753947, w: 0.9472314}
+        inSlope: {x: -0.008426292, y: 0.05962869, z: 0.029943272, w: -0.0018480445}
+        outSlope: {x: -0.008426292, y: 0.05962869, z: 0.029943272, w: -0.0018480445}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.024253363, y: -0.09432158, z: 0.2871512, w: 0.9529215}
+        inSlope: {x: -0.012067034, y: 0.060951464, z: -0.072926015, w: 0.028488765}
+        outSlope: {x: -0.012067034, y: 0.060951464, z: -0.072926015, w: 0.028488765}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0038058646, y: -0.10001765, z: -0.20034802, w: 0.9745987}
+        inSlope: {x: 0.036096413, y: 0.10255783, z: -0.12662888, w: -0.015844703}
+        outSlope: {x: 0.036096413, y: 0.10255783, z: -0.12662888, w: -0.015844703}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: 0.012727027, y: -0.04284081, z: -0.23031163, w: 0.9720901}
+        inSlope: {x: 0.009470705, y: 0.06472875, z: 0.085609555, w: 0.02301244}
+        outSlope: {x: 0.009470705, y: 0.06472875, z: 0.085609555, w: 0.02301244}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.0005169903, y: -0.08446662, z: -0.20868123, w: 0.9743292}
+        inSlope: {x: -0.041529246, y: -0.17030156, z: -0.06801575, w: -0.029352335}
+        outSlope: {x: -0.041529246, y: -0.17030156, z: -0.06801575, w: -0.029352335}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6000001
+        value: {x: -0.013635001, y: -0.13726, z: -0.19502127, w: 0.9710512}
+        inSlope: {x: 0.0032968551, y: 0.026891597, z: 0.085071996, w: 0.020934625}
+        outSlope: {x: 0.0032968551, y: 0.026891597, z: 0.085071996, w: 0.020934625}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.0041233166, y: -0.10114345, z: -0.1989991, w: 0.9747576}
+        inSlope: {x: 0.036343735, y: 0.1066469, z: -0.11528008, w: -0.011867935}
+        outSlope: {x: 0.036343735, y: 0.1066469, z: -0.11528008, w: -0.011867935}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.050776865, y: -0.18849945, z: -0.093548, w: 0.9762881}
+        inSlope: {x: 0.030438935, y: 0.13896883, z: -0.12125506, w: 0.016196966}
+        outSlope: {x: 0.030438935, y: 0.13896883, z: -0.12125506, w: 0.016196966}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.033978354, y: -0.10568668, z: -0.14312333, w: 0.983459}
+        inSlope: {x: 0.0038212514, y: 0.103393, z: 0.077616885, w: 0.022548439}
+        outSlope: {x: 0.0038212514, y: 0.103393, z: 0.077616885, w: 0.022548439}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.047069877, y: -0.14674355, z: -0.1046492, w: 0.9824965}
+        inSlope: {x: -0.033794917, y: -0.21319827, z: -0.03273628, w: -0.03698323}
+        outSlope: {x: -0.033794917, y: -0.21319827, z: -0.03273628, w: -0.03698323}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5666667
+        value: {x: -0.05557487, y: -0.22281913, z: -0.100630514, w: 0.96805817}
+        inSlope: {x: -0.004679559, y: -0.03232821, z: 0.083564594, w: 0.0009852599}
+        outSlope: {x: -0.004679559, y: -0.03232821, z: 0.083564594, w: 0.0009852599}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.05102005, y: -0.18996951, z: -0.092393145, w: 0.97610044}
+        inSlope: {x: 0.027894653, y: 0.13482587, z: -0.0931674, w: 0.019356696}
+        outSlope: {x: 0.027894653, y: 0.13482587, z: -0.0931674, w: 0.019356696}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019/wing_Bone020
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.029449394, y: -0.12710384, z: -0.099539876, w: 0.9864427}
+        inSlope: {x: 0.010881218, y: 0.1674152, z: -0.075887285, w: 0.013663172}
+        outSlope: {x: 0.010881218, y: 0.1674152, z: -0.075887285, w: 0.013663172}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.6
+        value: {x: -0.017299067, y: -0.0069557866, z: -0.16905986, w: 0.9854294}
+        inSlope: {x: 0.020198014, y: 0.17111802, z: 0.053916637, w: 0.010846852}
+        outSlope: {x: 0.020198014, y: 0.17111802, z: 0.053916637, w: 0.010846852}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.02717968, y: -0.039648764, z: -0.11238693, w: 0.99250114}
+        inSlope: {x: -0.05725413, y: -0.28141713, z: 0.035352666, w: -0.008859345}
+        outSlope: {x: -0.05725413, y: -0.28141713, z: 0.035352666, w: -0.008859345}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5333334
+        value: {x: -0.037106693, y: -0.14686137, z: -0.118284024, w: 0.9813581}
+        inSlope: {x: 0.0119514875, y: -0.105900645, z: 0.046103865, w: -0.009809742}
+        outSlope: {x: 0.0119514875, y: -0.105900645, z: 0.046103865, w: -0.009809742}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.029542133, y: -0.1288623, z: -0.098927975, w: 0.98627335}
+        inSlope: {x: 0.014319094, y: 0.15325989, z: -0.041353367, w: 0.016740637}
+        outSlope: {x: 0.014319094, y: 0.15325989, z: -0.041353367, w: 0.016740637}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019/wing_Bone020/wing_Bone021
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.20408309, y: -0.1204342, z: -0.46297392, w: 0.8541082}
+        inSlope: {x: 0.08824199, y: 0.12749612, z: -0.10097801, w: -0.01634717}
+        outSlope: {x: 0.08824199, y: 0.12749612, z: -0.10097801, w: -0.01634717}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5
+        value: {x: -0.16625656, y: -0.054028176, z: -0.48776785, w: 0.8552907}
+        inSlope: {x: 0.03117957, y: 0.08718835, z: 0.06950721, w: 0.05122572}
+        outSlope: {x: 0.03117957, y: 0.08718835, z: 0.06950721, w: 0.05122572}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: -0.19402395, y: -0.09811357, z: -0.4648273, w: 0.8582914}
+        inSlope: {x: -0.09988069, y: -0.2083059, z: -0.06873827, w: -0.08367324}
+        outSlope: {x: -0.09988069, y: -0.2083059, z: -0.06873827, w: -0.08367324}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5333334
+        value: {x: -0.22460839, y: -0.1665242, z: -0.46689293, w: 0.8389468}
+        inSlope: {x: -0.010919954, y: -0.013798861, z: 0.079284385, w: 0.03845755}
+        outSlope: {x: -0.010919954, y: -0.013798861, z: 0.079284385, w: 0.03845755}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.8333334
+        value: {x: -0.21784157, y: -0.1450041, z: -0.45121893, w: 0.8531825}
+        inSlope: {x: 0.077027395, y: 0.14929521, z: -0.02829772, w: 0.030118508}
+        outSlope: {x: 0.077027395, y: 0.14929521, z: -0.02829772, w: 0.030118508}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.20493521, y: -0.12197237, z: -0.4617388, w: 0.8543545}
+        inSlope: {x: 0.082472935, y: 0.14338306, z: -0.09703293, w: -0.011469178}
+        outSlope: {x: 0.082472935, y: 0.14338306, z: -0.09703293, w: -0.011469178}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone023
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.015716419, y: -0.08535364, z: -0.2280743, w: 0.969768}
+        inSlope: {x: 0.014612506, y: 0.19652902, z: -0.05447432, w: 0.004003644}
+        outSlope: {x: 0.014612506, y: 0.19652902, z: -0.05447432, w: 0.004003644}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.002824221, y: 0.017204981, z: -0.24777748, w: 0.9686601}
+        inSlope: {x: 0.020358037, y: 0.11539553, z: 0.0813722, w: 0.018849673}
+        outSlope: {x: 0.020358037, y: 0.11539553, z: 0.0813722, w: 0.018849673}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.012951878, y: -0.035802543, z: -0.22297888, w: 0.9740795}
+        inSlope: {x: -0.054914437, y: -0.26915115, z: -0.081070065, w: -0.029234316}
+        outSlope: {x: -0.054914437, y: -0.26915115, z: -0.081070065, w: -0.029234316}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5666667
+        value: {x: -0.021901855, y: -0.121287346, z: -0.24746573, w: 0.9610257}
+        inSlope: {x: 0.009216452, y: -0.04626697, z: 0.044239193, w: 0.00577121}
+        outSlope: {x: 0.009216452, y: -0.04626697, z: 0.044239193, w: 0.00577121}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.0158209, y: -0.08713322, z: -0.22783908, w: 0.9696633}
+        inSlope: {x: 0.020998942, y: 0.16931163, z: -0.018790748, w: 0.011651569}
+        outSlope: {x: 0.020998942, y: 0.16931163, z: -0.018790748, w: 0.011651569}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone023/wing_Bone024
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.018739464, y: -0.12734516, z: -0.7277677, w: 0.67363656}
+        inSlope: {x: 0.032377895, y: 0.037318464, z: -0.05068123, w: -0.048782226}
+        outSlope: {x: 0.032377895, y: 0.037318464, z: -0.05068123, w: -0.048782226}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: 0.03663453, y: -0.103889085, z: -0.7326926, w: 0.6715851}
+        inSlope: {x: 0.021470357, y: 0.02922099, z: 0.04710764, w: 0.054747466}
+        outSlope: {x: 0.021470357, y: 0.02922099, z: 0.04710764, w: 0.054747466}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: 0.020117939, y: -0.12828986, z: -0.7308483, w: 0.6700729}
+        inSlope: {x: -0.08036633, y: -0.113387585, z: -0.04977559, w: -0.07356501}
+        outSlope: {x: -0.08036633, y: -0.113387585, z: -0.04977559, w: -0.07356501}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6333334
+        value: {x: 0.008033255, y: -0.1475594, z: -0.72342366, w: 0.67440337}
+        inSlope: {x: 0.020314727, y: 0.040893666, z: 0.04463826, w: 0.05659377}
+        outSlope: {x: 0.020314727, y: 0.040893666, z: 0.04463826, w: 0.05659377}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.018244417, y: -0.12766154, z: -0.7272159, w: 0.674186}
+        inSlope: {x: 0.037167817, y: 0.042612895, z: -0.05336011, w: -0.050280917}
+        outSlope: {x: 0.037167817, y: 0.042612895, z: -0.05336011, w: -0.050280917}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone030
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: 0.000886242, y: -0.0069097914, z: -0.02635398, w: 0.9996284}
+        inSlope: {x: -0.028006827, y: 0.058182403, z: -0.11054942, w: -0.002760887}
+        outSlope: {x: -0.028006827, y: 0.058182403, z: -0.11054942, w: -0.002760887}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: -0.013981489, y: 0.025707666, z: -0.051885337, w: 0.9982242}
+        inSlope: {x: -0.0058819395, y: 0.08723517, z: 0.08257011, w: 0.001946388}
+        outSlope: {x: -0.0058819395, y: 0.08723517, z: 0.08257011, w: 0.001946388}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: -0.00017641048, y: 0.016527561, z: -0.030840944, w: 0.9993877}
+        inSlope: {x: 0.047168583, y: -0.18471341, z: -0.095363475, w: 0.00003486703}
+        outSlope: {x: 0.047168583, y: -0.18471341, z: -0.095363475, w: 0.00003486703}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4666667
+        value: {x: 0.013461471, y: -0.035193093, z: -0.052460484, w: 0.99791193}
+        inSlope: {x: 0.009155843, y: -0.007604348, z: 0.07259508, w: 0.0034055072}
+        outSlope: {x: 0.009155843, y: -0.007604348, z: 0.07259508, w: 0.0034055072}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.9666668
+        value: {x: 0.0025397157, y: -0.009629293, z: -0.022202406, w: 0.99970394}
+        inSlope: {x: -0.03545723, y: 0.06273052, z: -0.07846294, w: -0.0010755685}
+        outSlope: {x: -0.03545723, y: 0.06273052, z: -0.07846294, w: -0.0010755685}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: 0.0013532302, y: -0.007588509, z: -0.025196057, w: 0.9996528}
+        inSlope: {x: -0.035594728, y: 0.06122381, z: -0.08980993, w: -0.0015342305}
+        outSlope: {x: -0.035594728, y: 0.06122381, z: -0.08980993, w: -0.0015342305}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone030/wing_Bone031
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.040272195, y: -0.16441904, z: -0.32911125, w: 0.92899424}
+        inSlope: {x: 0.034920685, y: 0.07658734, z: -0.06845802, w: -0.009396671}
+        outSlope: {x: 0.034920685, y: 0.07658734, z: -0.06845802, w: -0.009396671}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: -0.025269061, y: -0.12023935, z: -0.33419296, w: 0.9344619}
+        inSlope: {x: -0.00007345551, y: 0.02913728, z: 0.07047281, w: 0.028956234}
+        outSlope: {x: -0.00007345551, y: 0.02913728, z: 0.07047281, w: 0.028956234}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0666667
+        value: {x: -0.039138615, y: -0.16360132, z: -0.33342826, w: 0.9276467}
+        inSlope: {x: -0.04305972, y: -0.16747417, z: -0.0754381, w: -0.058453437}
+        outSlope: {x: -0.04305972, y: -0.16747417, z: -0.0754381, w: -0.058453437}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.6666667
+        value: {x: -0.04986987, y: -0.19777001, z: -0.322076, w: 0.92448205}
+        inSlope: {x: 0.012460549, y: 0.070215605, z: 0.052899472, w: 0.034118626}
+        outSlope: {x: 0.012460549, y: 0.070215605, z: 0.052899472, w: 0.034118626}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.040732495, y: -0.1652958, z: -0.32834893, w: 0.92908835}
+        inSlope: {x: 0.038620073, y: 0.08742387, z: -0.071293436, w: -0.0076926104}
+        outSlope: {x: 0.038620073, y: 0.08742387, z: -0.071293436, w: -0.0076926104}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.0025589706, y: -0.015591839, z: -0.17821336, w: 0.983865}
+        inSlope: {x: 0.019116549, y: 0.15349407, z: -0.105307095, w: -0.017191172}
+        outSlope: {x: 0.019116549, y: 0.15349407, z: -0.105307095, w: -0.017191172}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.53333336
+        value: {x: 0.008249482, y: 0.062896475, z: -0.20268007, w: 0.97718817}
+        inSlope: {x: 0.022860594, y: 0.11624058, z: 0.09131752, w: 0.011275103}
+        outSlope: {x: 0.022860594, y: 0.11624058, z: 0.09131752, w: 0.011275103}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: 0.0036651355, y: 0.021578465, z: -0.18005466, w: 0.9834131}
+        inSlope: {x: -0.04583337, y: -0.28385556, z: -0.10537655, w: -0.013012284}
+        outSlope: {x: -0.04583337, y: -0.28385556, z: -0.10537655, w: -0.013012284}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.5000001
+        value: {x: -0.008960116, y: -0.066545695, z: -0.19984344, w: 0.97752446}
+        inSlope: {x: -0.0017510457, y: -0.034251872, z: 0.07883655, w: 0.013763301}
+        outSlope: {x: -0.0017510457, y: -0.034251872, z: 0.07883655, w: 0.013763301}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.0027332094, y: -0.017340602, z: -0.17711972, w: 0.98403275}
+        inSlope: {x: 0.018075544, y: 0.15712123, z: -0.08445465, w: -0.011835748}
+        outSlope: {x: 0.018075544, y: 0.15712123, z: -0.08445465, w: -0.011835748}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026/wing_Bone027
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.002550712, y: -0.033975434, z: -0.19449757, w: 0.9803111}
+        inSlope: {x: 0.0019561686, y: 0.18665206, z: -0.07033825, w: -0.00815928}
+        outSlope: {x: 0.0019561686, y: 0.18665206, z: -0.07033825, w: -0.00815928}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 0.5666667
+        value: {x: 0.0022700627, y: 0.065787226, z: -0.23359072, w: 0.9701043}
+        inSlope: {x: 0.024996739, y: 0.1771442, z: 0.06952734, w: 0.00467241}
+        outSlope: {x: 0.024996739, y: 0.1771442, z: 0.06952734, w: 0.00467241}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.0333334
+        value: {x: 0.0048026536, y: 0.05183809, z: -0.19703315, w: 0.9790136}
+        inSlope: {x: -0.031154577, y: -0.31461817, z: -0.047369808, w: 0.007059562}
+        outSlope: {x: -0.031154577, y: -0.31461817, z: -0.047369808, w: 0.007059562}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1.4000001
+        value: {x: -0.003048461, y: -0.05838773, z: -0.22925171, w: 0.9716096}
+        inSlope: {x: -0.0012355007, y: -0.1614801, z: -0.025050739, w: -0.015533581}
+        outSlope: {x: -0.0012355007, y: -0.1614801, z: -0.025050739, w: -0.015533581}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.0025450764, y: -0.035994533, z: -0.19394657, w: 0.9803482}
+        inSlope: {x: 0.00034998794, y: 0.1780406, z: -0.028647464, w: 0.0014233653}
+        outSlope: {x: 0.00034998794, y: 0.1780406, z: -0.028647464, w: 0.0014233653}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026/wing_Bone027/wing_Bone028
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0, y: -0.118969716, z: -0.16041957}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0, y: -0.118969716, z: -0.16041957}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -2.2223952e-10, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -2.2223952e-10, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.11765559, y: -0.030936806, z: -0.0794944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.11765559, y: -0.030936806, z: -0.0794944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.33668035, y: 0.00000009298324, z: 0.0000000026751228}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.33668035, y: 0.00000009298324, z: 0.0000000026751228}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.697917, y: -0.00000004529953, z: 0.000000006854541}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.697917, y: -0.00000004529953, z: 0.000000006854541}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6669876, y: -0.000000017881398, z: 0.000000042773756}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6669876, y: -0.000000017881398, z: 0.000000042773756}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003/wing_Bone004
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.7790855, y: -0.000004464389, z: 0.000000015258019}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.7790855, y: -0.000004464389, z: 0.000000015258019}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone003/wing_Bone004/wing_Bone005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6776368, y: -0.23759569, z: -0.03073883}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6776368, y: -0.23759569, z: -0.03073883}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone007
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.652176, y: 7.4505804e-11, z: -0.000000007565177}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.652176, y: 7.4505804e-11, z: -0.000000007565177}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone002/wing_Bone007/wing_Bone008
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.22553745, y: -0.21724755, z: -0.0027296138}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.22553745, y: -0.21724755, z: -0.0027296138}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone014
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.36591163, y: -0.000000045318156, z: 0.000000007277067}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.36591163, y: -0.000000045318156, z: 0.000000007277067}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone014/wing_Bone015
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.36753374, y: -0.09105035, z: 0.013435783}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.36753374, y: -0.09105035, z: 0.013435783}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.57606167, y: 0.00000011205673, z: -0.0000000021916093}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.57606167, y: 0.00000011205673, z: -0.0000000021916093}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010/wing_Bone011
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.44952914, y: 0.00000031948088, z: -0.00000001966865}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.44952914, y: 0.00000031948088, z: -0.00000001966865}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone001/wing_Bone010/wing_Bone011/wing_Bone012
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.1176556, y: -0.030936778, z: 0.07949}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.1176556, y: -0.030936778, z: 0.07949}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.33668035, y: -0.00000018596648, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.33668035, y: -0.00000018596648, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6979171, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6979171, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6669876, y: 0.000000076293944, z: 0.000000076293944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6669876, y: 0.000000076293944, z: 0.000000076293944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019/wing_Bone020
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.77908474, y: 0.000004272461, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.77908474, y: 0.000004272461, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone019/wing_Bone020/wing_Bone021
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6776424, y: 0.23760282, z: -0.030736465}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6776424, y: 0.23760282, z: -0.030736465}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone023
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.6521759, y: 0, z: -0.000000076293944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.6521759, y: 0, z: -0.000000076293944}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone018/wing_Bone023/wing_Bone024
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.22554535, y: 0.2172497, z: -0.0027287316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.22554535, y: 0.2172497, z: -0.0027287316}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone030
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.36591154, y: 0.000000028610229, z: 0.000000038146972}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.36591154, y: 0.000000028610229, z: 0.000000038146972}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone030/wing_Bone031
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.36754158, y: 0.091052435, z: 0.01343667}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.36754158, y: 0.091052435, z: 0.01343667}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.57606167, y: -0.000000019073486, z: 0.000000085830685}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.57606167, y: -0.000000019073486, z: 0.000000085830685}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026/wing_Bone027
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: {x: -0.4495291, y: -0.000000076293944, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 2
+        value: {x: -0.4495291, y: -0.000000076293944, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: DM_wing/wing_Bone000/wing_Bone017/wing_Bone026/wing_Bone027/wing_Bone028
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 30
+  m_WrapMode: 2
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 2
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []

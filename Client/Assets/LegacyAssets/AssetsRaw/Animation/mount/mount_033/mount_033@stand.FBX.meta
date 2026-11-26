@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: ce5d740c4f0246a48a241d81432e41c2
+timeCreated: 1585221228
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: body
+    100002: ef_motuo_danqi
+    100004: ef_motuo_liuguang
+    100006: ef_motuo_lun-LG
+    100008: horse_bone33_001
+    100010: horse_bone33_002
+    100012: horse_bone33_003
+    100014: horse_bone33_004
+    100016: horse_bone33_005
+    100018: horse_bone33_006
+    100020: horse_bone33_007
+    100022: horse_bone33_008
+    100024: horse_bone33_009
+    100026: horse_bone33_010
+    100028: horse_bone33_011
+    100030: horse_bone33_012
+    100032: horse_bone33_013
+    100034: horse_bone33_014
+    100036: horse_bone33_015
+    100038: horse_bone33_016
+    100040: horse_bone33_017
+    100042: horse_bone33_018
+    100044: horse_bone33_019
+    100046: horse_bone33_020
+    100048: horse_bone33_root
+    100050: Horse_E_back
+    100052: Horse_E_Spine
+    100054: Horse_E_top
+    100056: IK Chain001
+    100058: IK Chain002
+    100060: //RootNode
+    400000: body
+    400002: ef_motuo_danqi
+    400004: ef_motuo_liuguang
+    400006: ef_motuo_lun-LG
+    400008: horse_bone33_001
+    400010: horse_bone33_002
+    400012: horse_bone33_003
+    400014: horse_bone33_004
+    400016: horse_bone33_005
+    400018: horse_bone33_006
+    400020: horse_bone33_007
+    400022: horse_bone33_008
+    400024: horse_bone33_009
+    400026: horse_bone33_010
+    400028: horse_bone33_011
+    400030: horse_bone33_012
+    400032: horse_bone33_013
+    400034: horse_bone33_014
+    400036: horse_bone33_015
+    400038: horse_bone33_016
+    400040: horse_bone33_017
+    400042: horse_bone33_018
+    400044: horse_bone33_019
+    400046: horse_bone33_020
+    400048: horse_bone33_root
+    400050: Horse_E_back
+    400052: Horse_E_Spine
+    400054: Horse_E_top
+    400056: IK Chain001
+    400058: IK Chain002
+    400060: //RootNode
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

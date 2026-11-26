@@ -1,0 +1,63 @@
+# Unity generated caches (never commit)
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+**/.utmp/
+**/.vs/
+**/.idea/
+**/.gradle/
+**/.cache/
+**/DerivedData/
+**/*.csproj
+**/*.sln
+**/*.suo
+**/*.user
+**/*.tmp
+**/*.bak
+**/*.log
+**/sysinfo.txt
+**/EditorInstance.json
+**/UIElementsSchema/
+**/AppData/
+# Credentials/Env/local
+**/.env
+**/.env.*
+!**/.env.example
+**/*.keystore
+**/*.jks
+**/*.p12
+**/*.pem
+**/id_rsa
+**/id_ed25519
+**/known_hosts
+**/loetransfer
+**/loetransfer.pub
+**/apk-transfer/
+**/auth.json
+# Package artifacts
+*.apk
+*.aab
+*.exe
+*.dll
+*.pdb
+*.zip
+*.7z
+*.tar
+*.gz
+# local QA/screenshots not needed for source
+Docs/unity-*.log
+Docs/*-before-android.unity
+Docs/*-before-android.asset
+Docs/animation-fix-backup-*/
+# Preserve all Unity .meta files
+**/*.bak-*
+**/*.pyc
+**/__pycache__/
+**/*.orig
+**/*.old

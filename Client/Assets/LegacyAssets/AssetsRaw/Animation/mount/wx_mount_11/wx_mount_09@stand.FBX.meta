@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 46193ebe54b5800458d7ef945be02779
+timeCreated: 1602924020
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: horse_Bip001
+    100002: Horse_E_back
+    100004: Horse_E_head
+    100006: Horse_E_Spine
+    100008: Horse_E_Tail
+    100010: Horse_E_top001
+    100012: //RootNode
+    100014: ZQ_Bone_00
+    100016: ZQ_Bone_00 1
+    100018: ZQ_Bone_01
+    100020: ZQ_Bone_01 1
+    100022: ZQ_Bone_02
+    100024: ZQ_Bone_02 1
+    100026: ZQ_Bone_03
+    100028: ZQ_Bone_03 1
+    100030: ZQ_Bone_04
+    100032: ZQ_Bone_04 1
+    100034: ZQ_Bone_05
+    100036: ZQ_Bone_05 1
+    100038: ZQ_Bone_06
+    100040: ZQ_Bone_06 1
+    100042: ZQ_Bone_07
+    100044: ZQ_Bone_07 1
+    100046: ZQ_Bone_08
+    100048: ZQ_Bone_08 1
+    100050: ZQ_Bone_09
+    100052: ZQ_Bone_09 1
+    100054: ZQ_Bone_10
+    100056: ZQ_Bone_10 1
+    100058: ZQ_Bone_11
+    100060: ZQ_Bone_11 1
+    100062: ZQ_Bone_12
+    100064: ZQ_Bone_13
+    100066: ZQ_Bone_14
+    100068: ZQ_Bone_15
+    100070: ZQ_Bone_16
+    100072: ZQ_Bone_17
+    100074: ZQ_Bone_18
+    100076: ZQ_Bone_19
+    100078: ZQ_Bone_20
+    100080: ZQ_Bone_21
+    100082: ZQ_Bone_22
+    100084: ZQ_Bone_23
+    100086: ZQ_Bone_24
+    100088: ZQ_Bone_25
+    100090: ZQ_Bone_27
+    100092: ZQ_Bone_28
+    100094: ZQ_Bone_29
+    100096: ZQ_Bone_30
+    100098: ZQ_Bone_31
+    100100: ZQ_Bone_32
+    100102: ZQ_Bone_38
+    100104: ZQ_Bone_39
+    100106: ZQ_Bone_40
+    100108: ZQ_Bone_41
+    100110: ZQ_Bone_42
+    100112: ZQ_Bone_43
+    100114: ZQ_Bone_44
+    100116: ZQ_Bone_44 1
+    100118: ZQ_Bone_45
+    100120: ZQ_Bone_46
+    100122: ZQ_Bone_47
+    100124: ZQ_Bone_48
+    100126: ZQ_Bone_49
+    100128: ZQ_Bone_50
+    100130: ZQ_Bone_51
+    100132: ZQ_Bone_52
+    100134: ZQ_Bone_53
+    100136: ZQ_Bone_54
+    100138: ZQ_Bone_55
+    100140: ZQ_Bone_56
+    100142: ZQ_Bone_57
+    100144: ZQ_Bone_58
+    100146: ZQ_Bone_59
+    100148: ZQ_Bone_60
+    100150: ZQ_Bone_61
+    100152: body
+    400000: horse_Bip001
+    400002: Horse_E_back
+    400004: Horse_E_head
+    400006: Horse_E_Spine
+    400008: Horse_E_Tail
+    400010: Horse_E_top001
+    400012: //RootNode
+    400014: ZQ_Bone_00
+    400016: ZQ_Bone_00 1
+    400018: ZQ_Bone_01
+    400020: ZQ_Bone_01 1
+    400022: ZQ_Bone_02
+    400024: ZQ_Bone_02 1
+    400026: ZQ_Bone_03
+    400028: ZQ_Bone_03 1
+    400030: ZQ_Bone_04
+    400032: ZQ_Bone_04 1
+    400034: ZQ_Bone_05
+    400036: ZQ_Bone_05 1
+    400038: ZQ_Bone_06
+    400040: ZQ_Bone_06 1
+    400042: ZQ_Bone_07
+    400044: ZQ_Bone_07 1
+    400046: ZQ_Bone_08
+    400048: ZQ_Bone_08 1
+    400050: ZQ_Bone_09
+    400052: ZQ_Bone_09 1
+    400054: ZQ_Bone_10
+    400056: ZQ_Bone_10 1
+    400058: ZQ_Bone_11
+    400060: ZQ_Bone_11 1
+    400062: ZQ_Bone_12
+    400064: ZQ_Bone_13
+    400066: ZQ_Bone_14
+    400068: ZQ_Bone_15
+    400070: ZQ_Bone_16
+    400072: ZQ_Bone_17
+    400074: ZQ_Bone_18
+    400076: ZQ_Bone_19
+    400078: ZQ_Bone_20
+    400080: ZQ_Bone_21
+    400082: ZQ_Bone_22
+    400084: ZQ_Bone_23
+    400086: ZQ_Bone_24
+    400088: ZQ_Bone_25
+    400090: ZQ_Bone_27
+    400092: ZQ_Bone_28
+    400094: ZQ_Bone_29
+    400096: ZQ_Bone_30
+    400098: ZQ_Bone_31
+    400100: ZQ_Bone_32
+    400102: ZQ_Bone_38
+    400104: ZQ_Bone_39
+    400106: ZQ_Bone_40
+    400108: ZQ_Bone_41
+    400110: ZQ_Bone_42
+    400112: ZQ_Bone_43
+    400114: ZQ_Bone_44
+    400116: ZQ_Bone_44 1
+    400118: ZQ_Bone_45
+    400120: ZQ_Bone_46
+    400122: ZQ_Bone_47
+    400124: ZQ_Bone_48
+    400126: ZQ_Bone_49
+    400128: ZQ_Bone_50
+    400130: ZQ_Bone_51
+    400132: ZQ_Bone_52
+    400134: ZQ_Bone_53
+    400136: ZQ_Bone_54
+    400138: ZQ_Bone_55
+    400140: ZQ_Bone_56
+    400142: ZQ_Bone_57
+    400144: ZQ_Bone_58
+    400146: ZQ_Bone_59
+    400148: ZQ_Bone_60
+    400150: ZQ_Bone_61
+    400152: body
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 1
+    animationPositionError: 1
+    animationScaleError: 1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
