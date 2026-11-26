@@ -43,12 +43,16 @@ namespace LegacyOfEternity.Editor
                 Debug.Log("LOE_M05_ANDROID_SHORT_TOOLCHAIN=" + shortToolchain);
             }
 
+            // M05.11: Unity's generated Gradle settings should use standard public repositories.
+            // Older Unity mirror repositories may not resolve Android Gradle Plugin dependencies.
+            string settingsTemplatePath = "Assets/Plugins/Android/settingsTemplate.gradle";
+            Debug.Log("LOE_M0511_GRADLE_REPOS=" + settingsTemplatePath);
             EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android, BuildTarget.Android);
             PlayerSettings.companyName = "Lunex";
             PlayerSettings.productName = "Legacy of Eternity";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.lunex.legacyofeternity");
-            PlayerSettings.bundleVersion = "0.5.3";
-            PlayerSettings.Android.bundleVersionCode = 12;
+            PlayerSettings.bundleVersion = "0.5.4";
+            PlayerSettings.Android.bundleVersionCode = 13;
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
@@ -60,7 +64,7 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.Android.useCustomKeystore = false;
             EditorUserBuildSettings.buildAppBundle = false;
 
-            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.5.3-alpha.apk");
+            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.5.4-alpha.apk");
             Directory.CreateDirectory(Path.GetDirectoryName(output));
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
@@ -73,6 +77,21 @@ namespace LegacyOfEternity.Editor
                       " errors=" + report.summary.totalErrors +
                       " warnings=" + report.summary.totalWarnings +
                       " bytes=" + report.summary.totalSize + " path=" + output);
+            // M05.11: preserve individual Unity BuildReport diagnostics.
+            string diagnosticsPath = Path.GetFullPath("../Docs/unity-android-0.5.4-buildreport.txt");
+            using (var writer = new StreamWriter(diagnosticsPath, false, new System.Text.UTF8Encoding(false)))
+            {
+                writer.WriteLine("Result: " + report.summary.result);
+                writer.WriteLine("Errors: " + report.summary.totalErrors);
+                writer.WriteLine("Warnings: " + report.summary.totalWarnings);
+                foreach (var step in report.steps)
+                {
+                    writer.WriteLine("STEP: " + step.name);
+                    foreach (var msg in step.messages)
+                        writer.WriteLine(msg.type + ": " + msg.content);
+                }
+            }
+            Debug.Log("LOE_M0511_BUILDREPORT=" + diagnosticsPath);
             if (report.summary.result != BuildResult.Succeeded || !File.Exists(output))
                 throw new Exception("M05 Android build FAILED: " + report.summary.result + " path=" + output);
         }

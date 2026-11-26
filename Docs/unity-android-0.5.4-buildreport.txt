@@ -1,0 +1,131 @@
+Result: Succeeded
+Errors: 0
+Warnings: 34
+STEP: Build player
+STEP: Preprocess Player
+STEP: Prepare For Build
+STEP: ProducePlayerScriptAssemblies
+STEP: Prebuild Cleanup and Recompile
+STEP: Compile scripts
+STEP: Generate and validate platform script types
+STEP: Verify Build setup
+STEP: GetUnityAssemblies
+STEP: GetPlayerAssemblies
+STEP: Check old data build
+STEP: Prepare assets for target platform
+STEP: Prepare splash screen
+Log: Including Unity Splash Screen logo because 'Show Unity Logo' is enabled.
+STEP: Building scenes
+STEP: Building scene Assets/LegacyOfEternity/Scenes/CoastalPrototype.unity
+STEP: Build scripts DLLs
+STEP: GetSystemAssemblies
+STEP: Build GlobalGameManagers file
+STEP: Writing asset files
+STEP: Packaging assets - 1a007512b44760f4e8626b2c5636edc0
+STEP: Packaging assets - 2df15e1e263b23b42b1b50085882d21a
+STEP: Packaging assets - 3dea3630b78c2764e9617c3e9829667e
+STEP: Packaging assets - 3eda3161d979ad34e805ca24f9e7f819
+Warning: Script attached to 'ZS_M_attack002_S' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_attack002_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 4037ace05473c0444a0dca976b318659
+STEP: Packaging assets - 469321b31ee43e940bd1e7b938bbdf14
+Warning: Script attached to 'ZS_M_skill001_S' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill001_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'daomian' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill001_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'daomian' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill001_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'daomian' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill001_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 4939028ed7dda29468ae0479ee7e35f1
+STEP: Packaging assets - 52833ae8983ce684eb04002cd5326aa7
+STEP: Packaging assets - 534e64c5df26e4a48a61f3124e347f48
+Warning: Script attached to 'ef_fs_san01' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack002_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'baoqiquan (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack002_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 5610fa33617edf34abc05fc43ed406d3
+Warning: Script attached to 'ef_fs_san01' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'GameObject' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'fenghuang_attack003' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'ef_fs_san01 (1)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'baoqiquan (3)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill003_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 57d4cabfb40364e4d83bb9d6e068c2ca
+Warning: Script attached to 'FBCamera' in asset 'Assets/LegacyAssets/Resources/Scene/Camera/FBCamera.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'FBCamera' in asset 'Assets/LegacyAssets/Resources/Scene/Camera/FBCamera.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'FinalCamera' in asset 'Assets/LegacyAssets/Resources/Scene/Camera/FBCamera.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 59ebb60ad849675458d68d93554dacea
+Warning: Script attached to 'cike_chongci_skill002_xuanguang' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill002_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'cike_chongci_skill002_xuanguang' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill002_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'cike_chongci_skill002_xuanguang' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill002_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'cike_chongci_skill002_xuanguang' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill002_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 5a7f006d946bd994b96b177a5a231329
+STEP: Packaging assets - 6610bb4b15abd2949a43d145f0067341
+STEP: Packaging assets - 70447693cb76ae445940721ca7983ce2
+STEP: Packaging assets - 70cf1ca1459414d4f9bed5820ec66b87
+STEP: Packaging assets - 73251d807fd29d041aa0042f927c575a
+STEP: Packaging assets - 736db6459035b96448fd8be6d1e76ece
+STEP: Packaging assets - 77fc3b3c86f10704191e942140a29314
+STEP: Packaging assets - 7845268842fd9e8479a54f70f33bbb62
+Warning: Script attached to 'ZS_M_attack003_S' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_attack003_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 7c14c7a51e2932340a2cbab014af3759
+STEP: Packaging assets - 7e2704a22bdde0d4b93494dbd0492707
+STEP: Packaging assets - 7eb8cfec605230340b92c1fee79181f3
+STEP: Packaging assets - 80ad61f2ea602fc468f5d7e0a8d38054
+Warning: Script attached to 'ef_fs_san01' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'ef_fs_san01' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack003_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'baoqiquan (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack003_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 87a153638801aca41b92232c309dbd3b
+STEP: Packaging assets - 8cce73c47c4f28c44b15524797cdb124
+STEP: Packaging assets - 9062ea059fc934e4389e136ca89040eb
+STEP: Packaging assets - 958b8ed1925558c43bdc2b11cd30d638
+STEP: Packaging assets - 96df2fa775ba1924e9b7b871fbb38d8b
+STEP: Packaging assets - 9c2e4c4fa592b6a41b28f04467ef1b30
+Warning: Script attached to 'daoguang_an02' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill003_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - 9f603e8de452fd14e9dad13234e93198
+STEP: Packaging assets - a6ad032c05e62a64b916219c41ca9437
+STEP: Packaging assets - ac51a32a4cb3d5341a7c6acc69f6b29d
+Warning: Script attached to 'baoqiquan (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack001_s.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'ef_fs_san01' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_attack001_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - b18683a63a3e8ef43a319d87948d554f
+STEP: Packaging assets - b2375df607a54fc40ba3268ead0152e7
+Warning: Script attached to 'ZS_M_attack001_S' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_attack001_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - b2b404a10b9929541a6484bcd6af18e0
+STEP: Packaging assets - bbe14dfbdcf371c489b7cff2ff5ce48d
+STEP: Packaging assets - be1337f0ac7df504abba78f1fec301cf
+STEP: Packaging assets - bfae8b27e5d9546489e1ba855e185e52
+Warning: Script attached to 'ZS_M_skill002_S' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/ZS_M/ZS_M_skill002_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - c011f32f1e3401545911d9bb382c1780
+STEP: Packaging assets - c552f2e0cbd10ee4b8217966268ee833
+STEP: Packaging assets - c9e556e5f95a51745ae2de2ce2c8fb17
+STEP: Packaging assets - d123fcfe848641945bdcb0dd8a0f099a
+STEP: Packaging assets - d3b594f29e0c31345ba102425b72e6ee
+STEP: Packaging assets - d5cfe162fc9486c41b4973168371d16d
+STEP: Packaging assets - dbf0d54cde8646e429c20b65174e9ae7
+STEP: Packaging assets - de82f9eda593e464fbd236aba20e6fbe
+Warning: Script attached to 'bingzhu_mesh' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/FS_W/FS_W_attack001_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - e2541e719c4251343b0e620f1c860643
+Warning: Script attached to 'baoqiquan (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill001_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - e800ea1ae7f804742961b4634c4114c4
+STEP: Packaging assets - eb1987a10c7becb43a6f75a653faaae6
+STEP: Packaging assets - ebb3a033a6ae15b4bb189874e7cb6a01
+STEP: Packaging assets - f8a5446830439074684580d23bb154ac
+Warning: Script attached to 'daogaung (4)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill004_S.prefab' is missing or no valid script is attached.
+Warning: Script attached to 'daogaung (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/CK_W/CK_W_skill004_S.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - f93d2e43c38ebbb40a8c0203762b95e2
+Warning: Script attached to 'baoqiquan (3)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill004_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - f97198bf5aeeb954e828bd68815c084a
+Warning: Script attached to 'baoqiquan (2)' in asset 'Assets/LegacyAssets/Resources/Effect/skill/player/GJS_M/GJS_M_skill002_s.prefab' is missing or no valid script is attached.
+STEP: Packaging assets - fcf7c9e581506174ab9a5350a74e1aba
+STEP: Packaging assets - globalgamemanagers.assets
+STEP: Packaging assets - sharedassets0.assets = additional assets for scene 0: Assets/LegacyOfEternity/Scenes/CoastalPrototype.unity
+STEP: Building Resources/unity_builtin_extra
+STEP: Write data build dirty tracking information
+STEP: Postprocess built player
+STEP: Initializing
+STEP: Check gradle project collisions
+STEP: Preparing banner
+STEP: Setup incremental player build
+STEP: Incremental player build
+STEP: Report output files
+STEP: Calling IPostGenerateGradleAndroidProject callbacks
+STEP: Validate Gradle Project
+STEP: Unity Services Symbol Upload
+STEP: Building Gradle project
+STEP: Building Gradle Symbols
+STEP: Processing Mapping File
+STEP: Moving output package(s)
+STEP: Checking Symbols size

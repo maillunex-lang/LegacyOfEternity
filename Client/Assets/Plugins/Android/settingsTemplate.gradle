@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+}
+
+include ':launcher', ':unityLibrary'
+
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+
+        google()
+        mavenCentral()
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+    }
+}

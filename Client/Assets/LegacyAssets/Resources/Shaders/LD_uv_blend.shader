@@ -35,7 +35,9 @@ Shader "LD/LD_uv_blend" {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #ifndef UNITY_PASS_FORWARDBASE
             #define UNITY_PASS_FORWARDBASE
+            #endif
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
             #pragma exclude_renderers xbox360 

@@ -101,3 +101,6 @@ Next proposed work in order:
 5. M05.15 final M05 regression build and owner acceptance; then M06 authoritative Go/PostgreSQL MMO backend.
 
 Keep changes incremental, original source read-only, Git LFS and meta GUIDs intact. Each implemented milestone requires relevant audits, Android build, APK publication and verified GitHub synchronization. No claim of complete fresh clone validation for this release; check independently when needed.
+M05.11 2026-11-26: partial audit, Gradle failed; local shader guard changes pending verified Android build, no 0.5.4 release. Details Docs/M05.11-WARNING-AUDIT.md.
+
+M05.11 checkpoint: 0.5.4 Alpha Unity Succeeded 0 errors 34 remaining legacy script warnings; APK published and signature/hash checked. Physical-device QA and GitHub sync pending. See Docs/M05.11-WARNING-AUDIT.md.

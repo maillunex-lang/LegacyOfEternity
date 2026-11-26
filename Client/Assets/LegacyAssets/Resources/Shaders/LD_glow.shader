@@ -42,7 +42,9 @@ Shader "LD/LD_glow" {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #ifndef UNITY_PASS_FORWARDBASE
             #define UNITY_PASS_FORWARDBASE
+            #endif
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
@@ -136,7 +138,9 @@ Shader "LD/LD_glow" {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #ifndef UNITY_PASS_FORWARDADD
             #define UNITY_PASS_FORWARDADD
+            #endif
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
@@ -223,7 +227,9 @@ Shader "LD/LD_glow" {
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
+            #ifndef UNITY_PASS_SHADOWCASTER
             #define UNITY_PASS_SHADOWCASTER
+            #endif
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
             #pragma fragmentoption ARB_precision_hint_fastest
