@@ -51,8 +51,8 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.companyName = "Lunex";
             PlayerSettings.productName = "Legacy of Eternity";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.lunex.legacyofeternity");
-            PlayerSettings.bundleVersion = "0.5.4";
-            PlayerSettings.Android.bundleVersionCode = 13;
+            PlayerSettings.bundleVersion = "0.5.5";
+            PlayerSettings.Android.bundleVersionCode = 14;
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
@@ -64,7 +64,7 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.Android.useCustomKeystore = false;
             EditorUserBuildSettings.buildAppBundle = false;
 
-            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.5.4-alpha.apk");
+            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.5.5-alpha.apk");
             Directory.CreateDirectory(Path.GetDirectoryName(output));
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
@@ -78,7 +78,7 @@ namespace LegacyOfEternity.Editor
                       " warnings=" + report.summary.totalWarnings +
                       " bytes=" + report.summary.totalSize + " path=" + output);
             // M05.11: preserve individual Unity BuildReport diagnostics.
-            string diagnosticsPath = Path.GetFullPath("../Docs/unity-android-0.5.4-buildreport.txt");
+            string diagnosticsPath = Path.GetFullPath("../Docs/unity-android-0.5.5-buildreport.txt");
             using (var writer = new StreamWriter(diagnosticsPath, false, new System.Text.UTF8Encoding(false)))
             {
                 writer.WriteLine("Result: " + report.summary.result);

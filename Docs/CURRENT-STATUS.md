@@ -104,3 +104,5 @@ Keep changes incremental, original source read-only, Git LFS and meta GUIDs inta
 M05.11 2026-11-26: partial audit, Gradle failed; local shader guard changes pending verified Android build, no 0.5.4 release. Details Docs/M05.11-WARNING-AUDIT.md.
 
 M05.11 checkpoint: 0.5.4 Alpha Unity Succeeded 0 errors 34 remaining legacy script warnings; APK published and signature/hash checked. Physical-device QA and GitHub sync pending. See Docs/M05.11-WARNING-AUDIT.md.
+
+M05.13 0.5.5 Alpha verified Android build and published (2026-11-26): 20 full original normal-prefab FX restored with GUIDs, 20 sounds and 329 particle systems. Unity errors0 warnings73 (source legacy script attachments), SHA256 0217DE048CF607523C2CC2977EEB5D61298A4EA9C85D6A20E8224E50937C4222. Physical device visual QA and full bone/quality-component parity still pending. See M05.13-ORIGINAL-EFFECT-FORENSICS.md.

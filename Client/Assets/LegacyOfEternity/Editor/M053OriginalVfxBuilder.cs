@@ -63,8 +63,9 @@ namespace LegacyOfEternity.Editor
                 for (int slot = 0; slot < 5; slot++)
                 {
                     int index = cl*5 + slot;
-                    string suffix = cls == "GJS_M" ? "_s" : "_S";
-                    string name = cls + "_" + Clips[slot] + suffix;
+                    // Local player uses the unsuffixed prefab. The original client
+                    // appends _S only for AT_REMOTE_PLAYER, never local PvE.
+                    string name = cls + "_" + Clips[slot];
                     string originalPath = Original + cls + "/" + name + ".prefab";
                     string targetPath = DestRoot + "/" + cls + "/" + name + "_Unity6.prefab";
                     var source = AssetDatabase.LoadAssetAtPath<GameObject>(originalPath);

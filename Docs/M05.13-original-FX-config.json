@@ -1,0 +1,162 @@
+﻿[
+    {
+        "Class":  "ZS_M",
+        "Action":  "attack001",
+        "Configured":  true,
+        "DurationSeconds":  0.6,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "ZS_M",
+        "Action":  "skill001",
+        "Configured":  true,
+        "DurationSeconds":  1.4,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "ZS_M",
+        "Action":  "skill002",
+        "Configured":  true,
+        "DurationSeconds":  2,
+        "IsBind":  true,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "ZS_M",
+        "Action":  "skill003",
+        "Configured":  true,
+        "DurationSeconds":  1.9,
+        "IsBind":  true,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "ZS_M",
+        "Action":  "skill004",
+        "Configured":  true,
+        "DurationSeconds":  3,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "CK_W",
+        "Action":  "attack001",
+        "Configured":  true,
+        "DurationSeconds":  1,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "CK_W",
+        "Action":  "skill001",
+        "Configured":  true,
+        "DurationSeconds":  10,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "CK_W",
+        "Action":  "skill002",
+        "Configured":  true,
+        "DurationSeconds":  3,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "CK_W",
+        "Action":  "skill003",
+        "Configured":  true,
+        "DurationSeconds":  2.8,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "CK_W",
+        "Action":  "skill004",
+        "Configured":  true,
+        "DurationSeconds":  2.5,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "FS_W",
+        "Action":  "attack001",
+        "Configured":  false,
+        "DurationSeconds":  0,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "FS_W",
+        "Action":  "skill001",
+        "Configured":  true,
+        "DurationSeconds":  3,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "FS_W",
+        "Action":  "skill002",
+        "Configured":  true,
+        "DurationSeconds":  2,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "FS_W",
+        "Action":  "skill003",
+        "Configured":  true,
+        "DurationSeconds":  2.5,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "FS_W",
+        "Action":  "skill004",
+        "Configured":  true,
+        "DurationSeconds":  5,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "GJS_M",
+        "Action":  "attack001",
+        "Configured":  true,
+        "DurationSeconds":  0.8,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "GJS_M",
+        "Action":  "skill001",
+        "Configured":  true,
+        "DurationSeconds":  2.1,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "GJS_M",
+        "Action":  "skill002",
+        "Configured":  true,
+        "DurationSeconds":  1.6,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "GJS_M",
+        "Action":  "skill003",
+        "Configured":  true,
+        "DurationSeconds":  2.1,
+        "IsBind":  false,
+        "EffectPosition":  0
+    },
+    {
+        "Class":  "GJS_M",
+        "Action":  "skill004",
+        "Configured":  true,
+        "DurationSeconds":  2.8,
+        "IsBind":  false,
+        "EffectPosition":  0
+    }
+]

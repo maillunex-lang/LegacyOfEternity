@@ -15,7 +15,22 @@ namespace LegacyOfEternity.Combat
         [SerializeField] private GameObject[] classEffects = new GameObject[20];
         [SerializeField] private AudioClip[] classSounds = new AudioClip[20];
         private AudioSource player;
-        private static readonly float[] Seconds = { 1.4f, 1.8f, 2.0f, 2.7f, 3.0f };
+        // Source: Resources/Lua/Data/t_skill_action.lua.txt, normal/local-player FX.
+        // Source has no configured FS_W attack001 FX; use the short preview fallback.
+        private static readonly float[,] EffectSeconds =
+        {
+            { 0.6f, 1.4f, 2.0f, 1.9f, 3.0f },
+            { 1.0f, 10.0f, 3.0f, 2.8f, 2.5f },
+            { 0.8f, 3.0f, 2.0f, 2.5f, 5.0f },
+            { 0.8f, 2.1f, 1.6f, 2.1f, 2.8f }
+        };
+        private static readonly bool[,] SourceBind =
+        {
+            { false, false, true, true, false },
+            { false, false, false, false, false },
+            { false, false, false, false, false },
+            { false, false, false, false, false }
+        };
 
         private void Awake()
         {
@@ -44,6 +59,8 @@ namespace LegacyOfEternity.Combat
                                                int slot, float impactSeconds)
         {
             bool ranged = classIndex >= 2;
+            float fxLifetime = EffectSeconds[classIndex, Mathf.Clamp(slot, 0, 4)];
+            // The source skill table requests attachment only for warrior skills 002/003.
             Transform visual = selector != null && selector.ActiveAnimator != null
                 ? selector.ActiveAnimator.transform : transform;
             Transform muzzle = null;
@@ -62,6 +79,12 @@ namespace LegacyOfEternity.Combat
                 : transform.position;
             Quaternion facing = transform.rotation;
             GameObject instance = Instantiate(prefab, spawn, facing);
+            if (SourceBind[classIndex, slot])
+            {
+                instance.transform.SetParent(transform, true);
+                instance.transform.localPosition = Vector3.zero;
+                instance.transform.localRotation = Quaternion.identity;
+            }
             instance.name = "Original FX " + prefab.name;
             // The imported heroes are normalized to 1.8 world units high by FourClassesBuilder.
             // Original FX authored for the original character rig must preserve their scale
@@ -70,7 +93,8 @@ namespace LegacyOfEternity.Combat
             float originalRigScale = visual != null ? visual.lossyScale.x : 1f;
             if (originalRigScale <= 0.001f || originalRigScale > 10f)
                 originalRigScale = 1f;
-            instance.transform.localScale = prefab.transform.localScale * originalRigScale;
+            instance.transform.localScale = SourceBind[classIndex, slot]
+                ? prefab.transform.localScale : prefab.transform.localScale * originalRigScale;
             // Original particle prefabs already encode Play On Awake and active-state
             // per emitter. Forcing Play(true) on every nested system was bypassing
             // their authored timing and triggering inactive ice/debris prematurely.
@@ -95,12 +119,15 @@ namespace LegacyOfEternity.Combat
             {
                 // Original melee FX follow the hero's facing during a short action window.
                 float elapsed = 0f;
-                float duration = Seconds[Mathf.Clamp(slot, 0, 4)];
+                float duration = fxLifetime;
                 while (instance != null && elapsed < duration)
                 {
                     elapsed += Time.deltaTime;
-                    instance.transform.position = transform.position;
-                    instance.transform.rotation = transform.rotation;
+                    if (!SourceBind[classIndex, slot])
+                    {
+                        instance.transform.position = transform.position;
+                        instance.transform.rotation = transform.rotation;
+                    }
                     yield return null;
                 }
             }
