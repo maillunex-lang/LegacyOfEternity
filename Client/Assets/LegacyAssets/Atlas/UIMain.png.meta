@@ -1,0 +1,7956 @@
+fileFormatVersion: 2
+guid: ae8b3ca1d7ccfe44989a70ce0ef28e9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: back_attak.png
+  - first:
+      213: 21300002
+    second: back_beauty.png
+  - first:
+      213: 21300004
+    second: back_btn.png
+  - first:
+      213: 21300006
+    second: back_chat.png
+  - first:
+      213: 21300008
+    second: back_function.png
+  - first:
+      213: 21300010
+    second: back_level.png
+  - first:
+      213: 21300012
+    second: back_name.png
+  - first:
+      213: 21300014
+    second: back_player.png
+  - first:
+      213: 21300016
+    second: back_power.png
+  - first:
+      213: 21300018
+    second: back_skill.png
+  - first:
+      213: 21300020
+    second: back_skilllock.png
+  - first:
+      213: 21300022
+    second: back_task.png
+  - first:
+      213: 21300024
+    second: back_taskmark.png
+  - first:
+      213: 21300026
+    second: bar_exp.png
+  - first:
+      213: 21300028
+    second: bar_expback.png
+  - first:
+      213: 21300030
+    second: bar_hp.png
+  - first:
+      213: 21300032
+    second: bar_hpback.png
+  - first:
+      213: 21300034
+    second: btn_taskhide.png
+  - first:
+      213: 21300036
+    second: btn_tasknormal.png
+  - first:
+      213: 21300038
+    second: btn_taskselect.png
+  - first:
+      213: 21300040
+    second: btn_taskshow.png
+  - first:
+      213: 21300042
+    second: frame_task.png
+  - first:
+      213: 21300044
+    second: ico_0.png
+  - first:
+      213: 21300046
+    second: ico_attack.png
+  - first:
+      213: 21300048
+    second: ico_beautytemp.png
+  - first:
+      213: 21300050
+    second: ico_fun1.png
+  - first:
+      213: 21300052
+    second: ico_fun2.png
+  - first:
+      213: 21300054
+    second: ico_fun3.png
+  - first:
+      213: 21300056
+    second: ico_fun4.png
+  - first:
+      213: 21300058
+    second: ico_fun5.png
+  - first:
+      213: 21300060
+    second: ico_huodong1.png
+  - first:
+      213: 21300062
+    second: ico_huodong2.png
+  - first:
+      213: 21300064
+    second: ico_huodong3.png
+  - first:
+      213: 21300066
+    second: ico_huodong4.png
+  - first:
+      213: 21300068
+    second: ico_huodong5.png
+  - first:
+      213: 21300070
+    second: ico_huodong6.png
+  - first:
+      213: 21300072
+    second: ico_huodong7.png
+  - first:
+      213: 21300074
+    second: ico_huodong8.png
+  - first:
+      213: 21300076
+    second: ico_huodong9.png
+  - first:
+      213: 21300078
+    second: ico_role1.png
+  - first:
+      213: 21300080
+    second: ico_setting.png
+  - first:
+      213: 21300082
+    second: ico_talk.png
+  - first:
+      213: 21300084
+    second: ico_tasktemp1.png
+  - first:
+      213: 21300086
+    second: ico_tasktemp2.png
+  - first:
+      213: 21300088
+    second: back_skillcd.png
+  - first:
+      213: 21300090
+    second: joystick_back.png
+  - first:
+      213: 21300092
+    second: joystick_thumb.png
+  - first:
+      213: 21300094
+    second: btn_arrowdown.png
+  - first:
+      213: 21300096
+    second: btn_arrowup.png
+  - first:
+      213: 21300098
+    second: icon_Social.png
+  - first:
+      213: 21300100
+    second: icon_vip.png
+  - first:
+      213: 21300102
+    second: back_1.png
+  - first:
+      213: 21300104
+    second: back_pace.png
+  - first:
+      213: 21300106
+    second: bar_task.png
+  - first:
+      213: 21300108
+    second: bar_taskBack.png
+  - first:
+      213: 21300110
+    second: bar_task_end.png
+  - first:
+      213: 21300112
+    second: btn_active.png
+  - first:
+      213: 21300114
+    second: ico_task.png
+  - first:
+      213: 21300116
+    second: icon_grown.png
+  - first:
+      213: 21300118
+    second: image_jt.png
+  - first:
+      213: 21300120
+    second: item_select.png
+  - first:
+      213: 21300122
+    second: line1.png
+  - first:
+      213: 21300124
+    second: tab_normal.png
+  - first:
+      213: 21300126
+    second: tab_select.png
+  - first:
+      213: 21300128
+    second: back_skillbigback.png
+  - first:
+      213: 21300130
+    second: back_skillbiglock.png
+  - first:
+      213: 21300132
+    second: back_skillbigmask.png
+  - first:
+      213: 21300134
+    second: ico_attack2.png
+  - first:
+      213: 21300136
+    second: icon_gonggao.png
+  - first:
+      213: 21300138
+    second: icon_qhzh.png
+  - first:
+      213: 21300140
+    second: back_attak2.png
+  - first:
+      213: 21300142
+    second: back_attak3.png
+  - first:
+      213: 21300144
+    second: joystick_direction.png
+  - first:
+      213: 21300146
+    second: temp_effect.png
+  - first:
+      213: 21300148
+    second: back_roleinfo.png
+  - first:
+      213: 21300150
+    second: back_map_name.png
+  - first:
+      213: 21300152
+    second: back_taskteam.png
+  - first:
+      213: 21300154
+    second: back_taskteam_mark.png
+  - first:
+      213: 21300156
+    second: back_taskteam_switch.png
+  - first:
+      213: 21300158
+    second: bar_hp_back.png
+  - first:
+      213: 21300160
+    second: bar_hp_end.png
+  - first:
+      213: 21300162
+    second: main_7day.png
+  - first:
+      213: 21300164
+    second: main_bprw.png
+  - first:
+      213: 21300166
+    second: main_chibang.png
+  - first:
+      213: 21300168
+    second: main_chongzhi.png
+  - first:
+      213: 21300170
+    second: main_djfb.png
+  - first:
+      213: 21300172
+    second: main_fuli.png
+  - first:
+      213: 21300174
+    second: main_horse.png
+  - first:
+      213: 21300176
+    second: main_huanling.png
+  - first:
+      213: 21300178
+    second: main_huodong.png
+  - first:
+      213: 21300180
+    second: main_jingji.png
+  - first:
+      213: 21300182
+    second: main_lxsy.png
+  - first:
+      213: 21300184
+    second: main_mochong.png
+  - first:
+      213: 21300186
+    second: main_paihangbang.png
+  - first:
+      213: 21300188
+    second: main_peiyang.png
+  - first:
+      213: 21300190
+    second: main_peiyang2.png
+  - first:
+      213: 21300192
+    second: main_pfhj.png
+  - first:
+      213: 21300194
+    second: main_renwu.png
+  - first:
+      213: 21300196
+    second: main_shenbing.png
+  - first:
+      213: 21300198
+    second: main_shengdun.png
+  - first:
+      213: 21300200
+    second: main_shezhi.png
+  - first:
+      213: 21300202
+    second: main_shouchong.png
+  - first:
+      213: 21300204
+    second: main_sjboss.png
+  - first:
+      213: 21300206
+    second: main_taozhuang.png
+  - first:
+      213: 21300208
+    second: main_zaixianjiangli.png
+  - first:
+      213: 21300210
+    second: main_zdmj.png
+  - first:
+      213: 21300212
+    second: main_zhuangbei.png
+  - first:
+      213: 21300214
+    second: main_bag.png
+  - first:
+      213: 21300216
+    second: main_guaji.png
+  - first:
+      213: 21300218
+    second: main_guaji_disable.png
+  - first:
+      213: 21300220
+    second: main_strong.png
+  - first:
+      213: 21300222
+    second: back_mapinfo.png
+  - first:
+      213: 21300224
+    second: back_mapname.png
+  - first:
+      213: 21300226
+    second: back_net.png
+  - first:
+      213: 21300228
+    second: bar3.png
+  - first:
+      213: 21300230
+    second: bar3back.png
+  - first:
+      213: 21300232
+    second: bar3end.png
+  - first:
+      213: 21300234
+    second: channel_area.png
+  - first:
+      213: 21300236
+    second: channel_camp.png
+  - first:
+      213: 21300238
+    second: channel_guild.png
+  - first:
+      213: 21300240
+    second: channel_horn.png
+  - first:
+      213: 21300242
+    second: channel_private.png
+  - first:
+      213: 21300244
+    second: channel_server.png
+  - first:
+      213: 21300246
+    second: channel_system.png
+  - first:
+      213: 21300248
+    second: channel_team.png
+  - first:
+      213: 21300250
+    second: channel_world.png
+  - first:
+      213: 21300252
+    second: ico_battery_0.png
+  - first:
+      213: 21300254
+    second: ico_battery_1.png
+  - first:
+      213: 21300256
+    second: ico_battery_2.png
+  - first:
+      213: 21300258
+    second: ico_net_0.png
+  - first:
+      213: 21300260
+    second: ico_net_1.png
+  - first:
+      213: 21300262
+    second: ico_net_2.png
+  - first:
+      213: 21300264
+    second: ico_net_3.png
+  - first:
+      213: 21300266
+    second: ico_net_4.png
+  - first:
+      213: 21300268
+    second: ico_wifi_0.png
+  - first:
+      213: 21300270
+    second: ico_wifi_1.png
+  - first:
+      213: 21300272
+    second: ico_wifi_2.png
+  - first:
+      213: 21300274
+    second: ico_wifi_3.png
+  - first:
+      213: 21300276
+    second: ico_wifi_4.png
+  - first:
+      213: 21300278
+    second: pk_mode_all.png
+  - first:
+      213: 21300280
+    second: pk_mode_camp.png
+  - first:
+      213: 21300282
+    second: pk_mode_evil.png
+  - first:
+      213: 21300284
+    second: pk_mode_guild.png
+  - first:
+      213: 21300286
+    second: pk_mode_peace.png
+  - first:
+      213: 21300288
+    second: pk_mode_server.png
+  - first:
+      213: 21300290
+    second: pk_mode_team.png
+  - first:
+      213: 21300292
+    second: back_fun_preview.png
+  - first:
+      213: 21300294
+    second: text_fun_open.png
+  - first:
+      213: 21300296
+    second: main_btmj.png
+  - first:
+      213: 21300298
+    second: main_fblt.png
+  - first:
+      213: 21300300
+    second: main_jyfb.png
+  - first:
+      213: 21300302
+    second: main_jyrw.png
+  - first:
+      213: 21300304
+    second: main_kfzdmj.png
+  - first:
+      213: 21300306
+    second: main_kuafu.png
+  - first:
+      213: 21300308
+    second: main_mrcz.png
+  - first:
+      213: 21300310
+    second: main_mydl.png
+  - first:
+      213: 21300312
+    second: main_shejiao.png
+  - first:
+      213: 21300314
+    second: main_slmj.png
+  - first:
+      213: 21300316
+    second: main_tfrw.png
+  - first:
+      213: 21300318
+    second: main_tongji.png
+  - first:
+      213: 21300320
+    second: main_xunbao.png
+  - first:
+      213: 21300322
+    second: main_ylboss.png
+  - first:
+      213: 21300324
+    second: main_zyfb.png
+  - first:
+      213: 21300326
+    second: main_dengjitouzi.png
+  - first:
+      213: 21300328
+    second: main_shangcheng.png
+  - first:
+      213: 21300330
+    second: main_multiexp.png
+  - first:
+      213: 21300332
+    second: main_gonghui.png
+  - first:
+      213: 21300334
+    second: main_ellx.png
+  - first:
+      213: 21300336
+    second: main_mrdati.png
+  - first:
+      213: 21300338
+    second: back_fun_preview_light.png
+  - first:
+      213: 21300340
+    second: main_1yuan.png
+  - first:
+      213: 21300342
+    second: main_czfanli.png
+  - first:
+      213: 21300344
+    second: main_oneyuan.png
+  - first:
+      213: 21300346
+    second: main_xinfuhd.png
+  - first:
+      213: 21300348
+    second: main_djjl.png
+  - first:
+      213: 21300350
+    second: main_kaifucb.png
+  - first:
+      213: 21300352
+    second: main_zhenfa.png
+  - first:
+      213: 21300354
+    second: main_hero.png
+  - first:
+      213: 21300356
+    second: 00.png
+  - first:
+      213: 21300358
+    second: 01.png
+  - first:
+      213: 21300360
+    second: 02.png
+  - first:
+      213: 21300362
+    second: 03.png
+  - first:
+      213: 21300364
+    second: 04.png
+  - first:
+      213: 21300366
+    second: 05.png
+  - first:
+      213: 21300368
+    second: Default.png
+  - first:
+      213: 21300370
+    second: equip_yongqi_1.png
+  - first:
+      213: 21300372
+    second: equip_yongqi_2.png
+  - first:
+      213: 21300374
+    second: guild_badge1.png
+  - first:
+      213: 21300376
+    second: guild_badge2.png
+  - first:
+      213: 21300378
+    second: guild_badge3.png
+  - first:
+      213: 21300380
+    second: guild_point.png
+  - first:
+      213: 21300382
+    second: huizhang_.png
+  - first:
+      213: 21300384
+    second: ico_ITEMbsjr.png
+  - first:
+      213: 21300386
+    second: ico_ITEMcb01.png
+  - first:
+      213: 21300388
+    second: ico_ITEMcb02.png
+  - first:
+      213: 21300390
+    second: ico_ITEMcb03.png
+  - first:
+      213: 21300392
+    second: ico_ITEMcb04.png
+  - first:
+      213: 21300394
+    second: ico_ITEMcb05.png
+  - first:
+      213: 21300396
+    second: ico_ITEMcb06.png
+  - first:
+      213: 21300398
+    second: ico_ITEMcb07.png
+  - first:
+      213: 21300400
+    second: ico_ITEMcb08.png
+  - first:
+      213: 21300402
+    second: ico_ITEMcb09.png
+  - first:
+      213: 21300404
+    second: ico_ITEMcb10.png
+  - first:
+      213: 21300406
+    second: ico_ITEMcynw.png
+  - first:
+      213: 21300408
+    second: ico_ITEMdsjs.png
+  - first:
+      213: 21300410
+    second: ico_ITEMfyjs.png
+  - first:
+      213: 21300412
+    second: ico_ITEMhbjl.png
+  - first:
+      213: 21300414
+    second: ico_ITEMhlqs.png
+  - first:
+      213: 21300416
+    second: ico_ITEMhyjl.png
+  - first:
+      213: 21300418
+    second: ico_ITEMjbss.png
+  - first:
+      213: 21300420
+    second: ico_ITEMltjs.png
+  - first:
+      213: 21300422
+    second: ico_ITEMlxjs.png
+  - first:
+      213: 21300424
+    second: ico_ITEMmyjs.png
+  - first:
+      213: 21300426
+    second: ico_ITEMsbjjs.png
+  - first:
+      213: 21300428
+    second: ico_ITEMsbjns01.png
+  - first:
+      213: 21300430
+    second: ico_ITEMsbjns02.png
+  - first:
+      213: 21300432
+    second: ico_ITEMsbjns03.png
+  - first:
+      213: 21300434
+    second: ico_ITEMsbjns04.png
+  - first:
+      213: 21300436
+    second: ico_ITEMsbjns05.png
+  - first:
+      213: 21300438
+    second: ico_ITEMsbsxs.png
+  - first:
+      213: 21300440
+    second: ico_ITEMsbzzs.png
+  - first:
+      213: 21300442
+    second: ico_ITEMsdjjs.png
+  - first:
+      213: 21300444
+    second: ico_ITEMsdjns.png
+  - first:
+      213: 21300446
+    second: ico_ITEMsdjns02.png
+  - first:
+      213: 21300448
+    second: ico_ITEMsdjns03.png
+  - first:
+      213: 21300450
+    second: ico_ITEMsdjns04.png
+  - first:
+      213: 21300452
+    second: ico_ITEMsdjns05.png
+  - first:
+      213: 21300454
+    second: ico_ITEMsdsxs.png
+  - first:
+      213: 21300456
+    second: ico_ITEMsdzzs.png
+  - first:
+      213: 21300458
+    second: ico_ITEMxwjs.png
+  - first:
+      213: 21300460
+    second: ico_ITEMxyjs.png
+  - first:
+      213: 21300462
+    second: ico_ITEMzrjs.png
+  - first:
+      213: 21300464
+    second: ico_bagexpand.png
+  - first:
+      213: 21300466
+    second: ico_juebanch.png
+  - first:
+      213: 21300468
+    second: ico_yydbq.png
+  - first:
+      213: 21300470
+    second: ico_zhenbao01.png
+  - first:
+      213: 21300472
+    second: ico_zhenbao02.png
+  - first:
+      213: 21300474
+    second: ico_zhenbao03.png
+  - first:
+      213: 21300476
+    second: ico_zhenbao04.png
+  - first:
+      213: 21300478
+    second: ico_zhenbao05.png
+  - first:
+      213: 21300480
+    second: ico_zhenbao06.png
+  - first:
+      213: 21300482
+    second: ico_zhenbao07.png
+  - first:
+      213: 21300484
+    second: ico_zhenbao08.png
+  - first:
+      213: 21300486
+    second: ico_zhenbao09.png
+  - first:
+      213: 21300488
+    second: ico_zhenbao10.png
+  - first:
+      213: 21300490
+    second: ico_zhenbao11.png
+  - first:
+      213: 21300492
+    second: ico_zhenbao12.png
+  - first:
+      213: 21300494
+    second: ico_zhenbao13.png
+  - first:
+      213: 21300496
+    second: ico_zhenbao14.png
+  - first:
+      213: 21300498
+    second: ico_zhenbao15.png
+  - first:
+      213: 21300500
+    second: ico_zhenbao16.png
+  - first:
+      213: 21300502
+    second: ico_zhenbao17.png
+  - first:
+      213: 21300504
+    second: ico_zhenbao18.png
+  - first:
+      213: 21300506
+    second: ico_zhenfa_jjs.png
+  - first:
+      213: 21300508
+    second: ico_zhenfa_sxd.png
+  - first:
+      213: 21300510
+    second: ico_zhenfa_zzd.png
+  - first:
+      213: 21300512
+    second: icon_bdjbbx.png
+  - first:
+      213: 21300514
+    second: icon_bsb1.png
+  - first:
+      213: 21300516
+    second: icon_bsb2.png
+  - first:
+      213: 21300518
+    second: icon_cjfbjnb.png
+  - first:
+      213: 21300520
+    second: icon_csml1.png
+  - first:
+      213: 21300522
+    second: icon_csml2.png
+  - first:
+      213: 21300524
+    second: icon_cwjh.png
+  - first:
+      213: 21300526
+    second: icon_cwjy1.png
+  - first:
+      213: 21300528
+    second: icon_cwjy2.PNG
+  - first:
+      213: 21300530
+    second: icon_cwjy3.png
+  - first:
+      213: 21300532
+    second: icon_cwjy4.PNG
+  - first:
+      213: 21300534
+    second: icon_fblb.png
+  - first:
+      213: 21300536
+    second: icon_flyj.png
+  - first:
+      213: 21300538
+    second: icon_gmk.png
+  - first:
+      213: 21300540
+    second: icon_jjslb.png
+  - first:
+      213: 21300542
+    second: icon_jlml1.png
+  - first:
+      213: 21300544
+    second: icon_jlml2.png
+  - first:
+      213: 21300546
+    second: icon_jls1.png
+  - first:
+      213: 21300548
+    second: icon_jls2.png
+  - first:
+      213: 21300550
+    second: icon_jwsql.png
+  - first:
+      213: 21300552
+    second: icon_jy.png
+  - first:
+      213: 21300554
+    second: icon_libiao.png
+  - first:
+      213: 21300556
+    second: icon_mbh.png
+  - first:
+      213: 21300558
+    second: icon_mcjlhhjz.png
+  - first:
+      213: 21300560
+    second: icon_mcjs.png
+  - first:
+      213: 21300562
+    second: icon_mcjxs.png
+  - first:
+      213: 21300564
+    second: icon_mcsp.png
+  - first:
+      213: 21300566
+    second: icon_mfbx.png
+  - first:
+      213: 21300568
+    second: icon_mhl.png
+  - first:
+      213: 21300570
+    second: icon_owjh1.png
+  - first:
+      213: 21300572
+    second: icon_owjh2.png
+  - first:
+      213: 21300574
+    second: icon_owjh3.png
+  - first:
+      213: 21300576
+    second: icon_owjh4.png
+  - first:
+      213: 21300578
+    second: icon_owjh5.png
+  - first:
+      213: 21300580
+    second: icon_qhsxl.png
+  - first:
+      213: 21300582
+    second: icon_qljz.png
+  - first:
+      213: 21300584
+    second: icon_qlz.png
+  - first:
+      213: 21300586
+    second: icon_saodangquan.png
+  - first:
+      213: 21300588
+    second: icon_skincard.png
+  - first:
+      213: 21300590
+    second: icon_smxc.png
+  - first:
+      213: 21300592
+    second: icon_ssml1.png
+  - first:
+      213: 21300594
+    second: icon_ssml2.png
+  - first:
+      213: 21300596
+    second: icon_sxdb1.png
+  - first:
+      213: 21300598
+    second: icon_sxs.png
+  - first:
+      213: 21300600
+    second: icon_tmjf.png
+  - first:
+      213: 21300602
+    second: icon_tmjfj.png
+  - first:
+      213: 21300604
+    second: icon_viplb.png
+  - first:
+      213: 21300606
+    second: icon_xkc.png
+  - first:
+      213: 21300608
+    second: icon_xwjy.png
+  - first:
+      213: 21300610
+    second: icon_zbcp.png
+  - first:
+      213: 21300612
+    second: icon_zbsxs.PNG
+  - first:
+      213: 21300614
+    second: icon_znjjs.png
+  - first:
+      213: 21300616
+    second: icon_znsxd.png
+  - first:
+      213: 21300618
+    second: icon_znzzd.png
+  - first:
+      213: 21300620
+    second: icon_zqjj.png
+  - first:
+      213: 21300622
+    second: icon_zqjjs.png
+  - first:
+      213: 21300624
+    second: icon_zqsx.png
+  - first:
+      213: 21300626
+    second: icon_zqzzs.png
+  - first:
+      213: 21300628
+    second: vip_card.png
+  - first:
+      213: 21300630
+    second: vip_exp.png
+  - first:
+      213: 21300632
+    second: vip_expcard.png
+  - first:
+      213: 21300634
+    second: wing1.png
+  - first:
+      213: 21300636
+    second: wing8.png
+  - first:
+      213: 21300638
+    second: xueping1.png
+  - first:
+      213: 21300640
+    second: xueping10.png
+  - first:
+      213: 21300642
+    second: xueping2.png
+  - first:
+      213: 21300644
+    second: xueping3.png
+  - first:
+      213: 21300646
+    second: xueping4.png
+  - first:
+      213: 21300648
+    second: xueping5.png
+  - first:
+      213: 21300650
+    second: xueping6.png
+  - first:
+      213: 21300652
+    second: xueping7.png
+  - first:
+      213: 21300654
+    second: xueping8.png
+  - first:
+      213: 21300656
+    second: xueping9.png
+  - first:
+      213: 21300658
+    second: main_zhannu.png
+  - first:
+      213: 21300660
+    second: main_baojia.png
+  - first:
+      213: 21300662
+    second: main_hunqi.png
+  - first:
+      213: 21300664
+    second: main_zhekoushop.png
+  - first:
+      213: 21300666
+    second: main_cmzhanchang.png
+  - first:
+      213: 21300668
+    second: main_mjtanxian.png
+  - first:
+      213: 21300670
+    second: main_ghly.png
+  - first:
+      213: 21300672
+    second: main_ghz.png
+  - first:
+      213: 21300674
+    second: main_gyrw.png
+  - first:
+      213: 21300676
+    second: main_ghrw.png
+  - first:
+      213: 21300678
+    second: main_xtjiban.png
+  - first:
+      213: 21300680
+    second: main_bianjing.png
+  - first:
+      213: 21300682
+    second: main_wzvip.png
+  - first:
+      213: 21300684
+    second: man.png
+  - first:
+      213: 21300686
+    second: back_skillbigback01.png
+  - first:
+      213: 21300688
+    second: main_czkh.png
+  - first:
+      213: 21300690
+    second: main_hzcj.png
+  - first:
+      213: 21300692
+    second: ditu01.png
+  - first:
+      213: 21300694
+    second: ditu02.png
+  - first:
+      213: 21300696
+    second: ditu03.png
+  - first:
+      213: 21300698
+    second: uimain_vipzb.png
+  - first:
+      213: 21300700
+    second: main_bugsubmit.png
+  - first:
+      213: 21300702
+    second: main_luckyturn.png
+  - first:
+      213: 21300704
+    second: main_cjvip.png
+  - first:
+      213: 21300706
+    second: main_mstz.png
+  - first:
+      213: 21300708
+    second: main_zbkh.png
+  - first:
+      213: 21300710
+    second: main_zksd.png
+  - first:
+      213: 21300712
+    second: icon_flyshoe.png
+  - first:
+      213: 21300714
+    second: back_biaotidi.png
+  - first:
+      213: 21300716
+    second: back_equip_collect.png
+  - first:
+      213: 21300718
+    second: back_equip_collect2.png
+  - first:
+      213: 21300720
+    second: back_top2.png
+  - first:
+      213: 21300722
+    second: bar8_light.png
+  - first:
+      213: 21300724
+    second: bar_exp_mark.png
+  - first:
+      213: 21300726
+    second: bar_exp_slot.png
+  - first:
+      213: 21300728
+    second: blank.png
+  - first:
+      213: 21300730
+    second: btn_add.png
+  - first:
+      213: 21300732
+    second: btn_blue.png
+  - first:
+      213: 21300734
+    second: btn_fly.png
+  - first:
+      213: 21300736
+    second: btn_newfriend.png
+  - first:
+      213: 21300738
+    second: btn_newmail.png
+  - first:
+      213: 21300740
+    second: btn_newtalk.png
+  - first:
+      213: 21300742
+    second: btn_pingbi.png
+  - first:
+      213: 21300744
+    second: btn_pingbi2.png
+  - first:
+      213: 21300746
+    second: btn_shengyin.png
+  - first:
+      213: 21300748
+    second: btn_shengyin2.png
+  - first:
+      213: 21300750
+    second: btn_switch.png
+  - first:
+      213: 21300752
+    second: hero_titleback.png
+  - first:
+      213: 21300754
+    second: ico_caption.png
+  - first:
+      213: 21300756
+    second: ico_red_mark.png
+  - first:
+      213: 21300758
+    second: icon_back.png
+  - first:
+      213: 21300760
+    second: icon_diamond.png
+  - first:
+      213: 21300762
+    second: icon_diamond_lock.png
+  - first:
+      213: 21300764
+    second: icon_gold.png
+  - first:
+      213: 21300766
+    second: line6.png
+  - first:
+      213: 21300768
+    second: mark_buff.png
+  - first:
+      213: 21300770
+    second: select3.png
+  - first:
+      213: 21300772
+    second: text_power2.png
+  - first:
+      213: 21300774
+    second: toggle2_select.png
+  - first:
+      213: 21300776
+    second: main_heroequip.png
+  - first:
+      213: 21300778
+    second: back_attak_normal.png
+  - first:
+      213: 21300780
+    second: back_attak_special .png
+  - first:
+      213: 21300782
+    second: back_ico.png
+  - first:
+      213: 21300784
+    second: back_map.png
+  - first:
+      213: 21300786
+    second: back_role.png
+  - first:
+      213: 21300788
+    second: back_vip.png
+  - first:
+      213: 21300790
+    second: bar_hp_slot.png
+  - first:
+      213: 21300792
+    second: btn_buff.png
+  - first:
+      213: 21300794
+    second: btn_setting.png
+  - first:
+      213: 21300796
+    second: btn_switch1.png
+  - first:
+      213: 21300798
+    second: btn_switch2.png
+  - first:
+      213: 21300800
+    second: btn_tab1_normal.png
+  - first:
+      213: 21300802
+    second: btn_tab1_select.png
+  - first:
+      213: 21300804
+    second: ico_auto_attack.png
+  - first:
+      213: 21300806
+    second: ico_auto_attack2.png
+  - first:
+      213: 21300808
+    second: ico_power.png
+  - first:
+      213: 21300810
+    second: ico_social.png
+  - first:
+      213: 21300812
+    second: ico_vip1.png
+  - first:
+      213: 21300814
+    second: icon_flys.png
+  - first:
+      213: 21300816
+    second: mark_channel_world.png
+  - first:
+      213: 21300818
+    second: mark_task_type1.png
+  - first:
+      213: 21300820
+    second: mark_task_type2.png
+  - first:
+      213: 21300822
+    second: txt_power.png
+  - first:
+      213: 21300824
+    second: btn_mount.png
+  - first:
+      213: 21300826
+    second: line2.png
+  - first:
+      213: 21300828
+    second: btn_mount_down.png
+  - first:
+      213: 21300830
+    second: back_role_ring.png
+  - first:
+      213: 21300832
+    second: mark_task.png
+  - first:
+      213: 21300834
+    second: mark_pk.png
+  - first:
+      213: 21300836
+    second: back_skillbig.png
+  - first:
+      213: 21300838
+    second: main_chengjiu.png
+  - first:
+      213: 21300840
+    second: main_mijuan.png
+  - first:
+      213: 21300842
+    second: main_shengqi.png
+  - first:
+      213: 21300844
+    second: main_jianchi.png
+  - first:
+      213: 21300846
+    second: none.png
+  - first:
+      213: 21300848
+    second: btn_courage.png
+  - first:
+      213: 21300850
+    second: btn_exp.png
+  - first:
+      213: 21300852
+    second: main_molian.png
+  - first:
+      213: 21300854
+    second: mark_finish2.png
+  - first:
+      213: 21300856
+    second: back_team_icon.png
+  - first:
+      213: 21300858
+    second: btn_green.png
+  - first:
+      213: 21300860
+    second: btn_red.png
+  - first:
+      213: 21300862
+    second: NewJiantou.png
+  - first:
+      213: 21300864
+    second: NewTaskHide.png
+  - first:
+      213: 21300866
+    second: NewTaskTitle.png
+  - first:
+      213: 21300868
+    second: NewTaskback.png
+  - first:
+      213: 21300870
+    second: NewTaskbtn1.png
+  - first:
+      213: 21300872
+    second: NewTaskbtn2.png
+  - first:
+      213: 21300874
+    second: NewVoice.png
+  - first:
+      213: 21300876
+    second: boss.png
+  - first:
+      213: 21300878
+    second: main_kaobei.png
+  - first:
+      213: 21300880
+    second: main_shenge.png
+  - first:
+      213: 21300882
+    second: main_shouchong .png
+  - first:
+      213: 21300884
+    second: back_btn_sj.png
+  - first:
+      213: 21300886
+    second: back_di1.png
+  - first:
+      213: 21300888
+    second: back_di2.png
+  - first:
+      213: 21300890
+    second: back_icon_sj.png
+  - first:
+      213: 21300892
+    second: eftex_ui_shengjidun_001.png
+  - first:
+      213: 21300894
+    second: Guide_skill_jiesuo.png
+  - first:
+      213: 21300896
+    second: Guide_skill_kaiqi.png
+  - first:
+      213: 21300898
+    second: back_collect.png
+  - first:
+      213: 21300900
+    second: mark_collect.png
+  - first:
+      213: 21300902
+    second: mark_collect_slot.png
+  - first:
+      213: 21300904
+    second: back_name2.png
+  - first:
+      213: 21300906
+    second: bar_exp4.png
+  - first:
+      213: 21300908
+    second: bar_exp4_slot.png
+  - first:
+      213: 21300910
+    second: "NewTaskbtn\uFF13.png"
+  - first:
+      213: 21300912
+    second: "NewTaskbtn\uFF14.png"
+  - first:
+      213: 21300914
+    second: back_skillgot.png
+  - first:
+      213: 21300916
+    second: back_skillname.png
+  - first:
+      213: 21300918
+    second: title_skillgot.png
+  - first:
+      213: 21300920
+    second: main_boss.png
+  - first:
+      213: 21300922
+    second: main_cross.png
+  - first:
+      213: 21300924
+    second: back_skillbig_a.png
+  - first:
+      213: 21300926
+    second: back_skillbig_a_lock.png
+  - first:
+      213: 21300928
+    second: main_0yuangou.png
+  - first:
+      213: 21300930
+    second: main_moqiang.png
+  - first:
+      213: 21300932
+    second: icon_hand.png
+  - first:
+      213: 21300934
+    second: cross_zi_1.png
+  - first:
+      213: 21300936
+    second: cross_zi_2.png
+  - first:
+      213: 21300938
+    second: cross_zi_3.png
+  - first:
+      213: 21300940
+    second: cross_zi_4.png
+  - first:
+      213: 21300942
+    second: cross_zi_5.png
+  - first:
+      213: 21300944
+    second: cross_zi_6.png
+  - first:
+      213: 21300946
+    second: cross_zi_7.png
+  - first:
+      213: 21300948
+    second: icon_cike.png
+  - first:
+      213: 21300950
+    second: icon_zhanshi.png
+  - first:
+      213: 21300952
+    second: Skill_fashi_1.png
+  - first:
+      213: 21300954
+    second: Skill_fashi_2.png
+  - first:
+      213: 21300956
+    second: Skill_fashi_3.png
+  - first:
+      213: 21300958
+    second: Skill_fashi_4.png
+  - first:
+      213: 21300960
+    second: Skill_zhanshi_1.png
+  - first:
+      213: 21300962
+    second: Skill_zhanshi_2.png
+  - first:
+      213: 21300964
+    second: Skill_zhanshi_3.png
+  - first:
+      213: 21300966
+    second: Skill_zhanshi_4.png
+  - first:
+      213: 21300968
+    second: ico_expbg.png
+  - first:
+      213: 21300970
+    second: main_first_recharge_one.png
+  - first:
+      213: 21300972
+    second: main_kuanghua.png
+  - first:
+      213: 21300974
+    second: back_Equip.png
+  - first:
+      213: 21300976
+    second: mark_task1.png
+  - first:
+      213: 21300978
+    second: mark_task2.png
+  - first:
+      213: 21300980
+    second: mark_task3.png
+  - first:
+      213: 21300982
+    second: main_heroe.png
+  - first:
+      213: 21300984
+    second: main_hl.png
+  - first:
+      213: 21300986
+    second: main_jymg.png
+  - first:
+      213: 21300988
+    second: main_phb.png
+  - first:
+      213: 21300990
+    second: main_sqsl.png
+  - first:
+      213: 21300992
+    second: main_yysl.png
+  - first:
+      213: 21300994
+    second: icon_grown1.png
+  - first:
+      213: 21300996
+    second: icon_grown2.png
+  - first:
+      213: 21300998
+    second: icon_grown3.png
+  - first:
+      213: 21301000
+    second: main_crown.png
+  - first:
+      213: 21301002
+    second: main_chongzhi01.png
+  - first:
+      213: 21301004
+    second: main_fuben.png
+  - first:
+      213: 21301006
+    second: main_huangcheng.png
+  - first:
+      213: 21301008
+    second: main_kaifuchongbang.png
+  - first:
+      213: 21301010
+    second: main_mofashendian.png
+  - first:
+      213: 21301012
+    second: main_qiridenglu.png
+  - first:
+      213: 21301014
+    second: main_richang.png
+  - first:
+      213: 21301016
+    second: main_shangcheng01.png
+  - first:
+      213: 21301018
+    second: main_shenbing01.png
+  - first:
+      213: 21301020
+    second: main_touzi.png
+  - first:
+      213: 21301022
+    second: main_xingzuo.png
+  - first:
+      213: 21301024
+    second: main_zhunxing.png
+  - first:
+      213: 21301026
+    second: main_flag.png
+  - first:
+      213: 21301028
+    second: ico_exp.png
+  - first:
+      213: 21301030
+    second: ico_guwu.png
+  - first:
+      213: 21301032
+    second: main_czjh.png
+  - first:
+      213: 21301034
+    second: main_jphz.png
+  - first:
+      213: 21301036
+    second: main_zlxz.png
+  - first:
+      213: 21301038
+    second: main_bianqiang.png
+  - first:
+      213: 21301040
+    second: icon_duoqi.PNG
+  - first:
+      213: 21301042
+    second: main_dbsz.png
+  - first:
+      213: 21301044
+    second: main_kfkh.png
+  - first:
+      213: 21301046
+    second: main_jieri.png
+  - first:
+      213: 21301048
+    second: main_xfsl.png
+  - first:
+      213: 21301050
+    second: main_mzlc.PNG
+  - first:
+      213: 21301052
+    second: main_xsyg.png
+  - first:
+      213: 21301054
+    second: main_zhuanzhi.png
+  - first:
+      213: 21301056
+    second: btn_complete.png
+  - first:
+      213: 21301058
+    second: channel_local.png
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 1024
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 13
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Default.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 880
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09405410000000000800000000000000
+      internalID: 21300368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewJiantou.png
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 946
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7605410000000000800000000000000
+      internalID: 21300862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewTaskHide.png
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 314
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08605410000000000800000000000000
+      internalID: 21300864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewTaskTitle.png
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 953
+        width: 254
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28605410000000000800000000000000
+      internalID: 21300866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewTaskback.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 712
+        width: 129
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48605410000000000800000000000000
+      internalID: 21300868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewVoice.png
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 197
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8605410000000000800000000000000
+      internalID: 21300874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_fashi_1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 376
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d605410000000000800000000000000
+      internalID: 21300952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_fashi_2.png
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 435
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad605410000000000800000000000000
+      internalID: 21300954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_fashi_3.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 447
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd605410000000000800000000000000
+      internalID: 21300956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_fashi_4.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 515
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed605410000000000800000000000000
+      internalID: 21300958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_zhanshi_1.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 523
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e605410000000000800000000000000
+      internalID: 21300960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_zhanshi_2.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 550
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e605410000000000800000000000000
+      internalID: 21300962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_zhanshi_3.png
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 709
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e605410000000000800000000000000
+      internalID: 21300964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skill_zhanshi_4.png
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 591
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e605410000000000800000000000000
+      internalID: 21300966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_1.png
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 937
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68305410000000000800000000000000
+      internalID: 21300102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_Equip.png
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 787
+        width: 132
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee605410000000000800000000000000
+      internalID: 21300974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_attak_normal.png
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 667
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2605410000000000800000000000000
+      internalID: 21300778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_attak_special .png
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 67
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2605410000000000800000000000000
+      internalID: 21300780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_btn.png
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 214
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_chat.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 236
+        width: 58
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_collect.png
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 960
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a605410000000000800000000000000
+      internalID: 21300898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_equip_collect2.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 871
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee505410000000000800000000000000
+      internalID: 21300718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_function.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 816
+        width: 136
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_ico.png
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 38
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2605410000000000800000000000000
+      internalID: 21300782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_level.png
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 246
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 6, y: 6, z: 6, w: 6}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_map.png
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 289
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 10, z: 15, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03605410000000000800000000000000
+      internalID: 21300784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_map_name.png
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 937
+        width: 183
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b305410000000000800000000000000
+      internalID: 21300150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_name.png
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 236
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 10, z: 15, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_net.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 897
+        width: 149
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20405410000000000800000000000000
+      internalID: 21300226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_power.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 2, z: 1, w: 2}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_role.png
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 913
+        width: 224
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 154, y: 0, z: 57, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23605410000000000800000000000000
+      internalID: 21300786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_role_ring.png
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 805
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5605410000000000800000000000000
+      internalID: 21300830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skill.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 599
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillbig.png
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 197
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46605410000000000800000000000000
+      internalID: 21300836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillbig_a.png
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 135
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb605410000000000800000000000000
+      internalID: 21300924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillbig_a_lock.png
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 135
+        width: 66
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb605410000000000800000000000000
+      internalID: 21300926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillcd.png
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 2
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillgot.png
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 783
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b605410000000000800000000000000
+      internalID: 21300914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skilllock.png
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 638
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_skillname.png
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 710
+        width: 41
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 18, y: 0, z: 18, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b605410000000000800000000000000
+      internalID: 21300916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_task.png
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 241
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 20, y: 20, z: 20, w: 20}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_team_icon.png
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 707
+        width: 91
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87605410000000000800000000000000
+      internalID: 21300856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_top2.png
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 354
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 16, y: 0, z: 16, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f505410000000000800000000000000
+      internalID: 21300720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back_vip.png
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 49
+        width: 64
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 30, y: 10, z: 30, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43605410000000000800000000000000
+      internalID: 21300788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar3.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 626
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40405410000000000800000000000000
+      internalID: 21300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar3back.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60405410000000000800000000000000
+      internalID: 21300230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar3end.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 796
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80405410000000000800000000000000
+      internalID: 21300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar8_light.png
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 279
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f505410000000000800000000000000
+      internalID: 21300722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_exp.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 847
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_exp4.png
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 266
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 15, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa605410000000000800000000000000
+      internalID: 21300906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_exp4_slot.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 287
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 15, y: 0, z: 15, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca605410000000000800000000000000
+      internalID: 21300908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_exp_mark.png
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 862
+        width: 2
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f505410000000000800000000000000
+      internalID: 21300724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_exp_slot.png
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 266
+        width: 29
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 7, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f505410000000000800000000000000
+      internalID: 21300726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_hp.png
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1005
+        width: 259
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_hp_slot.png
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 67
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 18, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63605410000000000800000000000000
+      internalID: 21300790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_task.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 886
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 4, y: 4, z: 4, w: 4}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8305410000000000800000000000000
+      internalID: 21300106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_taskBack.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 886
+        width: 138
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8305410000000000800000000000000
+      internalID: 21300108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_task_end.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 771
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8305410000000000800000000000000
+      internalID: 21300110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blank.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 855
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f505410000000000800000000000000
+      internalID: 21300728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss.png
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2
+        width: 66
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8605410000000000800000000000000
+      internalID: 21300876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_active.png
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 131
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09305410000000000800000000000000
+      internalID: 21300112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_buff.png
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 67
+        width: 65
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83605410000000000800000000000000
+      internalID: 21300792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_complete.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 765
+        width: 82
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04705410000000000800000000000000
+      internalID: 21301056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_exp.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 108
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27605410000000000800000000000000
+      internalID: 21300850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_fly.png
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 795
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef505410000000000800000000000000
+      internalID: 21300734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_green.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 764
+        width: 134
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7605410000000000800000000000000
+      internalID: 21300858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_mount.png
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 3
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85605410000000000800000000000000
+      internalID: 21300824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_mount_down.png
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 679
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5605410000000000800000000000000
+      internalID: 21300828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_newfriend.png
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 525
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00605410000000000800000000000000
+      internalID: 21300736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_newmail.png
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 743
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20605410000000000800000000000000
+      internalID: 21300738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_newtalk.png
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 283
+        width: 37
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40605410000000000800000000000000
+      internalID: 21300740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_pingbi.png
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 247
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60605410000000000800000000000000
+      internalID: 21300742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_pingbi2.png
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 874
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80605410000000000800000000000000
+      internalID: 21300744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_red.png
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 861
+        width: 134
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7605410000000000800000000000000
+      internalID: 21300860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_setting.png
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 39
+        width: 63
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3605410000000000800000000000000
+      internalID: 21300794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_shengyin.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 438
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0605410000000000800000000000000
+      internalID: 21300746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_shengyin2.png
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 1006
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0605410000000000800000000000000
+      internalID: 21300748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_switch1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 197
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3605410000000000800000000000000
+      internalID: 21300796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_switch2.png
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 971
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3605410000000000800000000000000
+      internalID: 21300798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_tab1_normal.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 574
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04605410000000000800000000000000
+      internalID: 21300800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_tab1_select.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 608
+        width: 112
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24605410000000000800000000000000
+      internalID: 21300802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_taskshow.png
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 198
+        width: 25
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_area.png
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 127
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0405410000000000800000000000000
+      internalID: 21300234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_camp.png
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 150
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0405410000000000800000000000000
+      internalID: 21300236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_guild.png
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 173
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0405410000000000800000000000000
+      internalID: 21300238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_horn.png
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 196
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01405410000000000800000000000000
+      internalID: 21300240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_local.png
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 265
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24705410000000000800000000000000
+      internalID: 21301058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_private.png
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 288
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21405410000000000800000000000000
+      internalID: 21300242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_server.png
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 288
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41405410000000000800000000000000
+      internalID: 21300244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_system.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 288
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61405410000000000800000000000000
+      internalID: 21300246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_team.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 333
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81405410000000000800000000000000
+      internalID: 21300248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: channel_world.png
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 265
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1405410000000000800000000000000
+      internalID: 21300250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_1.png
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 6
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c605410000000000800000000000000
+      internalID: 21300934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_2.png
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 6
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c605410000000000800000000000000
+      internalID: 21300936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_3.png
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 137
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac605410000000000800000000000000
+      internalID: 21300938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_4.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 356
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc605410000000000800000000000000
+      internalID: 21300940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_5.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 388
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec605410000000000800000000000000
+      internalID: 21300942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_6.png
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 420
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d605410000000000800000000000000
+      internalID: 21300944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cross_zi_7.png
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 905
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d605410000000000800000000000000
+      internalID: 21300946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frame_task.png
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 287
+        width: 43
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_titleback.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 966
+        width: 297
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01605410000000000800000000000000
+      internalID: 21300752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_attack.png
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 682
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_attack2.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 713
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a305410000000000800000000000000
+      internalID: 21300134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_auto_attack.png
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 673
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44605410000000000800000000000000
+      internalID: 21300804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_auto_attack2.png
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 606
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64605410000000000800000000000000
+      internalID: 21300806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_battery_0.png
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 88
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1405410000000000800000000000000
+      internalID: 21300252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_battery_1.png
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 219
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1405410000000000800000000000000
+      internalID: 21300254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_battery_2.png
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 627
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02405410000000000800000000000000
+      internalID: 21300256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_caption.png
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 515
+        width: 49
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21605410000000000800000000000000
+      internalID: 21300754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_exp.png
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 67
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42705410000000000800000000000000
+      internalID: 21301028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_expbg.png
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 559
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e605410000000000800000000000000
+      internalID: 21300968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_guwu.png
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 197
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62705410000000000800000000000000
+      internalID: 21301030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_net_0.png
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 107
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22405410000000000800000000000000
+      internalID: 21300258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_net_1.png
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 121
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42405410000000000800000000000000
+      internalID: 21300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_net_2.png
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 200
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62405410000000000800000000000000
+      internalID: 21300262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_net_3.png
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82405410000000000800000000000000
+      internalID: 21300264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_net_4.png
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2405410000000000800000000000000
+      internalID: 21300266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_power.png
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 95
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84605410000000000800000000000000
+      internalID: 21300808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_red_mark.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 460
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41605410000000000800000000000000
+      internalID: 21300756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_setting.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 485
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_social.png
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 67
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4605410000000000800000000000000
+      internalID: 21300810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_talk.png
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 367
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_vip1.png
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 311
+        width: 60
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4605410000000000800000000000000
+      internalID: 21300812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_wifi_0.png
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 178
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2405410000000000800000000000000
+      internalID: 21300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_wifi_1.png
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 178
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2405410000000000800000000000000
+      internalID: 21300270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_wifi_2.png
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 67
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03405410000000000800000000000000
+      internalID: 21300272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_wifi_3.png
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 67
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23405410000000000800000000000000
+      internalID: 21300274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ico_wifi_4.png
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 418
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43405410000000000800000000000000
+      internalID: 21300276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_Social.png
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 676
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28305410000000000800000000000000
+      internalID: 21300098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_back.png
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 680
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61605410000000000800000000000000
+      internalID: 21300758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_cike.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 795
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d605410000000000800000000000000
+      internalID: 21300948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_diamond.png
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 87
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81605410000000000800000000000000
+      internalID: 21300760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_diamond_lock.png
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 627
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1605410000000000800000000000000
+      internalID: 21300762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_duoqi.PNG
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 136
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03705410000000000800000000000000
+      internalID: 21301040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_flys.png
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 465
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4605410000000000800000000000000
+      internalID: 21300814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_gold.png
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 667
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1605410000000000800000000000000
+      internalID: 21300764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_gonggao.png
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a305410000000000800000000000000
+      internalID: 21300136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_grown.png
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 74
+        width: 66
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49305410000000000800000000000000
+      internalID: 21300116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_grown1.png
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 197
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20705410000000000800000000000000
+      internalID: 21300994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_grown2.png
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 611
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40705410000000000800000000000000
+      internalID: 21300996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_grown3.png
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60705410000000000800000000000000
+      internalID: 21300998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_hand.png
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 702
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c605410000000000800000000000000
+      internalID: 21300932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_qhzh.png
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 135
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa305410000000000800000000000000
+      internalID: 21300138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_zhanshi.png
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 511
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d605410000000000800000000000000
+      internalID: 21300950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: item_select.png
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 893
+        width: 210
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89305410000000000800000000000000
+      internalID: 21300120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joystick_back.png
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 784
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7305410000000000800000000000000
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joystick_thumb.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 609
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7305410000000000800000000000000
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: line1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 963
+        width: 210
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9305410000000000800000000000000
+      internalID: 21300122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: line2.png
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 873
+        width: 2
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5605410000000000800000000000000
+      internalID: 21300826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: line6.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 760
+        width: 132
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 0, z: 50, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1605410000000000800000000000000
+      internalID: 21300766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_0yuangou.png
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 135
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c605410000000000800000000000000
+      internalID: 21300928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_7day.png
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 219
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c305410000000000800000000000000
+      internalID: 21300162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_bag.png
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 136
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f305410000000000800000000000000
+      internalID: 21300214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_baojia.png
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 164
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b505410000000000800000000000000
+      internalID: 21300660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_bianqiang.png
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 162
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2705410000000000800000000000000
+      internalID: 21301038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_boss.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 16
+        width: 65
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b605410000000000800000000000000
+      internalID: 21300920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_bugsubmit.png
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 197
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd505410000000000800000000000000
+      internalID: 21300700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_chengjiu.png
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 231
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66605410000000000800000000000000
+      internalID: 21300838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_chibang.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 236
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c305410000000000800000000000000
+      internalID: 21300166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_chongzhi.png
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 266
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c305410000000000800000000000000
+      internalID: 21300168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_chongzhi01.png
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 612
+        width: 68
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0705410000000000800000000000000
+      internalID: 21301002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_cjvip.png
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 691
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e505410000000000800000000000000
+      internalID: 21300704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_cross.png
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 743
+        width: 65
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab605410000000000800000000000000
+      internalID: 21300922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_crown.png
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 15
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80705410000000000800000000000000
+      internalID: 21301000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_czjh.png
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 278
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82705410000000000800000000000000
+      internalID: 21301032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_czkh.png
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 81
+        width: 66
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d505410000000000800000000000000
+      internalID: 21300688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_dbsz.png
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 287
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23705410000000000800000000000000
+      internalID: 21301042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_dengjitouzi.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 767
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66405410000000000800000000000000
+      internalID: 21300326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_first_recharge_one.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 642
+        width: 128
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae605410000000000800000000000000
+      internalID: 21300970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_flag.png
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 423
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22705410000000000800000000000000
+      internalID: 21301026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_fuben.png
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 311
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0705410000000000800000000000000
+      internalID: 21301004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_fuli.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 311
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc305410000000000800000000000000
+      internalID: 21300172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_gonghui.png
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 203
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6405410000000000800000000000000
+      internalID: 21300332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_guaji.png
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 741
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f305410000000000800000000000000
+      internalID: 21300216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_guaji_disable.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 278
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af305410000000000800000000000000
+      internalID: 21300218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_heroe.png
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 204
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f605410000000000800000000000000
+      internalID: 21300982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_hl.png
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 230
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f605410000000000800000000000000
+      internalID: 21300984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_horse.png
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 265
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec305410000000000800000000000000
+      internalID: 21300174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_huangcheng.png
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 299
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0705410000000000800000000000000
+      internalID: 21301006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_hunqi.png
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 85
+        width: 63
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b505410000000000800000000000000
+      internalID: 21300662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_huodong.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 304
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d305410000000000800000000000000
+      internalID: 21300178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_hzcj.png
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 334
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d505410000000000800000000000000
+      internalID: 21300690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jianchi.png
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 875
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6605410000000000800000000000000
+      internalID: 21300844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jieri.png
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 346
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63705410000000000800000000000000
+      internalID: 21301046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jingji.png
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 105
+        width: 66
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d305410000000000800000000000000
+      internalID: 21300180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jphz.png
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 355
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2705410000000000800000000000000
+      internalID: 21301034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jyfb.png
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 198
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4405410000000000800000000000000
+      internalID: 21300300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_jyrw.png
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 104
+        width: 66
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4405410000000000800000000000000
+      internalID: 21300302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kaifucb.png
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 379
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7405410000000000800000000000000
+      internalID: 21300350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kaifuchongbang.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 308
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01705410000000000800000000000000
+      internalID: 21301008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kaobei.png
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 367
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8605410000000000800000000000000
+      internalID: 21300878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kfkh.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 379
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43705410000000000800000000000000
+      internalID: 21301044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kfzdmj.png
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 131
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05405410000000000800000000000000
+      internalID: 21300304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_kuanghua.png
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 271
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce605410000000000800000000000000
+      internalID: 21300972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_luckyturn.png
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 67
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed505410000000000800000000000000
+      internalID: 21300702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_lxsy.png
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 3
+        width: 66
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d305410000000000800000000000000
+      internalID: 21300182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mijuan.png
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 67
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86605410000000000800000000000000
+      internalID: 21300840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mochong.png
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 272
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d305410000000000800000000000000
+      internalID: 21300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mofashendian.png
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 339
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21705410000000000800000000000000
+      internalID: 21301010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_molian.png
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47605410000000000800000000000000
+      internalID: 21300852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_moqiang.png
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 841
+        width: 59
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c605410000000000800000000000000
+      internalID: 21300930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mrcz.png
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 197
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45405410000000000800000000000000
+      internalID: 21300308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mrdati.png
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 298
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07405410000000000800000000000000
+      internalID: 21300336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mstz.png
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 340
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e505410000000000800000000000000
+      internalID: 21300706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mydl.png
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 407
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65405410000000000800000000000000
+      internalID: 21300310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_mzlc.PNG
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 333
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3705410000000000800000000000000
+      internalID: 21301050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_oneyuan.png
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 366
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87405410000000000800000000000000
+      internalID: 21300344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_paihangbang.png
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 135
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad305410000000000800000000000000
+      internalID: 21300186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_peiyang.png
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 169
+        width: 66
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd305410000000000800000000000000
+      internalID: 21300188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_peiyang2.png
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 408
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed305410000000000800000000000000
+      internalID: 21300190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_phb.png
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 475
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf605410000000000800000000000000
+      internalID: 21300988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_qiridenglu.png
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 367
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41705410000000000800000000000000
+      internalID: 21301012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_renwu.png
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 372
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e305410000000000800000000000000
+      internalID: 21300194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_richang.png
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 435
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61705410000000000800000000000000
+      internalID: 21301014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shangcheng.png
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 136
+        width: 57
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86405410000000000800000000000000
+      internalID: 21300328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shangcheng01.png
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 402
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81705410000000000800000000000000
+      internalID: 21301016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shejiao.png
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 386
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85405410000000000800000000000000
+      internalID: 21300312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shenbing.png
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 538
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e305410000000000800000000000000
+      internalID: 21300196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shenbing01.png
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 440
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1705410000000000800000000000000
+      internalID: 21301018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shengdun.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 414
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e305410000000000800000000000000
+      internalID: 21300198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shenge.png
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09605410000000000800000000000000
+      internalID: 21300880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shengqi.png
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 3
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6605410000000000800000000000000
+      internalID: 21300842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shezhi.png
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 470
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e305410000000000800000000000000
+      internalID: 21300200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shouchong .png
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 401
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29605410000000000800000000000000
+      internalID: 21300882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_shouchong.png
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 434
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae305410000000000800000000000000
+      internalID: 21300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_sjboss.png
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 67
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce305410000000000800000000000000
+      internalID: 21300204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_strong.png
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 469
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf305410000000000800000000000000
+      internalID: 21300220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_taozhuang.png
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 476
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee305410000000000800000000000000
+      internalID: 21300206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_tfrw.png
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 502
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5405410000000000800000000000000
+      internalID: 21300316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_touzi.png
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 537
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1705410000000000800000000000000
+      internalID: 21301020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_wzvip.png
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 503
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac505410000000000800000000000000
+      internalID: 21300682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_xfsl.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 508
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83705410000000000800000000000000
+      internalID: 21301048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_xinfuhd.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 136
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7405410000000000800000000000000
+      internalID: 21300346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_xingzuo.png
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 571
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1705410000000000800000000000000
+      internalID: 21301022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_xsyg.png
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 447
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3705410000000000800000000000000
+      internalID: 21301052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_xunbao.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 482
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06405410000000000800000000000000
+      internalID: 21300320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zhannu.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 576
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b505410000000000800000000000000
+      internalID: 21300658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zhekoushop.png
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 644
+        width: 80
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b505410000000000800000000000000
+      internalID: 21300664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zhenfa.png
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 543
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08405410000000000800000000000000
+      internalID: 21300352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zhuangbei.png
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 544
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f305410000000000800000000000000
+      internalID: 21300212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zhunxing.png
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 570
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02705410000000000800000000000000
+      internalID: 21301024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zlxz.png
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 605
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2705410000000000800000000000000
+      internalID: 21301036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: main_zyfb.png
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 67
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46405410000000000800000000000000
+      internalID: 21300324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man.png
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 434
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc505410000000000800000000000000
+      internalID: 21300684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_buff.png
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 981
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02605410000000000800000000000000
+      internalID: 21300768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_channel_world.png
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 265
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05605410000000000800000000000000
+      internalID: 21300816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_collect.png
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 772
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a605410000000000800000000000000
+      internalID: 21300900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_collect_slot.png
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 931
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a605410000000000800000000000000
+      internalID: 21300902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_finish2.png
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 752
+        width: 71
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67605410000000000800000000000000
+      internalID: 21300854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_pk.png
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 864
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26605410000000000800000000000000
+      internalID: 21300834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task.png
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 197
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06605410000000000800000000000000
+      internalID: 21300832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task1.png
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 265
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f605410000000000800000000000000
+      internalID: 21300976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task2.png
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 197
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f605410000000000800000000000000
+      internalID: 21300978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task3.png
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 219
+        width: 42
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f605410000000000800000000000000
+      internalID: 21300980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task_type1.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 265
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25605410000000000800000000000000
+      internalID: 21300818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mark_task_type2.png
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 311
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45605410000000000800000000000000
+      internalID: 21300820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_all.png
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 29
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63405410000000000800000000000000
+      internalID: 21300278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_camp.png
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 57
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83405410000000000800000000000000
+      internalID: 21300280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_evil.png
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 10
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3405410000000000800000000000000
+      internalID: 21300282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_guild.png
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 10
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3405410000000000800000000000000
+      internalID: 21300284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_peace.png
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 10
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3405410000000000800000000000000
+      internalID: 21300286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_server.png
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 10
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04405410000000000800000000000000
+      internalID: 21300288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pk_mode_team.png
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 39
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 13, y: 8, z: 13, w: 8}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24405410000000000800000000000000
+      internalID: 21300290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tab_normal.png
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 577
+        width: 43
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9305410000000000800000000000000
+      internalID: 21300124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tab_select.png
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 863
+        width: 43
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9305410000000000800000000000000
+      internalID: 21300126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: text_power2.png
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 849
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42605410000000000800000000000000
+      internalID: 21300772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: title_skillgot.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 922
+        width: 207
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b605410000000000800000000000000
+      internalID: 21300918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toggle2_select.png
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 287
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62605410000000000800000000000000
+      internalID: 21300774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: txt_power.png
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 490
+        width: 50
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65605410000000000800000000000000
+      internalID: 21300822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uimain_vipzb.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 639
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad505410000000000800000000000000
+      internalID: 21300698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Default.png: 21300368
+      NewJiantou.png: 21300862
+      NewTaskHide.png: 21300864
+      NewTaskTitle.png: 21300866
+      NewTaskback.png: 21300868
+      NewVoice.png: 21300874
+      Skill_fashi_1.png: 21300952
+      Skill_fashi_2.png: 21300954
+      Skill_fashi_3.png: 21300956
+      Skill_fashi_4.png: 21300958
+      Skill_zhanshi_1.png: 21300960
+      Skill_zhanshi_2.png: 21300962
+      Skill_zhanshi_3.png: 21300964
+      Skill_zhanshi_4.png: 21300966
+      back_1.png: 21300102
+      back_Equip.png: 21300974
+      back_attak_normal.png: 21300778
+      back_attak_special .png: 21300780
+      back_btn.png: 21300004
+      back_chat.png: 21300006
+      back_collect.png: 21300898
+      back_equip_collect2.png: 21300718
+      back_function.png: 21300008
+      back_ico.png: 21300782
+      back_level.png: 21300010
+      back_map.png: 21300784
+      back_map_name.png: 21300150
+      back_name.png: 21300012
+      back_net.png: 21300226
+      back_power.png: 21300016
+      back_role.png: 21300786
+      back_role_ring.png: 21300830
+      back_skill.png: 21300018
+      back_skillbig.png: 21300836
+      back_skillbig_a.png: 21300924
+      back_skillbig_a_lock.png: 21300926
+      back_skillcd.png: 21300088
+      back_skillgot.png: 21300914
+      back_skilllock.png: 21300020
+      back_skillname.png: 21300916
+      back_task.png: 21300022
+      back_team_icon.png: 21300856
+      back_top2.png: 21300720
+      back_vip.png: 21300788
+      bar3.png: 21300228
+      bar3back.png: 21300230
+      bar3end.png: 21300232
+      bar8_light.png: 21300722
+      bar_exp.png: 21300026
+      bar_exp4.png: 21300906
+      bar_exp4_slot.png: 21300908
+      bar_exp_mark.png: 21300724
+      bar_exp_slot.png: 21300726
+      bar_hp.png: 21300030
+      bar_hp_slot.png: 21300790
+      bar_task.png: 21300106
+      bar_taskBack.png: 21300108
+      bar_task_end.png: 21300110
+      blank.png: 21300728
+      boss.png: 21300876
+      btn_active.png: 21300112
+      btn_buff.png: 21300792
+      btn_complete.png: 21301056
+      btn_exp.png: 21300850
+      btn_fly.png: 21300734
+      btn_green.png: 21300858
+      btn_mount.png: 21300824
+      btn_mount_down.png: 21300828
+      btn_newfriend.png: 21300736
+      btn_newmail.png: 21300738
+      btn_newtalk.png: 21300740
+      btn_pingbi.png: 21300742
+      btn_pingbi2.png: 21300744
+      btn_red.png: 21300860
+      btn_setting.png: 21300794
+      btn_shengyin.png: 21300746
+      btn_shengyin2.png: 21300748
+      btn_switch1.png: 21300796
+      btn_switch2.png: 21300798
+      btn_tab1_normal.png: 21300800
+      btn_tab1_select.png: 21300802
+      btn_taskshow.png: 21300040
+      channel_area.png: 21300234
+      channel_camp.png: 21300236
+      channel_guild.png: 21300238
+      channel_horn.png: 21300240
+      channel_local.png: 21301058
+      channel_private.png: 21300242
+      channel_server.png: 21300244
+      channel_system.png: 21300246
+      channel_team.png: 21300248
+      channel_world.png: 21300250
+      cross_zi_1.png: 21300934
+      cross_zi_2.png: 21300936
+      cross_zi_3.png: 21300938
+      cross_zi_4.png: 21300940
+      cross_zi_5.png: 21300942
+      cross_zi_6.png: 21300944
+      cross_zi_7.png: 21300946
+      frame_task.png: 21300042
+      hero_titleback.png: 21300752
+      ico_attack.png: 21300046
+      ico_attack2.png: 21300134
+      ico_auto_attack.png: 21300804
+      ico_auto_attack2.png: 21300806
+      ico_battery_0.png: 21300252
+      ico_battery_1.png: 21300254
+      ico_battery_2.png: 21300256
+      ico_caption.png: 21300754
+      ico_exp.png: 21301028
+      ico_expbg.png: 21300968
+      ico_guwu.png: 21301030
+      ico_net_0.png: 21300258
+      ico_net_1.png: 21300260
+      ico_net_2.png: 21300262
+      ico_net_3.png: 21300264
+      ico_net_4.png: 21300266
+      ico_power.png: 21300808
+      ico_red_mark.png: 21300756
+      ico_setting.png: 21300080
+      ico_social.png: 21300810
+      ico_talk.png: 21300082
+      ico_vip1.png: 21300812
+      ico_wifi_0.png: 21300268
+      ico_wifi_1.png: 21300270
+      ico_wifi_2.png: 21300272
+      ico_wifi_3.png: 21300274
+      ico_wifi_4.png: 21300276
+      icon_Social.png: 21300098
+      icon_back.png: 21300758
+      icon_cike.png: 21300948
+      icon_diamond.png: 21300760
+      icon_diamond_lock.png: 21300762
+      icon_duoqi.PNG: 21301040
+      icon_flys.png: 21300814
+      icon_gold.png: 21300764
+      icon_gonggao.png: 21300136
+      icon_grown.png: 21300116
+      icon_grown1.png: 21300994
+      icon_grown2.png: 21300996
+      icon_grown3.png: 21300998
+      icon_hand.png: 21300932
+      icon_qhzh.png: 21300138
+      icon_zhanshi.png: 21300950
+      item_select.png: 21300120
+      joystick_back.png: 21300090
+      joystick_thumb.png: 21300092
+      line1.png: 21300122
+      line2.png: 21300826
+      line6.png: 21300766
+      main_0yuangou.png: 21300928
+      main_7day.png: 21300162
+      main_bag.png: 21300214
+      main_baojia.png: 21300660
+      main_bianqiang.png: 21301038
+      main_boss.png: 21300920
+      main_bugsubmit.png: 21300700
+      main_chengjiu.png: 21300838
+      main_chibang.png: 21300166
+      main_chongzhi.png: 21300168
+      main_chongzhi01.png: 21301002
+      main_cjvip.png: 21300704
+      main_cross.png: 21300922
+      main_crown.png: 21301000
+      main_czjh.png: 21301032
+      main_czkh.png: 21300688
+      main_dbsz.png: 21301042
+      main_dengjitouzi.png: 21300326
+      main_first_recharge_one.png: 21300970
+      main_flag.png: 21301026
+      main_fuben.png: 21301004
+      main_fuli.png: 21300172
+      main_gonghui.png: 21300332
+      main_guaji.png: 21300216
+      main_guaji_disable.png: 21300218
+      main_heroe.png: 21300982
+      main_hl.png: 21300984
+      main_horse.png: 21300174
+      main_huangcheng.png: 21301006
+      main_hunqi.png: 21300662
+      main_huodong.png: 21300178
+      main_hzcj.png: 21300690
+      main_jianchi.png: 21300844
+      main_jieri.png: 21301046
+      main_jingji.png: 21300180
+      main_jphz.png: 21301034
+      main_jyfb.png: 21300300
+      main_jyrw.png: 21300302
+      main_kaifucb.png: 21300350
+      main_kaifuchongbang.png: 21301008
+      main_kaobei.png: 21300878
+      main_kfkh.png: 21301044
+      main_kfzdmj.png: 21300304
+      main_kuanghua.png: 21300972
+      main_luckyturn.png: 21300702
+      main_lxsy.png: 21300182
+      main_mijuan.png: 21300840
+      main_mochong.png: 21300184
+      main_mofashendian.png: 21301010
+      main_molian.png: 21300852
+      main_moqiang.png: 21300930
+      main_mrcz.png: 21300308
+      main_mrdati.png: 21300336
+      main_mstz.png: 21300706
+      main_mydl.png: 21300310
+      main_mzlc.PNG: 21301050
+      main_oneyuan.png: 21300344
+      main_paihangbang.png: 21300186
+      main_peiyang.png: 21300188
+      main_peiyang2.png: 21300190
+      main_phb.png: 21300988
+      main_qiridenglu.png: 21301012
+      main_renwu.png: 21300194
+      main_richang.png: 21301014
+      main_shangcheng.png: 21300328
+      main_shangcheng01.png: 21301016
+      main_shejiao.png: 21300312
+      main_shenbing.png: 21300196
+      main_shenbing01.png: 21301018
+      main_shengdun.png: 21300198
+      main_shenge.png: 21300880
+      main_shengqi.png: 21300842
+      main_shezhi.png: 21300200
+      main_shouchong .png: 21300882
+      main_shouchong.png: 21300202
+      main_sjboss.png: 21300204
+      main_strong.png: 21300220
+      main_taozhuang.png: 21300206
+      main_tfrw.png: 21300316
+      main_touzi.png: 21301020
+      main_wzvip.png: 21300682
+      main_xfsl.png: 21301048
+      main_xinfuhd.png: 21300346
+      main_xingzuo.png: 21301022
+      main_xsyg.png: 21301052
+      main_xunbao.png: 21300320
+      main_zhannu.png: 21300658
+      main_zhekoushop.png: 21300664
+      main_zhenfa.png: 21300352
+      main_zhuangbei.png: 21300212
+      main_zhunxing.png: 21301024
+      main_zlxz.png: 21301036
+      main_zyfb.png: 21300324
+      man.png: 21300684
+      mark_buff.png: 21300768
+      mark_channel_world.png: 21300816
+      mark_collect.png: 21300900
+      mark_collect_slot.png: 21300902
+      mark_finish2.png: 21300854
+      mark_pk.png: 21300834
+      mark_task.png: 21300832
+      mark_task1.png: 21300976
+      mark_task2.png: 21300978
+      mark_task3.png: 21300980
+      mark_task_type1.png: 21300818
+      mark_task_type2.png: 21300820
+      pk_mode_all.png: 21300278
+      pk_mode_camp.png: 21300280
+      pk_mode_evil.png: 21300282
+      pk_mode_guild.png: 21300284
+      pk_mode_peace.png: 21300286
+      pk_mode_server.png: 21300288
+      pk_mode_team.png: 21300290
+      tab_normal.png: 21300124
+      tab_select.png: 21300126
+      text_power2.png: 21300772
+      title_skillgot.png: 21300918
+      toggle2_select.png: 21300774
+      txt_power.png: 21300822
+      uimain_vipzb.png: 21300698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,189 @@
+{
+  "source": "Resources/Lua/Data/t_skill.lua.txt",
+  "spriteSources": "Assets/Atlas/UIMain.png.meta and UIMain2.png.meta",
+  "slots": [
+    {
+      "class": "Warrior",
+      "slot": 0,
+      "skillId": 3000001,
+      "atlas": "UIMain",
+      "spriteName": "ico_attack.png",
+      "sourceReference": "UIMain:ico_attack"
+    },
+    {
+      "class": "Warrior",
+      "slot": 1,
+      "skillId": 3001001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_zhanshi_1.png",
+      "sourceReference": "UIMain:Skill_zhanshi_1"
+    },
+    {
+      "class": "Warrior",
+      "slot": 2,
+      "skillId": 3002001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_zhanshi_2.png",
+      "sourceReference": "UIMain:Skill_zhanshi_2"
+    },
+    {
+      "class": "Warrior",
+      "slot": 3,
+      "skillId": 3005001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_zhanshi_3.png",
+      "sourceReference": "UIMain:Skill_zhanshi_3"
+    },
+    {
+      "class": "Warrior",
+      "slot": 4,
+      "skillId": 3006001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_zhanshi_4.png",
+      "sourceReference": "UIMain:Skill_zhanshi_4"
+    },
+    {
+      "class": "Assassin",
+      "slot": 0,
+      "skillId": 4000001,
+      "atlas": "UIMain2",
+      "spriteName": "ico_attack3.png",
+      "sourceReference": "UIMain2:ico_attack3"
+    },
+    {
+      "class": "Assassin",
+      "slot": 1,
+      "skillId": 4001001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_cike_1.png",
+      "sourceReference": "UIMain2:Skill_cike_1"
+    },
+    {
+      "class": "Assassin",
+      "slot": 2,
+      "skillId": 4002001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_cike_2.png",
+      "sourceReference": "UIMain2:Skill_cike_2"
+    },
+    {
+      "class": "Assassin",
+      "slot": 3,
+      "skillId": 4003001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_cike_3.png",
+      "sourceReference": "UIMain2:Skill_cike_3"
+    },
+    {
+      "class": "Assassin",
+      "slot": 4,
+      "skillId": 4004001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_cike_4.png",
+      "sourceReference": "UIMain2:Skill_cike_4"
+    },
+    {
+      "class": "Mage",
+      "slot": 0,
+      "skillId": 1000001,
+      "atlas": "UIMain",
+      "spriteName": "ico_attack2.png",
+      "sourceReference": "UIMain:ico_attack2"
+    },
+    {
+      "class": "Mage",
+      "slot": 1,
+      "skillId": 1001001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_fashi_1.png",
+      "sourceReference": "UIMain:Skill_fashi_1"
+    },
+    {
+      "class": "Mage",
+      "slot": 2,
+      "skillId": 1002001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_fashi_2.png",
+      "sourceReference": "UIMain:Skill_fashi_2"
+    },
+    {
+      "class": "Mage",
+      "slot": 3,
+      "skillId": 1003001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_fashi_3.png",
+      "sourceReference": "UIMain:Skill_fashi_3"
+    },
+    {
+      "class": "Mage",
+      "slot": 4,
+      "skillId": 1004001,
+      "atlas": "UIMain",
+      "spriteName": "Skill_fashi_4.png",
+      "sourceReference": "UIMain:Skill_fashi_4"
+    },
+    {
+      "class": "Archer",
+      "slot": 0,
+      "skillId": 2000001,
+      "atlas": "UIMain2",
+      "spriteName": "ico_attack4.png",
+      "sourceReference": "UIMain2:ico_attack4"
+    },
+    {
+      "class": "Archer",
+      "slot": 1,
+      "skillId": 2001001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_sheshou_1.png",
+      "sourceReference": "UIMain2:Skill_sheshou_1"
+    },
+    {
+      "class": "Archer",
+      "slot": 2,
+      "skillId": 2002001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_sheshou_2.png",
+      "sourceReference": "UIMain2:Skill_sheshou_2"
+    },
+    {
+      "class": "Archer",
+      "slot": 3,
+      "skillId": 2003001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_sheshou_3.png",
+      "sourceReference": "UIMain2:Skill_sheshou_3"
+    },
+    {
+      "class": "Archer",
+      "slot": 4,
+      "skillId": 2004001,
+      "atlas": "UIMain2",
+      "spriteName": "Skill_sheshou_4.png",
+      "sourceReference": "UIMain2:Skill_sheshou_4"
+    }
+  ],
+  "copiedAssets": [
+    {
+      "asset": "Atlas\\UIMain.png",
+      "bytes": 1530009,
+      "sha256": "1fc0eee1caa7f0f21d069f52c3ea03ac0e8d7270d362b2db534b489f23488533"
+    },
+    {
+      "asset": "Atlas\\UIMain.png.meta",
+      "bytes": 105367,
+      "sha256": "1668010d49a6a13f6d9631fcb53eda2b6f359873f0ba154b49eb30de9e8b0697"
+    },
+    {
+      "asset": "Atlas\\UIMain2.png",
+      "bytes": 1462528,
+      "sha256": "bb8b57d5a3026a5c9cfa3718ae9a7cff49200f06c6bbe951d80afd610c3583c5"
+    },
+    {
+      "asset": "Atlas\\UIMain2.png.meta",
+      "bytes": 65758,
+      "sha256": "a77825cbec0200a4d9030a74a0ec62fc84a6442e438c726dc0ac02e7ac0d0890"
+    }
+  ],
+  "originalUntouched": true
+}
