@@ -1,149 +1,84 @@
 {
-    "value":  [
-                  {
-                      "status":  "in_progress",
-                      "name":  "Setup",
-                      "id":  "M00",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "in_progress",
-                      "name":  "Asset audit",
-                      "id":  "M01",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Asset library",
-                      "id":  "M02",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "World",
-                      "id":  "M03",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Characters",
-                      "id":  "M04",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Combat",
-                      "id":  "M05",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "MMO server",
-                      "id":  "M06",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Game systems",
-                      "id":  "M07",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Social",
-                      "id":  "M08",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "UI",
-                      "id":  "M09",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Optimization",
-                      "id":  "M10",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  },
-                  {
-                      "status":  "pending",
-                      "name":  "Alpha",
-                      "id":  "M11",
-                      "next_tasks":  [
-                                         "M05.2 Weapons",
-                                         "M05.3 Skill animations and VFX",
-                                         "M05.4 Auto combat",
-                                         "M05.5 Combat polish",
-                                         "M05.6 Android 0.3.0 release"
-                                     ]
-                  }
-              ],
-    "Count":  12
+  "value": [
+    {
+      "status": "in_progress",
+      "name": "Setup",
+      "id": "M00"
+    },
+    {
+      "status": "in_progress",
+      "name": "Asset audit",
+      "id": "M01"
+    },
+    {
+      "status": "in_progress",
+      "name": "Asset library",
+      "id": "M02"
+    },
+    {
+      "status": "in_progress",
+      "name": "World",
+      "id": "M03"
+    },
+    {
+      "status": "in_progress",
+      "name": "Characters",
+      "id": "M04"
+    },
+    {
+      "status": "in_progress",
+      "name": "Combat",
+      "id": "M05",
+      "next_tasks": [
+        "Audit 40 Unity build warnings; preserve original visual behavior",
+        "Validate 0.5.3 on physical Android; fix camera and HUD until approved",
+        "Restore exact historical target/auto UI and safe area as necessary",
+        "Source-accurate skill attachment, projectile, timing and VFX size for all four classes",
+        "Auto combat/pathing and original monster behavior",
+        "Final M05 regression APK; then M06 authoritative Go/PostgreSQL server"
+      ]
+    },
+    {
+      "status": "pending",
+      "name": "MMO server",
+      "id": "M06"
+    },
+    {
+      "status": "pending",
+      "name": "Game systems",
+      "id": "M07"
+    },
+    {
+      "status": "pending",
+      "name": "Social",
+      "id": "M08"
+    },
+    {
+      "status": "pending",
+      "name": "UI",
+      "id": "M09"
+    },
+    {
+      "status": "pending",
+      "name": "Optimization",
+      "id": "M10"
+    },
+    {
+      "status": "pending",
+      "name": "Alpha",
+      "id": "M11"
+    }
+  ],
+  "Count": 12,
+  "current_release": "0.5.3 Alpha",
+  "verified_code_commit": "06dc41aa38aa913f5bce9e24f93e3799befbcbb2",
+  "next_tasks": [
+    "Audit 40 Unity build warnings; preserve original visual behavior",
+    "Validate 0.5.3 on physical Android; fix camera and HUD until approved",
+    "Restore exact historical target/auto UI and safe area as necessary",
+    "Source-accurate skill attachment, projectile, timing and VFX size for all four classes",
+    "Auto combat/pathing and original monster behavior",
+    "Final M05 regression APK; then M06 authoritative Go/PostgreSQL server"
+  ],
+  "device_qa": "0.5.3 pending owner acceptance"
 }
