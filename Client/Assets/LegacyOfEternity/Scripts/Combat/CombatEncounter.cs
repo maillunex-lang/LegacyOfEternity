@@ -23,6 +23,28 @@ namespace LegacyOfEternity.Combat
 
         public CombatEnemy CurrentTarget => currentTarget;
 
+        // Read-only combat state for both manual HUD and automatic control.
+        public float CooldownRemaining(int slot)
+        {
+            if (slot < 0 || slot >= nextAllowed.Length) return float.PositiveInfinity;
+            return Mathf.Max(0f, nextAllowed[slot] - Time.time);
+        }
+
+        public float CombatRange(int slot)
+        {
+            return slot >= 0 && slot < nextAllowed.Length ? AllowedRange(slot) : 0f;
+        }
+
+        public CombatEnemy[] TrackedEnemies => enemies;
+
+        public bool SelectAutomaticTarget(CombatEnemy candidate)
+        {
+            if (candidate == null || candidate.IsDead || enemies == null ||
+                System.Array.IndexOf(enemies, candidate) < 0) return false;
+            currentTarget = candidate;
+            return true;
+        }
+
         public void Configure(CombatEnemy[] spawned, Text targetText, Text feedbackText)
         {
             enemies = spawned;
@@ -155,25 +177,43 @@ namespace LegacyOfEternity.Combat
                 default: damage = 12; cooldown = .8f; break;
             }
             nextAllowed[slot] = Time.time + cooldown;
-            StartCoroutine(ResolveAction(currentTarget, damage, slot, allowedRange));
+            var currentClass = selector != null ? selector.CurrentClass : CharacterClass.Warrior;
+            var hitTimes = CombatImpactProfile.HitTimes(currentClass, slot);
+            GetComponent<OriginalCombatEffects>()?.PlayAction(slot, currentTarget, hitTimes[0]);
+            StartCoroutine(ResolveAction(currentTarget, damage, slot, allowedRange, hitTimes));
             ShowFeedback(slot == 0 ? "АТАКА" : "НАВЫК " + slot);
             return true;
         }
 
-        private IEnumerator ResolveAction(CombatEnemy primary, int damage, int slot, float maxDistance)
+        private IEnumerator ResolveAction(CombatEnemy primary, int damage, int slot,
+                                          float maxDistance, float[] hitTimes)
         {
-            yield return new WaitForSeconds(slot == 0 ? .28f : .5f);
-            if (hero == null || hero.IsDead || primary == null || primary.IsDead) yield break;
-            if (FlatDistance(transform.position, primary.transform.position) > maxDistance + .5f) yield break;
-            if (slot == 3 && enemies != null)
+            // Timings follow original skill-display hit markers. Never duplicate the
+            // prototype's total damage when the animation has multiple strikes.
+            if (hitTimes == null || hitTimes.Length == 0) yield break;
+            float previousTime = 0f;
+            for (int index = 0; index < hitTimes.Length; index++)
             {
-                foreach (var enemy in enemies)
-                    if (enemy != null && !enemy.IsDead && FlatDistance(enemy.transform.position, primary.transform.position) <= 3.5f)
-                        enemy.ApplyDamage(damage);
+                float nextTime = Mathf.Max(previousTime, hitTimes[index]);
+                yield return new WaitForSeconds(Mathf.Max(0f, nextTime - previousTime));
+                previousTime = nextTime;
+                if (hero == null || hero.IsDead || primary == null || primary.IsDead) yield break;
+                if (FlatDistance(transform.position, primary.transform.position) > maxDistance + .5f)
+                    yield break;
+                int pulse = damage / hitTimes.Length + (index < damage % hitTimes.Length ? 1 : 0);
+                if (pulse <= 0) continue;
+
+                if (slot == 3 && enemies != null)
+                {
+                    foreach (var enemy in enemies)
+                        if (enemy != null && !enemy.IsDead &&
+                            FlatDistance(enemy.transform.position, primary.transform.position) <= 3.5f)
+                            enemy.ApplyDamage(pulse);
+                }
+                else
+                    primary.ApplyDamage(pulse);
+                RefreshHud();
             }
-            else
-                primary.ApplyDamage(damage);
-            RefreshHud();
         }
 
         public void OnHeroRespawn()

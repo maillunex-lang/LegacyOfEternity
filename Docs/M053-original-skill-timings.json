@@ -1,0 +1,315 @@
+{
+  "source": "Assets/Resources/Data/skill/SkillClassDisplayDesc.xml",
+  "mapping": [
+    {
+      "class": "Warrior",
+      "slot": 0,
+      "sourceSkillId": "3000001",
+      "originalDescription": "战士普攻1",
+      "originalHitTimes": [
+        0.15
+      ],
+      "runtimeHitTimes": [
+        0.15
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Warrior",
+      "slot": 1,
+      "sourceSkillId": "3001001",
+      "originalDescription": "战士1技能",
+      "originalHitTimes": [
+        0.6
+      ],
+      "runtimeHitTimes": [
+        0.6
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Warrior",
+      "slot": 2,
+      "sourceSkillId": "3002001",
+      "originalDescription": "战士冲锋",
+      "originalHitTimes": [
+        0.6
+      ],
+      "runtimeHitTimes": [
+        0.6
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Warrior",
+      "slot": 3,
+      "sourceSkillId": "3005001",
+      "originalDescription": "战士旋风斩",
+      "originalHitTimes": [
+        0.5,
+        0.7,
+        0.9,
+        1.1,
+        1.3
+      ],
+      "runtimeHitTimes": [
+        0.5,
+        0.7,
+        0.9,
+        1.1,
+        1.3
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Warrior",
+      "slot": 4,
+      "sourceSkillId": "3006001",
+      "originalDescription": "战士大招",
+      "originalHitTimes": [
+        0.3,
+        0.67,
+        1.7
+      ],
+      "runtimeHitTimes": [
+        0.3,
+        0.67,
+        1.7
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Assassin",
+      "slot": 0,
+      "sourceSkillId": "4000001",
+      "originalDescription": "刺客普攻1",
+      "originalHitTimes": [
+        0.4
+      ],
+      "runtimeHitTimes": [
+        0.4
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Assassin",
+      "slot": 1,
+      "sourceSkillId": "4001001",
+      "originalDescription": "刺客1技能",
+      "originalHitTimes": [
+        0.6
+      ],
+      "runtimeHitTimes": [
+        0.6
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Assassin",
+      "slot": 2,
+      "sourceSkillId": "4002001",
+      "originalDescription": "刺客2技能",
+      "originalHitTimes": [
+        0.6
+      ],
+      "runtimeHitTimes": [
+        0.6
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Assassin",
+      "slot": 3,
+      "sourceSkillId": "4003001",
+      "originalDescription": "刺客3技能",
+      "originalHitTimes": [
+        0.2,
+        0.7,
+        0.9
+      ],
+      "runtimeHitTimes": [
+        0.2,
+        0.7,
+        0.9
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Assassin",
+      "slot": 4,
+      "sourceSkillId": "4004001",
+      "originalDescription": "刺客4技能",
+      "originalHitTimes": [
+        0.2,
+        0.8,
+        1.6
+      ],
+      "runtimeHitTimes": [
+        0.131,
+        0.525,
+        1.05
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Mage",
+      "slot": 0,
+      "sourceSkillId": "1000001",
+      "originalDescription": "法师普攻1",
+      "originalHitTimes": [
+        0.5
+      ],
+      "runtimeHitTimes": [
+        0.5
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Mage",
+      "slot": 1,
+      "sourceSkillId": "1001001",
+      "originalDescription": "法师1技能",
+      "originalHitTimes": [
+        0.57
+      ],
+      "runtimeHitTimes": [
+        0.57
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Mage",
+      "slot": 2,
+      "sourceSkillId": "1002001",
+      "originalDescription": "法师2技能",
+      "originalHitTimes": [
+        0.54
+      ],
+      "runtimeHitTimes": [
+        0.54
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Mage",
+      "slot": 3,
+      "sourceSkillId": "1003001",
+      "originalDescription": "法师3技能",
+      "originalHitTimes": [
+        0.5,
+        0.7,
+        0.9,
+        1.1
+      ],
+      "runtimeHitTimes": [
+        0.5,
+        0.7,
+        0.9,
+        1.1
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Mage",
+      "slot": 4,
+      "sourceSkillId": "1004001",
+      "originalDescription": "法师4技能",
+      "originalHitTimes": [
+        0.45,
+        0.8,
+        1.4
+      ],
+      "runtimeHitTimes": [
+        0.45,
+        0.8,
+        1.4
+      ],
+      "sourceBackedTiming": true,
+      "remark": ""
+    },
+    {
+      "class": "Archer",
+      "slot": 0,
+      "sourceSkillId": null,
+      "originalDescription": "",
+      "originalHitTimes": [
+        0.28
+      ],
+      "runtimeHitTimes": [
+        0.28
+      ],
+      "sourceBackedTiming": false,
+      "remark": "MVP skill id mapping based on class and slot; archer data unavailable"
+    },
+    {
+      "class": "Archer",
+      "slot": 1,
+      "sourceSkillId": null,
+      "originalDescription": "",
+      "originalHitTimes": [
+        0.5
+      ],
+      "runtimeHitTimes": [
+        0.5
+      ],
+      "sourceBackedTiming": false,
+      "remark": "MVP skill id mapping based on class and slot; archer data unavailable"
+    },
+    {
+      "class": "Archer",
+      "slot": 2,
+      "sourceSkillId": null,
+      "originalDescription": "",
+      "originalHitTimes": [
+        0.5
+      ],
+      "runtimeHitTimes": [
+        0.5
+      ],
+      "sourceBackedTiming": false,
+      "remark": "MVP skill id mapping based on class and slot; archer data unavailable"
+    },
+    {
+      "class": "Archer",
+      "slot": 3,
+      "sourceSkillId": null,
+      "originalDescription": "",
+      "originalHitTimes": [
+        0.5
+      ],
+      "runtimeHitTimes": [
+        0.5
+      ],
+      "sourceBackedTiming": false,
+      "remark": "MVP skill id mapping based on class and slot; archer data unavailable"
+    },
+    {
+      "class": "Archer",
+      "slot": 4,
+      "sourceSkillId": null,
+      "originalDescription": "",
+      "originalHitTimes": [
+        0.5
+      ],
+      "runtimeHitTimes": [
+        0.5
+      ],
+      "sourceBackedTiming": false,
+      "remark": "MVP skill id mapping based on class and slot; archer data unavailable"
+    }
+  ]
+}

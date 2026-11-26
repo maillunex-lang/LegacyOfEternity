@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: cike_skill_huanying
+  m_Shader: {fileID: 4800000, guid: 1a0438e5d64b0d149830df40f2a2809c, type: 3}
+  m_ShaderKeywords: _BIANYUANKAIGUAN_ON _LIUGUANGKAIGUAN_ON
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a75ea80989bcc2a4d8e909e267eff0bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTexture:
+        m_Texture: {fileID: 2800000, guid: fde0aee089153384ab0224a0a85dadb0, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _mask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _node_8133:
+        m_Texture: {fileID: 2800000, guid: 7f6b308b94f0e804d8c6f5a5f00401ea, type: 3}
+        m_Scale: {x: 0.2, y: 0.2}
+        m_Offset: {x: 0, y: 0}
+    - _node_8569:
+        m_Texture: {fileID: 2800000, guid: a626536343d6db44bb06c06b87857dd3, type: 3}
+        m_Scale: {x: 0.5, y: 2}
+        m_Offset: {x: 0, y: 0}
+    - _rongjiewenli:
+        m_Texture: {fileID: 2800000, guid: e26d2203b0b2f9b47899fa27b305e684, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _wenli:
+        m_Texture: {fileID: 2800000, guid: f374b06888980594482db68be3cbd499, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _Glossiness: 0.5
+    - _Metallic: 0
+    - _Mode: 0
+    - _N_BY_KD: 0.02
+    - _N_BY_QD: 1
+    - _N_mask: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    - _bianyuanhoudu: 2.05
+    - _bianyuankaiguan: 1
+    - _bianyuanqiangdu: 3.86
+    - _liuguangkaiguan: 1
+    - _liuguangqiangdu: 3
+    - _rongjie: 0.03
+    m_Colors:
+    - _C_BYcolor: {r: 0, g: 0.13103437, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _TintColor: {r: 0.18772823, g: 0.11764705, b: 1, a: 1}
+    - _bianyuanyanse: {r: 0.066176474, g: 0.14989835, b: 1, a: 1}
+    - _liuguangyanse: {r: 0.52789026, g: 0.30147058, b: 1, a: 1}
+    - _rongjieyanse: {r: 1, g: 1, b: 1, a: 1}
+    - _wenliyanse: {r: 0.07586241, g: 0, b: 1, a: 1}

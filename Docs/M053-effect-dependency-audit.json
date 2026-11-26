@@ -1,0 +1,1302 @@
+{
+  "prefabs": [
+    {
+      "class": "ZS_M",
+      "skill": "attack001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\ZS_M\\ZS_M_attack001_S.prefab",
+      "dependencies": 3,
+      "missing": 2,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "fca6033140a33364d9bc846468010234",
+        "1cd3d44b8f2adcc4bb612c8224278d1e"
+      ]
+    },
+    {
+      "class": "ZS_M",
+      "skill": "skill001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\ZS_M\\ZS_M_skill001_S.prefab",
+      "dependencies": 6,
+      "missing": 6,
+      "legacyScripts": 2,
+      "missingGuids": [
+        "28031e2885632a3489ab407919396b38",
+        "e14ef26472c34e444949c552b239800f",
+        "6396a0a9b95b25d4983456a16cf6c180",
+        "ff5fa73c34a8e65498f7a98875551e0d",
+        "f795a0350251186418a74b4709975b47",
+        "1cd3d44b8f2adcc4bb612c8224278d1e"
+      ]
+    },
+    {
+      "class": "ZS_M",
+      "skill": "skill002",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\ZS_M\\ZS_M_skill002_S.prefab",
+      "dependencies": 8,
+      "missing": 8,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "9a72fac2abfe0e04c869bb1e0c5add6c",
+        "b2c0452cd59969b41a4bd1691d70e8c5",
+        "f6670c57e2bcca748bbef947470b0054",
+        "7a34f85c46355f64ea59988f7b141d80",
+        "5c5f85b21d025fd47bcbe199d94de935",
+        "8cab6462bfc1c614db5d9482f868c148",
+        "644620edde487194bb6c4d1933abe54c",
+        "1cd3d44b8f2adcc4bb612c8224278d1e"
+      ]
+    },
+    {
+      "class": "ZS_M",
+      "skill": "skill003",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\ZS_M\\ZS_M_skill003_S.prefab",
+      "dependencies": 5,
+      "missing": 4,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "33729301e17dfc9489784c315f379558",
+        "fca6033140a33364d9bc846468010234",
+        "c2fc0eaec67d70f44b808b663a544ccf",
+        "e14ef26472c34e444949c552b239800f"
+      ]
+    },
+    {
+      "class": "ZS_M",
+      "skill": "skill004",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\ZS_M\\ZS_M_skill004_S.prefab",
+      "dependencies": 11,
+      "missing": 10,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "33729301e17dfc9489784c315f379558",
+        "1ca133e45c499b942902dc7661e7bd93",
+        "170e32fdd67894044986823a7aa4c2f0",
+        "0450e66cc974b9343a57378d77ec97f8",
+        "ee9be580b2d60d845a206e1900e121eb",
+        "6263748b6a9e37641a578ca718c77123",
+        "89ce47dd2f1163d4fb80f04e4b3bd91d",
+        "ad7ef399ea9d12f4a8acb1667ef20427",
+        "a803d7bd0ffc23d419ec8fa1534b3ad2",
+        "db3227a6d5ab49747b56f6c903749bae"
+      ]
+    },
+    {
+      "class": "CK_W",
+      "skill": "attack001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\CK_W\\CK_W_attack001_S.prefab",
+      "dependencies": 2,
+      "missing": 2,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "332c7030dbafe5b4e9f19da20f655f61",
+        "6396a0a9b95b25d4983456a16cf6c180"
+      ]
+    },
+    {
+      "class": "CK_W",
+      "skill": "skill001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\CK_W\\CK_W_skill001_S.prefab",
+      "dependencies": 16,
+      "missing": 15,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "c15df334ee357744c92659e9fce8ec6c",
+        "e7288d94eefc33b4a9e84b6713c522e9",
+        "c26a901c7ea091d46839952d6afec5f3",
+        "0c0b572b2406cb64b84d8168dfa8e676",
+        "af6f9bed8696bdb43b0f76df1ab5f962",
+        "ee6f953cdcccd5240b153c276e166730",
+        "e1ef88d676976d248bcc6baef01c9399",
+        "48329629d3b1a8145a268f5d329dea37",
+        "669f8a4395d1ab040b6aa2438c74f27e",
+        "d7537b64a15388e4cb1a8f10464a0750",
+        "a7046bf36d26c454cb6f416ada7c8fb7",
+        "e9dc1739525711f44842f75b6cda6a2d",
+        "83066789befd07c46b11b1d6e87f5af0",
+        "b96e7f1e2f33d47428f4c7e9441b600c",
+        "8b8f9a1180c07394d9ed353a705987e6"
+      ]
+    },
+    {
+      "class": "CK_W",
+      "skill": "skill002",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\CK_W\\CK_W_skill002_S.prefab",
+      "dependencies": 9,
+      "missing": 8,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "55b1828af7f0b84419bb75b8fa5b8bb3",
+        "ad5e3170e1c85f645bf9b403988af047",
+        "ac97830088f24d74ab60fd9098c150af",
+        "cc603e1d931a8d448a62932f3dc02f10",
+        "4c30c5ba201d3254a8a5d9027c487023",
+        "a520bf9a5cc2a92439e414f2b9ba3290",
+        "97bcfa7a2277ae049b666785a2bc8005",
+        "283e0d849c24ca2469f7ce2476134598"
+      ]
+    },
+    {
+      "class": "CK_W",
+      "skill": "skill003",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\CK_W\\CK_W_skill003_S.prefab",
+      "dependencies": 5,
+      "missing": 5,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "6396a0a9b95b25d4983456a16cf6c180",
+        "7722ce129bb0e3545ad6938e82bfb4cd",
+        "a888b4c5dd46243469b087898aca24d3",
+        "89ce47dd2f1163d4fb80f04e4b3bd91d",
+        "25a22558133674f4b84790d80dd84917"
+      ]
+    },
+    {
+      "class": "CK_W",
+      "skill": "skill004",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\CK_W\\CK_W_skill004_S.prefab",
+      "dependencies": 10,
+      "missing": 9,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "f57b1fcd6276de44e930e0f1f2c70573",
+        "92d0dba4615c71d45bdbfd7c49b539ca",
+        "ac97830088f24d74ab60fd9098c150af",
+        "cc603e1d931a8d448a62932f3dc02f10",
+        "97bcfa7a2277ae049b666785a2bc8005",
+        "9bf79321cba565942b28647b03497aa3",
+        "283e0d849c24ca2469f7ce2476134598",
+        "a6e9e7a29a1e88049817b84375b09501",
+        "8cab6462bfc1c614db5d9482f868c148"
+      ]
+    },
+    {
+      "class": "FS_W",
+      "skill": "attack001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\FS_W\\FS_W_attack001_S.prefab",
+      "dependencies": 3,
+      "missing": 3,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "45c49385052ad1448ab9885326099cc3",
+        "f2ee2e9dd512fc4409dfa9501f2b10f8",
+        "4c30c5ba201d3254a8a5d9027c487023"
+      ]
+    },
+    {
+      "class": "FS_W",
+      "skill": "skill001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\FS_W\\FS_W_skill001_S.prefab",
+      "dependencies": 5,
+      "missing": 3,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "e34d5d2cc1c36a545a71d39a78930c8a",
+        "3a4400744f05c4e469beaa640660eab2",
+        "f2ee2e9dd512fc4409dfa9501f2b10f8"
+      ]
+    },
+    {
+      "class": "FS_W",
+      "skill": "skill002",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\FS_W\\FS_W_skill002_S.prefab",
+      "dependencies": 6,
+      "missing": 4,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "0450e66cc974b9343a57378d77ec97f8",
+        "a6e9e7a29a1e88049817b84375b09501",
+        "5c5f85b21d025fd47bcbe199d94de935",
+        "8cab6462bfc1c614db5d9482f868c148"
+      ]
+    },
+    {
+      "class": "FS_W",
+      "skill": "skill003",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\FS_W\\FS_W_skill003_S.prefab",
+      "dependencies": 7,
+      "missing": 5,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "637b6c517c3424c4b909c29b492d21c3",
+        "0450e66cc974b9343a57378d77ec97f8",
+        "082e3c55e415c584abbe0f738f2e988d",
+        "e6429eb5e18a0d945a85e70118883e23",
+        "c2d7f605b7690ff4aa9959cd53867f12"
+      ]
+    },
+    {
+      "class": "FS_W",
+      "skill": "skill004",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\FS_W\\FS_W_skill004_S.prefab",
+      "dependencies": 8,
+      "missing": 6,
+      "legacyScripts": 0,
+      "missingGuids": [
+        "d2ef31c5d84c4224fa80c8d55f2099e4",
+        "4dee3408a86e850439616774046d1941",
+        "02f7bc029009f8742ab83bc8ecf86152",
+        "e816ad1fac4428448a4dabcc2808a418",
+        "ca7bedfb8f85e6545a489d3e3def3568",
+        "f2ee2e9dd512fc4409dfa9501f2b10f8"
+      ]
+    },
+    {
+      "class": "GJS_M",
+      "skill": "attack001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\GJS_M\\GJS_M_attack001_S.prefab",
+      "dependencies": 11,
+      "missing": 11,
+      "legacyScripts": 2,
+      "missingGuids": [
+        "22f5dd0e96f1bcc40aad821c06f4a2a8",
+        "361b9ef0cb5bf4b409dca7b0c35cf869",
+        "95e8837923a964149b8d3be842068562",
+        "06a28b6185f5d6644a6cd2b03884d919",
+        "92d0dba4615c71d45bdbfd7c49b539ca",
+        "47b734d6cf544e946a6217f77fe9aa3d",
+        "40ca8d7317841d04ca74dee5f0d62c54",
+        "6b7167290ccc1ca43a689abaf4d86999",
+        "dbf4fcff449486349a0438c7953acb68",
+        "896a25654bdc5bf4e922c10dfddb8dd5",
+        "8cab6462bfc1c614db5d9482f868c148"
+      ]
+    },
+    {
+      "class": "GJS_M",
+      "skill": "skill001",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\GJS_M\\GJS_M_skill001_S.prefab",
+      "dependencies": 18,
+      "missing": 18,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "22f5dd0e96f1bcc40aad821c06f4a2a8",
+        "361b9ef0cb5bf4b409dca7b0c35cf869",
+        "95e8837923a964149b8d3be842068562",
+        "06a28b6185f5d6644a6cd2b03884d919",
+        "93f878f8e7a50ed45a8a974cef8a7d08",
+        "624ad89739abb0e4986e81b5025fe7fb",
+        "0450e66cc974b9343a57378d77ec97f8",
+        "47b734d6cf544e946a6217f77fe9aa3d",
+        "40ca8d7317841d04ca74dee5f0d62c54",
+        "57bd59eb3fef84d45a0f96840a5afc76",
+        "6b7167290ccc1ca43a689abaf4d86999",
+        "4dee3408a86e850439616774046d1941",
+        "89ce47dd2f1163d4fb80f04e4b3bd91d",
+        "896a25654bdc5bf4e922c10dfddb8dd5",
+        "6ea3a8b3f28efde4d929f605c38a2334",
+        "5c5f85b21d025fd47bcbe199d94de935",
+        "8cab6462bfc1c614db5d9482f868c148",
+        "34dfd1e3a04f2f642b5eee69f760c289"
+      ]
+    },
+    {
+      "class": "GJS_M",
+      "skill": "skill002",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\GJS_M\\GJS_M_skill002_S.prefab",
+      "dependencies": 19,
+      "missing": 19,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "332ad7fecfa2fcc44ba3c9b319dd586f",
+        "d26dd0d86e00152418cecac9ca540b02",
+        "95e8837923a964149b8d3be842068562",
+        "624ad89739abb0e4986e81b5025fe7fb",
+        "8c2ad56a680855a4993151dc29a52be2",
+        "e5cb7c7afc0697c40ba60912997b7a3e",
+        "d7e5d081f1bcb8740bbb9d4913bedcd5",
+        "d7537b64a15388e4cb1a8f10464a0750",
+        "22f5dd0e96f1bcc40aad821c06f4a2a8",
+        "40ca8d7317841d04ca74dee5f0d62c54",
+        "bd00a1c0487bc204fa9ed49fb6a3fc4f",
+        "6b7167290ccc1ca43a689abaf4d86999",
+        "27690dbe207b7a34592b2b5679a3975a",
+        "6bec05b83a150f148aeded167d610a1b",
+        "06a28b6185f5d6644a6cd2b03884d919",
+        "47b734d6cf544e946a6217f77fe9aa3d",
+        "caa9d3075e928e944a3d9458d6a86e55",
+        "8cab6462bfc1c614db5d9482f868c148",
+        "0fdd6750457321e4d85e0f4897feebc7"
+      ]
+    },
+    {
+      "class": "GJS_M",
+      "skill": "skill003",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\GJS_M\\GJS_M_skill003_S.prefab",
+      "dependencies": 40,
+      "missing": 38,
+      "legacyScripts": 2,
+      "missingGuids": [
+        "202a35a5f3b17114d84a235523a51bb8",
+        "3b1d0389c2d8a314d9f2cca03cd82372",
+        "27428a7f2ff03e443acd39f610f564f7",
+        "29df1d02ebefe0343b8afde4adef4b00",
+        "8a6c7852e4d091249907c4aec02e4fb7",
+        "8f6ff86a16d2b234daee008896251d5e",
+        "4f81bf1e8da3a2e40b06c2d353d7dcdc",
+        "95e8837923a964149b8d3be842068562",
+        "624ad89739abb0e4986e81b5025fe7fb",
+        "0450e66cc974b9343a57378d77ec97f8",
+        "8c2ad56a680855a4993151dc29a52be2",
+        "30888e215ab588c45ac7164b7caecd19",
+        "d7e5d081f1bcb8740bbb9d4913bedcd5",
+        "7e2704a22bdde0d4b93494dbd0492707",
+        "c53824d2aad055a4fad717ba0b7beb31",
+        "22f5dd0e96f1bcc40aad821c06f4a2a8",
+        "92d0dba4615c71d45bdbfd7c49b539ca",
+        "40ca8d7317841d04ca74dee5f0d62c54",
+        "bd00a1c0487bc204fa9ed49fb6a3fc4f",
+        "6b7167290ccc1ca43a689abaf4d86999",
+        "65f0f5c605ef20b44a386f7bfdb4c1a0",
+        "3c5e41e62b146a14f9cdb127ddc3cbec",
+        "fb7957e86b6f0fb4eb5efe86a46e7e91",
+        "3a98dfbf73cacc040bac5ec747b80f10",
+        "7af0accc5206e3747a9265ccb1cca8da",
+        "d8d0b327e8c9a3c45ba31383d7b20e08",
+        "361b9ef0cb5bf4b409dca7b0c35cf869",
+        "c310595537af3fa46bd5ba0edb550245",
+        "06a28b6185f5d6644a6cd2b03884d919",
+        "d484ed99be4398142a6857b0f21cbd38",
+        "a6218ea3221abe5479b0d0fa427f415b",
+        "47b734d6cf544e946a6217f77fe9aa3d",
+        "7cecfb984c81aa244acb261dc1b92dd5",
+        "ab6d19977c1feef4bb363ddbbf6e7981",
+        "896a25654bdc5bf4e922c10dfddb8dd5",
+        "91d9a442211640c45a3d3ed286935421",
+        "5c5f85b21d025fd47bcbe199d94de935",
+        "8cab6462bfc1c614db5d9482f868c148"
+      ]
+    },
+    {
+      "class": "GJS_M",
+      "skill": "skill004",
+      "prefab": "LegacyAssets\\Resources\\Effect\\skill\\player\\GJS_M\\GJS_M_skill004_S.prefab",
+      "dependencies": 30,
+      "missing": 29,
+      "legacyScripts": 1,
+      "missingGuids": [
+        "3b1d0389c2d8a314d9f2cca03cd82372",
+        "27428a7f2ff03e443acd39f610f564f7",
+        "edb6f8d70442481459f2901571dc2973",
+        "6ea3a8b3f28efde4d929f605c38a2334",
+        "0fad558ab9679c344a2ad2d6174e5212",
+        "310435c5f49fd8645af486d236ae2736",
+        "d26dd0d86e00152418cecac9ca540b02",
+        "4f81bf1e8da3a2e40b06c2d353d7dcdc",
+        "febe00f74e705f146829bbd98f4cf2ef",
+        "1bb7cec598eaf5f4abb0af9e656c848b",
+        "295368b435f681148b5f94cebecc954f",
+        "4dee3408a86e850439616774046d1941",
+        "ba626d8054023c04b8c4b442fa9a173e",
+        "22f5dd0e96f1bcc40aad821c06f4a2a8",
+        "43052972ffa50ae43b2cf11c1764a7c0",
+        "c15df334ee357744c92659e9fce8ec6c",
+        "40ca8d7317841d04ca74dee5f0d62c54",
+        "6b7167290ccc1ca43a689abaf4d86999",
+        "65f0f5c605ef20b44a386f7bfdb4c1a0",
+        "73988207bd1cf23488412800f1ff1438",
+        "361b9ef0cb5bf4b409dca7b0c35cf869",
+        "06a28b6185f5d6644a6cd2b03884d919",
+        "47b734d6cf544e946a6217f77fe9aa3d",
+        "c37b09a5e57ac4844b5195afe39f0aa8",
+        "46ff9fe990fdb564eb1ff7abc2a372c7",
+        "ab6d19977c1feef4bb363ddbbf6e7981",
+        "c66a7d6c98b51c440b449a96fcf0e7e8",
+        "5c5f85b21d025fd47bcbe199d94de935",
+        "8cab6462bfc1c614db5d9482f868c148"
+      ]
+    }
+  ],
+  "missingUnique": 127,
+  "legacyScripts": 5,
+  "filesMissing": [
+    {
+      "guid": "8cab6462bfc1c614db5d9482f868c148",
+      "uses": 8,
+      "source": "AssetsRaw\\Effect\\Models\\PSJ_FastMove2.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "5c5f85b21d025fd47bcbe199d94de935",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\Effect_00328.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "0450e66cc974b9343a57378d77ec97f8",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\dilie_glow.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "22f5dd0e96f1bcc40aad821c06f4a2a8",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\trail\\Materials\\Nunu_Trail_Add_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "06a28b6185f5d6644a6cd2b03884d919",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\bapquan.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "47b734d6cf544e946a6217f77fe9aa3d",
+      "uses": 5,
+      "source": "IGSoft_Resources\\Scripts\\NcEffect\\NcUvAnimation.cs.meta",
+      "sourceCount": 1,
+      "isScript": true
+    },
+    {
+      "guid": "40ca8d7317841d04ca74dee5f0d62c54",
+      "uses": 5,
+      "source": "Effect\\mesh2018\\ef_UP_shine-L.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "6b7167290ccc1ca43a689abaf4d86999",
+      "uses": 5,
+      "source": "Effect\\mesh2018\\ef_gnvjain-1.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "361b9ef0cb5bf4b409dca7b0c35cf869",
+      "uses": 4,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\Materials\\15_flare_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "95e8837923a964149b8d3be842068562",
+      "uses": 4,
+      "source": "Effect\\Texture2D\\Materials\\fx_g_jian-2.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "1cd3d44b8f2adcc4bb612c8224278d1e",
+      "uses": 3,
+      "source": "Scripts\\Core\\Effect\\EffectQuality.cs.meta",
+      "sourceCount": 1,
+      "isScript": true
+    },
+    {
+      "guid": "6396a0a9b95b25d4983456a16cf6c180",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Models\\daoguang_yuanzhu.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "89ce47dd2f1163d4fb80f04e4b3bd91d",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\dilie_chang.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "92d0dba4615c71d45bdbfd7c49b539ca",
+      "uses": 3,
+      "source": "IGSoft_Resources\\Scripts\\NcEffect\\NcCurveAnimation.cs.meta",
+      "sourceCount": 1,
+      "isScript": true
+    },
+    {
+      "guid": "f2ee2e9dd512fc4409dfa9501f2b10f8",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\fs_bingzhui.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "4dee3408a86e850439616774046d1941",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\path_00371_xuanzhuan.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "896a25654bdc5bf4e922c10dfddb8dd5",
+      "uses": 3,
+      "source": "Effect\\Texture2D\\Materials\\x_trails22_01.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "624ad89739abb0e4986e81b5025fe7fb",
+      "uses": 3,
+      "source": "Effect\\Texture2D\\Materials\\ef_fireworks-1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "fca6033140a33364d9bc846468010234",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Materials\\ct_dg002_3_1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e14ef26472c34e444949c552b239800f",
+      "uses": 2,
+      "source": "Resources\\Effect\\Scripts\\RendererQueueEdit.cs.meta",
+      "sourceCount": 1,
+      "isScript": true
+    },
+    {
+      "guid": "33729301e17dfc9489784c315f379558",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\fx_Lsd11124_tuowei_00000.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c15df334ee357744c92659e9fce8ec6c",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\light0113_add.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "d7537b64a15388e4cb1a8f10464a0750",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Models\\piaodai01.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ac97830088f24d74ab60fd9098c150af",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Materials\\obj_feibiao01.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "cc603e1d931a8d448a62932f3dc02f10",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\cike_skill_feibiao.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "4c30c5ba201d3254a8a5d9027c487023",
+      "uses": 2,
+      "source": "IGSoft_Resources\\Scripts\\NcEffect\\NcRotation.cs.meta",
+      "sourceCount": 1,
+      "isScript": true
+    },
+    {
+      "guid": "97bcfa7a2277ae049b666785a2bc8005",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Models\\daoguang_test.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "283e0d849c24ca2469f7ce2476134598",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\cike_skill001_baoqi 1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a6e9e7a29a1e88049817b84375b09501",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\bapquan_lanse.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "6ea3a8b3f28efde4d929f605c38a2334",
+      "uses": 2,
+      "source": null,
+      "sourceCount": 0,
+      "isScript": false
+    },
+    {
+      "guid": "d26dd0d86e00152418cecac9ca540b02",
+      "uses": 2,
+      "source": "Effect\\Texture2D\\Materials\\fx_g_plane002_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "8c2ad56a680855a4993151dc29a52be2",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\Materials\\starlight019.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "d7e5d081f1bcb8740bbb9d4913bedcd5",
+      "uses": 2,
+      "source": "Effect\\Texture2D\\Materials\\ef_fireworks-3.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "bd00a1c0487bc204fa9ed49fb6a3fc4f",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\Materials\\lieheng_glow.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "3b1d0389c2d8a314d9f2cca03cd82372",
+      "uses": 2,
+      "source": "Effect\\Texture2D\\Materials\\ef_Fire2261_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "27428a7f2ff03e443acd39f610f564f7",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\sanshe_ring\\Materials\\baoqiquan.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "4f81bf1e8da3a2e40b06c2d353d7dcdc",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\dilie15_1_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "65f0f5c605ef20b44a386f7bfdb4c1a0",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\bapquan_lvse1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ab6d19977c1feef4bb363ddbbf6e7981",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Models\\mesh_02047.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "28031e2885632a3489ab407919396b38",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\daoguang_clamp.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ff5fa73c34a8e65498f7a98875551e0d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Adt_00019_1_a.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "f795a0350251186418a74b4709975b47",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Models\\XTrail_01.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "9a72fac2abfe0e04c869bb1e0c5add6c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\Materials\\15_flare.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "b2c0452cd59969b41a4bd1691d70e8c5",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\bapquan_chengse.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "f6670c57e2bcca748bbef947470b0054",
+      "uses": 1,
+      "source": "AssetsRaw\\Animation\\player\\zhanshi\\ZS_M_wuqi\\ZS_M_wuqi_01_b\\ZS_M_wuqi_01_b.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "7a34f85c46355f64ea59988f7b141d80",
+      "uses": 1,
+      "source": "AssetsRaw\\Animation\\player\\zhanshi\\ZS_M_wuqi\\ZS_M_wuqi_01_b\\Materials\\ZS_M_wuqi_01_b_pvp.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "644620edde487194bb6c4d1933abe54c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\zhanshi_skill002_wuqi.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c2fc0eaec67d70f44b808b663a544ccf",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Materials\\daoguang_xian.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "1ca133e45c499b942902dc7661e7bd93",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\dilie001.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "170e32fdd67894044986823a7aa4c2f0",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\zhanshi_skill003_shisun.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ee9be580b2d60d845a206e1900e121eb",
+      "uses": 1,
+      "source": "Resources\\Effect\\Animation_2018\\zhanshi_skill004_S.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "6263748b6a9e37641a578ca718c77123",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\Materials\\dilie_wenli.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ad7ef399ea9d12f4a8acb1667ef20427",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\zhanshi_skill003_wuqi.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a803d7bd0ffc23d419ec8fa1534b3ad2",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\zhanshi_skill004_S.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "db3227a6d5ab49747b56f6c903749bae",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Materials\\DG_nnde001.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "332c7030dbafe5b4e9f19da20f655f61",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Materials\\Adt_00010.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e7288d94eefc33b4a9e84b6713c522e9",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Materials\\ZS_weapon_0003.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c26a901c7ea091d46839952d6afec5f3",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\ck_skill01_jian02.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "0c0b572b2406cb64b84d8168dfa8e676",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\y_dl21_13_00.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "af6f9bed8696bdb43b0f76df1ab5f962",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Models\\cike_mesh03.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ee6f953cdcccd5240b153c276e166730",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\boss_020_bingzhu 2.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e1ef88d676976d248bcc6baef01c9399",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Materials\\ZS_weapon_0001.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "48329629d3b1a8145a268f5d329dea37",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\andi 1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "669f8a4395d1ab040b6aa2438c74f27e",
+      "uses": 1,
+      "source": "Resources\\Effect\\Animation\\cike_huanying 1.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a7046bf36d26c454cb6f416ada7c8fb7",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\bingzhui_yuan.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e9dc1739525711f44842f75b6cda6a2d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\ckdl_bing01.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "83066789befd07c46b11b1d6e87f5af0",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\cike_skill_uv_zise.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "b96e7f1e2f33d47428f4c7e9441b600c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\cike_skill_huanying.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "8b8f9a1180c07394d9ed353a705987e6",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Models\\luoshitou.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "55b1828af7f0b84419bb75b8fa5b8bb3",
+      "uses": 1,
+      "source": "Resources\\Effect\\Animation\\xuandao.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ad5e3170e1c85f645bf9b403988af047",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\daoguang_liang.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a520bf9a5cc2a92439e414f2b9ba3290",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\glow_zise.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "7722ce129bb0e3545ad6938e82bfb4cd",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Materials\\trail0054.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a888b4c5dd46243469b087898aca24d3",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Materials\\Adt_00019_zi_bld.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "25a22558133674f4b84790d80dd84917",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\lieheng_ck_002.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "f57b1fcd6276de44e930e0f1f2c70573",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\cike_skill004_gaoguang5.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "9bf79321cba565942b28647b03497aa3",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\cike_skill004_gaoguang 2.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "45c49385052ad1448ab9885326099cc3",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\bingzhu_mesh.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e34d5d2cc1c36a545a71d39a78930c8a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\Materials\\wenli_0022_1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "3a4400744f05c4e469beaa640660eab2",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\bingzhui_chang.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "637b6c517c3424c4b909c29b492d21c3",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\dilie09.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "082e3c55e415c584abbe0f738f2e988d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\Materials\\xulie_shandian001_1x4.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e6429eb5e18a0d945a85e70118883e23",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\Materials\\Nat_00013.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c2d7f605b7690ff4aa9959cd53867f12",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\Materials\\xulie_shandian002_1x4.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "d2ef31c5d84c4224fa80c8d55f2099e4",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\bingfenghuang_longjuan 1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "02f7bc029009f8742ab83bc8ecf86152",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh\\longjuanfeng_zhuti.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e816ad1fac4428448a4dabcc2808a418",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\bingfenghuang_longjuan.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ca7bedfb8f85e6545a489d3e3def3568",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\shisun_mesh.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "dbf4fcff449486349a0438c7953acb68",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\Materials\\fx_g_plane002-a_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "93f878f8e7a50ed45a8a974cef8a7d08",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Animation\\ef_gjs_skill01.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "57bd59eb3fef84d45a0f96840a5afc76",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\lieheng_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "34dfd1e3a04f2f642b5eee69f760c289",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\zhanshi_skill002_andi_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "332ad7fecfa2fcc44ba3c9b319dd586f",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\tiaodai_ckskill.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "e5cb7c7afc0697c40ba60912997b7a3e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\Materials\\ckskill_liuguang03.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "27690dbe207b7a34592b2b5679a3975a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Animation\\ef_gjs_skill02.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "6bec05b83a150f148aeded167d610a1b",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\angel_005_liuguang_lv.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "caa9d3075e928e944a3d9458d6a86e55",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Materials\\shuye_01.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "0fdd6750457321e4d85e0f4897feebc7",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\Effect_00346_ui.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "202a35a5f3b17114d84a235523a51bb8",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\Take 001.anim.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "29df1d02ebefe0343b8afde4adef4b00",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\bapquan_lvse2.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "8a6c7852e4d091249907c4aec02e4fb7",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\smoke\\Materials\\cloud_02_add.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "8f6ff86a16d2b234daee008896251d5e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\dilie_00003.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "30888e215ab588c45ac7164b7caecd19",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\xishou_02.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "7e2704a22bdde0d4b93494dbd0492707",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\fenghuang_attack003.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c53824d2aad055a4fad717ba0b7beb31",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\gjs_skill03.controller.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "3c5e41e62b146a14f9cdb127ddc3cbec",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Materials\\Texture_02076.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "fb7957e86b6f0fb4eb5efe86a46e7e91",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Materials\\banqiu.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "3a98dfbf73cacc040bac5ec747b80f10",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\angel_001_skill002_posui1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "7af0accc5206e3747a9265ccb1cca8da",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\Materials\\ani0153_2x2.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "d8d0b327e8c9a3c45ba31383d7b20e08",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\bingfenghuang 3.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c310595537af3fa46bd5ba0edb550245",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\banyuan_zhaozi.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "d484ed99be4398142a6857b0f21cbd38",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\Materials\\ani0050.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "a6218ea3221abe5479b0d0fa427f415b",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\sanshe_ring\\Materials\\fangsheguang_00172.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "7cecfb984c81aa244acb261dc1b92dd5",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\fx_Lsd11124_tuowei_00001.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "91d9a442211640c45a3d3ed286935421",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\mesh_2018\\angel_skill002_posui.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "edb6f8d70442481459f2901571dc2973",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material_2018\\zhanshi_skill002_andi.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "0fad558ab9679c344a2ad2d6174e5212",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\sanshe_ring\\Materials\\ripple_lv_001.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "310435c5f49fd8645af486d236ae2736",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\Materials\\ef_Water_Splash.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "febe00f74e705f146829bbd98f4cf2ef",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\Materials\\00_flare_add01.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "1bb7cec598eaf5f4abb0af9e656c848b",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\Materials\\ef_jian-1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "295368b435f681148b5f94cebecc954f",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\Material\\shandian 1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "ba626d8054023c04b8c4b442fa9a173e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Materials\\light0113_1.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "43052972ffa50ae43b2cf11c1764a7c0",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\fazheng\\Materials\\fx_shading_13_fazhen03.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "73988207bd1cf23488412800f1ff1438",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\Materials\\glow_00005_3.mat.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c37b09a5e57ac4844b5195afe39f0aa8",
+      "uses": 1,
+      "source": "Effect\\mesh2018\\ef_line_baodian.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "46ff9fe990fdb564eb1ff7abc2a372c7",
+      "uses": 1,
+      "source": "Effect\\mesh2018\\ef_1x1_plane-1.FBX.meta",
+      "sourceCount": 1,
+      "isScript": false
+    },
+    {
+      "guid": "c66a7d6c98b51c440b449a96fcf0e7e8",
+      "uses": 1,
+      "source": "T4M\\Editor\\MeshBillb\\Billboard.fbx.meta",
+      "sourceCount": 1,
+      "isScript": false
+    }
+  ]
+}

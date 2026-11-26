@@ -29,6 +29,7 @@ namespace LegacyOfEternity.Combat
         private Coroutine strike;
         private Coroutine respawn;
 
+        public event System.Action<int> DamageApplied;
         public string DisplayName => displayName;
         public int Health => health;
         public int MaxHealth => maxHealth;
@@ -108,7 +109,9 @@ namespace LegacyOfEternity.Combat
         {
             if (dead || amount <= 0) return false;
             engaged = true;
+            int beforeHit = health;
             health = Mathf.Max(0, health - amount);
+            if (beforeHit != health) DamageApplied?.Invoke(beforeHit - health);
             if (health <= 0)
             {
                 Kill();

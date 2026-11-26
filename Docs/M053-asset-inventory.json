@@ -1,0 +1,277 @@
+{
+  "milestone": "M05.3",
+  "kind": "original asset inventory; no VFX bindings validated",
+  "characterClasses": {
+    "Warrior": {
+      "skills": [
+        {
+          "skill": 1,
+          "originalAnimation": "zhanshi/ZS_M_01/ZS_M_01@skill001.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 2,
+          "originalAnimation": "zhanshi/ZS_M_01/ZS_M_01@skill002.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 3,
+          "originalAnimation": "zhanshi/ZS_M_01/ZS_M_01@skill003.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 4,
+          "originalAnimation": "zhanshi/ZS_M_01/ZS_M_01@skill004.FBX",
+          "importedIdentical": true
+        }
+      ],
+      "effectFileSamples": [
+        "AssetsRaw/Effect/mesh/zhanshi_M_wuqi.FBX",
+        "AssetsRaw/Effect/mesh/zhanshi_wuq05i_mesh.FBX",
+        "AssetsRaw/Effect/mesh/zhanshi_wuqi_mesh.FBX",
+        "AssetsRaw/Effect/mesh/zhanshi_wuqi_mesh1.FBX",
+        "AssetsRaw/Effect/mesh/zhanshi_wuqi_mesh_001.FBX",
+        "AssetsRaw/Effect/mesh_2018/zhanshi_skill003.FBX",
+        "AssetsRaw/Effect/mesh_2018/zhanshi_skill004_S.FBX",
+        "AssetsRaw/Effect/mesh_2018/zhanshi_zhanshi_posui.FBX",
+        "AssetsRaw/Effect/mesh_2018/zs_daoguang.FBX",
+        "AssetsRaw/Effect/Models/zhanshi_daoguang_attack1.FBX",
+        "AssetsRaw/Effect/Models/zhanshi_wuqi_mesh1.FBX",
+        "AssetsRaw/Effect/Skill/wuqi_models/zhanshi_M_wuqi_3/zhanshi_M_jian.png",
+        "AssetsRaw/Effect/Skill/wuqi_models/zhanshi_M_wuqi_3/zhanshi_M_wuqi_3_1.FBX",
+        "AssetsRaw/Effect/Skill/wuqi_models/zhanshi_M_wuqi_3/Materials/zhanshi_M_jian.mat",
+        "AssetsRaw/Effect/Textures/daoguang/Materials/ef_zs_heidi2.mat",
+        "AssetsRaw/Effect/Textures/lgl/Ground_Crack_101_zs.png",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_gaoliang_zs.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_glow_zs.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_1.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_2.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_3.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_4.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_5.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_6.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_7.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_8.mat",
+        "AssetsRaw/Effect/Textures/Material/ef_liuguang_zs_lv1.mat",
+        "AssetsRaw/Effect/Textures/Material/zhanshi_M_wuqi_3_saoguang01.mat",
+        "AssetsRaw/Effect/Textures/Material/zhanshi_skill001_niuqu.mat",
+        "AssetsRaw/Effect/Textures/Material/zhanshi_skill004_niuqu 1.mat",
+        "AssetsRaw/Effect/Textures/Material/zhanshi_wuqi_liuguang001_6.mat",
+        "AssetsRaw/Effect/Textures/Material/zhanshi_wuqi_liuguang001_7.mat",
+        "AssetsRaw/Effect/Textures/Material/UI_chenghao_M/ef_liuguang_zs_6.mat",
+        "AssetsRaw/Effect/Textures/Material/UI_chenghao_M/ef_liuguang_zs_8.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/ef_liuguang_zs_5_Z 1.mat"
+      ],
+      "effectMatchingNamesCount": 96
+    },
+    "Assassin": {
+      "skills": [
+        {
+          "skill": 1,
+          "originalAnimation": "cike/CK_W_01/CK_W_01@skill001.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 2,
+          "originalAnimation": "cike/CK_W_01/CK_W_01@skill002.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 3,
+          "originalAnimation": "cike/CK_W_01/CK_W_01@skill003.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 4,
+          "originalAnimation": "cike/CK_W_01/CK_W_01@skill004.FBX",
+          "importedIdentical": true
+        }
+      ],
+      "effectFileSamples": [
+        "AssetsRaw/Effect/Animation/ck_canying01.anim",
+        "AssetsRaw/Effect/Animation/ck_dl_daoguang.anim",
+        "AssetsRaw/Effect/Animation/CK_DL_daoguang.controller",
+        "AssetsRaw/Effect/mesh_2018/ck_skill01_jian02.FBX",
+        "AssetsRaw/Effect/Models/cike_boss_wuqi.FBX",
+        "AssetsRaw/Effect/Models/cike_mesh01.FBX",
+        "AssetsRaw/Effect/Models/cike_mesh02.FBX",
+        "AssetsRaw/Effect/Models/cike_mesh03.FBX",
+        "AssetsRaw/Effect/Models/cike_tiaodai.FBX",
+        "AssetsRaw/Effect/Models/cike_tiaodai_01.FBX",
+        "AssetsRaw/Effect/Textures/crack/lieheng_ck_002.PNG",
+        "AssetsRaw/Effect/Textures/crack/Materials/lieheng_ck_002.mat",
+        "AssetsRaw/Effect/Textures/daoguang/Materials/xx_ck_dg_bg01.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_chongci_sidai.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_gaoliang_zs.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_glow_zs.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_guodu.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_daoguang_zhongjian.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_guangxian_lanse.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill001_baoqi 1.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill001_baoqi.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill001_gaoguang.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill001_shangaung.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill003_lieheng 2.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill004_gaoguang 2.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill004_gaoguang4.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill004_gaoguang5.mat",
+        "AssetsRaw/Effect/Textures/Material/cike_skill004_gaoguang_Z.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill001_andi.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill001_gaoguang 1.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill_feibiao.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill_feibiao02.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill_feibiao_zise.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill_huanying.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/cike_skill_huanying02.mat"
+      ],
+      "effectMatchingNamesCount": 42
+    },
+    "Mage": {
+      "skills": [
+        {
+          "skill": 1,
+          "originalAnimation": "fashi/FS_W_01/FS_W_01@skill001.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 2,
+          "originalAnimation": "fashi/FS_W_01/FS_W_01@skill002.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 3,
+          "originalAnimation": "fashi/FS_W_01/FS_W_01@skill003.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 4,
+          "originalAnimation": "fashi/FS_W_01/FS_W_01@skill004.FBX",
+          "importedIdentical": true
+        }
+      ],
+      "effectFileSamples": [
+        "AssetsRaw/Effect/mesh_2018/fs_w_sidai.FBX",
+        "AssetsRaw/Effect/mesh_2018/fs_w_sidai_01.FBX",
+        "AssetsRaw/Effect/mesh_2018/fs_w_sidai_02.FBX",
+        "AssetsRaw/Effect/Textures/lgl/fx_buff_shengji/fs_01_Mat.mat",
+        "AssetsRaw/Effect/Textures/lgl/fx_buff_shengji/fs_03_Mat.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_bingzhui 02.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_bingzhui.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_bingzhui_tw 02.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_bingzhui_tw.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_bingzhui_tw_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_skill002_chongci 1.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _02_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _02_liuguang_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _04_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _04_liuguang_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _05_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _06_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _06_liuguang1.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _06_liuguang_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _07_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _07_liuguang_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _08_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _08_liuguang_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W _09_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_010_liuguang.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_04_smoke.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_04_smoke_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_08_fire.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_08_fire_a.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_09_fire.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/FS_W_10_fire.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_w_sidai 1.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_w_sidai 2.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_w_sidai.mat",
+        "AssetsRaw/Effect/Textures/Material_2018/fs_w_sidai3.mat"
+      ],
+      "effectMatchingNamesCount": 49
+    },
+    "Archer": {
+      "skills": [
+        {
+          "skill": 1,
+          "originalAnimation": "GJS/GJS_M_01/GJS_M_01@skill001.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 2,
+          "originalAnimation": "GJS/GJS_M_01/GJS_M_01@skill002.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 3,
+          "originalAnimation": "GJS/GJS_M_01/GJS_M_01@skill003.FBX",
+          "importedIdentical": true
+        },
+        {
+          "skill": 4,
+          "originalAnimation": "GJS/GJS_M_01/GJS_M_01@skill004.FBX",
+          "importedIdentical": true
+        }
+      ],
+      "effectFileSamples": [
+        "AssetsRaw/Effect/Animation/ef_gjs_skill01.anim",
+        "AssetsRaw/Effect/Animation/ef_gjs_skill01.controller",
+        "AssetsRaw/Effect/Animation/ef_gjs_skill02.anim",
+        "AssetsRaw/Effect/Animation/ef_gjs_skill02.controller",
+        "AssetsRaw/Effect/mesh_2018/gjs_skill03.anim",
+        "AssetsRaw/Effect/mesh_2018/gjs_skill03.controller"
+      ],
+      "effectMatchingNamesCount": 6
+    }
+  },
+  "effectFileExtensions": {
+    ".meta": 3845,
+    ".anim": 76,
+    ".controller": 65,
+    ".fbx": 312,
+    ".tga": 318,
+    ".mat": 1783,
+    ".3ds": 17,
+    ".dds": 1,
+    ".prefab": 2,
+    ".png": 1143,
+    ".psd": 21,
+    ".jpg": 8,
+    ".ifl": 1,
+    ".bmp": 1
+  },
+  "audioFileExtensions": {
+    ".wav": 13,
+    ".mp3": 147
+  },
+  "audioSamples": [
+    "Examples/PoolManagerExampleFiles/Audio/Motorcycle.wav",
+    "Resources/Sound/common/ride.mp3",
+    "Resources/Sound/common/walk.mp3",
+    "Resources/Sound/hit/behit.mp3",
+    "Resources/Sound/hit/behit_2.mp3",
+    "Resources/Sound/hit/die01.mp3",
+    "Resources/Sound/hit/die02.mp3",
+    "Resources/Sound/hit/FS_shouji.mp3",
+    "Resources/Sound/hit/Hit_03.mp3",
+    "Resources/Sound/hit/hit_girl.mp3",
+    "Resources/Sound/hit/hit_youth.mp3",
+    "Resources/Sound/hit/hurt.mp3",
+    "Resources/Sound/hit/manhurt.mp3",
+    "Resources/Sound/hit/womanhurt.mp3",
+    "Resources/Sound/hit/ZS_shouji.mp3",
+    "Resources/Sound/role/chuangjue1.mp3",
+    "Resources/Sound/role/chuangjue2.mp3",
+    "Resources/Sound/role/mage.mp3",
+    "Resources/Sound/role/mount_001.mp3",
+    "Resources/Sound/role/mount_002.mp3",
+    "Resources/Sound/role/mount_003.mp3",
+    "Resources/Sound/role/mount_004.mp3",
+    "Resources/Sound/role/mount_005.mp3",
+    "Resources/Sound/role/mount_006.mp3",
+    "Resources/Sound/role/mount_007.mp3",
+    "Resources/Sound/role/mount_008.mp3",
+    "Resources/Sound/role/mount_009.mp3",
+    "Resources/Sound/role/mount_010.mp3",
+    "Resources/Sound/role/mount_011.mp3",
+    "Resources/Sound/role/mount_012.mp3"
+  ]
+}

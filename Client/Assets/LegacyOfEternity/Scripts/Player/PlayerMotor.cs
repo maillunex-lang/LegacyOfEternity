@@ -10,6 +10,15 @@ namespace LegacyOfEternity.Player
         private CharacterController controller;
         private PrototypeCombat combat;
         private static Vector2 touchInput;
+        private Vector3 autoDirection;
+
+        // World-space movement requested by AutoCombatController; collision remains
+        // handled here by the same CharacterController used for manual movement.
+        public void SetAutomaticDirection(Vector3 direction)
+        {
+            direction.y = 0f;
+            autoDirection = Vector3.ClampMagnitude(direction, 1f);
+        }
         public static void SetMobileInput(Vector2 value) { touchInput = Vector2.ClampMagnitude(value, 1f); }
         private void Awake()
         {
@@ -17,15 +26,26 @@ namespace LegacyOfEternity.Player
             combat = GetComponent<PrototypeCombat>();
             if (cameraTransform == null && Camera.main != null) cameraTransform = Camera.main.transform;
         }
-        private void OnDisable() { touchInput = Vector2.zero; }
+        private void OnDisable()
+        {
+            touchInput = Vector2.zero;
+            autoDirection = Vector3.zero;
+        }
         private void Update()
         {
             Vector2 input = combat != null && combat.IsDead ? Vector2.zero : ReadInput();
+            if (input.sqrMagnitude > .0001f)
+            {
+                var auto = GetComponent<AutoCombatController>();
+                if (auto != null && auto.IsEnabled) auto.StopForManualMovement();
+            }
             Vector3 forward = cameraTransform != null ? cameraTransform.forward : Vector3.forward;
             Vector3 right = cameraTransform != null ? cameraTransform.right : Vector3.right;
             forward.y = 0f; right.y = 0f;
             forward.Normalize(); right.Normalize();
             Vector3 direction = Vector3.ClampMagnitude(forward * input.y + right * input.x, 1f);
+            if (input.sqrMagnitude <= .0001f && (combat == null || !combat.IsDead))
+                direction = autoDirection;
             if (direction.sqrMagnitude > 0.0001f)
             {
                 Quaternion facing = Quaternion.LookRotation(direction, Vector3.up);

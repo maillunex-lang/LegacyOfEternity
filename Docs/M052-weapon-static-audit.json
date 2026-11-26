@@ -1,0 +1,166 @@
+{
+  "milestone": "M05.2",
+  "kind": "static original asset parity, not Unity visual QA",
+  "classes": {
+    "Warrior": [
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/L_ZS_wuqi_01.FBX",
+        "bytes": 100992,
+        "sha256": "80b417943cdda26c0827ac68ec55414be21a894c10a2fde33aeea65043e9a522"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/L_ZS_wuqi_01.FBX.meta",
+        "bytes": 2036,
+        "sha256": "b0a5588c310b74611297dc01aad223aa5220f93b7652d77c87f36cc835ee02b9"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/L_ZS_wuqi_01.tga",
+        "bytes": 262188,
+        "sha256": "c310877eba23eea0d7c526ae5df2e11661951ba1b45d860bcea572550ebee355"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/L_ZS_wuqi_01.tga.meta",
+        "bytes": 2068,
+        "sha256": "bb75c90db2f6ba03db05c6b3cb9a2aef8c9e5555fb531f7d009093b02a4d36ea"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/Materials/L_ZS_01_wuqi.mat",
+        "bytes": 2861,
+        "sha256": "875acd10ea39bb49688550f1ff7425aad473931bbf5f401bb8b5487ed0b4c00f"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/Materials/L_ZS_01_wuqi.mat.meta",
+        "bytes": 208,
+        "sha256": "f07e2ce0692405003092cfe0401e38969107164377a74650c50dcdfd38b4818f"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/Materials/L_ZS_01_wuqi_pvp.mat",
+        "bytes": 3436,
+        "sha256": "ca944e0c80a308158675447b7e4ba9d1c6af81133edfad9b63012ad9fb144f75"
+      },
+      {
+        "path": "zhanshi/ZS_M_wuqi/L_ZS_wuqi_01/Materials/L_ZS_01_wuqi_pvp.mat.meta",
+        "bytes": 208,
+        "sha256": "c0f079c921c28bce6a3304f664c83c4b411a70f56f64284208d717c2b267d867"
+      }
+    ],
+    "Assassin": [
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/CK_W_wuqi_01.FBX",
+        "bytes": 76384,
+        "sha256": "6e60b36eb648032a20efb0584fb679154ad5316d1ce2bdbed03c6aeb8b3a5a78"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/CK_W_wuqi_01.FBX.meta",
+        "bytes": 2188,
+        "sha256": "c2626c77ecca4a173433f9756ade66eac55ee3f7aa57b6caf0f8e95ef704a45a"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/CK_W_wuqi_01.tga",
+        "bytes": 196652,
+        "sha256": "d3c8eb38b75786e2bd915824c20456e8e39ef6498006e9871f4c42c6e44f2c1e"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/CK_W_wuqi_01.tga.meta",
+        "bytes": 2066,
+        "sha256": "6fa8bf6a5e666ec33e8422498354196cf5cf36d208575ec5fcddd9ae39829c09"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/Materials/CK_W_wuqi_01.mat",
+        "bytes": 3005,
+        "sha256": "fc43f9be8c6522cc3b2bc206577270696d97f37e5596d469c2cbc3474f22191f"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/Materials/CK_W_wuqi_01.mat.meta",
+        "bytes": 207,
+        "sha256": "2491fb76950cd276025a27f6badd2539bd910eff185d2cf09a724192ea681bb3"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/Materials/CK_W_wuqi_01_pvp.mat",
+        "bytes": 2795,
+        "sha256": "7433883662c94919ba2c73688b79089ae2aa04f902a2b46f9d426f6bfee24e23"
+      },
+      {
+        "path": "cike/CK_W_wuqi/CK_W_wuqi_01/Materials/CK_W_wuqi_01_pvp.mat.meta",
+        "bytes": 207,
+        "sha256": "6abc4bc15ec6fbbff1742945beae63075c2ffc51ee416a9a5c7d8510840ec2be"
+      }
+    ],
+    "Mage": [
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/FS_W_wuqi_01.FBX",
+        "bytes": 42240,
+        "sha256": "396c893cf6598c5d3315b838ff0b9036cc159f491c40361d15195bc72910fd5f"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/FS_W_wuqi_01.FBX.meta",
+        "bytes": 2109,
+        "sha256": "8e53ce9669b7d7fbb1d8804d97dfb93346b0c093fc44411dbdf617ad6a05e0f7"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/FS_W_wuqi_01.png",
+        "bytes": 80553,
+        "sha256": "0ec05c0d9a8715493f3ce3274ee80d1cf93b77f58a4d73e6a1c89a55a3586630"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/FS_W_wuqi_01.png.meta",
+        "bytes": 2067,
+        "sha256": "652c9fb02637f7f107487b14d971f596c0d62a5315363b940e12e3e69a31770e"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/Materials/FS_W_wuqi_01.mat",
+        "bytes": 2858,
+        "sha256": "1e9ebcd53164eb75df9056ab079415d5a32413ff97784f36164aca7a3392eab8"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/Materials/FS_W_wuqi_01.mat.meta",
+        "bytes": 207,
+        "sha256": "8a08988dcba3db506b876509afd63992f83f8d6e599e2a0aef8b7f916b5549cf"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/Materials/FS_W_wuqi_01_pvp.mat",
+        "bytes": 2860,
+        "sha256": "ab54857ab806d12e7178d88886368301074a1c01cf7398bda0c0d62d295395a1"
+      },
+      {
+        "path": "fashi/FS_W_wuqi/FS_W_wuqi_01/Materials/FS_W_wuqi_01_pvp.mat.meta",
+        "bytes": 207,
+        "sha256": "f8b507d70d9a3123954de245ed1bbce619a97332c7956ed9d386a7f5df64aaaf"
+      }
+    ],
+    "Archer": [
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/GJS_M_01_wuqi.FBX",
+        "bytes": 35552,
+        "sha256": "5b28e2ebb23911eec0a03804e76b88a5eff2bdd54ad1b57ca99479cf2ada5c83"
+      },
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/GJS_M_01_wuqi.FBX.meta",
+        "bytes": 2230,
+        "sha256": "a80ba44d7ece5497efbe15bd8703350f51adbc30908a703bd7bc9a70b9e3d7e8"
+      },
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/GJS_M_01_wuqi.tga",
+        "bytes": 786476,
+        "sha256": "baa2be9be5231dd9be092bd960cd951cb57131f3d5781e4228aa63e3eff9fd22"
+      },
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/GJS_M_01_wuqi.tga.meta",
+        "bytes": 1474,
+        "sha256": "c94ce810ec5baa7da16d4905420eee11282f5497de2b6159266c6fc82a3314bc"
+      },
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/Materials/GJS_M_01_wuqi.mat",
+        "bytes": 2794,
+        "sha256": "09a058badcf9cfddf5c7c84e8deb5c3a011328ff6c29b869a28c080807a30b7d"
+      },
+      {
+        "path": "GJS/GJS_M_wuqi/GJS_M_01_wuqi/Materials/GJS_M_01_wuqi.mat.meta",
+        "bytes": 207,
+        "sha256": "cc152cb7fc27d57ba23e88d941e63beb9083ecae3b5fd4f3783814b72193b274"
+      }
+    ]
+  },
+  "errors": [],
+  "pass": true
+}
