@@ -18,7 +18,7 @@ namespace LegacyOfEternity.CameraSystem
         [SerializeField, Range(3f, 15f)] private float height = 8f;
         [SerializeField, Min(1f)] private float smoothness = 10f;
         [SerializeField] private float yaw = 50f;
-        [SerializeField] private Vector3 targetOffset = Vector3.zero;
+        [SerializeField] private Vector3 targetOffset = Vector3.up;
         [SerializeField] private float minDistance = 5f;
         [SerializeField] private float maxDistance = 35f;
         [SerializeField] private float minHeight = 3f;
@@ -37,8 +37,8 @@ namespace LegacyOfEternity.CameraSystem
         private int gestureFirstId = -1;
         private int gestureSecondId = -1;
         private float lastGestureSpan;
-        private Vector2 lastGestureMid;
-        private float lastGestureAngle;
+        private Vector2 singleTouchStart;
+        private bool singleTouchDragging;
         private Vector3 currentFocus;
         private bool focused;
 
@@ -65,10 +65,17 @@ namespace LegacyOfEternity.CameraSystem
             return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(id);
         }
 
-        private static float TouchAngle(Vector2 first, Vector2 second)
+        // The EventSystem may not have updated its pointer cache yet at touch Began.
+        // Raycast the actual finger position to prevent camera stealing HUD touches.
+        private bool IsOverUi(Touch finger)
         {
-            Vector2 direction = second - first;
-            return Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            var system = EventSystem.current;
+            if (system == null) return false;
+            if (system.IsPointerOverGameObject(finger.fingerId)) return true;
+            var data = new PointerEventData(system) { position = finger.position };
+            var results = new List<RaycastResult>();
+            system.RaycastAll(data, results);
+            return results.Count > 0;
         }
 
         private static bool CanGesture(Touch first, Touch second, HashSet<int> blocked)
@@ -89,8 +96,10 @@ namespace LegacyOfEternity.CameraSystem
                     distance = Mathf.Clamp(distance - scroll * 10f, minDistance, maxDistance);
                 if (Input.GetMouseButton(1) && !IsOverUi(-1))
                 {
-                    yaw += Input.GetAxis("Mouse X") * 3.4f;
-                    height = Mathf.Clamp(height - Input.GetAxis("Mouse Y") * .5f, minHeight, maxHeight);
+                    float dx = Input.GetAxis("Mouse X");
+                    float dy = Input.GetAxis("Mouse Y");
+                    if (Mathf.Abs(dx) > Mathf.Abs(dy)) yaw += dx * 3.4f;
+                    else height = Mathf.Clamp(height - dy * .5f, minHeight, maxHeight);
                 }
             }
 #endif
@@ -103,7 +112,7 @@ namespace LegacyOfEternity.CameraSystem
             for (int i = 0; i < Input.touchCount; i++)
             {
                 Touch finger = Input.GetTouch(i);
-                if (finger.phase == TouchPhase.Began && IsOverUi(finger.fingerId))
+                if (finger.phase == TouchPhase.Began && IsOverUi(finger))
                     blockedFingers.Add(finger.fingerId);
             }
 
@@ -123,45 +132,56 @@ namespace LegacyOfEternity.CameraSystem
             if (eligible >= 2 && CanGesture(a, b, blockedFingers))
             {
                 activeSingleId = -1;
-                Vector2 midpoint = (a.position + b.position) * .5f;
                 float span = Vector2.Distance(a.position, b.position);
-                float angle = TouchAngle(a.position, b.position);
                 if (!gestureInitialized || gestureFirstId != a.fingerId || gestureSecondId != b.fingerId)
                 {
                     gestureInitialized = true;
                     gestureFirstId = a.fingerId;
                     gestureSecondId = b.fingerId;
                     lastGestureSpan = span;
-                    lastGestureMid = midpoint;
-                    lastGestureAngle = angle;
                 }
                 else
                 {
-                    // Pinch to zoom, shared two-finger drag rotates and changes height.
-                    // Two-finger twist rotates as well, with a separate yaw contribution.
-                    distance = Mathf.Clamp(distance - (span - lastGestureSpan) * zoomRatio, minDistance, maxDistance);
-                    Vector2 shift = midpoint - lastGestureMid;
-                    yaw += shift.x * rotationRatio + Mathf.DeltaAngle(lastGestureAngle, angle);
-                    height = Mathf.Clamp(height - shift.y * heightRatio, minHeight, maxHeight);
+                    // Original CameraControl.CheckTwo:
+                    // fingers moving together call Move(), which is intentionally empty.
+                    // Only opposing finger movement applies pinch zoom, never rotation.
+                    if (a.phase == TouchPhase.Moved || b.phase == TouchPhase.Moved)
+                    {
+                        float opposite = Vector2.Dot(a.deltaPosition, b.deltaPosition);
+                        if (opposite <= 0f && Mathf.Abs(span - lastGestureSpan) >= 1.5f)
+                            distance = Mathf.Clamp(distance - (span - lastGestureSpan) * zoomRatio, minDistance, maxDistance);
+                    }
                     lastGestureSpan = span;
-                    lastGestureMid = midpoint;
-                    lastGestureAngle = angle;
                 }
             }
             else
             {
                 gestureInitialized = false;
-                if (eligible == 1)
+                // A second finger on the joystick or battle HUD must not rotate
+                // the camera using the remaining free finger.
+                if (eligible == 1 && Input.touchCount == 1)
                 {
                     if (activeSingleId != a.fingerId)
                     {
                         activeSingleId = a.fingerId;
+                        singleTouchStart = a.position;
+                        singleTouchDragging = false;
                     }
                     else if (a.phase == TouchPhase.Moved)
                     {
-                        // Drag on empty world: original CameraControl Rotate(dx,dy).
-                        yaw += a.deltaPosition.x * rotationRatio;
-                        height = Mathf.Clamp(height - a.deltaPosition.y * heightRatio, minHeight, maxHeight);
+                        if (!singleTouchDragging &&
+                            (a.position - singleTouchStart).sqrMagnitude >= 25f * 25f)
+                            singleTouchDragging = true;
+                        if (singleTouchDragging)
+                        {
+                            // Exact original axis lock: horizontal OR vertical,
+                            // never both at once.
+                            float dx = a.deltaPosition.x, dy = a.deltaPosition.y;
+                            if (Mathf.Abs(dx) > Mathf.Abs(dy))
+                                yaw += dx * rotationRatio;
+                            else
+                                height = Mathf.Clamp(height - dy * heightRatio, minHeight, maxHeight);
+                        }
                     }
                 }
                 else
@@ -206,7 +226,7 @@ namespace LegacyOfEternity.CameraSystem
                 for (int i = 0; i < hits.Length; i++)
                 {
                     if (target != null && (hits[i].transform == target || hits[i].transform.IsChildOf(target))) continue;
-                    if (hits[i].distance < nearest) nearest = hits[i].distance;
+                    if (hits[i].distance > collisionRadius && hits[i].distance < nearest) nearest = hits[i].distance;
                 }
                 if (nearest < rayLength) desired = currentFocus + ray.normalized * Mathf.Max(minimumClearance, nearest - collisionPadding);
             }
