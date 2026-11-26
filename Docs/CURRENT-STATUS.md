@@ -17,3 +17,7 @@
 - Ubuntu VPS: `/home/gamedev/LegacyOfEternity` склонирован напрямую из GitHub в sparse-режиме (Server/Deploy/Docs), Go test, Compose config и Docker build проверены (exit 0).
 - GitHub Actions `Server smoke` прошёл успешно; GitHub prerelease v0.1.1-alpha содержит Android APK. Unity 6000.3.27f1 открыл clean clone и прошёл боевой аудит: EXIT=0, 28 клипов, 12720 curves, 0 проблем.
 - APK 0.1.1 подписан стандартным ключом Unity, так как `useCustomKeystore=false`; для обновления пользователей между разными ПК нужен постоянный релизный ключ с безопасным внешним хранением.
+
+- M05 PvE 0.2.0: три monster_001..003, локальные HP/атаки/skills/агро/смерть/respawn и выбор цели; Windows-сборка успешно (0 errors, 7 warnings); практическая проверка атаки 65->53, skill1 53->33, уничтожение, выбор следующей цели, смерть/возрождение героя. См. COMBAT-PVE-QA.md. Android физическая проверка 0.2.0 ожидается.
+
+- Android 0.2.0 Alpha: Unity BuildPipeline Succeeded, 0 errors, 5 warnings, APK 37766832 bytes, arm64-v8a, minSdk 26 targetSdk 36, versionCode 3. APK v2 signature verified, signing certificate SHA256 equal to 0.1.1. SHA256 eba87c88511f2e1d49bf68670eddbda53b507def2a62cec820174448f6599c85. Physical Android QA pending.

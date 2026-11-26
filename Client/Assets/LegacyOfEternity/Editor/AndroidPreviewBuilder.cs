@@ -52,11 +52,12 @@ UnityEditor.Android.AndroidExternalToolsSettings.sdkRootPath=Path.Combine(toolch
 UnityEditor.Android.AndroidExternalToolsSettings.jdkRootPath=Path.Combine(toolchainRoot,"OpenJDK");
 }
 LocomotionFix.Run();
+BuildPveArena.Run();
 Polish();
 EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTargetGroup.Android,BuildTarget.Android);
 PlayerSettings.productName="Legacy of Eternity";PlayerSettings.companyName="Lunex";
 PlayerSettings.SetApplicationIdentifier(UnityEditor.Build.NamedBuildTarget.Android,"com.lunex.legacyofeternity");
-PlayerSettings.bundleVersion="0.1.1";PlayerSettings.Android.bundleVersionCode=2;
+PlayerSettings.bundleVersion="0.2.0";PlayerSettings.Android.bundleVersionCode=3;
 PlayerSettings.defaultInterfaceOrientation=UIOrientation.LandscapeLeft;
 PlayerSettings.Android.minSdkVersion=AndroidSdkVersions.AndroidApiLevel26;
 PlayerSettings.Android.targetSdkVersion=AndroidSdkVersions.AndroidApiLevelAuto;
@@ -66,7 +67,7 @@ PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.Android,false);
 PlayerSettings.SetGraphicsAPIs(BuildTarget.Android,new[]{GraphicsDeviceType.OpenGLES3});
 PlayerSettings.Android.useCustomKeystore=false;
 EditorUserBuildSettings.buildAppBundle=false;
-var output=Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.1.1-alpha.apk");Directory.CreateDirectory(Path.GetDirectoryName(output));
+var output=Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.2.0-alpha.apk");Directory.CreateDirectory(Path.GetDirectoryName(output));
 var report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{ScenePath},locationPathName=output,target=BuildTarget.Android,options=BuildOptions.None});
 Debug.Log("LOE_ANDROID_BUILD result="+report.summary.result+" errors="+report.summary.totalErrors+" warnings="+report.summary.totalWarnings+" bytes="+report.summary.totalSize+" path="+output);
 if(report.summary.result!=BuildResult.Succeeded||!File.Exists(output))throw new Exception("Android build failed");

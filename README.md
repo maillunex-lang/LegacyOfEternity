@@ -48,3 +48,7 @@ git lfs pull
 [GitHub Issues](https://github.com/maillunex-lang/LegacyOfEternity/issues) содержит задачи разработки. Все исходники доступны в main, большие игровые ресурсы скачиваются с Git LFS.
 
 GitHub Release: https://github.com/maillunex-lang/LegacyOfEternity/releases/tag/v0.1.1-alpha
+
+## v0.2.0 Alpha: первый PvE-бой
+
+В сцене CoastalPrototype появились три врага с анимацией, преследованием, уроном, смертью и respawn. Для четырёх классов: атака и четыре навыка с дистанцией, кулдауном и реальным локальным уроном, выбор цели и HUD с HP. Windows GUI QA пройден. Android v0.2.0 Alpha: [скачать с CDN](https://rikagro.ru/MMORPG/downloads/LegacyOfEternity-0.2.0-alpha.apk) или [GitHub release](https://github.com/maillunex-lang/LegacyOfEternity/releases/tag/v0.2.0-alpha). Авторитетный сетевой бой и сохранение пока отсутствуют. Подробности: [COMBAT-PVE-QA](Docs/COMBAT-PVE-QA.md).

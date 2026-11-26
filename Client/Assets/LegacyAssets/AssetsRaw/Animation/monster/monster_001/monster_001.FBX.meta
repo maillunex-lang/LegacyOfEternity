@@ -325,13 +325,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 0bc3625c588bd8d4caa51edf2a35fc19
-  - 2c072d2ce7de0464385eaf5a78c09848
-  - 70a67143eff199b4295504024f8cda07
-  - dca3261ebdedd6046a05495aad3c21e3
-  - 187dc9284c510d64d9f728eb421b3b9c
-  - df96f0d63d149de4a8950acf12f6f85f
+  referencedClips: []
   importAnimation: 0
   humanDescription:
     serializedVersion: 3
@@ -351,7 +345,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 0

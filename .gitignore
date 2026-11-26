@@ -61,3 +61,4 @@ Docs/animation-fix-backup-*/
 **/__pycache__/
 **/*.orig
 **/*.old
+Docs/combat-m05-backup-*/
