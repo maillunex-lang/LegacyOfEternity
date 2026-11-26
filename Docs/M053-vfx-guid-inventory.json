@@ -1,0 +1,661 @@
+{
+  "sourceMeta": 31715,
+  "usedMaterials": 89,
+  "materialRefGuidCount": 111,
+  "missing": [
+    {
+      "guid": "966e96717e01b5a4281958f944f4b1d8",
+      "uses": 10,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Akt_00001_00000.png.meta",
+      "size": 79432
+    },
+    {
+      "guid": "991b0cbdaf0e7914f960fe67dd73e5e4",
+      "uses": 6,
+      "source": "AssetsRaw\\Effect\\Textures\\mask\\ramp_mask02.png.meta",
+      "size": 40388
+    },
+    {
+      "guid": "7f6b308b94f0e804d8c6f5a5f00401ea",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\magic0103_1.png.meta",
+      "size": 182669
+    },
+    {
+      "guid": "caac31c7359c5164d8da6a7b713dcaf9",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\bingzhui.png.meta",
+      "size": 61701
+    },
+    {
+      "guid": "afd667bb948cc24489bea6566b183483",
+      "uses": 5,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\zhanshi_skill003_shisun.png.meta",
+      "size": 55007
+    },
+    {
+      "guid": "d38a4043e1e929444b91f58efd1c8628",
+      "uses": 4,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\blend.tga.meta",
+      "size": 49196
+    },
+    {
+      "guid": "2d4d0b8e49ca61b42b3ccc6593a4f482",
+      "uses": 4,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\eye_lwy_t_smo-hammerige_02.tga.meta",
+      "size": 131116
+    },
+    {
+      "guid": "da250559c28e67c4098bfb339fe6d279",
+      "uses": 4,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\o_mask09a_1.png.meta",
+      "size": 56689
+    },
+    {
+      "guid": "68fc7c68ea35f59478c42ed39d95b107",
+      "uses": 4,
+      "source": "Resources\\Shaders\\LD_uv_blend.shader.meta",
+      "size": 6656
+    },
+    {
+      "guid": "da9f393c57c9e3743b38a245e383a2e2",
+      "uses": 4,
+      "source": "Effect\\Texture2D\\ef_jianyu-1.png.meta",
+      "size": 5380
+    },
+    {
+      "guid": "c7c56f371d628da49bb53168211daf02",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Textures\\trail\\fodder135_d_c.png.meta",
+      "size": 51151
+    },
+    {
+      "guid": "f958f23a69fc36a4d83fc81e8541b2b4",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Textures\\mask\\ramp_mask.png.meta",
+      "size": 4084
+    },
+    {
+      "guid": "7c361a8e0213f4e4aba29b679a39abab",
+      "uses": 3,
+      "source": "AssetsRaw\\Effect\\Textures\\trail\\Nunu_Trail_Add.png.meta",
+      "size": 56758
+    },
+    {
+      "guid": "80f9808493317a445a5b4b9baa90a701",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\Dguang_02_Tex_yy.tga.meta",
+      "size": 131116
+    },
+    {
+      "guid": "38bb16791a5f46b419297e31d9c00e11",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\Clouds_002.png.meta",
+      "size": 35875
+    },
+    {
+      "guid": "d4a97a625ae27414dbc62d5fabf6688a",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\daoguang_clamp.png.meta",
+      "size": 78722
+    },
+    {
+      "guid": "b1f5f3a8808b5ea4ab1e60dcbb54e411",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\fs_m_wenli_14.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "7fba5c85be55abd4a8a8816856c46972",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\bingfenghuang.png.meta",
+      "size": 95968
+    },
+    {
+      "guid": "3eaf97c5150d14f4f9ce96dccf047b93",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Tex_0047.png.meta",
+      "size": 4966
+    },
+    {
+      "guid": "74941aedcad9c7044b4885bcdb3cb6bd",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\mask\\ramp_mask01.png.meta",
+      "size": 9388
+    },
+    {
+      "guid": "b3bbe1f628515bc47b4f22bc3ab76bd3",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Tex_0045.png.meta",
+      "size": 20279
+    },
+    {
+      "guid": "f9b649bb2fde05c4081ff1389cccdbdc",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\Astral_ForceField02.png.meta",
+      "size": 82716
+    },
+    {
+      "guid": "a626536343d6db44bb06c06b87857dd3",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\shuili_00000.png.meta",
+      "size": 54170
+    },
+    {
+      "guid": "7e2419ed486bd1642abcfac74f5aa5df",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\light0114.png.meta",
+      "size": 7880
+    },
+    {
+      "guid": "40a3d5585a327854b946777d01ba7707",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\mask_clamp.png.meta",
+      "size": 5616
+    },
+    {
+      "guid": "1b38cf10f226ffd4c9c2757b31b7da1e",
+      "uses": 2,
+      "source": "Resources\\Shaders\\LD_uv_blend_depth.shader.meta",
+      "size": 6687
+    },
+    {
+      "guid": "364eec7b8ba6b3649b3249eb28165682",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\light0113.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "f62133792511a314eac90dfb9a89243d",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\liuguang1.png.meta",
+      "size": 14078
+    },
+    {
+      "guid": "746f49295188d8844a2a60a6579ae60b",
+      "uses": 2,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\rongyandimian.tga.meta",
+      "size": 778572
+    },
+    {
+      "guid": "fb136bdd824c6e3479fc1c3c16e15aad",
+      "uses": 1,
+      "source": "AssetsRaw\\Animation\\player\\zhanshi\\ZS_M_wuqi\\ZS_M_wuqi_01_b\\ZS_M_wuqi_01_b.png.meta",
+      "size": 100089
+    },
+    {
+      "guid": "ac6e774352f5ac64ca35135ca26b7f23",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Aat_00010.png.meta",
+      "size": 96640
+    },
+    {
+      "guid": "38d9f465b453db14787c0da991cd7865",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Aht_00004_1.png.meta",
+      "size": 66399
+    },
+    {
+      "guid": "fcd70846a7538564b91d6770c86f1deb",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Aft_00023.png.meta",
+      "size": 49481
+    },
+    {
+      "guid": "c194e0673da21f845bbf2be287515a0c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\daoguang005.png.meta",
+      "size": 54106
+    },
+    {
+      "guid": "aae3c8fcf2f30b342a2e9f133511bf70",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\flare_037.tga.meta",
+      "size": 196652
+    },
+    {
+      "guid": "cd557e2894e59a74cb37c31436731788",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\trail0041_00000.png.meta",
+      "size": 16978
+    },
+    {
+      "guid": "075769c95e55b4b459e80d2b3554f606",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\electric\\fx_lightinggray2x3.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "80b27dbd53fad8e498387e1a4d982ec5",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\xilie_glow015_4x4.png.meta",
+      "size": 51773
+    },
+    {
+      "guid": "2e01e17b3dbb53a4bb245b39c3e59e6c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\fire\\scn_ani0008_5x5.tga.meta",
+      "size": 2250044
+    },
+    {
+      "guid": "42de4218d886ba2409521c63b4170d1e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\FX_LWsissy_dilie_under_floor.png.meta",
+      "size": 187554
+    },
+    {
+      "guid": "f2656ef2990b495458789c57d4fc065c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\Ground_Crack_11.png.meta",
+      "size": 117239
+    },
+    {
+      "guid": "a2b16e30cc845e049ada821598144e15",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\wenli_0001.png.meta",
+      "size": 84256
+    },
+    {
+      "guid": "d54f0be79f036a4479bc950fa2cee316",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\fx_shuimiany.tga.meta",
+      "size": 196652
+    },
+    {
+      "guid": "97ccfff09da10e349859d2d7d0388bb4",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\FX_EnvGrayStreak_001_TEX_HKB 1.tga.meta",
+      "size": 63035
+    },
+    {
+      "guid": "d79f987d68fb4384a9191d167eafef4d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\TX-WL-005_a.png.meta",
+      "size": 29226
+    },
+    {
+      "guid": "97d0bc40f2251ef4eb08c574bf50f17f",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\daoguang008.png.meta",
+      "size": 73197
+    },
+    {
+      "guid": "1a0438e5d64b0d149830df40f2a2809c",
+      "uses": 1,
+      "source": "Resources\\Shaders\\LD_glow.shader.meta",
+      "size": 19045
+    },
+    {
+      "guid": "a75ea80989bcc2a4d8e909e267eff0bc",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\electric\\01_electric.png.meta",
+      "size": 90524
+    },
+    {
+      "guid": "fde0aee089153384ab0224a0a85dadb0",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\F_CloudFilter_Tex00_mask.tga.meta",
+      "size": 565574
+    },
+    {
+      "guid": "e26d2203b0b2f9b47899fa27b305e684",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\smoke\\WFX_T_FlamesSmall 4frm.tga.meta",
+      "size": 262188
+    },
+    {
+      "guid": "f374b06888980594482db68be3cbd499",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Aat_00011_00000.png.meta",
+      "size": 99865
+    },
+    {
+      "guid": "349fed47a85311d469defa46cc40e6ad",
+      "uses": 1,
+      "source": "Resources\\Shaders\\LD Add Mask.shader.meta",
+      "size": 3034
+    },
+    {
+      "guid": "838f62b5cdd297f41b7517c5f71be2e8",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\daoguang008_clamp.png.meta",
+      "size": 71149
+    },
+    {
+      "guid": "47761428b9b28344c9c0a29e743a3347",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\Glow_003.tga.meta",
+      "size": 16428
+    },
+    {
+      "guid": "665adb4dd5b23bc46a0cba2442d69ba9",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\guangyun.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "87fee3f1b4ad5a844b479610207a227c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\flare_038.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "267ffaa78894dcf44a5aef50e5c13946",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\zhanshi_skill003_jian.png.meta",
+      "size": 85911
+    },
+    {
+      "guid": "65213d320c4c5a743aec109827d6ad26",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\Texture_02076.png.meta",
+      "size": 90706
+    },
+    {
+      "guid": "a3dd9a41f16270c4bad3d7fcf13837a9",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\dilie001.png.meta",
+      "size": 9120
+    },
+    {
+      "guid": "7be83204a06d68b4c97e856f7eeaa216",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\dilie09.png.meta",
+      "size": 201911
+    },
+    {
+      "guid": "a95b40ac8ce5c5947a27c372707ec389",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\dilie15_1_lv.png.meta",
+      "size": 55837
+    },
+    {
+      "guid": "81924bdc6c500e946a3ae3dffa1e908e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\dilie_00003.png.meta",
+      "size": 190721
+    },
+    {
+      "guid": "b54f6e11ef6c14641938204f87ce294a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\lieheng_ck_002.PNG.meta",
+      "size": 17538
+    },
+    {
+      "guid": "5cadfe834c6505f4886b567b9df172f4",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\lieheng_lv.png.meta",
+      "size": 32500
+    },
+    {
+      "guid": "eb425fb7621526f4b9466e74ba7d4bdd",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\crack\\y_dl21_13_00.png.meta",
+      "size": 290460
+    },
+    {
+      "guid": "6394cdf116d0f5049b6b3ba9c51cd796",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\DG_nnde001.tga.meta",
+      "size": 262162
+    },
+    {
+      "guid": "61a795a863c321d49aa7774696d4552f",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\ct_dg002.png.meta",
+      "size": 47393
+    },
+    {
+      "guid": "e78d9de54d370284ea1f355e7e15ed6a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\daoguang\\Effect_00295.png.meta",
+      "size": 15394
+    },
+    {
+      "guid": "62fde372b5a31274e891e187e6a76b22",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\fazheng\\texture #11965.png.meta",
+      "size": 14758
+    },
+    {
+      "guid": "a5732b1262f0be44cbf7132815f564fd",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\fx_Ring_001.png.meta",
+      "size": 17349
+    },
+    {
+      "guid": "488754247778fc444883d9865e8ce5ca",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\15_flare.PNG.meta",
+      "size": 78548
+    },
+    {
+      "guid": "e8fcd9a60b73cd54ebee495e025a8466",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\15_flare_lv.PNG.meta",
+      "size": 48033
+    },
+    {
+      "guid": "ffa5584b99bed37498df42fc4fcfa489",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\glow_00005.png.meta",
+      "size": 6379
+    },
+    {
+      "guid": "ff76b18f0c1fda34cbb41d5eadeccb9e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\lieheng_glow.png.meta",
+      "size": 29999
+    },
+    {
+      "guid": "1109432ed74f0c94d9919ad510b5568d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\glow\\starlight019.png.meta",
+      "size": 22321
+    },
+    {
+      "guid": "e0adba8a0f28ecb49a55c015d15efac2",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\lgl\\fazhen_00052.jpg.meta",
+      "size": 24719
+    },
+    {
+      "guid": "0d0ee89297cfc544a8576c46f10a42a8",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\ZS_weapon_0001.png.meta",
+      "size": 85683
+    },
+    {
+      "guid": "08fa2d5b697d11b4da51937edfb6ba69",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\Tex_NPC_DaShiXiong_01.png.meta",
+      "size": 204736
+    },
+    {
+      "guid": "f51d90c3499d84c4ea63d755a466dd67",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\qilang.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "f36632cbd88227f47a9c215e5d4bfbfa",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\obj_feibiao01.png.meta",
+      "size": 159290
+    },
+    {
+      "guid": "be8acc39f63c01f4b94a896bfaa50b0a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\object\\shuye_01.tga.meta",
+      "size": 4140
+    },
+    {
+      "guid": "8f47662085049764aa3555863ce41752",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Effect_00328.png.meta",
+      "size": 46781
+    },
+    {
+      "guid": "ba169c86a0126d5499f12dff8dc6e432",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\Effect_00346.png.meta",
+      "size": 3088
+    },
+    {
+      "guid": "5c911ba36a44b974181fe426a7ec8021",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\fx_Lsd11124_tuowei_00000.png.meta",
+      "size": 15510
+    },
+    {
+      "guid": "69e0660471b09f1438c463da2729f1ea",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\fx_Lsd11124_tuowei_00001.png.meta",
+      "size": 11592
+    },
+    {
+      "guid": "39566de214396d2449cb16a3b46d6133",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\path_00371_xuanzhuan.png.meta",
+      "size": 18835
+    },
+    {
+      "guid": "68001155a13c40344b13d374a5ab69ac",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\path\\dawn_01.png.meta",
+      "size": 14312
+    },
+    {
+      "guid": "11bd783ff78ad6047a002ad3863f3382",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\sanshe_ring\\fangsheguang_00171.png.meta",
+      "size": 20287
+    },
+    {
+      "guid": "f1c8b0c895eead34d9ebb25c88f3e535",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\sanshe_ring\\ripple_lv_001.png.meta",
+      "size": 52534
+    },
+    {
+      "guid": "5aa8856bcde08f1409509385da8e8832",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\smoke\\cloud_02.tga.meta",
+      "size": 1048620
+    },
+    {
+      "guid": "771e29afc5d2bc84085f42baf58f413c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Adt_00019.png.meta",
+      "size": 35636
+    },
+    {
+      "guid": "23a52d9201a01d9459560584d83cb62e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Adt_00010.png.meta",
+      "size": 6211
+    },
+    {
+      "guid": "652dba27e047bd44c8ac2fa16088bb3b",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\test_zhanshi\\Adt_00019_zi.PNG.meta",
+      "size": 35394
+    },
+    {
+      "guid": "110b67275320daa43b6a0305caeac09e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\mask\\ramp_mask05.png.meta",
+      "size": 31404
+    },
+    {
+      "guid": "753c98ff03a6a344a86e26ea588ef68c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\flare\\light0098.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "fd54984f866722c47a4cdb911084a90c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\wenli\\wenli_0022.png.meta",
+      "size": 38280
+    },
+    {
+      "guid": "b3b2f592f7846dc4da66787c1c27134c",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\ani0050.tga.meta",
+      "size": 1048620
+    },
+    {
+      "guid": "3df645c0f02b9e641928e0914a0b293e",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\ani0153_2x2.tga.meta",
+      "size": 65580
+    },
+    {
+      "guid": "d509e995057726549a1aa98d08983d5d",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\xulie_shandian001_1x4.png.meta",
+      "size": 122901
+    },
+    {
+      "guid": "0906309b6b419ef4fbdd759d4071720a",
+      "uses": 1,
+      "source": "AssetsRaw\\Effect\\Textures\\xulie\\xulie_shandian002_1x4.png.meta",
+      "size": 75965
+    },
+    {
+      "guid": "7e289cd88db8a3c45a1c916490e530e0",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\ef_Fire2261_lv.png.meta",
+      "size": 83695
+    },
+    {
+      "guid": "8d95f170dfef6774c86e00b316165430",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\ef_Water_Splash.PNG.meta",
+      "size": 3757
+    },
+    {
+      "guid": "524d9ad2ff056f6478a30ce16c160931",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\ef_liuxing002.png.meta",
+      "size": 7987
+    },
+    {
+      "guid": "63e12ca5bf8f88d45b82d8befba7c0e2",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\ef_glow37.png.meta",
+      "size": 15578
+    },
+    {
+      "guid": "ff778f38a2e847740889e9ca1edd02ce",
+      "uses": 1,
+      "source": "Resources\\Shaders\\transCharacter.shader.meta",
+      "size": 2972
+    },
+    {
+      "guid": "677ac654a30f2ae4192ad63d8128742d",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\fx_jian_001.png.meta",
+      "size": 25014
+    },
+    {
+      "guid": "863cd6c90e9225047b1d7e5b125a922d",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\fx_jian_002.png.meta",
+      "size": 33828
+    },
+    {
+      "guid": "05e021c04bf0c914e9bc2107a435953d",
+      "uses": 1,
+      "source": "Effect\\Texture2D\\x_trails22_01.png.meta",
+      "size": 19490
+    }
+  ],
+  "unresolved": [
+    [
+      "ce47f77d4c07edb4884aed22d1665409",
+      2
+    ]
+  ]
+}
