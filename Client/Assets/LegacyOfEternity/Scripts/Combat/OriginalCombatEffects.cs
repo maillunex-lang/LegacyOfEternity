@@ -59,7 +59,7 @@ namespace LegacyOfEternity.Combat
 
             Vector3 spawn = ranged
                 ? (muzzle != null ? muzzle.position : transform.position + Vector3.up * 1.25f)
-                : transform.position + Vector3.up * 0.85f + transform.forward * 0.8f;
+                : transform.position;
             Quaternion facing = transform.rotation;
             GameObject instance = Instantiate(prefab, spawn, facing);
             instance.name = "Original FX " + prefab.name;
@@ -71,9 +71,10 @@ namespace LegacyOfEternity.Combat
             if (originalRigScale <= 0.001f || originalRigScale > 10f)
                 originalRigScale = 1f;
             instance.transform.localScale = prefab.transform.localScale * originalRigScale;
-            // All imported prefab assets were cleaned of missing legacy MonoBehaviours.
-            foreach (var system in instance.GetComponentsInChildren<ParticleSystem>(true))
-                system.Play(true);
+            // Original particle prefabs already encode Play On Awake and active-state
+            // per emitter. Forcing Play(true) on every nested system was bypassing
+            // their authored timing and triggering inactive ice/debris prematurely.
+            // Let Unity start only the emitters enabled by the original prefab.
 
             if (ranged && target != null && !target.IsDead)
             {
@@ -98,8 +99,7 @@ namespace LegacyOfEternity.Combat
                 while (instance != null && elapsed < duration)
                 {
                     elapsed += Time.deltaTime;
-                    instance.transform.position = transform.position + Vector3.up * 0.85f +
-                        transform.forward * 0.8f;
+                    instance.transform.position = transform.position;
                     instance.transform.rotation = transform.rotation;
                     yield return null;
                 }
