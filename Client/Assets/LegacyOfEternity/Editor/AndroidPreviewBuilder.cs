@@ -44,11 +44,12 @@ var knob=pad.Find("Handle");if(knob!=null){knob.GetComponent<Image>().sprite=sp;
 EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();Debug.Log("LOE_ANDROID_POLISH_OK");
 }
 public static void Build(){
-// Use the short-path junction on this build host only. New machines use Unity Hub defaults.
-if(Directory.Exists("C:/loe-android/NDK")) {
-UnityEditor.Android.AndroidExternalToolsSettings.ndkRootPath="C:/loe-android/NDK";
-UnityEditor.Android.AndroidExternalToolsSettings.sdkRootPath="C:/loe-android/SDK";
-UnityEditor.Android.AndroidExternalToolsSettings.jdkRootPath="C:/loe-android/OpenJDK";
+// Optional short toolchain path for Windows Ninja MAX_PATH, set by build environment.
+var toolchainRoot=Environment.GetEnvironmentVariable("LOE_ANDROID_TOOLCHAIN_ROOT");
+if(!string.IsNullOrWhiteSpace(toolchainRoot) && Directory.Exists(Path.Combine(toolchainRoot,"NDK"))) {
+UnityEditor.Android.AndroidExternalToolsSettings.ndkRootPath=Path.Combine(toolchainRoot,"NDK");
+UnityEditor.Android.AndroidExternalToolsSettings.sdkRootPath=Path.Combine(toolchainRoot,"SDK");
+UnityEditor.Android.AndroidExternalToolsSettings.jdkRootPath=Path.Combine(toolchainRoot,"OpenJDK");
 }
 LocomotionFix.Run();
 Polish();
