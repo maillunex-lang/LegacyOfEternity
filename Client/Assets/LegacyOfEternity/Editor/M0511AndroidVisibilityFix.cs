@@ -6,8 +6,8 @@ using UnityEngine;
 namespace LegacyOfEternity.Editor
 {
     /// <summary>
-    /// Phone acceptance hotfix: heroes readable on Android (Unlit) + soft particle
-    /// fallback so empty/broken VFX slots are not solid purple/white quads.
+    /// PORT-01: assign Custom/Character to prototype hero mats when available;
+    /// keep soft-particle fallback for empty/broken VFX (until PORT-03).
     /// </summary>
     public static class M0511AndroidVisibilityFix
     {
@@ -94,11 +94,13 @@ namespace LegacyOfEternity.Editor
 
         private static int FixHeroMaterials()
         {
+            var character = Shader.Find("Custom/Character");
             var unlit = Shader.Find("Unlit/Texture");
             if (unlit == null)
                 unlit = Shader.Find("Mobile/Unlit (Supports Lightmap)");
-            if (unlit == null)
-                throw new Exception("No Unlit shader for hero visibility fix");
+            var shader = character != null ? character : unlit;
+            if (shader == null)
+                throw new Exception("No Custom/Character or Unlit shader for hero visibility fix");
 
             int count = 0;
             foreach (var path in HeroMats)
@@ -107,7 +109,7 @@ namespace LegacyOfEternity.Editor
                 if (mat == null)
                     continue;
                 var tex = mat.HasProperty("_MainTex") ? mat.GetTexture("_MainTex") : null;
-                mat.shader = unlit;
+                mat.shader = shader;
                 if (tex != null && mat.HasProperty("_MainTex"))
                     mat.SetTexture("_MainTex", tex);
                 if (mat.HasProperty("_Color"))
@@ -115,6 +117,7 @@ namespace LegacyOfEternity.Editor
                 EditorUtility.SetDirty(mat);
                 count++;
             }
+            Debug.Log("LOE_M0511_HERO_SHADER=" + shader.name);
             return count;
         }
 

@@ -1,0 +1,4 @@
+﻿PORT-01: Custom-Character.shader imported to
+  Assets/LegacyAssets/Resources/Shaders/Custom-Character.shader
+GUID fc39ed277a42ab04b9921720cd614363 (must be unique — do not duplicate file).
+Mats under LegacyAssets/AssetsRaw/Animation/player already reference this GUID.

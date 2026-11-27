@@ -1,364 +1,303 @@
-# Legacy of Eternity — дорожная карта для исполнителей
+# Legacy of Eternity — дорожная карта полного паритета с оригиналом (Unity 6)
 
-**Дата актуализации:** 27.11.2026 (M05.18 loot/inventory)  
+**Дата актуализации:** 27.11.2026 (стратегия: full original → Unity 6)  
 **Владелец:** LunexUfa  
-**Канонический файл:** этот документ (`Docs/ROADMAP.md`). Любой ИИ-исполнитель **обязан** читать его в начале задачи и **обновлять** в конце (см. §0).
+**Канон:** этот файл. Любой ИИ-исполнитель **читает в начале** и **обновляет в конце** (§0).
 
-### Политика недочётов vs фич (решение владельца 27.11)
+Связанные файлы: `Docs/CURRENT-STATUS.md`, `Docs/DECISIONS.md`, `Docs/BOOTSTRAP.md`,  
+`C:\Source\Resources\14_Catalog\` (каталог Codex), `C:\SOURCE\LunexUfa\ROADMAP.md` (указатель).
 
-- **Блокеры приёмки** (не видно героя, сплошные фиолетовые/белые квадраты VFX, краш, нельзя пройти квест) → **сразу короткий патч-APK**, потом снова фичи.
-- **Косметика / UX / NPC-арт / диалоги** → копим в долг этапа, чиним отдельно или в M05.19 / GATE-ART.
-- Не останавливать дорожную карту на бесконечной полировке VFX parity.
+---
 
-Связанные файлы:
+## §0. Протокол исполнителя (обязателен)
 
-| Файл | Назначение |
+### 0.1 Цель продукта (с 27.11.2026)
+
+Сделать **ту же игру, что оригинал Darklord / Legacy of Eternity**, на **Unity 6000.3 + Android**,  
+перенося **возможности, механики, графику, текстуры, объекты, анимации, VFX, UI, локации, квесты, предметы (включая зелья), бой, прогрессию** — без упрощённых «заглушек» как конечной цели.
+
+Упрощённый оффлайн-прототип (login/квест/сумка 0.6–0.8) — **временные леса**, пока слой оригинала не заменит их по частям. Новые фичи **не выдумывать**: брать из оригинала.
+
+### 0.2 Источники (только чтение оригинала / запись в LoE)
+
+| Роль | Путь |
 | --- | --- |
-| `Docs/CURRENT-STATUS.md` | Факт «что сейчас на диске / какой APK» |
-| `Docs/BOOTSTRAP.md` | Подъём машины, Unity, Docker health |
-| `Docs/DECISIONS.md` | Юридические / продуктовые решения |
-| `Docs/ARCHITECTURE.md` | Архитектура (если расходится с ROADMAP — править оба) |
-| `C:\SOURCE\LunexUfa\ROADMAP.md` | Указатель: лаборатория, не целевой клиент |
+| **Целевой клиент** | `C:\LegacyOfEternity` (Unity 6, Built-in RP) |
+| **Codex-адаптация под U6** | `C:\Source\Resources\` (`01_…`–`18_…`, каталог `14_Catalog`) |
+| **Оригинал клиент+конфиг** | `C:\Source\Darklord-Final\` |
+| **Оригинал Android baseline** | `C:\SOURCE\LunexUfa\Baseline\Darklord-Android\` |
+| **Квесты/спавны эталон** | `C:\SOURCE\LunexUfa\Content\`, `Baseline\Haitan-*.md` |
+| **Лаборатория Server/Admin** | `C:\SOURCE\LunexUfa\Server`, `Admin` — не целевой APK |
+
+Правила импорта:
+
+1. **Оригинал и Resources — read-only** (не портить GUID/файлы на месте).  
+2. Копировать в LoE в `Client/Assets/OriginalPort/` (или согласованный префикс), **сохраняя `.meta` GUID** где есть в каталоге.  
+3. Сверять `14_Catalog\guid-mapping.json`, `compatibility-report.json`, `UNITY6_NOTES.md`, `MISSING_GUIDS.md`.  
+4. Legacy MonoBehaviour / NGUI / XLua **не тащить слепым копированием** — заменить эквивалентом uGUI/C# LoE, **поведение как в оригинале**.  
+5. Каждый крупный срез = ветка `cursor/port-<slice>-270c` + APK + обновление ROADMAP/STATUS.
+
+### 0.3 Перед работой
+
+1. Прочитать ROADMAP + CURRENT-STATUS + актуальный `14_Catalog` README/NOTES.  
+2. Взять **только** активный P0-срез (не «всю игру сразу» одним коммитом).  
+3. Рабочая копия: `C:\LegacyOfEternity`, ветка `cursor/<имя>-270c`.  
+4. Не собирать основной APK из Unity 2017 LunexUfa.
+
+### 0.4 Во время работы
+
+1. Крупный этап → один APK на приёмку.  
+2. CoastalPrototype можно расширять/заменять порциями; полный wipe сцены — только в срезе PORT-LOC с бэкапом/веткой.  
+3. APK не в git; LFS для крупных бинарников.  
+4. Toolchain: `LOE_ANDROID_TOOLCHAIN_ROOT=C:\asdk`, при необходимости `LOE_SKIP_ANDROID_AUDITS=1`; `platform-tools` без ломающего `package.xml`.  
+5. Сборка: `BuildOfflineAndroid.Run` (позже — отдельный `BuildParityAndroid` когда offline-gate станет опционален).  
+6. **Блокеры приёмки** (краш, не видно героя, сплошные error-квадраты) → сразу патч-APK.  
+7. Косметический долг вне текущего среза — в чеклист среза как «остаток», не останавливает следующий срез без указания владельца.
+
+### 0.5 После работы
+
+Обязательно обновить:
+
+1. Этот ROADMAP (статусы, чекбоксы, P0, дата).  
+2. `CURRENT-STATUS.md` (APK, чеклист приёмки).  
+3. При смене стратегии — `DECISIONS.md`.  
+4. Commit + push.
+
+### 0.6 Статусы
+
+`Готово (x.y.z)` | `В работе` | `Запланировано` | `Блокер` | `Отложено`
 
 ---
 
-## §0. Обязательный протокол для ИИ-исполнителя
+## §1. Продуктовые решения
 
-### 0.1 Перед работой
-
-1. Прочитать **этот** `ROADMAP.md` и `CURRENT-STATUS.md`.
-2. Определить **активную веху** (статус `В работе` или первая `Запланировано` в P0).
-3. Не начинать импорт Codex/`C:\Source\Resources` и не трогать M06 online, пока владелец явно не сказал или веха не открыта в P0.
-4. Рабочая копия клиента: `C:\LegacyOfEternity`. Ветка: `cursor/<кратко>-270c` от актуальной рабочей ветки / `main`.
-5. Не использовать `C:\SOURCE\LunexUfa\Client` как целевой Android-клиент.
-
-### 0.2 Во время работы
-
-1. Крупный этап = одна логическая поставка + один APK на приёмку. Мелкие фиксы внутри этапа — без отдельной приёмки.
-2. Сцену `Assets/LegacyOfEternity/Scenes/CoastalPrototype.unity` не перегенерировать без нужды; новые системы — runtime (`RuntimeInitializeOnLoad` / AddComponent), Editor-установщики — только если уже есть паттерн M05x.
-3. APK **не коммитить**. Большие бинарники — Git LFS.
-4. Android toolchain на этой машине: `LOE_ANDROID_TOOLCHAIN_ROOT=C:\asdk`, `LOE_SKIP_ANDROID_AUDITS=1` при холодном Library; у `C:\asdk\SDK\platform-tools` не должно быть `package.xml` (оставить `source.properties`).
-5. Сборка оффлайн-APK:  
-   `Unity.exe -batchmode -nographics -quit -projectPath C:\LegacyOfEternity\Client -executeMethod LegacyOfEternity.Editor.BuildOfflineAndroid.Run -logFile <log>`  
-   Успех: в логе `LOE APK OK` и `result=Succeeded errors=0`.
-6. Версии: поднимать `bundleVersion` / `bundleVersionCode` / имя APK в `Editor/BuildOfflineAndroid.cs` на каждый этапный билд.
-
-### 0.3 После работы (обязательная актуализация)
-
-Исполнитель **в том же PR/коммите этапа** обновляет:
-
-1. **`Docs/ROADMAP.md`**
-   - Статус вехи: `Запланировано` → `В работе` → `Готово (версия APK)`.
-   - Чекбоксы подзадач `[x]` / `[ ]`.
-   - Блок «Активная очередь P0».
-   - «Дата актуализации» в шапке.
-2. **`Docs/CURRENT-STATUS.md`**
-   - Что в коде, путь к APK, чеклист приёмки для владельца, «Дальше».
-3. Коммит с понятным сообщением; push ветки `cursor/*-270c`.
-4. Если изменились продуктовые решения — строка в `Docs/DECISIONS.md`.
-
-**Не закрывать этап**, пока не обновлены ROADMAP + CURRENT-STATUS + путь к APK (если этап с поставкой).
-
-### 0.4 Статусы вех (словарь)
-
-| Статус | Значение |
-| --- | --- |
-| `Готово (x.y.z)` | Код + APK собраны; владелец может принимать |
-| `В работе` | Текущий фокус исполнителя |
-| `Запланировано` | Не начинать, пока не в P0 |
-| `Блокер` | Ждёт внешнего входа (владелец / Codex / железо) |
-| `Отложено` | Сознательно не делаем |
+1. **Паритет с оригиналом на Unity 6 / Android** — главный критерий готовности систем.  
+2. **Целевой клиент только LoE** (`C:\LegacyOfEternity`).  
+3. **Перенос всего** (графика + механики + контент); упрощения допустимы только как промежуточный шаг внутри среза с явной заменой.  
+4. **`C:\Source\Resources` открыт к импорту** (стратегия 27.11: не ждать отдельной фразы «можно» — владелец поручил полный перенос).  
+5. Приёмка: APK после **каждого PORT-среза**.  
+6. Online (M06+) — после того как оффлайн-паритет ключевых систем (бой, сумка/зелья, квесты локации) играет на телефоне; сервер сверки с оригинальными конфигами.
 
 ---
 
-## §1. Продуктовые решения (зафиксировано)
-
-1. **Целевой клиент:** `C:\LegacyOfEternity`, Unity **6000.3.x**, Android landscape ARM64.
-2. **`C:\SOURCE\LunexUfa`:** эталон Darklord 2017, Server/Admin лаборатория, Content/Baseline — **не** основной APK.
-3. **Приёмка владельца:** APK после **каждого крупного этапа**, не после каждой мелкой правки.
-4. **Codex / `C:\Source\Resources`:** адаптация арта оригинала под Unity 6. **Импорт в LoE только по явной команде владельца** («можно импортировать Resources»).
-5. **Сеть (M06):** после стабильного оффлайн-цикла на телефоне; не параллелить с незакрытым оффлайн-контентом без указания владельца.
-6. **Права на ресурсы:** подтверждены владельцем (см. `DECISIONS.md` / `ASSET-RIGHTS.md`).
-
----
-
-## §2. Карта репозитория (куда лезть)
+## §2. Карта переноса (что откуда)
 
 ```
-C:\LegacyOfEternity\
-  Client\                          Unity 6 проект
-    Assets\LegacyOfEternity\
-      Scenes\CoastalPrototype.unity
-      Scripts\Offline\             оффлайн вход/квест/мир
-      Scripts\Combat\              PvE, VFX trigger
-      Scripts\Player\              мотор, классы, joystick
-      Scripts\Camera\
-      Effects\                     префабы навыков (Unity6)
-      Editor\BuildOfflineAndroid.cs
-    Assets\LegacyAssets\           перенесённый legacy арт/шейдеры
-    Assets\Resources\OfflineUI\    splash/login спрайты
-  Builds\Android\                  локальные APK (не в git)
-  Docs\                            ROADMAP, STATUS, аудиты M05x
-  Server\                          Go health scaffold (не полный MMO)
-  Deploy\                          docker-compose demo
-
-C:\Source\Resources\               Codex-адаптация (импорт по команде)
-C:\SOURCE\LunexUfa\                эталон / Server:8080 Admin:8090
-C:\SOURCE\LunexUfa\Content\HaitanPrototypeQuests.json
-C:\SOURCE\LunexUfa\Baseline\       механики Haitan, скрины
+Оригинал (Darklord-Final / Darklord-Android)
+  ├── Characters / Animations / Weapons
+  ├── Effects (VFX) + Shaders (LD/*, Custom-Character)
+  ├── UI (атласы UIMain, Login, Bag, SkillUI, Joystick)
+  ├── Scenes / Maps (cs_yw_haitan01, …)
+  ├── Lua Data: t_skill, t_item, QuestConfig, PotionIDs, t_map, …
+  └── Audio / Prefabs / Equipment
+        │
+        ▼  Codex adaptation
+C:\Source\Resources\01_…18_ + 14_Catalog\*.json
+        │
+        ▼  Port slices (GUID-safe)
+C:\LegacyOfEternity\Client\Assets\OriginalPort\…
+        + Scripts parity (C# instead of XLua/NGUI)
+        + APK на Android
 ```
 
-Ключевые оффлайн-скрипты:
-
-| Скрипт | Роль |
-| --- | --- |
-| `OfflineDemoStore.cs` | JSON-сейв аккаунтов/героев/квеста |
-| `OfflineLoginGate.cs` | UI входа (splash), разблокировка геймплея |
-| `OfflineSession.cs` | Текущий токен/герой в рантайме |
-| `OfflineQuestHud.cs` | Прогресс квеста (HUD) |
-| `OfflineWorldBootstrap.cs` | Спавн Тиаса + gather |
-| `OfflineWorldInteractable.cs` | Интеракты в мире |
-| `OfflineInteractHud.cs` | Кнопка Поговорить/Собрать/Сдать |
-| `OriginalCombatEffects.cs` | VFX навыков + sanitize magenta |
-| `CombatEnemy.cs` | `Killed` → прогресс kill-квеста |
-
-Сейв оффлайн: `Application.persistentDataPath/loe_offline_demo.json` (не в git).
+Уже в LoE (частично, не полный паритет): CoastalPrototype, 4 класса, VFX-префабы Unity6, offline login/квест/лут-заготовка, original HUD icons/camera/controls (M05.x).
 
 ---
 
-## §3. Сводная таблица вех
+## §3. Сводная таблица вех PORT / M
 
-| ID | Этап | Статус | APK / критерий |
+| ID | Срез | Статус | Критерий / APK |
 | --- | --- | --- | --- |
-| M00–M04 | Каркас, ассеты, Coastal, UI/камера | Готово частично (0.5.x) | Сцена играбельна |
-| M05.0–M05.15 | Бой, VFX, HUD, камера, контролы | Готово частично (≤0.5.5) | 4 класса, PvE |
-| M05.16 | Оффлайн вход + квест | Готово (0.6.x) | login→hero→quest |
-| M05.16b | Login UI «как в оригинале» | Готово (0.6.2) | splash + крупные поля |
-| M05.16c | Magenta VFX на Android | Готово (0.6.3) | GLES3 + null mats |
-| M05.17 | Мировой оффлайн-квест Haitan | Готово (0.7.0) | Тиас/gather/kill/сдача |
-| M05.17b | Патч видимости Android (герой+VFX) | Готово (0.7.1) | Unlit герои, soft-particle fallback |
-| M05.18 | Оффлайн лут + инвентарь-заготовка | Готово (0.8.0) | дроп/сумка, APK 0.8.0 |
-| M05.19 | Полировка оффлайн UX / маркеры квеста | Запланировано | радар/стрелка, диалоги |
-| GATE-ART | Импорт `C:\Source\Resources` | Блокер (ждёт команду) | каталог в LoE |
-| M06 | Online auth + сессии (Go) | Запланировано | клиент↔Server |
-| M07 | Серверные квесты/инвентарь/лут | Запланировано | authoritative |
-| M08–M12 | Соц./экономика/оптимизация/релизы | Запланировано | по мере M06–M07 |
+| LEGACY-0.8 | Offline scaffold (login/квест/лут) | Готово (0.8.0) | Временные леса |
+| **PORT-00** | **Инвентаризация + пайплайн импорта** | **Готово** | Манифест, OriginalPort, Port-FromResources.ps1 |
+| **PORT-01** | **Шейдеры + материалы персонажей** | **В работе** | Custom/Character + CustomLight; APK 0.9.0 pending |
+| PORT-02 | Персонажи + анимации + оружие (4 класса) | Запланировано | Ориг. меши/клипы/сокеты |
+| PORT-03 | VFX навыков (все классы) по каталогу | Запланировано | Без error-листов; тайминги как t_skill |
+| PORT-04 | UI бой + логин + сумка (атласы/префабы) | Запланировано | Как оригинал 1136×640 |
+| PORT-05 | Предметы + зелья + использование (ItemConfig/PotionIDs) | Запланировано | Реальное лечение/автоюз по конфигу |
+| PORT-06 | Локация Haitan (карта, террейн, пропы, спавны) | Запланировано | Паритет cs_yw_haitan01 / 110200011 |
+| PORT-07 | Квесты Haitan полный поток + NPC/gather объекты | Запланировано | 1001701+ диалоги/цели как оригинал |
+| PORT-08 | Остальные локации по t_map (очередь) | Запланировано | По одной карте = этап |
+| PORT-09 | Боевая механика (скиллы, CD, хиты, AI) | Запланировано | По SkillConfig / TitanMagic эталон |
+| PORT-10 | Прогрессия (уровни, эквип, усиления) | Запланировано | Как оригинальные таблицы |
+| M06 | Online auth/сессии (Go) | Запланировано | После PORT-05…07 на телефоне |
+| M07 | Authoritative квесты/инвентарь/лут | Запланировано | Сервер + клиент |
+| M08+ | Соц./экономика/оптимизация/релиз | Запланировано | По мере паритета |
+
+Старые M05.16–M05.18 остаются в истории как scaffold; новые работы идут под **PORT-***.
 
 ---
 
-## §4. Детальные вехи и подзадачи
+## §4. Детальные срезы
 
-### M05.16 — Оффлайн вход + базовый квест — `Готово (0.6.0–0.6.2)`
+### LEGACY-0.8 — Offline scaffold — `Готово (0.8.0)`
 
-- [x] `OfflineDemoStore`: register/login, миры, герои, 4 класса
-- [x] `OfflineLoginGate`: блок геймплея до входа
-- [x] Квест 1001701–1001703 (talk/gather/kill) + награды XP/money
-- [x] Persist в `loe_offline_demo.json`
-- [x] Крупный uGUI login + `Resources/OfflineUI` (splash `bg_login`, кнопки)
-- [x] APK 0.6.0–0.6.2
+- [x] Offline login/splash, квест Тиас/gather/kill/сдача  
+- [x] Lут-заготовка + сумка + dummy potion  
+- [x] VFX hotfix 0.6.3/0.7.1 (временный soft-particle / Unlit)  
 
-**Не делать снова:** не откатывать на OnGUI-логин; не удалять Offline store.
+**Долг:** заменить Unlit/soft-fallback и dummy potion срезами PORT-01 / PORT-03 / PORT-05.
 
 ---
 
-### M05.16c — Magenta skill VFX — `Готово (0.6.3)`
+### PORT-00 — Инвентаризация + пайплайн — `Готово`
 
-- [x] Убрать `gles3` из `#pragma exclude_renderers` в `LD_glow`, `LD_uv_blend_depth`, `LD_water`
-- [x] `M053AndroidVfxMaterialsFix`: заполнить 307 null material slots
-- [x] Runtime `SanitizeMagentaMaterials` в `OriginalCombatEffects`
-- [x] Graphics API: Vulkan → OpenGLES3 fallback
-- [x] APK 0.6.3
+**Цель:** любой исполнитель знает порядок срезов и куда класть файлы.
 
-**Регрессия:** при новых VFX-префабах снова гонять Fix/Audit перед APK.
+- [x] Создать `Client/Assets/OriginalPort/` (+ README с правилами GUID)  
+- [x] Создать `Docs/PORT-MANIFEST.md`: список срезов, зависимости, статус файлов  
+- [x] Зафиксировать скрипт/процедуру: `Docs/scripts/Port-FromResources.ps1`  
+- [x] Smoke: открытие Unity + `BuildOfflineAndroid` после игрового импорта (процедура в README/скрипте)  
+- [x] APK не нужен (нет игрового диффа в PORT-00)  
 
----
-
-### M05.17 — Мировой оффлайн-квест на Coastal — `Готово (0.7.0)`
-
-Цепочка: **1001701 talk → 1001702 gather → 1001703 kill×3 → 1001704 turn-in**.
-
-- [x] Спавн NPC **Тиас** (`OfflineWorldBootstrap` / `OfflineWorldInteractable` kind Guide)
-- [x] Точки **прибрежный хлам** (GatherScrap), одна сбора достаточно для цели
-- [x] `OfflineInteractHud`: Поговорить / Собрать / Сдать + подсказки
-- [x] Kill через `CombatEnemy.Killed` → `ApplyQuestEvent(..., "kill")`
-- [x] После 3 киллов → 1001704; сдача Тиасу → `questId=0` + награда
-- [x] Тексты как в эталоне «Близкая опасность (n)»
-- [x] HUD прогресса без старых кнопок talk/gather
-- [x] APK `Builds/Android/LegacyOfEternity-0.7.0-alpha.apk`
-
-**Приёмка владельца (чеклист):**
-
-1. Регистрация / вход → выбор/создание героя  
-2. Подойти к синему Тиасу → Поговорить  
-3. Собрать хлам (золотые маркеры)  
-4. Убить 3 монстров  
-5. Вернуться к Тиасу → Сдать  
-6. Перезапуск приложения: XP/монеты/квест сохранены  
-
-**Известный долг:** визуалы NPC/хлам — примитивы (капсула/куб), ждут GATE-ART.
+**Критерий:** следующий срез PORT-01 можно начать без вопросов «куда класть».
 
 ---
 
-### M05.18 — Оффлайн лут + инвентарь-заготовка — `Готово (0.8.0)`
+### PORT-01 — Шейдеры + материалы персонажей — `В работе`
 
-**Цель этапа:** после убийства монстра игрок получает лут; есть простой экран сумки; всё в оффлайн JSON; APK **0.8.0** на приёмку.
+Источник: `Resources/12_Shaders`, mats уже в `LegacyAssets/.../player`, notes в `UNITY6_NOTES.md`.
 
-#### Подзадачи (исполнять по порядку)
-
-**A. Данные**
-
-- [x] Расширить `OfflineDemoStore.Hero`: `ItemStack[] inventory`
-- [x] Таблица предметов: scrap, fang, hide, bone, potion, ore, cloth, gem (+ money в луте)
-- [x] Миграция сейва: `EnsureInventory` при Enter/Save
-- [x] `ApplyLoot` / `TryConsumeItem` + `SaveHero`
-
-**B. Дроп с монстров**
-
-- [x] `RollKillLoot` на `CombatEnemy.Killed` в `OfflineQuestHud`
-- [x] Общий пул Coastal
-- [x] `OfflineLootFeedback` тосты 2.8с
-
-**C. UI сумки**
-
-- [x] Кнопка «Сумка» top-right (`OfflineBagHud`)
-- [x] Панель список имя × count
-- [x] Выпить `offline_potion` → фиктивный heal feedback
-
-**D. Связь с квестом**
-
-- [x] Gather 1001702 кладёт `offline_scrap`
-- [x] Цепочка 1001701–1001704 сохранена
-
-**E. Документация и поставка**
-
-- [x] `BuildOfflineAndroid` **0.8.0** versionCode 21
-- [x] APK путь в `CURRENT-STATUS.md`
-- [x] Чеклист приёмки обновлён
-
-**Критерий готовности M05.18:** на телефоне видно дроп после килла, сумка показывает предметы после рестарта приложения.
-
-**Не входит в M05.18:** серверный инвентарь, аукцион, крафт, полный UI оригинала.
-
-### Changelog этапа M05.18 (27.11.2026)
-- Сделано: инвентарь JSON, лут с киллов, сумка, scrap с gather, potion use
-- APK: `Builds/Android/LegacyOfEternity-0.8.0-alpha.apk`
-- Статус вехи: Готово (0.8.0)
-- Следующая P0: M05.19 (полировка UX) или по указанию владельца
-- Блокеры: нет
+- [x] Импорт `Custom-Character.shader` (+ meta GUID `fc39ed…`) → `LegacyAssets/Resources/Shaders/`  
+- [x] Порт `CustomLight` → `Scripts/Rendering/CustomLight.cs` + глобали `_SLight*`  
+- [x] `HeroAndroidVisibility`: предпочитать `Custom/Character`, Unlit только emergency  
+- [x] `ramp_mask06.png` (ссылка из warrior mat)  
+- [ ] Compile/smoke Android GLES3; APK **0.9.0**  
+- [ ] Приёмка на телефоне: 4 класса читаемы, текстуры верные  
+- [ ] LD_* GLES-исключения — отдельный хвост при VFX (PORT-03), не блокер character mats
 
 ---
 
-### M05.19 — Полировка оффлайн UX — `Запланировано`
+### PORT-02 — Персонажи / анимации / оружие — `Запланировано`
 
-- [ ] Стрелка/компас к текущей цели квеста (Тиас / gather / ближайший враг)
-- [ ] Простой диалог Тиаса (2–3 строки текста) вместо мгновенного complete
-- [ ] Имена/HP врагов уже есть — проверить читаемость на телефоне
-- [ ] Заменить примитивы NPC на временные меши из уже импортированных `LegacyAssets` (если есть подходящий NPC), **не** полный Codex-импорт
-- [ ] APK этапный (например 0.8.1 / 0.9.0) только если объём тянет на «крупный этап»
-
----
-
-### GATE-ART — Импорт Codex Resources — `Блокер` (только по команде владельца)
-
-**Триггер:** фраза владельца вроде «можно импортировать Resources» / «Codex готов».
-
-Источник: `C:\Source\Resources\` (каталоги `01_Characters` … `18_UnityPackages`, `14_Catalog\*.json`).
-
-#### Подзадачи (когда откроют)
-
-- [ ] Прочитать `14_Catalog` JSON (классы, skills VFX, animations) — план маппинга в LoE
-- [ ] Импорт **порциями** (не всё сразу): сначала UI/characters OR VFX — согласовать с владельцем одну порцию
-- [ ] Сохранять `.meta` GUID где каталог это требует; SHA256 сверка при наличии отчётов Codex
-- [ ] Не затирать рабочие `Effects/*_Unity6.prefab` без backup/ветки
-- [ ] После порции: Editor audit (M053 / skill icons) + APK smoke
-- [ ] Обновить ROADMAP: какие папки импортированы, какие нет
-- [ ] Отдельная ветка `cursor/import-resources-<slice>-270c`
-
-**Пока блокер:** не копировать `C:\Source\Resources` в `Client/Assets` самостоятельно.
+- [ ] Импорт FBX/контроллеров 4 классов из `01_Characters` / `02_Animations` / `03_Weapons`  
+- [ ] Сокеты оружия (`weapon-socket-probe.json`)  
+- [ ] Animator transitions по каталогу; не ломать root motion без сверки  
+- [ ] APK  
 
 ---
 
-### M06 — Online backend — `Запланировано` (после оффлайн-приёмок)
+### PORT-03 — VFX навыков — `Запланировано`
 
-Ориентиры: `C:\LegacyOfEternity\Server` (Go health), идеи API из `C:\SOURCE\LunexUfa\Server`.
-
-#### Подзадачи (когда откроют)
-
-- [ ] Зафиксировать контракт: register/login/worlds/heroes (совместимый с OfflineDemoStore полями где возможно)
-- [ ] PostgreSQL schema (accounts, heroes, sessions)
-- [ ] Go: auth + session token; health уже есть — расширить
-- [ ] Docker compose в `Deploy/` с реальными сервисами (не только health)
-- [ ] Клиент: режим Online рядом с Offline (флаг/экран), не ломая оффлайн-вход
-- [ ] TLS / секреты — не хардкодить домен в клиент (`BOOTSTRAP.md`)
-- [ ] Smoke: два клиента / один сервер
-- [ ] APK + server runbook в CURRENT-STATUS
-
-**Не копипастить** клиент Unity 2017; переносить идеи протокола и данные.
+- [ ] Импорт по `03-class-skills-vfx*.json` / `09_VFX`  
+- [ ] Материалы/текстуры; запрет «пустой additive = фиолетовый квадрат»  
+- [ ] Привязка к `OriginalCombatEffects` / оригинальным таймингам `t_skill`  
+- [ ] APK  
 
 ---
 
-### M07 — Серверные квесты / инвентарь / лут — `Запланировано`
+### PORT-04 — UI (логин, бой, сумка) — `Запланировано`
 
-- [ ] Перенос цепочки Haitan 1001701+ на серверные цели
-- [ ] Authoritative kill/gather validation
-- [ ] Инвентарь на сервере; клиент отображает
-- [ ] Согласование с GATE-ART NPC/точками сбора на карте
+- [ ] Атласы UIMain/UIMain2/Login → Sprite; сверка rect/pivot с original meta  
+- [ ] LoginUI как оригинал (splash + поля + кнопка старта)  
+- [ ] SkillUIParent / Joystick / Bag layout 1136×640  
+- [ ] Замена NGUI MB на uGUI, **внешний вид и позиции как оригинал**  
+- [ ] APK  
 
 ---
 
-### M08–M12 — Дальше — `Запланировано` (кратко)
+### PORT-05 — Предметы и зелья как в оригинале — `Запланировано`
 
-| ID | Содержание | Когда |
-| --- | --- | --- |
-| M08 | Соц. (партия/чат минимум) | После M06–M07 |
-| M09 | Экономика / магазин | После инвентаря |
-| M10 | Оптимизация Android (draw calls, атласы, шейдеры) | После GATE-ART |
-| M11 | CI сборка APK / checks | По возможности раньше |
-| M12 | Релизный keystore, store listing | После стабильных альф |
+Эталон: `ItemConfig`, `ConstsConfig.PotionIDs` (`101010001`…`101010009`), BagModel auto-potion, UseItem.
+
+- [ ] Таблица предметов из оригинала (не `offline_*` заглушки)  
+- [ ] Зелья: хил по конфигу, требования уровня  
+- [ ] Использование из сумки + автоюз в бою (как autofight BuyPotion/Use)  
+- [ ] Миграция/замена offline inventory  
+- [ ] APK  
+
+---
+
+### PORT-06 — Локация Haitan — `Запланировано`
+
+- [ ] Импорт террейна/пропов/лайтов по зависимостям `cs_yw_haitan01` / Resources environment  
+- [ ] Камера/спавн героя как в оригинале (уже частично M05.9/10)  
+- [ ] Коллизии/навигация  
+- [ ] APK  
+
+---
+
+### PORT-07 — Квесты Haitan полный паритет — `Запланировано`
+
+- [ ] NPC Тиас и gather-объекты — оригинальные модели/точки из MapData `110200011`  
+- [ ] Диалоги/accept/finish как QuestConfig (не только кнопка)  
+- [ ] Цепочки после 1001703 по конфигу оригинала  
+- [ ] APK  
+
+---
+
+### PORT-08 — Прочие локации — `Запланировано`
+
+Очередь строить из `t_map` / каталога environments; **одна карта = один этап + APK**.
+
+- [ ] Составить упорядоченный список карт после Haitan  
+- [ ] Повторять PORT-06 паттерн  
+
+---
+
+### PORT-09 — Боевая механика — `Запланировано`
+
+- [ ] Скиллы: дальность, CD, мультикиты, эффекты статусов по SkillConfig  
+- [ ] Мобы: AI/агро/респавн как на карте  
+- [ ] Убрать расхождения prototype combat  
+
+---
+
+### PORT-10 — Прогрессия / эквип — `Запланировано`
+
+- [ ] Уровни, статы, экипировка из equipment/weapons каталогов  
+- [ ] UI эквипа как оригинал  
+
+---
+
+### M06+ Online — `Запланировано`
+
+После играбельного оффлайн-паритета Haitan (PORT-05…07 минимум):
+
+- [ ] Контракт auth/heroes ближе к оригинальному протоколу / текущему LunexUfa Server  
+- [ ] Go + PostgreSQL в `LegacyOfEternity/Server`  
+- [ ] Клиент online mode рядом с offline  
 
 ---
 
 ## §5. Активная очередь P0 (сейчас)
 
-1. Приёмка **0.8.0** (лут + сумка) владельцем.  
-2. Далее **M05.19** (компас/диалог Тиаса) — если не сказано иначе.  
-3. Не стартовать **GATE-ART** / **M06** без команды владельца.
+1. **PORT-01** — добить APK **0.9.0** + приёмка 4 классов на телефоне (`Custom/Character`).  
+2. Затем **PORT-02 → PORT-03 → PORT-04 → PORT-05** (персонаж → VFX → UI → зелья/предметы).  
+3. Параллельно не начинать M06, пока Haitan PORT-06/07 не приняты, если владелец не прикажет иначе.  
+4. PORT-00 закрыт (пайплайн + манифест + `Port-FromResources.ps1`).
 
 ---
 
-## §6. Осознанно отложено
+## §6. Осознанно не делаем
 
-- Полный порт сцены Haitan 2017 и всех NPC/blocker-геометрии.
-- Слияние git LunexUfa ↔ LegacyOfEternity.
-- Релизный keystore / store.
-- Параллельный Android-клиент из Unity 2017.
+- Параллельный «другой» геймдизайн вместо оригинала.  
+- Основной APK из Unity 2017.  
+- Слепой импорт XLua/NGUI без замены поведения.  
+- Релизный keystore до стабильного паритета.
 
 ---
 
-## §7. Шаблон обновления (копировать в конец коммита этапа)
+## §7. Шаблон changelog среза
 
 ```markdown
-### Changelog этапа <ID> (<дата>)
-- Сделано: …
+### Changelog PORT-XX (<дата>)
+- Источник: C:\Source\Resources\… / Darklord-Final\…
+- Перенесено: …
+- Поведение сверено с: <файл конфига / сцена>
 - APK: Builds/Android/LegacyOfEternity-x.y.z-alpha.apk
-- Статус вехи: Готово (x.y.z)
+- Остаток долга: …
 - Следующая P0: …
-- Блокеры: нет | …
 ```
-
-Вписать краткий блок также в `CURRENT-STATUS.md`.
 
 ---
 
-## §8. Быстрые команды (эта машина)
+## §8. Команды сборки (эта машина)
 
 ```powershell
-# Сборка этапного APK
 $env:LOE_ANDROID_TOOLCHAIN_ROOT='C:\asdk'
 $env:LOE_SKIP_ANDROID_AUDITS='1'
 $env:JAVA_HOME='C:\asdk\OpenJDK'
-# при необходимости:
-# Move-Item C:\asdk\SDK\platform-tools\package.xml C:\asdk\SDK\platform-tools\package.xml.bak -Force
 & 'C:\SOURCE\LunexUfa\Toolchain\Unity6000.3.29f1\Editor\Unity.exe' `
   -batchmode -nographics -quit `
   -projectPath 'C:\LegacyOfEternity\Client' `
@@ -366,8 +305,6 @@ $env:JAVA_HOME='C:\asdk\OpenJDK'
   -logFile 'C:\LegacyOfEternity\Builds\Android\Unity-build.log'
 ```
 
-Unity Editor version на машине может быть **6000.3.29f1** (см. фактический путь Toolchain); в BOOTSTRAP указан 6000.3.27f1 — при расхождении править BOOTSTRAP под установленный Editor.
-
 ---
 
-*Конец дорожной карты. Исполнитель: не оставляй статусы «В работе» на уже сданных вехах; не оставляй P0 на закрытом этапе.*
+*Конец. Исполнитель не оставляет P0 на закрытом срезе и не подменяет оригинал выдуманными механиками.*
