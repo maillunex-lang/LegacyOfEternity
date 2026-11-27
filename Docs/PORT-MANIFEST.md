@@ -18,7 +18,7 @@
 | Срез | Статус | В LoE | Примечание |
 | --- | --- | --- | --- |
 | PORT-00 пайплайн | Готово | `OriginalPort/`, `Docs/scripts/Port-FromResources.ps1` | — |
-| PORT-01 шейдеры/mats классов | В работе | `LegacyAssets/Resources/Shaders/Custom-Character.shader`, `Scripts/Rendering/CustomLight.cs`, правки `HeroAndroidVisibility` | Mats 4 классов уже в LegacyAssets; нужен APK 0.9.0 |
+| PORT-01 шейдеры/mats классов | Готово (0.9.0) | `Custom-Character.shader`, `CustomLight.cs`, `HeroAndroidVisibility` | APK собран; телефонная приёмка |
 | PORT-02 персонажи/аним/оружие | Запланировано | частично LegacyAssets | Полный GUID-safe импорт |
 | PORT-03 VFX | Запланировано | `LegacyOfEternity/Effects/*_Unity6` | Заменить soft-fallback |
 | PORT-04 UI | Запланировано | частично OfflineUI + UIMain icons | Login/Bag/Skill как оригинал |

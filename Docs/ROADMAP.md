@@ -110,7 +110,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 | --- | --- | --- | --- |
 | LEGACY-0.8 | Offline scaffold (login/квест/лут) | Готово (0.8.0) | Временные леса |
 | **PORT-00** | **Инвентаризация + пайплайн импорта** | **Готово** | Манифест, OriginalPort, Port-FromResources.ps1 |
-| **PORT-01** | **Шейдеры + материалы персонажей** | **В работе** | Custom/Character + CustomLight; APK 0.9.0 pending |
+| **PORT-01** | **Шейдеры + материалы персонажей** | **Готово (0.9.0)** | Custom/Character + CustomLight; APK собран; ждёт приёмку на телефоне |
 | PORT-02 | Персонажи + анимации + оружие (4 класса) | Запланировано | Ориг. меши/клипы/сокеты |
 | PORT-03 | VFX навыков (все классы) по каталогу | Запланировано | Без error-листов; тайминги как t_skill |
 | PORT-04 | UI бой + логин + сумка (атласы/префабы) | Запланировано | Как оригинал 1136×640 |
@@ -154,7 +154,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 
 ---
 
-### PORT-01 — Шейдеры + материалы персонажей — `В работе`
+### PORT-01 — Шейдеры + материалы персонажей — `Готово (0.9.0)`
 
 Источник: `Resources/12_Shaders`, mats уже в `LegacyAssets/.../player`, notes в `UNITY6_NOTES.md`.
 
@@ -162,9 +162,19 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] Порт `CustomLight` → `Scripts/Rendering/CustomLight.cs` + глобали `_SLight*`  
 - [x] `HeroAndroidVisibility`: предпочитать `Custom/Character`, Unlit только emergency  
 - [x] `ramp_mask06.png` (ссылка из warrior mat)  
-- [ ] Compile/smoke Android GLES3; APK **0.9.0**  
-- [ ] Приёмка на телефоне: 4 класса читаемы, текстуры верные  
-- [ ] LD_* GLES-исключения — отдельный хвост при VFX (PORT-03), не блокер character mats
+- [x] Compile Android: `LOE_M0511_HERO_SHADER=Custom/Character`; APK **0.9.0**  
+- [ ] Приёмка на телефоне: 4 класса читаемы, текстуры верные (владелец)  
+- [ ] LD_* GLES-исключения — хвост PORT-03  
+
+**APK:** `Builds/Android/LegacyOfEternity-0.9.0-alpha.apk`  
+
+### Changelog PORT-01 (27.11.2026)
+- Источник: `C:\Source\Resources\12_Shaders` + Darklord `CustomLight.cs`
+- Перенесено: Custom/Character, CustomLight, ramp_mask06; снят Unlit-форс
+- Поведение: mats 4 классов → оригинальный шейдер + `_SLight*` globals
+- APK: `LegacyOfEternity-0.9.0-alpha.apk`
+- Остаток: телефонная приёмка; LD_* / soft-particle → PORT-03
+- Следующая P0: **PORT-02** (персонажи/аним/оружие)
 
 ---
 
@@ -262,10 +272,10 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 
 ## §5. Активная очередь P0 (сейчас)
 
-1. **PORT-01** — добить APK **0.9.0** + приёмка 4 классов на телефоне (`Custom/Character`).  
-2. Затем **PORT-02 → PORT-03 → PORT-04 → PORT-05** (персонаж → VFX → UI → зелья/предметы).  
-3. Параллельно не начинать M06, пока Haitan PORT-06/07 не приняты, если владелец не прикажет иначе.  
-4. PORT-00 закрыт (пайплайн + манифест + `Port-FromResources.ps1`).
+1. **PORT-02** — персонажи / анимации / оружие (GUID-safe из Resources/Darklord).  
+2. Параллельно: владелец принимает **0.9.0** (Custom/Character на 4 классах).  
+3. Затем **PORT-03 → PORT-04 → PORT-05** (VFX → UI → зелья/предметы).  
+4. Не начинать M06, пока Haitan PORT-06/07 не приняты, если владелец не прикажет иначе.
 
 ---
 

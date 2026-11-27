@@ -13,17 +13,19 @@
 | Срез | Статус |
 | --- | --- |
 | PORT-00 пайплайн | Готово |
-| PORT-01 Custom/Character + CustomLight | В работе → APK 0.9.0 |
-| PORT-02… | Запланировано |
+| PORT-01 Custom/Character + CustomLight | Готово (0.9.0) — ждёт приёмку на телефоне |
+| PORT-02… | P0 следующий |
 
-## Последний APK (scaffold)
+## APK
 
-| Версия | Путь |
-| --- | --- |
-| 0.8.0 | `Builds/Android/LegacyOfEternity-0.8.0-alpha.apk` |
+| Версия | Путь | Примечание |
+| --- | --- | --- |
+| **0.9.0** | `Builds/Android/LegacyOfEternity-0.9.0-alpha.apk` | Custom/Character; ~45 MB |
+| 0.8.0 | `Builds/Android/LegacyOfEternity-0.8.0-alpha.apk` | scaffold loot/bag |
+
+Build log: `LOE_M0511_HERO_SHADER=Custom/Character`, `result=Succeeded`.
 
 ## P0 сейчас
 
-1. Собрать **0.9.0** с `Custom/Character` (без Unlit-форса).  
-2. Приёмка 4 классов на телефоне.  
-3. Далее PORT-02 / PORT-03 по ROADMAP.
+1. Приёмка 0.9.0 на телефоне (читаемость 4 классов).  
+2. **PORT-02** — полный перенос персонажей/анимаций/оружия.
