@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace LegacyOfEternity.World
@@ -83,13 +83,13 @@ namespace LegacyOfEternity.World
             {
                 case OriginalQuestKind.Gossip:
                     return q.finishNpcId != 0
-                        ? "Поговорите с NPC " + q.finishNpcId
+                        ? "Поговорите с " + OriginalModelCatalog.NpcName(q.finishNpcId)
                         : "Продолжайте задание";
                 case OriginalQuestKind.Gather:
                     return "Соберите объект " + q.goalId + " ×" + q.goalCount;
                 case OriginalQuestKind.KillMonster:
                     return "Убейте монстров " + q.goalId + " ×" + q.goalCount
-                           + (q.finishNpcId != 0 ? " и сдайте NPC " + q.finishNpcId : "");
+                           + (q.finishNpcId != 0 ? " и сдайте " + OriginalModelCatalog.NpcName(q.finishNpcId) : "");
                 default:
                     return q.name;
             }

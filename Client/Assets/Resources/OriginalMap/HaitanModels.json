@@ -1,0 +1,244 @@
+{
+    "source":  "t_model + t_npc + MonsterConfig + NpcConfig + MapData 110200011",
+    "npcLooks":  [
+                     {
+                         "npcId":  201001007,
+                         "lookModelId":  890101009,
+                         "name":  "Barbros"
+                     },
+                     {
+                         "npcId":  201001006,
+                         "lookModelId":  890101028,
+                         "name":  "Prado"
+                     },
+                     {
+                         "npcId":  201001015,
+                         "lookModelId":  890101034,
+                         "name":  "Tias"
+                     },
+                     {
+                         "npcId":  201001011,
+                         "lookModelId":  890101015,
+                         "name":  "Elvin"
+                     },
+                     {
+                         "npcId":  201001013,
+                         "lookModelId":  890101015,
+                         "name":  "Elvin"
+                     },
+                     {
+                         "npcId":  201001009,
+                         "lookModelId":  890101024,
+                         "name":  "Nông Dân"
+                     },
+                     {
+                         "npcId":  201001001,
+                         "lookModelId":  890101034,
+                         "name":  "Tias"
+                     },
+                     {
+                         "npcId":  201001003,
+                         "lookModelId":  890101028,
+                         "name":  "Prado"
+                     },
+                     {
+                         "npcId":  201001017,
+                         "lookModelId":  890101044,
+                         "name":  "Kane"
+                     },
+                     {
+                         "npcId":  201001012,
+                         "lookModelId":  890101034,
+                         "name":  "Tias"
+                     },
+                     {
+                         "npcId":  201001010,
+                         "lookModelId":  890101009,
+                         "name":  "Barbros"
+                     },
+                     {
+                         "npcId":  201001016,
+                         "lookModelId":  890101044,
+                         "name":  "Kane"
+                     },
+                     {
+                         "npcId":  201001008,
+                         "lookModelId":  890101015,
+                         "name":  "Elvin"
+                     },
+                     {
+                         "npcId":  201001004,
+                         "lookModelId":  890101032,
+                         "name":  "Grey"
+                     },
+                     {
+                         "npcId":  201001002,
+                         "lookModelId":  890101027,
+                         "name":  "Great"
+                     },
+                     {
+                         "npcId":  201001014,
+                         "lookModelId":  890101029,
+                         "name":  "Tiên Tri Angela"
+                     },
+                     {
+                         "npcId":  201001005,
+                         "lookModelId":  890101029,
+                         "name":  "Tiên Tri Angela"
+                     }
+                 ],
+    "monsterStats":  [
+                         {
+                             "id":  100101001,
+                             "name":  "Rùa Biển Trưởng Thành",
+                             "hp":  354,
+                             "att":  1
+                         },
+                         {
+                             "id":  100101002,
+                             "name":  "Thằn Lằn Bãi Biển",
+                             "hp":  405,
+                             "att":  1
+                         },
+                         {
+                             "id":  100101003,
+                             "name":  "Looter",
+                             "hp":  450,
+                             "att":  1
+                         },
+                         {
+                             "id":  100101004,
+                             "name":  "Chiến Binh Người Cá",
+                             "hp":  556,
+                             "att":  2
+                         },
+                         {
+                             "id":  100101005,
+                             "name":  "Nhện Di Tích",
+                             "hp":  638,
+                             "att":  2
+                         },
+                         {
+                             "id":  100101006,
+                             "name":  "Nguyên Tố Đất Thứ Cấp",
+                             "hp":  978,
+                             "att":  3
+                         },
+                         {
+                             "id":  100101007,
+                             "name":  "Nguyên Tố Đất Hoang",
+                             "hp":  1314,
+                             "att":  3
+                         },
+                         {
+                             "id":  100101008,
+                             "name":  "Nguyên Tố Đất Dày",
+                             "hp":  1575,
+                             "att":  4
+                         },
+                         {
+                             "id":  100101101,
+                             "name":  "Người Cá T.Anh",
+                             "hp":  1428,
+                             "att":  2
+                         },
+                         {
+                             "id":  100101102,
+                             "name":  "Thủ Vệ Di Tích",
+                             "hp":  3077,
+                             "att":  4
+                         },
+                         {
+                             "id":  100101103,
+                             "name":  "Lái Tàu Hải Tặc Yuri",
+                             "hp":  4806,
+                             "att":  5
+                         }
+                     ],
+    "models":  [
+                   {
+                       "modelId":  60001,
+                       "resourcesPath":  "Animation/mount/mount_001/mount_001_pre"
+                   },
+                   {
+                       "modelId":  880210107,
+                       "resourcesPath":  "Animation/monster/monster_107/monster_107_pre"
+                   },
+                   {
+                       "modelId":  880210108,
+                       "resourcesPath":  "Animation/monster/monster_108/monster_108_pre"
+                   },
+                   {
+                       "modelId":  880210111,
+                       "resourcesPath":  "Animation/monster/monster_111/monster_111_pre"
+                   },
+                   {
+                       "modelId":  880210112,
+                       "resourcesPath":  "Animation/monster/monster_112/monster_112_pre"
+                   },
+                   {
+                       "modelId":  880210116,
+                       "resourcesPath":  "Animation/monster/monster_116/monster_116_pre"
+                   },
+                   {
+                       "modelId":  880210118,
+                       "resourcesPath":  "Animation/monster/monster_108/monster_108_pre"
+                   },
+                   {
+                       "modelId":  890101009,
+                       "resourcesPath":  "Animation/npc/NPC_009/NPC_009_pre"
+                   },
+                   {
+                       "modelId":  890101015,
+                       "resourcesPath":  "Animation/npc/NPC_015/NPC_015_pre"
+                   },
+                   {
+                       "modelId":  890101024,
+                       "resourcesPath":  "Animation/npc/NPC_024/NPC_024_pre"
+                   },
+                   {
+                       "modelId":  890101027,
+                       "resourcesPath":  "Animation/npc/NPC_027/NPC_027_pre"
+                   },
+                   {
+                       "modelId":  890101028,
+                       "resourcesPath":  "Animation/npc/NPC_028/NPC_028_pre"
+                   },
+                   {
+                       "modelId":  890101029,
+                       "resourcesPath":  "Animation/npc/NPC_029/NPC_029_pre"
+                   },
+                   {
+                       "modelId":  890101032,
+                       "resourcesPath":  "Animation/npc/NPC_032/NPC_032_pre"
+                   },
+                   {
+                       "modelId":  890101034,
+                       "resourcesPath":  "Animation/npc/NPC_034/NPC_034_pre"
+                   },
+                   {
+                       "modelId":  890101044,
+                       "resourcesPath":  "Animation/npc/NPC_044/NPC_044_pre"
+                   },
+                   {
+                       "modelId":  890200001,
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_huowu"
+                   },
+                   {
+                       "modelId":  890200003,
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_xiakucao"
+                   },
+                   {
+                       "modelId":  890200014,
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_yuechangshi"
+                   },
+                   {
+                       "modelId":  890200018,
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_wuqi"
+                   },
+                   {
+                       "modelId":  890300005,
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_hailuo"
+                   }
+               ]
+}

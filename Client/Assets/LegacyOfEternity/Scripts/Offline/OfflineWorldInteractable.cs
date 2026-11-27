@@ -33,6 +33,13 @@ namespace LegacyOfEternity.Offline
             BuildVisual(color);
         }
 
+        /// <summary>When an original model prefab is attached, hide the placeholder capsule/cube.</summary>
+        public void HidePrimitiveBody()
+        {
+            if (body != null)
+                body.SetActive(false);
+        }
+
         void BuildVisual(Color color)
         {
             bool gather = Kind == OfflineInteractKind.GatherScrap;

@@ -225,7 +225,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] `OriginalHaitanBootstrap`: birth, NPC, gather, monsters; demo PvE-арена сносится  
 - [x] Подтверждено: `CoastalPrototype` уже содержит `cs_haitan` / dixing / walksurface / пропы (как оригинал)  
 - [x] Убраны interim walk-slabs (используется сцена)  
-- [ ] Оригинальные modelId меши мобов/NPC (сейчас clone/capsule)  
+- [x] modelId меши: `HaitanModels.json` + `Resources/Animation/*` (t_model/t_npc); fallback 880210118→108  
 - [ ] APK — **только после полной локации + квесты + графика** (указание владельца)
 
 ### PORT-07 — Квесты Haitan — `В работе`
@@ -233,8 +233,9 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] Экспорт `HaitanQuests.json` — **99** квестов `1001701`–`1001799` из `QuestConfig.lua`  
 - [x] Runtime по kind (gossip/gather/kill) + `finishNpcId` / `questGoals` / награды / `afterQuest`  
 - [x] Kill засчитывает только нужный `templateId`; gather/NPC — по ObjectId  
-- [ ] Диалоги/stories из оригинала; item rewards prof*/otherReward  
-- [ ] Модели NPC по modelId
+- [x] item rewards `prof*` / `otherReward` при CompleteQuest  
+- [x] Модели NPC по look model из t_npc  
+- [ ] Диалоги/stories из оригинала
 
 ### Changelog PORT-06/07 (27.11.2026)
 - Источник: MapData `110200011.xml` + `QuestConfig.lua`

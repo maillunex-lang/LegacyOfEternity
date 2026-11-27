@@ -412,6 +412,8 @@ namespace LegacyOfEternity.Offline
         {
             hero.experience += Mathf.Max(0, q.expReward);
             hero.money += Mathf.Max(0, q.moneyReward);
+            GrantConfigItems(hero, q.otherReward);
+            GrantConfigItems(hero, RewardForClass(hero.heroClass, q));
             int next = q.afterQuestId;
             if (next > 0)
             {
