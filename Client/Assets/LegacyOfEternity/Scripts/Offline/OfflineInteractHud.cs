@@ -63,7 +63,7 @@ namespace LegacyOfEternity.Offline
             float height = 84f * scale;
             var rect = new Rect((Screen.width - width) * 0.5f, Screen.height - height - 28f * scale, width, height);
 
-            if (OfflineDialogueHud.IsOpen)
+            if (OfflineDialogueHud.IsOpen || OfflineQuestDungeon.IsRunning)
                 return;
 
             if (active != null)
@@ -132,8 +132,9 @@ namespace LegacyOfEternity.Offline
                     break;
                 case LegacyOfEternity.World.OriginalQuestKind.Dungeon:
                 case LegacyOfEternity.World.OriginalQuestKind.MountDungeon:
-                    // Offline stub until real fuben PORT: clearing the dungeon completes the goal.
-                    OfflineDemoStore.ApplyQuestEvent(hero, "dungeon", q.dungeonId);
+                    if (OfflineQuestDungeon.IsRunning)
+                        return;
+                    OfflineQuestDungeon.TryEnter((int)q.dungeonId);
                     break;
             }
         }

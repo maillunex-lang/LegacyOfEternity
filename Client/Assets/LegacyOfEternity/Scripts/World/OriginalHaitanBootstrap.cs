@@ -48,6 +48,7 @@ namespace LegacyOfEternity.World
 
             OriginalDialogueCatalog.EnsureLoaded();
             OfflineDialogueHud.Ensure();
+            OfflineQuestDungeon.Ensure();
 
             var hudHost = gameObject.GetComponent<OfflineInteractHud>();
             if (hudHost == null)

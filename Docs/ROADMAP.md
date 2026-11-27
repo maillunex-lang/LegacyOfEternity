@@ -117,7 +117,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 | PORT-04 | UI бой + логин + сумка (атласы/префабы) | Запланировано | Как оригинал 1136×640 |
 | PORT-05 | Предметы + зелья + использование (ItemConfig/PotionIDs) | Запланировано | Реальное лечение/автоюз по конфигу |
 | PORT-06 | Локация Haitan (карта, террейн, пропы, спавны) | **В работе** | cs_haitan уже в CoastalPrototype; MapData spawns; без APK до полной локации |
-| PORT-07 | Квесты Haitan полный поток | **В работе** | 99 квестов QuestConfig 1001701–1001799 в runtime |
+| PORT-07 | Квесты Haitan полный поток | **В работе** | 99 квестов + offline fuben 14/17 + RU диалоги |
 | PORT-08 | Остальные локации по t_map (очередь) | Запланировано | По одной карте = этап |
 | PORT-09 | Боевая механика (скиллы, CD, хиты, AI) | Запланировано | По SkillConfig / TitanMagic эталон |
 | PORT-10 | Прогрессия (уровни, эквип, усиления) | Запланировано | Как оригинальные таблицы |
@@ -237,11 +237,12 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] item rewards `prof*` / `otherReward` при CompleteQuest  
 - [x] Модели NPC по look model из t_npc  
 - [x] Диалоги/stories: оригинал → RU (`HaitanDialogues.json`, `OfflineDialogueHud`)
-- [x] kind 3/7/8/9/14/17 runtime (drop/use/deliver/reach/dungeon stub)
+- [x] kind 3/7/8/9/14/17 runtime (drop/use/deliver/reach/dungeon)
+- [x] Offline fuben: `HaitanDungeons.json` из `Dungeon_questConfig` + `OfflineQuestDungeon` (арена, kill→`ApplyQuestEvent("dungeon")`)
 
 ### Changelog PORT-06/07 (27.11.2026)
-- Источник: MapData `110200011.xml` + `QuestConfig.lua` + `t_doc_quest` / `t_doc_dialogue`
-- Перенесено: spawn graph + полная квестовая таблица Haitan + RU-диалоги (перевод с оригинала)
+- Источник: MapData `110200011.xml` + `QuestConfig.lua` + `t_doc_quest` / `t_doc_dialogue` + `Dungeon_questConfig`
+- Перенесено: spawn graph + полная квестовая таблица Haitan + RU-диалоги + playable offline dungeon 14/17
 - APK: не собираем до готовности локации (owner)
 
 ---

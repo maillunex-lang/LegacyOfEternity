@@ -1,0 +1,90 @@
+{
+    "source":  "Dungeon_questConfig.lua",
+    "dungeons":  [
+                     {
+                         "id":  11,
+                         "mapId":  110700013,
+                         "timeSec":  120,
+                         "deathLimit":  3,
+                         "doorX":  -10,
+                         "doorZ":  17,
+                         "monsters":  [
+                                          {
+                                              "templateId":  100101201,
+                                              "count":  1,
+                                              "x":  155,
+                                              "z":  159
+                                          }
+                                      ],
+                         "title":  "Подземелье 11"
+                     },
+                     {
+                         "id":  12,
+                         "mapId":  110300022,
+                         "timeSec":  120,
+                         "deathLimit":  3,
+                         "doorX":  104,
+                         "doorZ":  95,
+                         "monsters":  [
+                                          {
+                                              "templateId":  100101303,
+                                              "count":  1,
+                                              "x":  113,
+                                              "z":  105
+                                          }
+                                      ],
+                         "title":  "Подземелье 12"
+                     },
+                     {
+                         "id":  22,
+                         "mapId":  110700045,
+                         "timeSec":  120,
+                         "deathLimit":  3,
+                         "doorX":  -38,
+                         "doorZ":  16,
+                         "monsters":  [
+                                          {
+                                              "templateId":  100102203,
+                                              "count":  1,
+                                              "x":  56,
+                                              "z":  66
+                                          }
+                                      ],
+                         "title":  "Подземелье 22"
+                     },
+                     {
+                         "id":  31,
+                         "mapId":  110700130,
+                         "timeSec":  120,
+                         "deathLimit":  3,
+                         "doorX":  -10,
+                         "doorZ":  17,
+                         "monsters":  [
+                                          {
+                                              "templateId":  100103201,
+                                              "count":  1,
+                                              "x":  73,
+                                              "z":  131
+                                          }
+                                      ],
+                         "title":  "Подземелье 31"
+                     },
+                     {
+                         "id":  30,
+                         "mapId":  110500001,
+                         "timeSec":  180,
+                         "deathLimit":  3,
+                         "doorX":  -9,
+                         "doorZ":  -100,
+                         "monsters":  [
+                                          {
+                                              "templateId":  100101201,
+                                              "count":  1,
+                                              "x":  0,
+                                              "z":  8
+                                          }
+                                      ],
+                         "title":  "Подземелье скакуна"
+                     }
+                 ]
+}

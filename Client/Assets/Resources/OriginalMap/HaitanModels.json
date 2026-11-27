@@ -153,6 +153,30 @@
                              "name":  "Lái Tàu Hải Tặc Yuri",
                              "hp":  4806,
                              "att":  5
+                         },
+                         {
+                             "name":  "Тень Короля магического дракона",
+                             "id":  100101201,
+                             "att":  12,
+                             "hp":  2500
+                         },
+                         {
+                             "name":  "«Акула» Вилфен",
+                             "id":  100101303,
+                             "att":  15,
+                             "hp":  3200
+                         },
+                         {
+                             "name":  "Злой жрец",
+                             "id":  100102203,
+                             "att":  18,
+                             "hp":  4000
+                         },
+                         {
+                             "name":  "Злой чародей",
+                             "id":  100103201,
+                             "att":  22,
+                             "hp":  5000
                          }
                      ],
     "models":  [
@@ -226,7 +250,7 @@
                    },
                    {
                        "modelId":  890200003,
-                       "resourcesPath":  "Animation/collection/cs_caijiwu_xiakucao"
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_emptything"
                    },
                    {
                        "modelId":  890200014,
@@ -234,11 +258,19 @@
                    },
                    {
                        "modelId":  890200018,
-                       "resourcesPath":  "Animation/collection/cs_caijiwu_wuqi"
+                       "resourcesPath":  "Animation/collection/cs_caijiwu_emptything"
                    },
                    {
                        "modelId":  890300005,
                        "resourcesPath":  "Animation/collection/cs_caijiwu_hailuo"
+                   },
+                   {
+                       "modelId":  880211004,
+                       "resourcesPath":  "Animation/monster/BOSS_004/BOSS_004_pre"
+                   },
+                   {
+                       "modelId":  880211008,
+                       "resourcesPath":  "Animation/monster/BOSS_008/BOSS_008_pre"
                    }
                ]
 }
