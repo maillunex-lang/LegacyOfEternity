@@ -116,8 +116,8 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 | PORT-03 | VFX навыков (все классы) по каталогу | Запланировано | Без error-листов; тайминги как t_skill |
 | PORT-04 | UI бой + логин + сумка (атласы/префабы) | Запланировано | Как оригинал 1136×640 |
 | PORT-05 | Предметы + зелья + использование (ItemConfig/PotionIDs) | Запланировано | Реальное лечение/автоюз по конфигу |
-| PORT-06 | Локация Haitan (карта, террейн, пропы, спавны) | **В работе (0.10.0)** | MapData 110200011 birth/NPC/mobs; mesh scene next |
-| PORT-07 | Квесты Haitan полный поток + NPC/gather объекты | Запланировано | 1001701+ диалоги/цели как оригинал |
+| PORT-06 | Локация Haitan (карта, террейн, пропы, спавны) | **В работе** | cs_haitan уже в CoastalPrototype; MapData spawns; без APK до полной локации |
+| PORT-07 | Квесты Haitan полный поток | **В работе** | 99 квестов QuestConfig 1001701–1001799 в runtime |
 | PORT-08 | Остальные локации по t_map (очередь) | Запланировано | По одной карте = этап |
 | PORT-09 | Боевая механика (скиллы, CD, хиты, AI) | Запланировано | По SkillConfig / TitanMagic эталон |
 | PORT-10 | Прогрессия (уровни, эквип, усиления) | Запланировано | Как оригинальные таблицы |
@@ -219,20 +219,27 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 
 ---
 
-### PORT-06 — Локация Haitan — `В работе (0.10.0)`
+### PORT-06 — Локация Haitan — `В работе`
 
-- [x] `Resources/OriginalMap/110200011.json` из оригинального MapData XML (103 mob / 17 NPC / 9 gather / birth)  
-- [x] `OriginalHaitanBootstrap`: birth (11,50.03,58), Тиас, gather 180, все monster points; demo PvE-арена у героя сносится  
-- [ ] Импорт/активация террейна и пропов `cs_yw_haitan01` (сейчас невидимые walk-slabs по высотам карты)  
-- [ ] Оригинальные modelId меши мобов/NPC вместо clone/capsule  
-- [ ] APK приёмка: старт не у кучи мобов; первая стая ~43,50,33  
+- [x] `Resources/OriginalMap/110200011.json` из MapData XML (103 mob / 17 NPC / 9 gather / birth)  
+- [x] `OriginalHaitanBootstrap`: birth, NPC, gather, monsters; demo PvE-арена сносится  
+- [x] Подтверждено: `CoastalPrototype` уже содержит `cs_haitan` / dixing / walksurface / пропы (как оригинал)  
+- [x] Убраны interim walk-slabs (используется сцена)  
+- [ ] Оригинальные modelId меши мобов/NPC (сейчас clone/capsule)  
+- [ ] APK — **только после полной локации + квесты + графика** (указание владельца)
 
-### Changelog PORT-06a (27.11.2026)
-- Источник: `Darklord-Final/.../MapData/110200011.xml`
-- Перенесено: полный spawn graph + отключение demo arena
-- APK: `LegacyOfEternity-0.10.0-alpha.apk`
-- Остаток: полный visual scene + modelId assets
-- Следующая P0: PORT-06 mesh scene / PORT-07
+### PORT-07 — Квесты Haitan — `В работе`
+
+- [x] Экспорт `HaitanQuests.json` — **99** квестов `1001701`–`1001799` из `QuestConfig.lua`  
+- [x] Runtime по kind (gossip/gather/kill) + `finishNpcId` / `questGoals` / награды / `afterQuest`  
+- [x] Kill засчитывает только нужный `templateId`; gather/NPC — по ObjectId  
+- [ ] Диалоги/stories из оригинала; item rewards prof*/otherReward  
+- [ ] Модели NPC по modelId
+
+### Changelog PORT-06/07 (27.11.2026)
+- Источник: MapData `110200011.xml` + `QuestConfig.lua`
+- Перенесено: spawn graph + полная квестовая таблица Haitan
+- APK: не собираем до готовности локации (owner)
 
 ---
 
@@ -281,10 +288,10 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 
 ## §5. Активная очередь P0 (сейчас)
 
-1. **PORT-06** — Haitan 1:1: MapData спавны уже в 0.10.0; дальше оригинальная сцена/террейн `cs_yw_haitan01`.  
-2. **PORT-07** — квесты/диалоги/модели NPC и gather как в оригинале.  
-3. **PORT-02/03** — модели мобов/VFX по modelId (сейчас визуал клонируется с импортированных FBX).  
-4. Не начинать M06, пока Haitan PORT-06/07 не приняты, если владелец не прикажет иначе.
+1. **PORT-06/07** — добить modelId меши мобов/NPC + item rewards/диалоги; сцена `cs_haitan` уже на месте.  
+2. **PORT-02/03** — modelId / VFX по каталогу.  
+3. **APK** — один билд после полной локации Haitan (квесты+графика), не промежуточные.  
+4. Не начинать M06, пока Haitan не принят.
 
 ---
 

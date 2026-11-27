@@ -6,14 +6,12 @@ using UnityEngine;
 namespace LegacyOfEternity.World
 {
     /// <summary>
-    /// Restores original Haitan start (map 110200011): birth, NPC/gather, all monster
-    /// spawn points from MapData. Replaces the demo PvE-arena cluster next to the hero.
+    /// Original Haitan start on the already-imported cs_haitan scene graphics:
+    /// MapData birth/NPC/gather/monsters + QuestConfig-driven interactables.
     /// </summary>
     public sealed class OriginalHaitanBootstrap : MonoBehaviour
     {
         const string RootName = "LOE_OriginalHaitan";
-        const long GuideNpcId = 201001001;
-        const long QuestGatherId = 180;
 
         OriginalMapData map;
         readonly List<OfflineWorldInteractable> interactables = new List<OfflineWorldInteractable>();
@@ -33,6 +31,7 @@ namespace LegacyOfEternity.World
 
         void Build(Transform hero)
         {
+            OriginalQuestCatalog.EnsureLoaded();
             map = OriginalMapData.LoadHaitan();
             if (hero == null)
                 hero = GameObject.Find("LOE Prototype Hero")?.transform;
@@ -42,10 +41,7 @@ namespace LegacyOfEternity.World
                 return;
             }
 
-            // Capture a visual template before clearing the demo arena.
             GameObject visualTemplate = CaptureEnemyVisualTemplate();
-
-            EnsureWalkSurface();
             PlaceHero(hero);
             ClearDemoArena();
             SpawnMonsters(hero, visualTemplate);
@@ -56,12 +52,17 @@ namespace LegacyOfEternity.World
                 hudHost = gameObject.AddComponent<OfflineInteractHud>();
             hudHost.Bind(interactables.ToArray());
 
+            // Scene already contains original dixing/walksurface/props under cs_haitan.
+            var slabs = GameObject.Find("LOE_Haitan_Walksurface");
+            if (slabs != null)
+                Destroy(slabs);
+
             Debug.Log(
                 "LOE_ORIGINAL_HAITAN map=" + map.mapId +
                 " monsters=" + map.monsters.Length +
                 " npcs=" + map.npcs.Length +
                 " collections=" + map.collections.Length +
-                " birth=" + map.heroBirth.Position);
+                " quests=loaded birth=" + map.heroBirth.Position);
         }
 
         static GameObject CaptureEnemyVisualTemplate()
@@ -75,32 +76,6 @@ namespace LegacyOfEternity.World
                     return child.gameObject;
             }
             return null;
-        }
-
-        static void EnsureWalkSurface()
-        {
-            if (GameObject.Find("LOE_Haitan_Walksurface") != null)
-                return;
-
-            // Invisible ground covering original map extents so birth/spawns are walkable
-            // until full cs_yw_haitan01 mesh import is wired into the playable scene.
-            var root = new GameObject("LOE_Haitan_Walksurface");
-            CreateSlab(root.transform, new Vector3(105f, 49.9f, 115f), new Vector3(220f, 1f, 240f));
-            CreateSlab(root.transform, new Vector3(90f, 54.3f, 80f), new Vector3(80f, 1f, 40f));
-            CreateSlab(root.transform, new Vector3(110f, 58.0f, 130f), new Vector3(80f, 1f, 80f));
-            CreateSlab(root.transform, new Vector3(110f, 62.0f, 165f), new Vector3(60f, 1f, 60f));
-        }
-
-        static void CreateSlab(Transform parent, Vector3 center, Vector3 size)
-        {
-            var slab = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            slab.name = "WalkSlab";
-            slab.transform.SetParent(parent, false);
-            slab.transform.position = center;
-            slab.transform.localScale = size;
-            var renderer = slab.GetComponent<Renderer>();
-            if (renderer != null)
-                renderer.enabled = false;
         }
 
         void PlaceHero(Transform hero)
@@ -175,7 +150,7 @@ namespace LegacyOfEternity.World
 
                 var enemy = go.AddComponent<CombatEnemy>();
                 var anim = go.GetComponentInChildren<Animator>();
-                enemy.Configure(hero, anim, "МОНСТР " + spawn.id, 65, 7);
+                enemy.Configure(hero, anim, "МОНСТР " + spawn.id, 65, 7, spawn.id);
                 go.AddComponent<CombatEnemyHud>();
                 spawned++;
             }
@@ -190,36 +165,34 @@ namespace LegacyOfEternity.World
 
             foreach (var npc in map.npcs)
             {
-                bool questGuide = npc.id == GuideNpcId;
-                string name = questGuide ? "Тиас" : ("NPC " + npc.id);
-                var kind = questGuide ? OfflineInteractKind.Guide : OfflineInteractKind.WorldProp;
-                var color = questGuide
+                string name = npc.id == 201001001 ? "Тиас" : ("NPC " + npc.id);
+                var color = npc.id == 201001001
                     ? new Color(0.22f, 0.48f, 0.92f, 1f)
                     : new Color(0.55f, 0.55f, 0.62f, 1f);
                 interactables.Add(CreateInteractable(
-                    root.transform, name, npc.Position, npc.Rotation, kind, hero, color));
+                    root.transform, name, npc.Position, npc.Rotation,
+                    OfflineInteractKind.Guide, hero, color, npc.id));
             }
 
             foreach (var col in map.collections)
             {
-                bool questGather = col.id == QuestGatherId;
-                string name = questGather ? "Прибрежный хлам" : ("Сбор " + col.id);
-                var kind = questGather ? OfflineInteractKind.GatherScrap : OfflineInteractKind.WorldProp;
+                string name = col.id == 180 ? "Прибрежный хлам" : ("Сбор " + col.id);
                 var color = new Color(0.72f, 0.55f, 0.28f, 1f);
                 interactables.Add(CreateInteractable(
-                    root.transform, name, col.Position, col.Rotation, kind, hero, color));
+                    root.transform, name, col.Position, col.Rotation,
+                    OfflineInteractKind.GatherScrap, hero, color, col.id));
             }
         }
 
         static OfflineWorldInteractable CreateInteractable(
             Transform parent, string name, Vector3 position, Quaternion rotation,
-            OfflineInteractKind kind, Transform hero, Color color)
+            OfflineInteractKind kind, Transform hero, Color color, long objectId)
         {
-            var go = new GameObject("Original_" + kind + "_" + name);
+            var go = new GameObject("Original_" + kind + "_" + objectId);
             go.transform.SetParent(parent, false);
             go.transform.SetPositionAndRotation(position, rotation);
             var interact = go.AddComponent<OfflineWorldInteractable>();
-            interact.Setup(kind, name, hero, color);
+            interact.Setup(kind, name, hero, color, objectId);
             return interact;
         }
     }

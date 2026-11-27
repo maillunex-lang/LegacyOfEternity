@@ -19,6 +19,7 @@ namespace LegacyOfEternity.Combat
         [SerializeField, Min(1f)] private float respawnAfter = 12f;
         [SerializeField] private Transform hero;
         [SerializeField] private Animator animator;
+        [SerializeField] private long templateId;
 
         private CharacterController character;
         private PrototypeCombat player;
@@ -37,15 +38,17 @@ namespace LegacyOfEternity.Combat
         public int Health => health;
         public int MaxHealth => maxHealth;
         public bool IsDead => dead;
+        public long TemplateId => templateId;
         public Vector3 AimPoint => transform.position + Vector3.up * 1f;
 
-        public void Configure(Transform target, Animator visualAnimator, string title, int hp, int damage)
+        public void Configure(Transform target, Animator visualAnimator, string title, int hp, int damage, long monsterTemplateId = 0)
         {
             hero = target;
             animator = visualAnimator;
             displayName = title;
             maxHealth = Mathf.Max(1, hp);
             attackDamage = Mathf.Max(0, damage);
+            templateId = monsterTemplateId;
             health = maxHealth;
             home = transform.position;
             player = hero != null ? hero.GetComponent<PrototypeCombat>() : null;

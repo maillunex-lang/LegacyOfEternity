@@ -1,3 +1,4 @@
+using LegacyOfEternity.World;
 using UnityEngine;
 
 namespace LegacyOfEternity.Offline
@@ -6,15 +7,15 @@ namespace LegacyOfEternity.Offline
     {
         Guide,
         GatherScrap,
-        /// <summary>Original-map prop/NPC placed for parity; not part of the active quest actions.</summary>
         WorldProp
     }
 
-    /// <summary>World NPC / gather point for the offline Haitan quest loop.</summary>
+    /// <summary>Original MapData NPC / gather point driven by QuestConfig finishNpc / goals.</summary>
     public sealed class OfflineWorldInteractable : MonoBehaviour
     {
         public OfflineInteractKind Kind;
         public string DisplayName = "Объект";
+        public long ObjectId;
         public float Radius = 3.2f;
         public bool Consumed;
 
@@ -23,10 +24,11 @@ namespace LegacyOfEternity.Offline
         GameObject marker;
         GameObject body;
 
-        public void Setup(OfflineInteractKind kind, string displayName, Transform heroTransform, Color color)
+        public void Setup(OfflineInteractKind kind, string displayName, Transform heroTransform, Color color, long objectId = 0)
         {
             Kind = kind;
             DisplayName = displayName;
+            ObjectId = objectId;
             hero = heroTransform;
             BuildVisual(color);
         }
@@ -51,7 +53,7 @@ namespace LegacyOfEternity.Offline
             marker.name = "Marker";
             marker.transform.SetParent(transform, false);
             marker.transform.localScale = Vector3.one * 0.35f;
-            marker.transform.localPosition = Vector3.up * (Kind == OfflineInteractKind.GatherScrap ? 1.35f : 2.6f);
+            marker.transform.localPosition = Vector3.up * (gather ? 1.35f : 2.6f);
             Object.Destroy(marker.GetComponent<Collider>());
             marker.GetComponent<Renderer>().sharedMaterial = new Material(shader)
             {
@@ -60,7 +62,7 @@ namespace LegacyOfEternity.Offline
 
             var labelGo = new GameObject("Label");
             labelGo.transform.SetParent(transform, false);
-            labelGo.transform.localPosition = Vector3.up * (Kind == OfflineInteractKind.GatherScrap ? 1.8f : 3.05f);
+            labelGo.transform.localPosition = Vector3.up * (gather ? 1.8f : 3.05f);
             label = labelGo.AddComponent<TextMesh>();
             label.text = DisplayName;
             label.fontSize = 42;
@@ -92,16 +94,26 @@ namespace LegacyOfEternity.Offline
 
         public bool IsRelevant()
         {
-            if (!OfflineSession.Ready || OfflineSession.Hero == null || Consumed)
+            if (!OfflineSession.Ready || OfflineSession.Hero == null || Consumed || ObjectId == 0)
                 return false;
-            int q = OfflineSession.Hero.questId;
-            if (Kind == OfflineInteractKind.WorldProp)
+            var heroData = OfflineSession.Hero;
+            var q = OriginalQuestCatalog.Get(heroData.questId);
+            if (q == null)
                 return false;
-            if (Kind == OfflineInteractKind.Guide)
-                return q == 1001701 || q == 1001704;
+
             if (Kind == OfflineInteractKind.GatherScrap)
-                return q == 1001702;
-            return false;
+            {
+                if (q.kind != OriginalQuestKind.Gather)
+                    return false;
+                return q.goalId == ObjectId && heroData.questProgress < Mathf.Max(1, q.goalCount);
+            }
+
+            // NPC
+            if (q.finishNpcId != ObjectId)
+                return false;
+            if (q.kind == OriginalQuestKind.Gossip)
+                return true;
+            return OriginalQuestCatalog.GoalComplete(heroData, q);
         }
 
         public bool InRange()
@@ -117,9 +129,12 @@ namespace LegacyOfEternity.Offline
 
         public string ActionLabel()
         {
-            if (Kind == OfflineInteractKind.GatherScrap)
+            var q = OfflineSession.Hero != null
+                ? OriginalQuestCatalog.Get(OfflineSession.Hero.questId)
+                : null;
+            if (q != null && q.kind == OriginalQuestKind.Gather)
                 return "Собрать";
-            if (OfflineSession.Hero != null && OfflineSession.Hero.questId == 1001704)
+            if (q != null && q.kind != OriginalQuestKind.Gossip && OriginalQuestCatalog.GoalComplete(OfflineSession.Hero, q))
                 return "Сдать задание";
             return "Поговорить";
         }
@@ -132,22 +147,20 @@ namespace LegacyOfEternity.Offline
             if (heroData == null)
                 return false;
 
-            if (Kind == OfflineInteractKind.GatherScrap)
+            var q = OriginalQuestCatalog.Get(heroData.questId);
+            if (q == null)
+                return false;
+
+            if (q.kind == OriginalQuestKind.Gather && q.goalId == ObjectId)
             {
-                OfflineDemoStore.ApplyQuestEvent(heroData, "gather");
+                OfflineDemoStore.ApplyQuestEvent(heroData, "gather", ObjectId);
                 Consumed = true;
                 return true;
             }
 
-            if (heroData.questId == 1001701)
+            if (q.finishNpcId == ObjectId)
             {
-                OfflineDemoStore.ApplyQuestEvent(heroData, "talk");
-                return true;
-            }
-
-            if (heroData.questId == 1001704)
-            {
-                OfflineDemoStore.ApplyQuestEvent(heroData, "turnin");
+                OfflineDemoStore.ApplyQuestEvent(heroData, "talk", ObjectId);
                 return true;
             }
 

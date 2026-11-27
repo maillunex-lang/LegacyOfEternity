@@ -81,14 +81,9 @@ namespace LegacyOfEternity.Offline
 
         static string HintForQuest(int questId)
         {
-            switch (questId)
-            {
-                case 1001701: return "Подойдите к Тиасу (синий маркер)";
-                case 1001702: return "Соберите хлам на берегу (золотые маркеры)";
-                case 1001703: return "Убейте 3 монстров на побережье";
-                case 1001704: return "Вернитесь к Тиасу и сдайте задание";
-                default: return "";
-            }
+            if (questId <= 0)
+                return "";
+            return LegacyOfEternity.World.OriginalQuestCatalog.Objective(questId);
         }
     }
 }

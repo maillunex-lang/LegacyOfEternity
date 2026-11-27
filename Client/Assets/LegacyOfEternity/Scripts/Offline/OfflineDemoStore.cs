@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -340,94 +340,100 @@ namespace LegacyOfEternity.Offline
         }
 
         /// <summary>
-        /// Haitan-style offline chain on CoastalPrototype:
-        /// talk (Tias) → gather scrap → kill x3 → turn in to Tias.
+        /// Original Haitan QuestConfig chain (1001701…): gossip / gather / kill + finishNpc.
+        /// payloadId = NPC id, collection id, or monster template id.
         /// </summary>
-        public static void ApplyQuestEvent(Hero hero, string type)
+        public static void ApplyQuestEvent(Hero hero, string type, long payloadId = 0)
         {
-            if (hero == null)
+            if (hero == null || hero.questId <= 0)
                 return;
             EnsureInventory(hero);
-            if (hero.questId == 1001701 && type == "talk")
+            LegacyOfEternity.World.OriginalQuestCatalog.EnsureLoaded();
+            var q = LegacyOfEternity.World.OriginalQuestCatalog.Get(hero.questId);
+            if (q == null)
+                return;
+
+            bool changed = false;
+            if (type == "talk" || type == "turnin")
             {
-                hero.experience += 1040;
-                hero.money += 1000;
-                hero.questId = 1001702;
-                hero.questProgress = 0;
-                hero.questGoalCount = 1;
+                if (q.finishNpcId != 0 && payloadId != 0 && payloadId != q.finishNpcId)
+                    return;
+                if (q.kind == LegacyOfEternity.World.OriginalQuestKind.Gossip)
+                    changed = CompleteQuest(hero, q);
+                else if (LegacyOfEternity.World.OriginalQuestCatalog.GoalComplete(hero, q) && q.finishNpcId != 0)
+                    changed = CompleteQuest(hero, q);
             }
-            else if (hero.questId == 1001702 && type == "gather")
+            else if (type == "gather" && q.kind == LegacyOfEternity.World.OriginalQuestKind.Gather)
             {
-                // Inline scrap grant (avoid mid-event SaveHero from ApplyLoot).
-                EnsureInventory(hero);
-                var list = new List<ItemStack>(hero.inventory);
-                bool found = false;
-                for (int i = 0; i < list.Count; i++)
+                if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
+                    return;
+                GrantScrap(hero);
+                hero.questProgress = Mathf.Min(hero.questProgress + 1, Mathf.Max(1, q.goalCount));
+                hero.questGoalCount = q.goalCount;
+                changed = true;
+                if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+            }
+            else if (type == "kill" && q.kind == LegacyOfEternity.World.OriginalQuestKind.KillMonster)
+            {
+                if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
+                    return;
+                hero.questProgress = Mathf.Min(hero.questProgress + 1, Mathf.Max(1, q.goalCount));
+                hero.questGoalCount = q.goalCount;
+                changed = true;
+                if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+            }
+
+            if (changed)
+                SaveHero(hero);
+        }
+
+        static void GrantScrap(Hero hero)
+        {
+            EnsureInventory(hero);
+            var list = new List<ItemStack>(hero.inventory);
+            bool found = false;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] != null && list[i].id == ItemScrap)
                 {
-                    if (list[i] != null && list[i].id == ItemScrap)
-                    {
-                        list[i].count += 1;
-                        found = true;
-                        break;
-                    }
+                    list[i].count += 1;
+                    found = true;
+                    break;
                 }
-                if (!found)
-                    list.Add(new ItemStack { id = ItemScrap, count = 1 });
-                hero.inventory = list.ToArray();
-                hero.questProgress = 1;
-                hero.experience += 550;
-                hero.money += 1050;
-                hero.questId = 1001703;
+            }
+            if (!found)
+                list.Add(new ItemStack { id = ItemScrap, count = 1 });
+            hero.inventory = list.ToArray();
+        }
+
+        static bool CompleteQuest(Hero hero, LegacyOfEternity.World.OriginalQuestDef q)
+        {
+            hero.experience += Mathf.Max(0, q.expReward);
+            hero.money += Mathf.Max(0, q.moneyReward);
+            int next = q.afterQuestId;
+            if (next > 0)
+            {
+                hero.questId = next;
                 hero.questProgress = 0;
-                hero.questGoalCount = 3;
+                var nq = LegacyOfEternity.World.OriginalQuestCatalog.Get(next);
+                hero.questGoalCount = nq != null ? Mathf.Max(0, nq.goalCount) : 0;
             }
-            else if (hero.questId == 1001703 && type == "kill")
+            else
             {
-                hero.questProgress = Mathf.Min(hero.questProgress + 1, 3);
-                if (hero.questProgress >= 3)
-                {
-                    hero.experience += 550;
-                    hero.money += 1050;
-                    hero.questId = 1001704;
-                    hero.questProgress = 0;
-                    hero.questGoalCount = 0;
-                }
-            }
-            else if (hero.questId == 1001704 && type == "turnin")
-            {
-                hero.experience += 800;
-                hero.money += 1200;
                 hero.questId = 0;
                 hero.questProgress = 0;
                 hero.questGoalCount = 0;
             }
-            SaveHero(hero);
+            return true;
         }
 
-        public static string QuestTitle(int questId)
-        {
-            switch (questId)
-            {
-                case 1001701: return "Близкая опасность (1)";
-                case 1001702: return "Близкая опасность (2)";
-                case 1001703: return "Близкая опасность (3)";
-                case 1001704: return "Близкая опасность (итог)";
-                default: return "Нет активного задания";
-            }
-        }
+        public static string QuestTitle(int questId) =>
+            LegacyOfEternity.World.OriginalQuestCatalog.Title(questId);
 
-        public static string QuestObjective(int questId)
-        {
-            switch (questId)
-            {
-                case 1001701: return "Поговорите с Тиасом";
-                case 1001702: return "Соберите прибрежный хлам";
-                case 1001703: return "Победите трёх противников";
-                case 1001704: return "Вернитесь к Тиасу и сдайте задание";
-                default: return "Исследуйте побережье";
-            }
-        }
-
+        public static string QuestObjective(int questId) =>
+            LegacyOfEternity.World.OriginalQuestCatalog.Objective(questId);
         public static int ClassIndex(string heroClass)
         {
             int idx = Array.IndexOf(ClassIds, heroClass);

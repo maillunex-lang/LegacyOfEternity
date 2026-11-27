@@ -38,7 +38,8 @@ namespace LegacyOfEternity.Offline
             var drops = OfflineDemoStore.RollKillLoot(OfflineSession.Hero);
             if (feedback != null)
                 feedback.ShowLoot(drops);
-            OfflineDemoStore.ApplyQuestEvent(OfflineSession.Hero, "kill");
+            long templateId = enemy != null ? enemy.TemplateId : 0;
+            OfflineDemoStore.ApplyQuestEvent(OfflineSession.Hero, "kill", templateId);
         }
 
         void EnsureStyles()
@@ -84,7 +85,7 @@ namespace LegacyOfEternity.Offline
             if (hero.questGoalCount > 0)
                 GUILayout.Label("Прогресс " + hero.questProgress + "/" + hero.questGoalCount, bodyStyle);
             if (hero.questId == 0)
-                GUILayout.Label("Цепочка побережья завершена", bodyStyle);
+                GUILayout.Label("Нет активного задания Haitan", bodyStyle);
             GUILayout.EndArea();
         }
     }
