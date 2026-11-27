@@ -11,8 +11,8 @@ using LoeCamera = LegacyOfEternity.CameraSystem.OrbitFollowCamera;
 namespace LegacyOfEternity.Offline
 {
     /// <summary>
-    /// Mobile login gate with large original-scale UI (1136x640 reference).
-    /// Built as runtime uGUI so Android touch targets stay readable.
+    /// Offline login gate styled like original Darklord LoginUI:
+    /// full-bleed splash, large fields, ornate start button (1136x640).
     /// </summary>
     public sealed class OfflineLoginGate : MonoBehaviour
     {
@@ -35,7 +35,7 @@ namespace LegacyOfEternity.Offline
         bool eventSystemWasEnabled;
 
         Canvas uiCanvas;
-        RectTransform panel;
+        RectTransform contentRoot;
         Text titleLabel;
         Text statusLabel;
         readonly List<GameObject> dynamicRows = new List<GameObject>();
@@ -44,11 +44,17 @@ namespace LegacyOfEternity.Offline
         InputField heroField;
         Font uiFont;
 
-        static readonly Color PanelColor = new Color(0.06f, 0.10f, 0.16f, 0.94f);
-        static readonly Color Accent = new Color(0.85f, 0.70f, 0.32f, 1f);
-        static readonly Color ButtonColor = new Color(0.12f, 0.22f, 0.34f, 1f);
-        static readonly Color ButtonHot = new Color(0.18f, 0.34f, 0.48f, 1f);
-        static readonly Color FieldColor = new Color(0.04f, 0.07f, 0.12f, 0.96f);
+        Sprite sprBg;
+        Sprite sprPanel;
+        Sprite sprField;
+        Sprite sprBtn;
+        Sprite sprTitleBar;
+        Sprite sprDivider;
+        Sprite[] sprClasses = Array.Empty<Sprite>();
+
+        static readonly Color Gold = new Color(1f, 0.86f, 0.45f, 1f);
+        static readonly Color SoftWhite = new Color(0.96f, 0.96f, 0.98f, 1f);
+        static readonly Color DimPanel = new Color(0.02f, 0.03f, 0.05f, 0.55f);
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void Boot()
@@ -67,6 +73,7 @@ namespace LegacyOfEternity.Offline
         {
             OfflineSession.Clear();
             uiFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            LoadArt();
             FreezeGameplay(true);
             BuildUi();
             ShowAccount();
@@ -78,6 +85,23 @@ namespace LegacyOfEternity.Offline
                 FreezeGameplay(false);
             if (uiCanvas != null)
                 Destroy(uiCanvas.gameObject);
+        }
+
+        void LoadArt()
+        {
+            sprBg = Resources.Load<Sprite>("OfflineUI/bg_login");
+            sprPanel = Resources.Load<Sprite>("OfflineUI/panel_login");
+            sprField = Resources.Load<Sprite>("OfflineUI/field_bg");
+            sprBtn = Resources.Load<Sprite>("OfflineUI/btn_start");
+            sprTitleBar = Resources.Load<Sprite>("OfflineUI/title_bar");
+            sprDivider = Resources.Load<Sprite>("OfflineUI/divider");
+            sprClasses = new[]
+            {
+                Resources.Load<Sprite>("OfflineUI/class_1"),
+                Resources.Load<Sprite>("OfflineUI/class_2"),
+                Resources.Load<Sprite>("OfflineUI/class_3"),
+                Resources.Load<Sprite>("OfflineUI/class_4")
+            };
         }
 
         void FreezeGameplay(bool freeze)
@@ -140,29 +164,43 @@ namespace LegacyOfEternity.Offline
             scaler.matchWidthOrHeight = 0.5f;
             DontDestroyOnLoad(root);
 
-            var dim = CreateImage(root.transform, "Dim", new Color(0f, 0f, 0f, 0.55f));
-            Stretch(dim.rectTransform);
+            // Full-bleed original splash
+            var bg = CreateImage(root.transform, "Splash", Color.white);
+            Stretch(bg.rectTransform);
+            if (sprBg != null)
+            {
+                bg.sprite = sprBg;
+                bg.type = Image.Type.Simple;
+                bg.preserveAspect = false;
+            }
+            else
+                bg.color = new Color(0.05f, 0.07f, 0.1f, 1f);
 
-            var panelGo = CreateImage(root.transform, "Panel", PanelColor).gameObject;
-            panel = panelGo.GetComponent<RectTransform>();
-            panel.anchorMin = new Vector2(0.5f, 0.5f);
-            panel.anchorMax = new Vector2(0.5f, 0.5f);
-            panel.pivot = new Vector2(0.5f, 0.5f);
-            panel.sizeDelta = new Vector2(620f, 560f);
+            // Soft vignette so fields stay readable over bright armor
+            var veil = CreateImage(root.transform, "Veil", new Color(0f, 0f, 0f, 0.28f));
+            Stretch(veil.rectTransform);
 
-            var border = CreateImage(panel, "Border", new Color(Accent.r, Accent.g, Accent.b, 0.35f));
-            Stretch(border.rectTransform, -4f);
-            var inner = CreateImage(panel, "Inner", PanelColor);
-            Stretch(inner.rectTransform, -8f);
+            contentRoot = new GameObject("Content", typeof(RectTransform)).GetComponent<RectTransform>();
+            contentRoot.SetParent(root.transform, false);
+            Stretch(contentRoot);
 
-            titleLabel = CreateText(panel, "Title", "LEGACY OF ETERNITY", 34, FontStyle.Bold, Accent);
-            Place(titleLabel.rectTransform, 0f, -28f, 560f, 44f);
+            // Version + brand
+            var version = CreateText(contentRoot, "Version", "Версия 0.6.2", 22, FontStyle.Normal, SoftWhite);
+            PlaceTopLeft(version.rectTransform, 24f, -18f, 280f, 32f);
 
-            var subtitle = CreateText(panel, "Subtitle", "Оффлайн вход", 22, FontStyle.Normal, Color.white);
-            Place(subtitle.rectTransform, 0f, -66f, 560f, 30f);
+            titleLabel = CreateText(contentRoot, "Title", "LEGACY OF ETERNITY", 30, FontStyle.Bold, Gold);
+            PlaceTop(titleLabel.rectTransform, 0f, -16f, 700f, 40f);
 
-            statusLabel = CreateText(panel, "Status", "", 20, FontStyle.Normal, new Color(1f, 0.82f, 0.45f, 1f));
-            Place(statusLabel.rectTransform, 0f, -98f, 560f, 36f);
+            if (sprTitleBar != null)
+            {
+                var bar = CreateImage(contentRoot, "TitleBar", Color.white);
+                bar.sprite = sprTitleBar;
+                bar.type = Image.Type.Sliced;
+                PlaceTop(bar.rectTransform, 0f, -58f, 520f, 22f);
+            }
+
+            statusLabel = CreateText(contentRoot, "Status", "", 22, FontStyle.Normal, Gold);
+            PlaceTop(statusLabel.rectTransform, 0f, -86f, 720f, 34f);
         }
 
         void ClearDynamic()
@@ -183,18 +221,32 @@ namespace LegacyOfEternity.Offline
             titleLabel.text = "LEGACY OF ETERNITY";
             SetStatus(status);
 
-            float y = -150f;
-            dynamicRows.Add(CreateLabel("Логин", y));
-            y -= 36f;
-            userField = CreateInput("User", y, username, false);
+            // Centered login plate over splash (original proportions, enlarged for touch)
+            var plate = CreateImage(contentRoot, "Plate", Color.white);
+            if (sprPanel != null)
+            {
+                plate.sprite = sprPanel;
+                plate.type = Image.Type.Sliced;
+                plate.color = Color.white;
+            }
+            else
+                plate.color = DimPanel;
+            PlaceCenter(plate.rectTransform, 0f, -36f, 560f, 360f);
+            dynamicRows.Add(plate.gameObject);
+
+            float y = -54f;
+            dynamicRows.Add(CreateLabel(plate.rectTransform, "Логин", y, 480f));
+            y -= 40f;
+            userField = CreateInput(plate.rectTransform, "User", y, username, false, 480f, 58f);
             y -= 78f;
-            dynamicRows.Add(CreateLabel("Пароль", y));
-            y -= 36f;
-            passField = CreateInput("Pass", y, password, true);
-            y -= 92f;
-            dynamicRows.Add(CreateButton("Зарегистрироваться", y, OnRegister).gameObject);
-            y -= 78f;
-            dynamicRows.Add(CreateButton("Войти", y, OnLogin).gameObject);
+            dynamicRows.Add(CreateLabel(plate.rectTransform, "Пароль", y, 480f));
+            y -= 40f;
+            passField = CreateInput(plate.rectTransform, "Pass", y, password, true, 480f, 58f);
+            y -= 88f;
+
+            dynamicRows.Add(CreateOrnateButton(plate.rectTransform, "Войти", y, 420f, 72f, OnLogin).gameObject);
+            y -= 82f;
+            dynamicRows.Add(CreateSecondaryButton(plate.rectTransform, "Зарегистрироваться", y, 420f, 56f, OnRegister).gameObject);
         }
 
         void ShowWorlds()
@@ -206,11 +258,21 @@ namespace LegacyOfEternity.Offline
             if (worlds == null)
                 worlds = OfflineDemoStore.ListWorlds();
 
-            float y = -150f;
+            var plate = CreateImage(contentRoot, "Plate", DimPanel);
+            if (sprPanel != null)
+            {
+                plate.sprite = sprPanel;
+                plate.type = Image.Type.Sliced;
+                plate.color = Color.white;
+            }
+            PlaceCenter(plate.rectTransform, 0f, -20f, 560f, 380f);
+            dynamicRows.Add(plate.gameObject);
+
+            float y = -50f;
             for (int i = 0; i < worlds.Length; i++)
             {
                 var world = worlds[i];
-                dynamicRows.Add(CreateButton(world.name, y, () =>
+                dynamicRows.Add(CreateOrnateButton(plate.rectTransform, world.name, y, 440f, 68f, () =>
                 {
                     selectedWorld = world;
                     heroes = OfflineDemoStore.ListHeroes(token, world.id);
@@ -218,7 +280,7 @@ namespace LegacyOfEternity.Offline
                 }).gameObject);
                 y -= 78f;
             }
-            dynamicRows.Add(CreateButton("Выйти из аккаунта", y, () =>
+            dynamicRows.Add(CreateSecondaryButton(plate.rectTransform, "Выйти из аккаунта", y, 440f, 54f, () =>
             {
                 token = null;
                 worlds = null;
@@ -233,10 +295,20 @@ namespace LegacyOfEternity.Offline
         {
             step = Step.Heroes;
             ClearDynamic();
-            titleLabel.text = selectedWorld.name;
+            titleLabel.text = selectedWorld != null ? selectedWorld.name : "Герои";
             SetStatus(status);
 
-            float y = -140f;
+            var plate = CreateImage(contentRoot, "Plate", DimPanel);
+            if (sprPanel != null)
+            {
+                plate.sprite = sprPanel;
+                plate.type = Image.Type.Sliced;
+                plate.color = Color.white;
+            }
+            PlaceCenter(plate.rectTransform, 0f, -10f, 620f, 460f);
+            dynamicRows.Add(plate.gameObject);
+
+            float y = -40f;
             if (heroes != null)
             {
                 for (int i = 0; i < heroes.Length; i++)
@@ -244,21 +316,29 @@ namespace LegacyOfEternity.Offline
                     var hero = heroes[i];
                     int idx = OfflineDemoStore.ClassIndex(hero.heroClass);
                     string label = hero.name + "  ·  " + OfflineDemoStore.ClassLabels[idx];
-                    dynamicRows.Add(CreateButton(label, y, () => EnterHero(hero.id)).gameObject);
+                    dynamicRows.Add(CreateOrnateButton(plate.rectTransform, label, y, 520f, 64f, () => EnterHero(hero.id)).gameObject);
                     y -= 72f;
                 }
             }
 
-            dynamicRows.Add(CreateLabel("Новый герой", y));
-            y -= 34f;
-            heroField = CreateInput("HeroName", y, heroName, false);
-            y -= 78f;
+            if (sprDivider != null)
+            {
+                var div = CreateImage(plate.rectTransform, "Div", Color.white);
+                div.sprite = sprDivider;
+                PlaceTop(div.rectTransform, 0f, y, 420f, 10f);
+                dynamicRows.Add(div.gameObject);
+                y -= 24f;
+            }
 
-            dynamicRows.Add(CreateClassRow(y).gameObject);
-            y -= 78f;
-            dynamicRows.Add(CreateButton("Создать героя", y, OnCreateHero).gameObject);
-            y -= 78f;
-            dynamicRows.Add(CreateButton("К списку миров", y, () =>
+            dynamicRows.Add(CreateLabel(plate.rectTransform, "Новый герой", y, 520f));
+            y -= 36f;
+            heroField = CreateInput(plate.rectTransform, "HeroName", y, heroName, false, 520f, 56f);
+            y -= 72f;
+            dynamicRows.Add(CreateClassRow(plate.rectTransform, y).gameObject);
+            y -= 100f;
+            dynamicRows.Add(CreateOrnateButton(plate.rectTransform, "Создать героя", y, 420f, 68f, OnCreateHero).gameObject);
+            y -= 76f;
+            dynamicRows.Add(CreateSecondaryButton(plate.rectTransform, "К списку миров", y, 420f, 52f, () =>
             {
                 selectedWorld = null;
                 status = "";
@@ -280,14 +360,14 @@ namespace LegacyOfEternity.Offline
         {
             PullFields();
             string err;
-            token = OfflineDemoStore.Login(username, password, out err);
-            if (token == null)
+            string tok = OfflineDemoStore.Login(username, password, out err);
+            if (string.IsNullOrEmpty(tok))
             {
                 status = ErrorLabel(err);
                 SetStatus(status);
                 return;
             }
-            password = "";
+            token = tok;
             status = "";
             worlds = OfflineDemoStore.ListWorlds();
             ShowWorlds();
@@ -305,10 +385,7 @@ namespace LegacyOfEternity.Offline
                 SetStatus(status);
                 return;
             }
-            heroName = "";
-            heroes = OfflineDemoStore.ListHeroes(token, selectedWorld.id);
-            status = "Герой создан — нажмите на него, чтобы войти.";
-            ShowHeroes();
+            EnterHero(created.id);
         }
 
         void EnterHero(string heroId)
@@ -365,33 +442,36 @@ namespace LegacyOfEternity.Offline
             }
         }
 
-        GameObject CreateLabel(string text, float y)
+        GameObject CreateLabel(Transform parent, string text, float y, float width)
         {
-            var t = CreateText(panel, "Label", text, 22, FontStyle.Bold, new Color(0.85f, 0.9f, 1f, 1f));
-            Place(t.rectTransform, 0f, y, 520f, 30f);
+            var t = CreateText(parent, "Label", text, 24, FontStyle.Bold, SoftWhite);
+            PlaceTop(t.rectTransform, 0f, y, width, 32f);
             t.alignment = TextAnchor.MiddleLeft;
             return t.gameObject;
         }
 
-        InputField CreateInput(string name, float y, string value, bool passwordMode)
+        InputField CreateInput(Transform parent, string name, float y, string value, bool passwordMode, float width, float height)
         {
-            var go = CreateImage(panel, name, FieldColor).gameObject;
+            var go = CreateImage(parent, name, new Color(0.05f, 0.07f, 0.1f, 0.92f)).gameObject;
             var rt = go.GetComponent<RectTransform>();
-            Place(rt, 0f, y, 520f, 64f);
-
-            var outline = go.AddComponent<Outline>();
-            outline.effectColor = new Color(Accent.r, Accent.g, Accent.b, 0.45f);
-            outline.effectDistance = new Vector2(1.5f, -1.5f);
+            PlaceTop(rt, 0f, y, width, height);
+            var image = go.GetComponent<Image>();
+            if (sprField != null)
+            {
+                image.sprite = sprField;
+                image.type = Image.Type.Sliced;
+                image.color = Color.white;
+            }
 
             var textGo = new GameObject("Text", typeof(RectTransform), typeof(Text));
             textGo.transform.SetParent(go.transform, false);
             var text = textGo.GetComponent<Text>();
             text.font = uiFont;
             text.fontSize = 28;
-            text.color = Color.white;
+            text.color = SoftWhite;
             text.alignment = TextAnchor.MiddleLeft;
             text.supportRichText = false;
-            Stretch(text.rectTransform, -18f, -10f);
+            Stretch(text.rectTransform, 18f, 8f);
 
             var placeholderGo = new GameObject("Placeholder", typeof(RectTransform), typeof(Text));
             placeholderGo.transform.SetParent(go.transform, false);
@@ -402,7 +482,7 @@ namespace LegacyOfEternity.Offline
             placeholder.color = new Color(1f, 1f, 1f, 0.35f);
             placeholder.alignment = TextAnchor.MiddleLeft;
             placeholder.text = passwordMode ? "••••••••" : "";
-            Stretch(placeholder.rectTransform, -18f, -10f);
+            Stretch(placeholder.rectTransform, 18f, 8f);
 
             var input = go.AddComponent<InputField>();
             input.textComponent = text;
@@ -416,55 +496,96 @@ namespace LegacyOfEternity.Offline
             return input;
         }
 
-        Button CreateButton(string caption, float y, Action onClick)
+        Button CreateOrnateButton(Transform parent, string caption, float y, float width, float height, Action onClick)
         {
-            var go = CreateImage(panel, "Btn", ButtonColor).gameObject;
+            var go = CreateImage(parent, "Btn", Color.white).gameObject;
             var rt = go.GetComponent<RectTransform>();
-            Place(rt, 0f, y, 520f, 68f);
+            PlaceTop(rt, 0f, y, width, height);
+            var image = go.GetComponent<Image>();
+            if (sprBtn != null)
+            {
+                image.sprite = sprBtn;
+                image.type = Image.Type.Simple;
+                image.preserveAspect = false;
+                image.color = Color.white;
+            }
+            else
+                image.color = new Color(0.55f, 0.32f, 0.08f, 1f);
 
-            var outline = go.AddComponent<Outline>();
-            outline.effectColor = Accent;
-            outline.effectDistance = new Vector2(1.2f, -1.2f);
-
-            var label = CreateText(go.transform, "Label", caption, 28, FontStyle.Bold, Color.white);
+            var label = CreateText(go.transform, "Label", caption, 28, FontStyle.Bold, SoftWhite);
             Stretch(label.rectTransform);
+            var outline = label.gameObject.AddComponent<Outline>();
+            outline.effectColor = new Color(0f, 0f, 0f, 0.75f);
+            outline.effectDistance = new Vector2(1.2f, -1.2f);
 
             var button = go.AddComponent<Button>();
             var colors = button.colors;
-            colors.normalColor = ButtonColor;
-            colors.highlightedColor = ButtonHot;
-            colors.pressedColor = new Color(0.25f, 0.42f, 0.55f, 1f);
-            colors.selectedColor = ButtonHot;
+            colors.normalColor = Color.white;
+            colors.highlightedColor = new Color(1f, 0.95f, 0.8f, 1f);
+            colors.pressedColor = new Color(0.85f, 0.85f, 0.85f, 1f);
+            colors.selectedColor = Color.white;
             button.colors = colors;
+            button.targetGraphic = image;
+            button.onClick.AddListener(() => onClick());
+            return button;
+        }
+
+        Button CreateSecondaryButton(Transform parent, string caption, float y, float width, float height, Action onClick)
+        {
+            var go = CreateImage(parent, "Btn2", new Color(0.08f, 0.1f, 0.14f, 0.88f)).gameObject;
+            var rt = go.GetComponent<RectTransform>();
+            PlaceTop(rt, 0f, y, width, height);
+            if (sprField != null)
+            {
+                var image = go.GetComponent<Image>();
+                image.sprite = sprField;
+                image.type = Image.Type.Sliced;
+                image.color = new Color(1f, 1f, 1f, 0.85f);
+            }
+
+            var label = CreateText(go.transform, "Label", caption, 24, FontStyle.Bold, Gold);
+            Stretch(label.rectTransform);
+
+            var button = go.AddComponent<Button>();
             button.targetGraphic = go.GetComponent<Image>();
             button.onClick.AddListener(() => onClick());
             return button;
         }
 
-        RectTransform CreateClassRow(float y)
+        RectTransform CreateClassRow(Transform parent, float y)
         {
             var row = new GameObject("Classes", typeof(RectTransform)).GetComponent<RectTransform>();
-            row.SetParent(panel, false);
-            Place(row, 0f, y, 520f, 64f);
+            row.SetParent(parent, false);
+            PlaceTop(row, 0f, y, 520f, 90f);
 
-            float w = 520f / OfflineDemoStore.ClassLabels.Length;
-            for (int i = 0; i < OfflineDemoStore.ClassLabels.Length; i++)
+            int count = OfflineDemoStore.ClassLabels.Length;
+            float w = 520f / count;
+            for (int i = 0; i < count; i++)
             {
                 int index = i;
                 bool selected = selectedClass == index;
-                var go = CreateImage(row, "Class" + i, selected ? ButtonHot : ButtonColor).gameObject;
+                var go = CreateImage(row, "Class" + i, selected ? Color.white : new Color(1f, 1f, 1f, 0.55f)).gameObject;
                 var rt = go.GetComponent<RectTransform>();
                 rt.anchorMin = new Vector2(0f, 0f);
                 rt.anchorMax = new Vector2(0f, 1f);
                 rt.pivot = new Vector2(0f, 0.5f);
-                rt.anchoredPosition = new Vector2(i * w + 2f, 0f);
-                rt.sizeDelta = new Vector2(w - 4f, 0f);
+                rt.anchoredPosition = new Vector2(i * w + 4f, 0f);
+                rt.sizeDelta = new Vector2(w - 8f, 0f);
 
-                var label = CreateText(go.transform, "L", OfflineDemoStore.ClassLabels[i], 20, FontStyle.Bold, selected ? Accent : Color.white);
-                Stretch(label.rectTransform);
+                var image = go.GetComponent<Image>();
+                if (sprClasses != null && i < sprClasses.Length && sprClasses[i] != null)
+                {
+                    image.sprite = sprClasses[i];
+                    image.preserveAspect = true;
+                    image.color = selected ? Color.white : new Color(1f, 1f, 1f, 0.55f);
+                }
+
+                var label = CreateText(go.transform, "L", OfflineDemoStore.ClassLabels[i], 16, FontStyle.Bold, selected ? Gold : SoftWhite);
+                label.alignment = TextAnchor.LowerCenter;
+                Stretch(label.rectTransform, 2f, 2f);
 
                 var button = go.AddComponent<Button>();
-                button.targetGraphic = go.GetComponent<Image>();
+                button.targetGraphic = image;
                 button.onClick.AddListener(() =>
                 {
                     selectedClass = index;
@@ -485,7 +606,7 @@ namespace LegacyOfEternity.Offline
 
         Image CreateImage(Transform parent, string name, Color color)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(Image));
+            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
             go.transform.SetParent(parent, false);
             var image = go.GetComponent<Image>();
             image.color = color;
@@ -495,7 +616,7 @@ namespace LegacyOfEternity.Offline
 
         Text CreateText(Transform parent, string name, string value, int size, FontStyle style, Color color)
         {
-            var go = new GameObject(name, typeof(RectTransform), typeof(Text));
+            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Text));
             go.transform.SetParent(parent, false);
             var text = go.GetComponent<Text>();
             text.font = uiFont;
@@ -510,11 +631,29 @@ namespace LegacyOfEternity.Offline
             return text;
         }
 
-        static void Place(RectTransform rt, float x, float y, float w, float h)
+        static void PlaceTop(RectTransform rt, float x, float y, float w, float h)
         {
             rt.anchorMin = new Vector2(0.5f, 1f);
             rt.anchorMax = new Vector2(0.5f, 1f);
             rt.pivot = new Vector2(0.5f, 1f);
+            rt.anchoredPosition = new Vector2(x, y);
+            rt.sizeDelta = new Vector2(w, h);
+        }
+
+        static void PlaceTopLeft(RectTransform rt, float x, float y, float w, float h)
+        {
+            rt.anchorMin = new Vector2(0f, 1f);
+            rt.anchorMax = new Vector2(0f, 1f);
+            rt.pivot = new Vector2(0f, 1f);
+            rt.anchoredPosition = new Vector2(x, y);
+            rt.sizeDelta = new Vector2(w, h);
+        }
+
+        static void PlaceCenter(RectTransform rt, float x, float y, float w, float h)
+        {
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.pivot = new Vector2(0.5f, 0.5f);
             rt.anchoredPosition = new Vector2(x, y);
             rt.sizeDelta = new Vector2(w, h);
         }
