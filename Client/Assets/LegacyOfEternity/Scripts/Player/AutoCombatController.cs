@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using LegacyOfEternity.Combat;
+using LegacyOfEternity.Offline;
 
 namespace LegacyOfEternity.Player
 {
@@ -141,7 +142,7 @@ namespace LegacyOfEternity.Player
 
         private void Update()
         {
-            if (!autoEnabled) return;
+            if (!OfflineSession.Ready || !autoEnabled) return;
             if (hero == null || hero.IsDead)
             {
                 DisableAuto();

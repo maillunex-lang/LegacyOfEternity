@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using LegacyOfEternity.Player;
+using LegacyOfEternity.Offline;
 
 namespace LegacyOfEternity.Combat
 {
@@ -30,6 +31,8 @@ namespace LegacyOfEternity.Combat
         private Coroutine respawn;
 
         public event System.Action<int> DamageApplied;
+        /// <summary>Fired once when this enemy dies (local PvE). Used by offline quest tracker.</summary>
+        public static event System.Action<CombatEnemy> Killed;
         public string DisplayName => displayName;
         public int Health => health;
         public int MaxHealth => maxHealth;
@@ -56,7 +59,7 @@ namespace LegacyOfEternity.Combat
 
         private void Update()
         {
-            if (dead || hero == null || player == null || player.IsDead) 
+            if (!OfflineSession.Ready || dead || hero == null || player == null || player.IsDead)
             {
                 if (animator != null) animator.SetFloat("Speed", 0f);
                 return;
@@ -133,6 +136,7 @@ namespace LegacyOfEternity.Combat
                 animator.SetFloat("Speed", 0f);
                 animator.SetBool("Dead", true);
             }
+            Killed?.Invoke(this);
             if (respawn != null) StopCoroutine(respawn);
             respawn = StartCoroutine(RespawnLater());
         }

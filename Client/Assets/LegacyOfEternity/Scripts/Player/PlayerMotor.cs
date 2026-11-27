@@ -1,4 +1,6 @@
 using UnityEngine;
+using LegacyOfEternity.Offline;
+
 namespace LegacyOfEternity.Player
 {
     [RequireComponent(typeof(CharacterController))]
@@ -33,6 +35,8 @@ namespace LegacyOfEternity.Player
         }
         private void Update()
         {
+            if (!OfflineSession.Ready)
+                return;
             Vector2 input = combat != null && combat.IsDead ? Vector2.zero : ReadInput();
             if (input.sqrMagnitude > .0001f)
             {

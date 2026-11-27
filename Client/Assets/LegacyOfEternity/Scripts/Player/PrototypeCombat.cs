@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using LegacyOfEternity.Combat;
+using LegacyOfEternity.Offline;
 
 namespace LegacyOfEternity.Player
 {
@@ -51,7 +52,7 @@ namespace LegacyOfEternity.Player
 
         private void UseAction(int slot)
         {
-            if (dead) return;
+            if (!OfflineSession.Ready || dead) return;
             if (encounter == null) encounter = GetComponent<CombatEncounter>();
             if (encounter != null && !encounter.Execute(slot)) return;
             Play(slot == 0 ? "Attack" : "Skill" + slot);
