@@ -1,0 +1,78 @@
+{
+  "prefabs_touched": 18,
+  "details": [
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\monster\\monster_107\\monster_107_pre.prefab",
+      "removed": 13
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\monster\\monster_108\\monster_108_pre.prefab",
+      "removed": 13
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\monster\\monster_111\\monster_111_pre.prefab",
+      "removed": 13
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\monster\\monster_112\\monster_112_pre.prefab",
+      "removed": 13
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\monster\\monster_116\\monster_116_pre.prefab",
+      "removed": 13
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_009\\NPC_009_pre.prefab",
+      "removed": 3
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_015\\NPC_015_pre.prefab",
+      "removed": 3
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_024\\NPC_024_pre.prefab",
+      "removed": 3
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_027\\NPC_027_pre.prefab",
+      "removed": 5
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_028\\NPC_028_pre.prefab",
+      "removed": 3
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_029\\NPC_029_pre.prefab",
+      "removed": 3
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_032\\NPC_032_pre.prefab",
+      "removed": 5
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_034\\NPC_034_pre.prefab",
+      "removed": 9
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\npc\\NPC_044\\NPC_044_pre.prefab",
+      "removed": 5
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\collection\\cs_caijiwu_huowu.prefab",
+      "removed": 2
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\collection\\cs_caijiwu_yuechangshi.prefab",
+      "removed": 2
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\collection\\cs_caijiwu_wuqi.prefab",
+      "removed": 1
+    },
+    {
+      "prefab": "C:\\LegacyOfEternity\\Client\\Assets\\Resources\\Animation\\collection\\cs_caijiwu_hailuo.prefab",
+      "removed": 2
+    }
+  ],
+  "script_missing_count": 24
+}

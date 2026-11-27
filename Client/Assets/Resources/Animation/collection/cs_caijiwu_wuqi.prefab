@@ -61,7 +61,6 @@ GameObject:
   - component: {fileID: 400816}
   - component: {fileID: 3336244}
   - component: {fileID: 2399768}
-  - component: {fileID: 114508562899352404}
   m_Layer: 15
   m_Name: zhanshi_M_wuqi_3
   m_TagString: Untagged
@@ -3453,19 +3452,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 183190}
   m_IsPrefabParent: 1
---- !u!114 &114508562899352404
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c30c5ba201d3254a8a5d9027c487023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fUserTag: 0
-  m_fCurrenTime: 0
-  m_fPlaySpeed: 1
-  m_bWorldSpace: 0
-  m_vRotationValue: {x: 0, y: 0, z: 40}

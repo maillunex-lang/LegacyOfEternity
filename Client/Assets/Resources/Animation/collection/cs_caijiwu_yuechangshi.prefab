@@ -24,8 +24,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 498264}
-  - component: {fileID: 11455330}
-  - component: {fileID: 11498330}
   m_Layer: 15
   m_Name: cs_caijiwu_yuechangshi
   m_TagString: Untagged
@@ -173,80 +171,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.57, y: 1.12, z: 0.61}
   m_Center: {x: 0.02, y: 0.78, z: -0.02}
---- !u!114 &11455330
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c30c5ba201d3254a8a5d9027c487023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fUserTag: 0
-  m_fCurrenTime: 0
-  m_fPlaySpeed: 1
-  m_bWorldSpace: 0
-  m_vRotationValue: {x: 0, y: 50, z: 0}
---- !u!114 &11498330
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92d0dba4615c71d45bdbfd7c49b539ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_fUserTag: 0
-  m_fCurrenTime: 0
-  m_fPlaySpeed: 1
-  m_OnEndAniFunction: OnEndAnimation
-  m_CurveInfoList:
-  - m_bEnabled: 1
-    m_CurveName: 
-    m_AniCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 2
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0.9998537
-        tangentMode: 69
-      - serializedVersion: 2
-        time: 0.5022288
-        value: 0.5021553
-        inSlope: 0.9998537
-        outSlope: -1.0131278
-        tangentMode: 69
-      - serializedVersion: 2
-        time: 1
-        value: -0.002150556
-        inSlope: -1.0131278
-        outSlope: 0
-        tangentMode: 69
-      m_PreInfinity: 1
-      m_PostInfinity: 1
-      m_RotationOrder: 4
-    m_ApplyType: 1
-    m_bApplyOption: 00010000
-    m_bRecursively: 0
-    m_fValueScale: 0.5
-    m_FromColor: {x: 1, y: 1, z: 1, w: 1}
-    m_ToColor: {x: 1, y: 1, z: 1, w: 0}
-    m_nTag: 0
-    m_nSortGroup: 0
-    m_OriginalValue: {x: 0, y: 0, z: 0, w: 0}
-    m_BeforeValue: {x: 0, y: 0, z: 0, w: 0}
-    m_ChildOriginalColorValues: []
-    m_ChildBeforeColorValues: []
-  m_fDelayTime: 0
-  m_fDurationTime: 3
-  m_bAutoDestruct: 0
-  m_bResetForPooL: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -351,9 +351,6 @@ GameObject:
   - component: {fileID: 4303761135533816}
   - component: {fileID: 111578827517385708}
   - component: {fileID: 136074370025212414}
-  - component: {fileID: 114190253129803722}
-  - component: {fileID: 114105607362132124}
-  - component: {fileID: 114513580021156778}
   m_Layer: 15
   m_Name: NPC_015_pre
   m_TagString: npc
@@ -1372,77 +1369,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114105607362132124
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398227057326156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73f962dd4da58948b056caab7d602e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114190253129803722
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398227057326156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f9c5ca5c6259df44a6dd192fd26c587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_allSkinnedMesh: []
-  m_CurveMovePos: {x: 0, y: 0, z: 0}
-  m_move: {fileID: 0}
-  m_AutoMove: {fileID: 0}
-  m_bAutoMove: 0
-  m_bRunToAttack: 0
-  m_RunEndure: 0
-  m_gameDBMgr: {fileID: 0}
-  bUserBehit: 1
-  m_bMoveEnd: 0
-  m_bUseBehitColor: 0
-  m_bSummonMonster: 0
-  m_actionStartPlayTime: 0
-  m_WarningefxObj: {fileID: 0}
-  m_RuncastSKillID: 0
-  m_gravityMotionBase: {fileID: 0}
-  m_SelectTargetObject: {fileID: 0}
-  m_AttackState: {fileID: 0}
-  m_BehitState: {fileID: 0}
-  m_bStealthState: 0
-  m_bCharmState: 0
-  NormalAttackSpeedScale: 1
-  NoramalAttackEffectDelayTime: 0
-  LineRender: {fileID: 0}
-  m_BuffDamageTransferPer: 0
-  m_TeamType: 0
-  m_TargetList: 
-  m_OldTeamType: 0
-  MagicKeyModel: {fileID: 0}
-  mMagicKeyId: 0
-  mMagicKeyStar: 0
-  mCurWeapon: -1
-  mCurWing: 0
-  mClothes: 0
-  m_bWuDi: 0
-  m_EditTest: 0
-  m_bUseAI: 0
---- !u!114 &114513580021156778
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1398227057326156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad25866d3d8b6cd47b770e0dc6e935c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shadowPro: {fileID: 0}
 --- !u!136 &136074370025212414
 CapsuleCollider:
   m_ObjectHideFlags: 1

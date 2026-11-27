@@ -225,7 +225,8 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] `OriginalHaitanBootstrap`: birth, NPC, gather, monsters; demo PvE-арена сносится  
 - [x] Подтверждено: `CoastalPrototype` уже содержит `cs_haitan` / dixing / walksurface / пропы (как оригинал)  
 - [x] Убраны interim walk-slabs (используется сцена)  
-- [x] modelId меши: `HaitanModels.json` + `Resources/Animation/*` (t_model/t_npc); fallback 880210118→108  
+- [x] modelId меши: `HaitanModels.json` + `Resources/Animation/*` (t_model/t_npc); fallback 880210118→108
+- [x] Prefab deps Haitan (mat/fbx/anim) + strip missing scripts + `OriginalVisualSanitize`  
 - [ ] APK — **только после полной локации + квесты + графика** (указание владельца)
 
 ### PORT-07 — Квесты Haitan — `В работе`
@@ -336,4 +337,5 @@ $env:JAVA_HOME='C:\asdk\OpenJDK'
 ---
 
 *Конец. Исполнитель не оставляет P0 на закрытом срезе и не подменяет оригинал выдуманными механиками.*
+
 

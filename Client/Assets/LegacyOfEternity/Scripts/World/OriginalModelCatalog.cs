@@ -111,6 +111,7 @@ namespace LegacyOfEternity.World
             if (prefab == null)
                 return null;
             var visual = UnityEngine.Object.Instantiate(prefab, parent, false);
+            OriginalVisualSanitize.Sanitize(visual);
             visual.name = "Visual_" + modelId;
             visual.transform.localPosition = Vector3.zero;
             visual.transform.localRotation = Quaternion.identity;
