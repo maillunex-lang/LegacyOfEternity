@@ -10,6 +10,16 @@ namespace LegacyOfEternity.Offline
         GUIStyle bodyStyle;
         GUIStyle boxStyle;
         bool stylesReady;
+        OfflineLootFeedback feedback;
+
+        void Awake()
+        {
+            feedback = OfflineLootFeedback.Ensure(gameObject);
+            var bag = GetComponent<OfflineBagHud>();
+            if (bag == null)
+                bag = gameObject.AddComponent<OfflineBagHud>();
+            bag.BindFeedback(feedback);
+        }
 
         void OnEnable()
         {
@@ -25,6 +35,9 @@ namespace LegacyOfEternity.Offline
         {
             if (!OfflineSession.Ready || OfflineSession.Hero == null)
                 return;
+            var drops = OfflineDemoStore.RollKillLoot(OfflineSession.Hero);
+            if (feedback != null)
+                feedback.ShowLoot(drops);
             OfflineDemoStore.ApplyQuestEvent(OfflineSession.Hero, "kill");
         }
 
@@ -56,13 +69,16 @@ namespace LegacyOfEternity.Offline
                 return;
             EnsureStyles();
             float scale = Mathf.Clamp(Screen.height / 640f, 1.1f, 2.4f);
-            float width = Mathf.Min(Screen.width - 24f, 520f * scale);
+            float width = Mathf.Min(Screen.width - 190f * scale, 480f * scale);
             float height = 200f * scale;
             var hero = OfflineSession.Hero;
+            OfflineDemoStore.EnsureInventory(hero);
 
             GUILayout.BeginArea(new Rect(16f, 16f, width, height), boxStyle);
             GUILayout.Label(hero.name + " · " + OfflineDemoStore.ClassLabels[OfflineDemoStore.ClassIndex(hero.heroClass)], titleStyle);
             GUILayout.Label("Опыт " + hero.experience + "   Монеты " + hero.money, bodyStyle);
+            int slots = hero.inventory != null ? hero.inventory.Length : 0;
+            GUILayout.Label("Сумка: " + slots + " вид(ов)", bodyStyle);
             GUILayout.Label(OfflineDemoStore.QuestTitle(hero.questId), titleStyle);
             GUILayout.Label(OfflineDemoStore.QuestObjective(hero.questId), bodyStyle);
             if (hero.questGoalCount > 0)

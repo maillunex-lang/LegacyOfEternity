@@ -7,13 +7,21 @@ using UnityEngine;
 namespace LegacyOfEternity.Offline
 {
     /// <summary>
-    /// Fully offline account/hero/quest store for Android demo (no network).
-    /// Ported from LunexUfa prototype and adapted to four LoE classes.
+    /// Fully offline account/hero/quest/inventory store for Android demo (no network).
     /// </summary>
     public static class OfflineDemoStore
     {
         public static readonly string[] ClassIds = { "warrior", "assassin", "mage", "archer" };
         public static readonly string[] ClassLabels = { "Воин", "Ассасин", "Маг", "Лучник" };
+
+        public const string ItemScrap = "offline_scrap";
+        public const string ItemFang = "offline_fang";
+        public const string ItemHide = "offline_hide";
+        public const string ItemBone = "offline_bone";
+        public const string ItemPotion = "offline_potion";
+        public const string ItemOre = "offline_ore";
+        public const string ItemCloth = "offline_cloth";
+        public const string ItemGem = "offline_gem";
 
         [Serializable]
         public class Account
@@ -21,6 +29,13 @@ namespace LegacyOfEternity.Offline
             public string id;
             public string username;
             public string password;
+        }
+
+        [Serializable]
+        public class ItemStack
+        {
+            public string id;
+            public int count;
         }
 
         [Serializable]
@@ -35,6 +50,7 @@ namespace LegacyOfEternity.Offline
             public int questId;
             public int questProgress;
             public int questGoalCount;
+            public ItemStack[] inventory;
         }
 
         [Serializable]
@@ -42,6 +58,13 @@ namespace LegacyOfEternity.Offline
         {
             public string id;
             public string name;
+        }
+
+        [Serializable]
+        public class LootLine
+        {
+            public string itemId;
+            public int count;
         }
 
         [Serializable]
@@ -54,6 +77,11 @@ namespace LegacyOfEternity.Offline
         static readonly WorldInfo[] Worlds =
         {
             new WorldInfo { id = "world-coastal-1", name = "Побережье Хайтен (оффлайн)" }
+        };
+
+        static readonly string[] KillLootPool =
+        {
+            ItemFang, ItemHide, ItemBone, ItemOre, ItemCloth, ItemPotion, ItemGem
         };
 
         static string PathFile => Path.Combine(Application.persistentDataPath, "loe_offline_demo.json");
@@ -73,6 +101,30 @@ namespace LegacyOfEternity.Offline
         }
 
         static void Save(Db db) => File.WriteAllText(PathFile, JsonUtility.ToJson(db, true), Encoding.UTF8);
+
+        public static void EnsureInventory(Hero hero)
+        {
+            if (hero == null)
+                return;
+            if (hero.inventory == null)
+                hero.inventory = new ItemStack[0];
+        }
+
+        public static string ItemDisplayName(string itemId)
+        {
+            switch (itemId)
+            {
+                case ItemScrap: return "Прибрежный хлам";
+                case ItemFang: return "Клык хищника";
+                case ItemHide: return "Шкура зверя";
+                case ItemBone: return "Кость";
+                case ItemPotion: return "Зелье лечения";
+                case ItemOre: return "Рудный осколок";
+                case ItemCloth: return "Обрывок ткани";
+                case ItemGem: return "Тусклый самоцвет";
+                default: return itemId ?? "?";
+            }
+        }
 
         public static bool Register(string username, string password, out string error)
         {
@@ -131,7 +183,10 @@ namespace LegacyOfEternity.Offline
             {
                 var h = db.heroes[i];
                 if (h.worldId == worldId && h.id != null && h.id.StartsWith(accountId + ":", StringComparison.Ordinal))
+                {
+                    EnsureInventory(h);
                     result.Add(h);
+                }
             }
             return result.ToArray();
         }
@@ -168,7 +223,8 @@ namespace LegacyOfEternity.Offline
                 money = 0,
                 questId = 1001701,
                 questProgress = 0,
-                questGoalCount = 0
+                questGoalCount = 0,
+                inventory = new ItemStack[0]
             };
             var heroes = new List<Hero>(db.heroes) { hero };
             db.heroes = heroes.ToArray();
@@ -186,7 +242,17 @@ namespace LegacyOfEternity.Offline
                 var h = db.heroes[i];
                 if (h.id == heroId && h.worldId == worldId &&
                     h.id.StartsWith(accountId + ":", StringComparison.Ordinal))
-                    return Clone(h);
+                {
+                    EnsureInventory(h);
+                    var clone = Clone(h);
+                    EnsureInventory(clone);
+                    if (h.inventory == null)
+                    {
+                        h.inventory = new ItemStack[0];
+                        Save(db);
+                    }
+                    return clone;
+                }
             }
             error = "invalid_hero";
             return null;
@@ -196,6 +262,7 @@ namespace LegacyOfEternity.Offline
         {
             if (hero == null || string.IsNullOrEmpty(hero.id))
                 return;
+            EnsureInventory(hero);
             var db = Load();
             for (int i = 0; i < db.heroes.Length; i++)
             {
@@ -208,6 +275,70 @@ namespace LegacyOfEternity.Offline
             }
         }
 
+        public static void ApplyLoot(Hero hero, string itemId, int count)
+        {
+            if (hero == null || string.IsNullOrEmpty(itemId) || count <= 0)
+                return;
+            EnsureInventory(hero);
+            var list = new List<ItemStack>(hero.inventory ?? new ItemStack[0]);
+            bool found = false;
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] != null && list[i].id == itemId)
+                {
+                    list[i].count += count;
+                    found = true;
+                    break;
+                }
+            }
+            if (!found)
+                list.Add(new ItemStack { id = itemId, count = count });
+            hero.inventory = list.ToArray();
+            SaveHero(hero);
+        }
+
+        public static bool TryConsumeItem(Hero hero, string itemId, int count)
+        {
+            if (hero == null || string.IsNullOrEmpty(itemId) || count <= 0)
+                return false;
+            EnsureInventory(hero);
+            var list = new List<ItemStack>(hero.inventory ?? new ItemStack[0]);
+            for (int i = 0; i < list.Count; i++)
+            {
+                if (list[i] == null || list[i].id != itemId || list[i].count < count)
+                    continue;
+                list[i].count -= count;
+                if (list[i].count <= 0)
+                    list.RemoveAt(i);
+                hero.inventory = list.ToArray();
+                SaveHero(hero);
+                return true;
+            }
+            return false;
+        }
+
+        /// <summary>Roll 1–2 stack drops + small coin bonus for a Coastal kill.</summary>
+        public static LootLine[] RollKillLoot(Hero hero)
+        {
+            if (hero == null)
+                return new LootLine[0];
+            EnsureInventory(hero);
+            var drops = new List<LootLine>();
+            int rolls = UnityEngine.Random.Range(1, 3);
+            for (int i = 0; i < rolls; i++)
+            {
+                string id = KillLootPool[UnityEngine.Random.Range(0, KillLootPool.Length)];
+                int count = id == ItemPotion || id == ItemGem ? 1 : UnityEngine.Random.Range(1, 3);
+                ApplyLoot(hero, id, count);
+                drops.Add(new LootLine { itemId = id, count = count });
+            }
+            int coins = UnityEngine.Random.Range(15, 46);
+            hero.money += coins;
+            SaveHero(hero);
+            drops.Add(new LootLine { itemId = "money", count = coins });
+            return drops.ToArray();
+        }
+
         /// <summary>
         /// Haitan-style offline chain on CoastalPrototype:
         /// talk (Tias) → gather scrap → kill x3 → turn in to Tias.
@@ -216,6 +347,7 @@ namespace LegacyOfEternity.Offline
         {
             if (hero == null)
                 return;
+            EnsureInventory(hero);
             if (hero.questId == 1001701 && type == "talk")
             {
                 hero.experience += 1040;
@@ -226,6 +358,22 @@ namespace LegacyOfEternity.Offline
             }
             else if (hero.questId == 1001702 && type == "gather")
             {
+                // Inline scrap grant (avoid mid-event SaveHero from ApplyLoot).
+                EnsureInventory(hero);
+                var list = new List<ItemStack>(hero.inventory);
+                bool found = false;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (list[i] != null && list[i].id == ItemScrap)
+                    {
+                        list[i].count += 1;
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found)
+                    list.Add(new ItemStack { id = ItemScrap, count = 1 });
+                hero.inventory = list.ToArray();
                 hero.questProgress = 1;
                 hero.experience += 550;
                 hero.money += 1050;
@@ -295,6 +443,11 @@ namespace LegacyOfEternity.Offline
                 : token;
         }
 
-        static Hero Clone(Hero src) => JsonUtility.FromJson<Hero>(JsonUtility.ToJson(src));
+        static Hero Clone(Hero src)
+        {
+            var clone = JsonUtility.FromJson<Hero>(JsonUtility.ToJson(src));
+            EnsureInventory(clone);
+            return clone;
+        }
     }
 }
