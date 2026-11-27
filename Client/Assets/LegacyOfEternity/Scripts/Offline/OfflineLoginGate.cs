@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using LegacyOfEternity.Player;
+using LegacyOfEternity.Mobile;
 using LoeCamera = LegacyOfEternity.CameraSystem.OrbitFollowCamera;
 
 namespace LegacyOfEternity.Offline
