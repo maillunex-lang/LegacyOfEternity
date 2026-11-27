@@ -9,7 +9,7 @@ using UnityEngine.Rendering;
 namespace LegacyOfEternity.Editor
 {
     /// <summary>
-    /// 0.6.0 offline-login APK: builds CoastalPrototype without regenerating the scene.
+    /// Offline-login APK: CoastalPrototype + Android VFX magenta fix.
     /// Audits from M05 are optional via LOE_SKIP_ANDROID_AUDITS=1 for cold Library imports.
     /// </summary>
     public static class BuildOfflineAndroid
@@ -19,6 +19,9 @@ namespace LegacyOfEternity.Editor
         public static void Run()
         {
             Debug.Log("LOE_OFFLINE_ANDROID_START");
+            // Always patch empty/broken VFX materials before packaging.
+            M053AndroidVfxMaterialsFix.Run();
+
             if (Environment.GetEnvironmentVariable("LOE_SKIP_ANDROID_AUDITS") != "1")
             {
                 M052WeaponBuilder.Audit();
@@ -29,6 +32,7 @@ namespace LegacyOfEternity.Editor
                 M058OriginalCombatHud.Audit();
                 M059OriginalCamera.Audit();
                 M0510OriginalControls.Audit();
+                M053AndroidVfxMaterialsFix.Audit();
             }
             else
                 Debug.Log("LOE_OFFLINE_ANDROID_AUDITS_SKIPPED");
@@ -49,19 +53,24 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.companyName = "Lunex";
             PlayerSettings.productName = "Legacy of Eternity";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.lunex.legacyofeternity");
-            PlayerSettings.bundleVersion = "0.6.2";
-            PlayerSettings.Android.bundleVersionCode = 17;
+            PlayerSettings.bundleVersion = "0.6.3";
+            PlayerSettings.Android.bundleVersionCode = 18;
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
+            // Vulkan first: LD_glow historically excluded GLES3 and showed magenta there.
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.Android, false);
-            PlayerSettings.SetGraphicsAPIs(BuildTarget.Android, new[] { GraphicsDeviceType.OpenGLES3 });
+            PlayerSettings.SetGraphicsAPIs(BuildTarget.Android, new[]
+            {
+                GraphicsDeviceType.Vulkan,
+                GraphicsDeviceType.OpenGLES3
+            });
             PlayerSettings.Android.useCustomKeystore = false;
             EditorUserBuildSettings.buildAppBundle = false;
 
-            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.6.2-alpha.apk");
+            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.6.3-alpha.apk");
             Directory.CreateDirectory(Path.GetDirectoryName(output));
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
@@ -81,4 +90,3 @@ namespace LegacyOfEternity.Editor
         }
     }
 }
-

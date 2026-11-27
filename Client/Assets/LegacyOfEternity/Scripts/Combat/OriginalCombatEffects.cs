@@ -86,6 +86,7 @@ namespace LegacyOfEternity.Combat
                 instance.transform.localRotation = Quaternion.identity;
             }
             instance.name = "Original FX " + prefab.name;
+            SanitizeMagentaMaterials(instance);
             // The imported heroes are normalized to 1.8 world units high by FourClassesBuilder.
             // Original FX authored for the original character rig must preserve their scale
             // relative to that same rig. The visual's original scale factor varies by class.
@@ -132,6 +133,58 @@ namespace LegacyOfEternity.Combat
                 }
             }
             if (instance != null) Destroy(instance, 0.15f);
+        }
+
+        /// <summary>
+        /// Replace null / error-shader materials that show as magenta on Android GLES.
+        /// </summary>
+        private static void SanitizeMagentaMaterials(GameObject root)
+        {
+            var fallback = GetFallbackParticleMaterial();
+            if (fallback == null)
+                return;
+            foreach (var renderer in root.GetComponentsInChildren<Renderer>(true))
+            {
+                var mats = renderer.sharedMaterials;
+                if (mats == null || mats.Length == 0)
+                    continue;
+                bool changed = false;
+                for (int i = 0; i < mats.Length; i++)
+                {
+                    var mat = mats[i];
+                    if (mat == null ||
+                        mat.shader == null ||
+                        mat.shader.name == "Hidden/InternalErrorShader" ||
+                        !mat.shader.isSupported)
+                    {
+                        mats[i] = fallback;
+                        changed = true;
+                    }
+                }
+                if (changed)
+                    renderer.sharedMaterials = mats;
+            }
+        }
+
+        private static Material fallbackParticle;
+
+        private static Material GetFallbackParticleMaterial()
+        {
+            if (fallbackParticle != null)
+                return fallbackParticle;
+            var shader = Shader.Find("Mobile/Particles/Additive");
+            if (shader == null)
+                shader = Shader.Find("Legacy Shaders/Particles/Additive");
+            if (shader == null)
+                return null;
+            fallbackParticle = new Material(shader)
+            {
+                name = "LOE_RuntimeParticleFallback",
+                hideFlags = HideFlags.HideAndDontSave
+            };
+            if (fallbackParticle.HasProperty("_TintColor"))
+                fallbackParticle.SetColor("_TintColor", new Color(1f, 1f, 1f, 0.55f));
+            return fallbackParticle;
         }
     }
 }

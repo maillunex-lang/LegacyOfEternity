@@ -42,7 +42,7 @@ Shader "LD/LD_water" {
             #include "UnityCG.cginc"
             #pragma multi_compile_fwdbase
             #pragma multi_compile_fog
-            #pragma exclude_renderers gles3 d3d11_9x xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _TimeEditor;
             uniform sampler2D _liuguang01; uniform float4 _liuguang01_ST;

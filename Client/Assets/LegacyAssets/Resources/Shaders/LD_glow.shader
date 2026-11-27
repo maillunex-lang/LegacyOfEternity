@@ -48,7 +48,7 @@ Shader "LD/LD_glow" {
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdbase_fullshadows
-            #pragma exclude_renderers gles3 d3d11_9x xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _TimeEditor;
@@ -144,7 +144,7 @@ Shader "LD/LD_glow" {
             #include "UnityCG.cginc"
             #include "AutoLight.cginc"
             #pragma multi_compile_fwdadd_fullshadows
-            #pragma exclude_renderers gles3 d3d11_9x xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _LightColor0;
             uniform float4 _TimeEditor;
@@ -234,7 +234,7 @@ Shader "LD/LD_glow" {
             #include "Lighting.cginc"
             #pragma fragmentoption ARB_precision_hint_fastest
             #pragma multi_compile_shadowcaster
-            #pragma exclude_renderers gles3 d3d11_9x xbox360 xboxone ps3 ps4 psp2 
+            #pragma exclude_renderers d3d11_9x xbox360 xboxone ps3 ps4 psp2 
             #pragma target 3.0
             uniform float4 _TimeEditor;
             uniform sampler2D _rongjiewenli; uniform float4 _rongjiewenli_ST;
