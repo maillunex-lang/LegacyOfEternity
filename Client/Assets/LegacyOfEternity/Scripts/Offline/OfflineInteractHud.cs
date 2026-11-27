@@ -70,15 +70,24 @@ namespace LegacyOfEternity.Offline
             {
                 if (GUI.Button(rect, active.ActionLabel() + " · " + active.DisplayName, buttonStyle))
                     active.TryInteract();
+                return;
             }
-            else
+
+            var q = LegacyOfEternity.World.OriginalQuestCatalog.Get(OfflineSession.Hero.questId);
+            if (q != null && LegacyOfEternity.World.OriginalQuestCatalog.NeedsActionButton(q)
+                && !LegacyOfEternity.World.OriginalQuestCatalog.GoalComplete(OfflineSession.Hero, q))
             {
-                string hint = HintForQuest(OfflineSession.Hero.questId);
-                if (!string.IsNullOrEmpty(hint))
-                {
-                    var hintRect = new Rect(20f, Screen.height - 56f * scale, Screen.width - 40f, 40f * scale);
-                    GUI.Label(hintRect, hint, hintStyle);
-                }
+                string label = ActionLabel(q);
+                if (GUI.Button(rect, label, buttonStyle))
+                    RunQuestAction(q);
+                return;
+            }
+
+            string hint = HintForQuest(OfflineSession.Hero.questId);
+            if (!string.IsNullOrEmpty(hint))
+            {
+                var hintRect = new Rect(20f, Screen.height - 56f * scale, Screen.width - 40f, 40f * scale);
+                GUI.Label(hintRect, hint, hintStyle);
             }
         }
 
@@ -87,6 +96,46 @@ namespace LegacyOfEternity.Offline
             if (questId <= 0)
                 return "";
             return LegacyOfEternity.World.OriginalQuestCatalog.Objective(questId);
+        }
+
+        static string ActionLabel(LegacyOfEternity.World.OriginalQuestDef q)
+        {
+            switch (q.kind)
+            {
+                case LegacyOfEternity.World.OriginalQuestKind.UseItem:
+                    return "Использовать " + OfflineDemoStore.ItemDisplayName(
+                        (q.useItemId != 0 ? q.useItemId : q.goalId).ToString());
+                case LegacyOfEternity.World.OriginalQuestKind.Reach:
+                    return "Дойти до цели";
+                case LegacyOfEternity.World.OriginalQuestKind.Dungeon:
+                    return "Войти в подземелье " + q.dungeonId;
+                case LegacyOfEternity.World.OriginalQuestKind.MountDungeon:
+                    return "Подземелье скакуна " + q.dungeonId;
+                default:
+                    return "Продолжить задание";
+            }
+        }
+
+        static void RunQuestAction(LegacyOfEternity.World.OriginalQuestDef q)
+        {
+            var hero = OfflineSession.Hero;
+            if (hero == null || q == null)
+                return;
+            switch (q.kind)
+            {
+                case LegacyOfEternity.World.OriginalQuestKind.UseItem:
+                    OfflineDemoStore.ApplyQuestEvent(hero, "use",
+                        q.useItemId != 0 ? q.useItemId : q.goalId);
+                    break;
+                case LegacyOfEternity.World.OriginalQuestKind.Reach:
+                    OfflineDemoStore.ApplyQuestEvent(hero, "reach", q.positionId);
+                    break;
+                case LegacyOfEternity.World.OriginalQuestKind.Dungeon:
+                case LegacyOfEternity.World.OriginalQuestKind.MountDungeon:
+                    // Offline stub until real fuben PORT: clearing the dungeon completes the goal.
+                    OfflineDemoStore.ApplyQuestEvent(hero, "dungeon", q.dungeonId);
+                    break;
+            }
         }
     }
 }

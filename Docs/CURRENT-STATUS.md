@@ -6,14 +6,12 @@
 
 | Слой | Статус |
 | --- | --- |
-| Сцена `cs_haitan` / dixing / walksurface / пропы | В `CoastalPrototype` |
-| MapData spawns | `OriginalHaitanBootstrap` |
-| 99 квестов QuestConfig | `HaitanQuests.json` (имена RU) |
-| modelId визуалы мобов/NPC/gather | `HaitanModels.json` + `Resources/Animation/*` |
-| Item rewards из QuestConfig | CompleteQuest |
-| Диалоги/stories | `HaitanDialogues.json` (RU перевод с оригинала) + `OfflineDialogueHud` |
+| Сцена / MapData / modelId | Готово |
+| 99 квестов + RU диалоги | Готово |
+| kind 1/2/4 + **3/7/8/9/14/17** | Runtime в OfflineDemoStore |
+| Item rewards / finishRemoveItem | CompleteQuest |
 | APK | Отложен |
 
 ## Следующее
 
-Проверить missing-script на импортированных prefab; довести графику локации; APK только когда Haitan полон.
+Проверка missing-script на Animation prefab; графика локации; реальные подземелья вместо stub kind 14/17; APK когда Haitan полон.

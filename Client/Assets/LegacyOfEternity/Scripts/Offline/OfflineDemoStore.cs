@@ -122,7 +122,81 @@ namespace LegacyOfEternity.Offline
                 case ItemOre: return "Рудный осколок";
                 case ItemCloth: return "Обрывок ткани";
                 case ItemGem: return "Тусклый самоцвет";
+                case "money": return "Монеты";
+                case "130000001": return "Крабовое мясо";
+                case "130000005": return "Письмо Тиаса";
+                case "130000009": return "Голова старпома";
+                case "130000010": return "Составной отвар";
                 default: return itemId ?? "?";
+            }
+        }
+
+        public static int CountItem(Hero hero, string itemId)
+        {
+            if (hero == null || string.IsNullOrEmpty(itemId))
+                return 0;
+            EnsureInventory(hero);
+            int total = 0;
+            for (int i = 0; i < hero.inventory.Length; i++)
+            {
+                var s = hero.inventory[i];
+                if (s != null && s.id == itemId)
+                    total += s.count;
+            }
+            return total;
+        }
+
+        static void GrantConfigItems(Hero hero, string spec)
+        {
+            if (hero == null || string.IsNullOrEmpty(spec))
+                return;
+            EnsureInventory(hero);
+            var chunks = spec.Split(new[] { '#', ';' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int c = 0; c < chunks.Length; c++)
+            {
+                var parts = chunks[c].Split(',');
+                if (parts.Length < 1 || string.IsNullOrEmpty(parts[0]))
+                    continue;
+                string id = parts[0].Trim();
+                int count = 1;
+                if (parts.Length >= 2)
+                    int.TryParse(parts[1].Trim(), out count);
+                if (count <= 0)
+                    count = 1;
+                ApplyLoot(hero, id, count);
+            }
+        }
+
+        static void RemoveConfigItems(Hero hero, string spec)
+        {
+            if (hero == null || string.IsNullOrEmpty(spec))
+                return;
+            var chunks = spec.Split(new[] { '#', ';' }, StringSplitOptions.RemoveEmptyEntries);
+            for (int c = 0; c < chunks.Length; c++)
+            {
+                var parts = chunks[c].Split(',');
+                if (parts.Length < 1 || string.IsNullOrEmpty(parts[0]))
+                    continue;
+                string id = parts[0].Trim();
+                int count = 1;
+                if (parts.Length >= 2)
+                    int.TryParse(parts[1].Trim(), out count);
+                TryConsumeItem(hero, id, Mathf.Max(1, count));
+            }
+        }
+
+        static string RewardForClass(string heroClass, LegacyOfEternity.World.OriginalQuestDef q)
+        {
+            if (q == null)
+                return "";
+            int idx = ClassIndex(heroClass);
+            switch (idx)
+            {
+                case 0: return q.prof1Reward;
+                case 1: return q.prof2Reward;
+                case 2: return q.prof3Reward;
+                case 3: return q.prof4Reward;
+                default: return q.prof1Reward;
             }
         }
 
@@ -340,8 +414,8 @@ namespace LegacyOfEternity.Offline
         }
 
         /// <summary>
-        /// Original Haitan QuestConfig chain (1001701…): gossip / gather / kill + finishNpc.
-        /// payloadId = NPC id, collection id, or monster template id.
+        /// Original Haitan QuestConfig chain (1001701…): gossip/gather/kill/drop/use/reach/dungeon + finishNpc.
+        /// payloadId = NPC id, collection id, monster template id, item id, position id, or dungeon id.
         /// </summary>
         public static void ApplyQuestEvent(Hero hero, string type, long payloadId = 0)
         {
@@ -354,16 +428,19 @@ namespace LegacyOfEternity.Offline
                 return;
 
             bool changed = false;
+            var K = LegacyOfEternity.World.OriginalQuestKind;
+            var Cat = LegacyOfEternity.World.OriginalQuestCatalog;
+
             if (type == "talk" || type == "turnin")
             {
                 if (q.finishNpcId != 0 && payloadId != 0 && payloadId != q.finishNpcId)
                     return;
-                if (q.kind == LegacyOfEternity.World.OriginalQuestKind.Gossip)
+                if (Cat.IsTalkKind(q))
                     changed = CompleteQuest(hero, q);
-                else if (LegacyOfEternity.World.OriginalQuestCatalog.GoalComplete(hero, q) && q.finishNpcId != 0)
+                else if (Cat.GoalComplete(hero, q) && q.finishNpcId != 0)
                     changed = CompleteQuest(hero, q);
             }
-            else if (type == "gather" && q.kind == LegacyOfEternity.World.OriginalQuestKind.Gather)
+            else if (type == "gather" && q.kind == K.Gather)
             {
                 if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
                     return;
@@ -374,14 +451,57 @@ namespace LegacyOfEternity.Offline
                 if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
                     CompleteQuest(hero, q);
             }
-            else if (type == "kill" && q.kind == LegacyOfEternity.World.OriginalQuestKind.KillMonster)
+            else if (type == "kill" && (q.kind == K.KillMonster || q.kind == K.KillDrop))
             {
                 if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
                     return;
+                if (q.kind == K.KillDrop)
+                {
+                    int rate = q.dropRate > 0 ? q.dropRate : 10000;
+                    if (UnityEngine.Random.Range(0, 10000) < rate && q.dropItemId != 0)
+                        ApplyLoot(hero, q.dropItemId.ToString(), 1);
+                }
                 hero.questProgress = Mathf.Min(hero.questProgress + 1, Mathf.Max(1, q.goalCount));
                 hero.questGoalCount = q.goalCount;
                 changed = true;
                 if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+            }
+            else if (type == "use" && q.kind == K.UseItem)
+            {
+                long need = q.useItemId != 0 ? q.useItemId : q.goalId;
+                if (need != 0 && payloadId != 0 && payloadId != need)
+                    return;
+                string itemKey = need.ToString();
+                int needCount = Mathf.Max(1, q.goalCount);
+                if (!TryConsumeItem(hero, itemKey, needCount))
+                    return;
+                hero.questProgress = needCount;
+                hero.questGoalCount = needCount;
+                changed = true;
+                if (q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+            }
+            else if (type == "reach" && q.kind == K.Reach)
+            {
+                if (q.positionId != 0 && payloadId != 0 && payloadId != q.positionId)
+                    return;
+                hero.questProgress = 1;
+                hero.questGoalCount = 1;
+                changed = true;
+                if (q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+            }
+            else if (type == "dungeon" && (q.kind == K.Dungeon || q.kind == K.MountDungeon))
+            {
+                if (q.dungeonId != 0 && payloadId != 0 && payloadId != q.dungeonId)
+                    return;
+                hero.questProgress = Mathf.Max(1, q.goalCount);
+                hero.questGoalCount = Mathf.Max(1, q.goalCount);
+                changed = true;
+                if (q.finishNpcId == 0)
+                    CompleteQuest(hero, q);
+                else if (Cat.GoalComplete(hero, q))
                     CompleteQuest(hero, q);
             }
 
@@ -410,6 +530,7 @@ namespace LegacyOfEternity.Offline
 
         static bool CompleteQuest(Hero hero, LegacyOfEternity.World.OriginalQuestDef q)
         {
+            RemoveConfigItems(hero, q.finishRemoveItem);
             hero.experience += Mathf.Max(0, q.expReward);
             hero.money += Mathf.Max(0, q.moneyReward);
             GrantConfigItems(hero, q.otherReward);
@@ -421,6 +542,8 @@ namespace LegacyOfEternity.Offline
                 hero.questProgress = 0;
                 var nq = LegacyOfEternity.World.OriginalQuestCatalog.Get(next);
                 hero.questGoalCount = nq != null ? Mathf.Max(0, nq.goalCount) : 0;
+                if (nq != null && nq.acceptGetItem != 0)
+                    ApplyLoot(hero, nq.acceptGetItem.ToString(), 1);
             }
             else
             {

@@ -118,7 +118,7 @@ namespace LegacyOfEternity.Offline
             // NPC
             if (q.finishNpcId != ObjectId)
                 return false;
-            if (q.kind == OriginalQuestKind.Gossip)
+            if (OriginalQuestCatalog.IsTalkKind(q))
                 return true;
             return OriginalQuestCatalog.GoalComplete(heroData, q);
         }
@@ -141,7 +141,7 @@ namespace LegacyOfEternity.Offline
                 : null;
             if (q != null && q.kind == OriginalQuestKind.Gather)
                 return "Собрать";
-            if (q != null && q.kind != OriginalQuestKind.Gossip && OriginalQuestCatalog.GoalComplete(OfflineSession.Hero, q))
+            if (q != null && !OriginalQuestCatalog.IsTalkKind(q) && OriginalQuestCatalog.GoalComplete(OfflineSession.Hero, q))
                 return "Сдать задание";
             return "Поговорить";
         }

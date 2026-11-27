@@ -8,7 +8,13 @@ namespace LegacyOfEternity.World
     {
         public const int Gossip = 1;
         public const int KillMonster = 2;
+        public const int KillDrop = 3;      // kill monster → quest item drop
         public const int Gather = 4;
+        public const int UseItem = 7;       // use item from bag
+        public const int Deliver = 8;       // talk / deliver to finishNpc
+        public const int Reach = 9;         // reach position id
+        public const int Dungeon = 14;      // clear quest dungeon
+        public const int MountDungeon = 17; // clear mount dungeon
     }
 
     [Serializable]
@@ -23,6 +29,13 @@ namespace LegacyOfEternity.World
         public string questGoals;
         public long goalId;
         public int goalCount;
+        public long dropItemId;
+        public int dropRate;          // /10000
+        public long useItemId;
+        public long positionId;
+        public long dungeonId;
+        public string finishRemoveItem;
+        public long acceptGetItem;
         public bool autoAccept;
         public int expReward;
         public int moneyReward;
@@ -88,6 +101,7 @@ namespace LegacyOfEternity.World
             switch (q.kind)
             {
                 case OriginalQuestKind.Gossip:
+                case OriginalQuestKind.Deliver:
                     return q.finishNpcId != 0
                         ? "Поговорите с " + OriginalModelCatalog.NpcName(q.finishNpcId)
                         : "Продолжайте задание";
@@ -96,6 +110,17 @@ namespace LegacyOfEternity.World
                 case OriginalQuestKind.KillMonster:
                     return "Убейте монстров " + q.goalId + " ×" + q.goalCount
                            + (q.finishNpcId != 0 ? " и сдайте " + OriginalModelCatalog.NpcName(q.finishNpcId) : "");
+                case OriginalQuestKind.KillDrop:
+                    return "Добудьте предмет " + q.dropItemId + " ×" + q.goalCount
+                           + " (с монстра " + q.goalId + ")";
+                case OriginalQuestKind.UseItem:
+                    return "Используйте предмет " + q.useItemId;
+                case OriginalQuestKind.Reach:
+                    return "Дойдите до точки " + q.positionId;
+                case OriginalQuestKind.Dungeon:
+                    return "Пройдите подземелье " + q.dungeonId;
+                case OriginalQuestKind.MountDungeon:
+                    return "Пройдите подземелье скакуна " + q.dungeonId;
                 default:
                     return q.name;
             }
@@ -105,18 +130,42 @@ namespace LegacyOfEternity.World
         {
             if (q == null || npcId == 0 || q.finishNpcId != npcId)
                 return false;
-            if (q.kind == OriginalQuestKind.Gossip)
+            if (q.kind == OriginalQuestKind.Gossip || q.kind == OriginalQuestKind.Deliver)
                 return true;
-            // Kill/gather with finishNpc: talk only after goal progress is met.
             return false;
+        }
+
+        public static bool IsTalkKind(OriginalQuestDef q)
+        {
+            if (q == null)
+                return false;
+            return q.kind == OriginalQuestKind.Gossip || q.kind == OriginalQuestKind.Deliver;
+        }
+
+        public static bool NeedsActionButton(OriginalQuestDef q)
+        {
+            if (q == null)
+                return false;
+            switch (q.kind)
+            {
+                case OriginalQuestKind.UseItem:
+                case OriginalQuestKind.Reach:
+                case OriginalQuestKind.Dungeon:
+                case OriginalQuestKind.MountDungeon:
+                    return true;
+                default:
+                    return false;
+            }
         }
 
         public static bool GoalComplete(Offline.OfflineDemoStore.Hero hero, OriginalQuestDef q)
         {
             if (hero == null || q == null)
                 return false;
-            if (q.kind == OriginalQuestKind.Gossip)
+            if (IsTalkKind(q))
                 return true;
+            if (q.kind == OriginalQuestKind.UseItem)
+                return hero.questProgress >= Mathf.Max(1, q.goalCount);
             return q.goalCount <= 0 || hero.questProgress >= q.goalCount;
         }
     }

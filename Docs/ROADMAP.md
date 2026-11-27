@@ -1,4 +1,4 @@
-# Legacy of Eternity — дорожная карта полного паритета с оригиналом (Unity 6)
+﻿# Legacy of Eternity — дорожная карта полного паритета с оригиналом (Unity 6)
 
 **Дата актуализации:** 27.11.2026 (стратегия: full original → Unity 6)  
 **Владелец:** LunexUfa  
@@ -236,6 +236,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] item rewards `prof*` / `otherReward` при CompleteQuest  
 - [x] Модели NPC по look model из t_npc  
 - [x] Диалоги/stories: оригинал → RU (`HaitanDialogues.json`, `OfflineDialogueHud`)
+- [x] kind 3/7/8/9/14/17 runtime (drop/use/deliver/reach/dungeon stub)
 
 ### Changelog PORT-06/07 (27.11.2026)
 - Источник: MapData `110200011.xml` + `QuestConfig.lua` + `t_doc_quest` / `t_doc_dialogue`
@@ -335,3 +336,4 @@ $env:JAVA_HOME='C:\asdk\OpenJDK'
 ---
 
 *Конец. Исполнитель не оставляет P0 на закрытом срезе и не подменяет оригинал выдуманными механиками.*
+

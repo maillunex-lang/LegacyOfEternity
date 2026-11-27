@@ -96,6 +96,17 @@ namespace LegacyOfEternity.Offline
                                 feedback.Push("Зелье выпито (+фиктивное лечение)");
                         }
                     }
+                    else if (IsQuestUseItem(hero, stack.id) &&
+                             GUILayout.Button("Использовать", buttonStyle, GUILayout.Width(160f * scale)))
+                    {
+                        long itemId;
+                        if (long.TryParse(stack.id, out itemId))
+                        {
+                            OfflineDemoStore.ApplyQuestEvent(hero, "use", itemId);
+                            if (feedback != null)
+                                feedback.Push("Использовано: " + OfflineDemoStore.ItemDisplayName(stack.id));
+                        }
+                    }
                     GUILayout.EndHorizontal();
                 }
                 GUILayout.EndScrollView();
@@ -104,6 +115,18 @@ namespace LegacyOfEternity.Offline
             if (GUILayout.Button("Закрыть сумку", buttonStyle))
                 open = false;
             GUILayout.EndArea();
+        }
+
+        static bool IsQuestUseItem(OfflineDemoStore.Hero hero, string itemId)
+        {
+            if (hero == null || string.IsNullOrEmpty(itemId))
+                return false;
+            var q = LegacyOfEternity.World.OriginalQuestCatalog.Get(hero.questId);
+            if (q == null || q.kind != LegacyOfEternity.World.OriginalQuestKind.UseItem)
+                return false;
+            long need = q.useItemId != 0 ? q.useItemId : q.goalId;
+            long parsed;
+            return need != 0 && long.TryParse(itemId, out parsed) && parsed == need;
         }
     }
 }
