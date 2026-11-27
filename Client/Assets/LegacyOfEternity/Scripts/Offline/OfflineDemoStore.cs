@@ -428,19 +428,17 @@ namespace LegacyOfEternity.Offline
                 return;
 
             bool changed = false;
-            var K = LegacyOfEternity.World.OriginalQuestKind;
-            var Cat = LegacyOfEternity.World.OriginalQuestCatalog;
 
             if (type == "talk" || type == "turnin")
             {
                 if (q.finishNpcId != 0 && payloadId != 0 && payloadId != q.finishNpcId)
                     return;
-                if (Cat.IsTalkKind(q))
+                if (LegacyOfEternity.World.OriginalQuestCatalog.IsTalkKind(q))
                     changed = CompleteQuest(hero, q);
-                else if (Cat.GoalComplete(hero, q) && q.finishNpcId != 0)
+                else if (LegacyOfEternity.World.OriginalQuestCatalog.GoalComplete(hero, q) && q.finishNpcId != 0)
                     changed = CompleteQuest(hero, q);
             }
-            else if (type == "gather" && q.kind == K.Gather)
+            else if (type == "gather" && q.kind == LegacyOfEternity.World.OriginalQuestKind.Gather)
             {
                 if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
                     return;
@@ -451,11 +449,12 @@ namespace LegacyOfEternity.Offline
                 if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
                     CompleteQuest(hero, q);
             }
-            else if (type == "kill" && (q.kind == K.KillMonster || q.kind == K.KillDrop))
+            else if (type == "kill" && (q.kind == LegacyOfEternity.World.OriginalQuestKind.KillMonster
+                                       || q.kind == LegacyOfEternity.World.OriginalQuestKind.KillDrop))
             {
                 if (q.goalId != 0 && payloadId != 0 && payloadId != q.goalId)
                     return;
-                if (q.kind == K.KillDrop)
+                if (q.kind == LegacyOfEternity.World.OriginalQuestKind.KillDrop)
                 {
                     int rate = q.dropRate > 0 ? q.dropRate : 10000;
                     if (UnityEngine.Random.Range(0, 10000) < rate && q.dropItemId != 0)
@@ -467,7 +466,7 @@ namespace LegacyOfEternity.Offline
                 if (hero.questProgress >= q.goalCount && q.finishNpcId == 0)
                     CompleteQuest(hero, q);
             }
-            else if (type == "use" && q.kind == K.UseItem)
+            else if (type == "use" && q.kind == LegacyOfEternity.World.OriginalQuestKind.UseItem)
             {
                 long need = q.useItemId != 0 ? q.useItemId : q.goalId;
                 if (need != 0 && payloadId != 0 && payloadId != need)
@@ -482,7 +481,7 @@ namespace LegacyOfEternity.Offline
                 if (q.finishNpcId == 0)
                     CompleteQuest(hero, q);
             }
-            else if (type == "reach" && q.kind == K.Reach)
+            else if (type == "reach" && q.kind == LegacyOfEternity.World.OriginalQuestKind.Reach)
             {
                 if (q.positionId != 0 && payloadId != 0 && payloadId != q.positionId)
                     return;
@@ -492,7 +491,8 @@ namespace LegacyOfEternity.Offline
                 if (q.finishNpcId == 0)
                     CompleteQuest(hero, q);
             }
-            else if (type == "dungeon" && (q.kind == K.Dungeon || q.kind == K.MountDungeon))
+            else if (type == "dungeon" && (q.kind == LegacyOfEternity.World.OriginalQuestKind.Dungeon
+                                          || q.kind == LegacyOfEternity.World.OriginalQuestKind.MountDungeon))
             {
                 if (q.dungeonId != 0 && payloadId != 0 && payloadId != q.dungeonId)
                     return;
@@ -501,7 +501,7 @@ namespace LegacyOfEternity.Offline
                 changed = true;
                 if (q.finishNpcId == 0)
                     CompleteQuest(hero, q);
-                else if (Cat.GoalComplete(hero, q))
+                else if (LegacyOfEternity.World.OriginalQuestCatalog.GoalComplete(hero, q))
                     CompleteQuest(hero, q);
             }
 

@@ -227,7 +227,7 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] Убраны interim walk-slabs (используется сцена)  
 - [x] modelId меши: `HaitanModels.json` + `Resources/Animation/*` (t_model/t_npc); fallback 880210118→108
 - [x] Prefab deps Haitan (mat/fbx/anim) + strip missing scripts + `OriginalVisualSanitize`  
-- [ ] APK — **только после полной локации + квесты + графика** (указание владельца)
+- [x] APK `0.11.0-haitan` (`BuildOfflineAndroid`, versionCode 24) — устройство: ждём отчёт владельца
 
 ### PORT-07 — Квесты Haitan — `В работе`
 
@@ -252,7 +252,8 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] NPC Тиас и gather — точки/modelId из MapData `110200011` + RU имена  
 - [x] Диалоги accept/finish (`finishTalk`/`acceptStory` из t_quest + t_doc) + intro после autoAccept  
 - [x] Цепочки afterQuest `1001701`…`1001799` в runtime  
-- [ ] APK — после приёмки владельца в Editor  
+- [x] APK `LegacyOfEternity-0.11.0-haitan.apk` собран 27.11.2026  
+
 
 
 ---

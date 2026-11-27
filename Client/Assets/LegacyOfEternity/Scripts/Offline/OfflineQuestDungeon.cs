@@ -144,7 +144,7 @@ namespace LegacyOfEternity.Offline
             floor.name = "ArenaFloor";
             floor.transform.SetParent(arenaRoot.transform, false);
             floor.transform.localScale = new Vector3(14f, 0.15f, 14f);
-            Object.Destroy(floor.GetComponent<Collider>());
+            UnityEngine.Object.Destroy(floor.GetComponent<Collider>());
             var shader = Shader.Find("Standard") ?? Shader.Find("Mobile/Diffuse");
             if (shader != null)
                 floor.GetComponent<Renderer>().sharedMaterial = new Material(shader) { color = new Color(0.18f, 0.2f, 0.28f, 1f) };
@@ -189,7 +189,7 @@ namespace LegacyOfEternity.Offline
                 body.name = "BodyFallback";
                 body.transform.SetParent(go.transform, false);
                 body.transform.localPosition = Vector3.up;
-                Object.Destroy(body.GetComponent<Collider>());
+                UnityEngine.Object.Destroy(body.GetComponent<Collider>());
             }
 
             var capsule = go.AddComponent<CharacterController>();

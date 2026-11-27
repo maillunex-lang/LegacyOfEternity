@@ -1,21 +1,25 @@
 ﻿# Фактический статус: 27.11.2026
 
-**APK:** код Haitan доведён до offline-паритета цепочки; сборка — после вашей явной команды / приёмки в Editor.
+## APK
+
+Собран offline Haitan APK:
+
+- `Builds/Android/LegacyOfEternity-0.11.0-haitan.apk`
+- versionName `0.11.0` / versionCode `24`
+- Unity `6000.3.29f1` · `BuildOfflineAndroid.Run`
+- лог: `Builds/Android/Unity-build-0.11.0-haitan.log` → `LOE APK OK`
 
 ## Готово в коде
 
 | Слой | Статус |
 | --- | --- |
 | Сцена / MapData / modelId | Готово |
-| 99 квестов + RU диалоги + kind 3/7/8/9/14/17 | Готово |
-| Accept / finish talk | `acceptStoryId` / `finishStoryId` + intro после autoAccept |
-| Offline fuben 14/17 | `OfflineQuestDungeon` + BOSS_004/008 |
-| NPC / gather имена | RU (`Тиас`, `Оружие по руке`, …) |
-| Prefab deps + strip + sanitize | Готово (+ fallback при null `_MainTex`) |
-| Collection wuqi/xiakucao | mesh GUID нет в источниках → `emptything` |
+| 99 квестов + RU диалоги accept/finish + kinds 3/7/8/9/14/17 | Готово |
+| Offline fuben 14/17 + BOSS_004/008 | Готово |
+| RU NPC/gather имена | Готово |
+| Prefab deps + strip + sanitize | Готово |
+| APK 0.11.0-haitan | Собран |
 
-## Перед APK (приёмка)
+## Приёмка на устройстве
 
-1. Editor Play: вход → Haitan → Тиас → цепочка квестов / данж кнопка.
-2. Визуально: нет критичного magenta на ключевых NPC/мобах.
-3. Ваша команда «собирай APK».
+Установить APK → offline login → Haitan → Тиас / цепочка / данж. Сообщить magenta/краши.
