@@ -419,13 +419,59 @@ namespace LegacyOfEternity.Offline
                 Destroy(uiCanvas.gameObject);
             uiCanvas = null;
             FreezeGameplay(false);
+            EnsureMobileControls();
             if (GetComponent<OfflineQuestHud>() == null)
                 gameObject.AddComponent<OfflineQuestHud>();
             Transform heroTransform = selector != null ? selector.transform : null;
             if (heroTransform == null)
                 heroTransform = GameObject.Find("LOE Prototype Hero")?.transform;
             OfflineWorldBootstrap.Ensure(heroTransform);
+            EnsureMobileControls();
             enabled = false;
+        }
+
+        /// <summary>
+        /// Joystick must be bottom-left and HUD canvas enabled after login freeze.
+        /// Scene historically had Move Joystick anchored bottom-right (skills side).
+        /// </summary>
+        static void EnsureMobileControls()
+        {
+            var es = FindFirstObjectByType<EventSystem>();
+            if (es != null)
+                es.enabled = true;
+
+            var hud = GameObject.Find("LOE Mobile HUD");
+            if (hud == null)
+                return;
+            hud.SetActive(true);
+            var canvas = hud.GetComponent<Canvas>();
+            if (canvas != null)
+            {
+                canvas.enabled = true;
+                canvas.sortingOrder = Mathf.Max(canvas.sortingOrder, 100);
+            }
+
+            var stick = hud.transform.Find("Move Joystick") as RectTransform;
+            if (stick == null)
+                return;
+            stick.gameObject.SetActive(true);
+            stick.anchorMin = new Vector2(0f, 0f);
+            stick.anchorMax = new Vector2(0f, 0f);
+            stick.pivot = new Vector2(0.5f, 0.5f);
+            stick.anchoredPosition = new Vector2(130f, 140f);
+            stick.sizeDelta = new Vector2(208f, 208f);
+            var joy = stick.GetComponent<MobileJoystick>();
+            if (joy != null)
+                joy.enabled = true;
+            var img = stick.GetComponent<Image>();
+            if (img != null)
+            {
+                // Keep a usable hit target; decorative child draws the visible pad.
+                var c = img.color;
+                if (c.a < 0.05f)
+                    img.color = new Color(c.r, c.g, c.b, 0.12f);
+            }
+            Debug.Log("LOE_MOBILE_CONTROLS joystick left-bottom ready");
         }
 
         void SetStatus(string text)

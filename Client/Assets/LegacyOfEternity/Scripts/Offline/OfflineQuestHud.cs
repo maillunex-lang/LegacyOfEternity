@@ -71,7 +71,7 @@ namespace LegacyOfEternity.Offline
             EnsureStyles();
             float scale = Mathf.Clamp(Screen.height / 640f, 1.1f, 2.4f);
             float width = Mathf.Min(Screen.width - 190f * scale, 480f * scale);
-            float height = 200f * scale;
+            float height = 260f * scale;
             var hero = OfflineSession.Hero;
             OfflineDemoStore.EnsureInventory(hero);
 
@@ -80,12 +80,15 @@ namespace LegacyOfEternity.Offline
             GUILayout.Label("Опыт " + hero.experience + "   Монеты " + hero.money, bodyStyle);
             int slots = hero.inventory != null ? hero.inventory.Length : 0;
             GUILayout.Label("Сумка: " + slots + " вид(ов)", bodyStyle);
-            GUILayout.Label(OfflineDemoStore.QuestTitle(hero.questId), titleStyle);
+            if (GUILayout.Button(OfflineDemoStore.QuestTitle(hero.questId), titleStyle, GUILayout.MinHeight(36f * scale)))
+                OfflineQuestNavigate.TryGo();
             GUILayout.Label(OfflineDemoStore.QuestObjective(hero.questId), bodyStyle);
             if (hero.questGoalCount > 0)
                 GUILayout.Label("Прогресс " + hero.questProgress + "/" + hero.questGoalCount, bodyStyle);
             if (hero.questId == 0)
                 GUILayout.Label("Нет активного задания Haitan", bodyStyle);
+            else if (GUILayout.Button("Бежать к цели", GUILayout.Height(44f * scale)))
+                OfflineQuestNavigate.TryGo();
             GUILayout.EndArea();
         }
     }

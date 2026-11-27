@@ -33,6 +33,8 @@ namespace LegacyOfEternity.World
             OriginalQuestCatalog.EnsureLoaded();
             OriginalModelCatalog.EnsureLoaded();
             map = OriginalMapData.LoadHaitan();
+            // Strip demo arena before anything else so login never opens into PvE dummies.
+            ClearDemoArena();
             if (hero == null)
                 hero = GameObject.Find("LOE Prototype Hero")?.transform;
             if (hero == null)
@@ -42,7 +44,6 @@ namespace LegacyOfEternity.World
             }
 
             PlaceHero(hero);
-            ClearDemoArena();
             int monsters = SpawnMonsters(hero);
             SpawnNpcsAndCollections(hero);
 
@@ -92,14 +93,22 @@ namespace LegacyOfEternity.World
         static void ClearDemoArena()
         {
             var arena = GameObject.Find("LOE PvE Arena");
-            if (arena == null)
-                return;
-            foreach (var enemy in arena.GetComponentsInChildren<CombatEnemy>(true))
+            if (arena != null)
             {
-                if (enemy != null)
-                    Destroy(enemy.gameObject);
+                Object.Destroy(arena);
+                Debug.Log("LOE_ORIGINAL_HAITAN cleared demo arena");
             }
-            arena.SetActive(false);
+
+            foreach (var enemy in Object.FindObjectsByType<CombatEnemy>(FindObjectsSortMode.None))
+            {
+                if (enemy == null)
+                    continue;
+                string root = enemy.transform.root != null ? enemy.transform.root.name : "";
+                if (root.StartsWith("LOE_Original", System.StringComparison.Ordinal) ||
+                    root.StartsWith("LOE_QuestDungeon", System.StringComparison.Ordinal))
+                    continue;
+                Object.Destroy(enemy.gameObject);
+            }
         }
 
         int SpawnMonsters(Transform hero)
@@ -108,6 +117,8 @@ namespace LegacyOfEternity.World
             root.transform.SetParent(transform, false);
             int spawned = 0;
             int withVisual = 0;
+            var list = new List<GameObject>();
+            Vector3 birth = hero != null ? hero.position : map.heroBirth.Position;
 
             foreach (var spawn in map.monsters)
             {
@@ -138,10 +149,20 @@ namespace LegacyOfEternity.World
                 var anim = go.GetComponentInChildren<Animator>();
                 enemy.Configure(hero, anim, title, hp, dmg, spawn.id);
                 go.AddComponent<CombatEnemyHud>();
+
+                float dx = spawn.Position.x - birth.x;
+                float dz = spawn.Position.z - birth.z;
+                if (dx * dx + dz * dz > 42f * 42f)
+                    go.SetActive(false);
+
+                list.Add(go);
                 spawned++;
             }
 
-            Debug.Log("LOE_ORIGINAL_HAITAN monsters=" + spawned + " with_model=" + withVisual);
+            var stream = root.AddComponent<OfflineMonsterStream>();
+            stream.Configure(hero, list);
+
+            Debug.Log("LOE_ORIGINAL_HAITAN monsters=" + spawned + " with_model=" + withVisual + " streamed");
             return spawned;
         }
 

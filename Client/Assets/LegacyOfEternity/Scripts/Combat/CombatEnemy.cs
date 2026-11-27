@@ -14,6 +14,7 @@ namespace LegacyOfEternity.Combat
         [SerializeField, Min(0)] private int attackDamage = 7;
         [SerializeField, Min(.1f)] private float moveSpeed = 2.4f;
         [SerializeField, Min(1f)] private float aggroRadius = 3.5f;
+        [SerializeField, Min(5f)] private float sleepRadius = 28f;
         [SerializeField, Min(.5f)] private float attackRadius = 1.8f;
         [SerializeField, Min(.1f)] private float attackInterval = 2.8f;
         [SerializeField, Min(1f)] private float respawnAfter = 12f;
@@ -76,6 +77,12 @@ namespace LegacyOfEternity.Combat
             Vector3 delta = hero.position - transform.position;
             delta.y = 0f;
             float distance = delta.magnitude;
+            // Far from player: fully idle (no chase / no attack) so birth isn't a mob rush.
+            if (distance > sleepRadius && !engaged)
+            {
+                if (animator != null) animator.SetFloat("Speed", 0f);
+                return;
+            }
             if (distance > aggroRadius && !engaged)
             {
                 if (animator != null) animator.SetFloat("Speed", 0f);
