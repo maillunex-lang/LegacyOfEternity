@@ -8,22 +8,25 @@
 
 ## Сейчас в коде
 
-- CoastalPrototype + локальный PvE, offline login (красивый splash), VFX magenta fix (0.6.3).
-- **M05.17 (в работе):** мировые интеракты оффлайн-квеста
-  - `OfflineWorldBootstrap` / `OfflineWorldInteractable` — Тиас + gather
-  - `OfflineInteractHud` — кнопка «Поговорить / Собрать / Сдать»
-  - цепочка 1001701→1001702→1001703→1001704 (сдача Тиасу)
+- CoastalPrototype + локальный PvE, offline login, VFX magenta fix.
+- **M05.17 готово:** мировой оффлайн-квест Haitan на Coastal
+  - Тиас (разговор / сдача), gather-хлам на берегу, kill×3
+  - цепочка 1001701→1001702→1001703→1001704
 
-## APK
+## APK на приёмку этапа
 
-| Версия | Путь | Заметка |
-| --- | --- | --- |
-| 0.6.3 | `Builds/Android/LegacyOfEternity-0.6.3-alpha.apk` | VFX magenta fix |
-| 0.6.2 | `Builds/Android/LegacyOfEternity-0.6.2-alpha.apk` | Login splash art |
-| 0.7.0 | *(собирается по завершении M05.17)* | Мировой оффлайн-квест |
+- **0.7.0** `C:\LegacyOfEternity\Builds\Android\LegacyOfEternity-0.7.0-alpha.apk` (~45 MB)
+- Лог: `Builds/Android/Unity-0.7.0-world-quest.log` (LOE APK OK, errors=0)
+
+## Как принимать 0.7.0
+
+1. Вход / регистрация → герой
+2. Подойти к Тиасу (синий) → Поговорить
+3. Собрать хлам на берегу (золотые маркеры)
+4. Убить 3 монстров
+5. Вернуться к Тиасу → Сдать задание
+6. Прогресс сохраняется после перезапуска
 
 ## Дальше
 
-1. Закончить M05.17 и выдать APK 0.7.0 на приёмку.
-2. Следующий крупный этап — по ROADMAP (M05.18 или M06).
-3. Импорт Codex Resources — только по явной команде владельца.
+Следующий крупный этап (M05.18 лут/инвентарь-заготовка или M06 online) — без ожидания Codex.
