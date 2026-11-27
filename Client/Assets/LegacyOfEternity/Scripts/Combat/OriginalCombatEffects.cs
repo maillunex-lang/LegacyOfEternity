@@ -136,7 +136,8 @@ namespace LegacyOfEternity.Combat
         }
 
         /// <summary>
-        /// Replace null / error-shader materials that show as magenta on Android GLES.
+        /// Replace null / unsupported / textureless VFX materials that show as
+        /// solid purple or white quads on Android.
         /// </summary>
         private static void SanitizeMagentaMaterials(GameObject root)
         {
@@ -151,11 +152,7 @@ namespace LegacyOfEternity.Combat
                 bool changed = false;
                 for (int i = 0; i < mats.Length; i++)
                 {
-                    var mat = mats[i];
-                    if (mat == null ||
-                        mat.shader == null ||
-                        mat.shader.name == "Hidden/InternalErrorShader" ||
-                        !mat.shader.isSupported)
+                    if (NeedsSoftFallback(mats[i]))
                     {
                         mats[i] = fallback;
                         changed = true;
@@ -164,6 +161,27 @@ namespace LegacyOfEternity.Combat
                 if (changed)
                     renderer.sharedMaterials = mats;
             }
+        }
+
+        private static bool NeedsSoftFallback(Material mat)
+        {
+            if (mat == null || mat.shader == null)
+                return true;
+            string name = mat.shader.name ?? "";
+            if (name == "Hidden/InternalErrorShader" || !mat.shader.isSupported)
+                return true;
+            if (name == "LD/LD_glow" || name == "LD/LD_uv_blend_depth" || name == "LD/LD_water")
+                return true;
+            bool hasTex = false;
+            foreach (var key in new[] { "_MainTex", "_Texture", "_Tex", "_wenli" })
+            {
+                if (mat.HasProperty(key) && mat.GetTexture(key) != null)
+                {
+                    hasTex = true;
+                    break;
+                }
+            }
+            return !hasTex;
         }
 
         private static Material fallbackParticle;
@@ -182,8 +200,13 @@ namespace LegacyOfEternity.Combat
                 name = "LOE_RuntimeParticleFallback",
                 hideFlags = HideFlags.HideAndDontSave
             };
+            var soft = Resources.Load<Texture2D>("OfflineUI/SoftParticle");
+            if (soft == null)
+                soft = Resources.Load<Texture2D>("SoftParticle");
+            if (soft != null && fallbackParticle.HasProperty("_MainTex"))
+                fallbackParticle.SetTexture("_MainTex", soft);
             if (fallbackParticle.HasProperty("_TintColor"))
-                fallbackParticle.SetColor("_TintColor", new Color(1f, 1f, 1f, 0.55f));
+                fallbackParticle.SetColor("_TintColor", new Color(1f, 0.95f, 0.75f, 0.45f));
             return fallbackParticle;
         }
     }

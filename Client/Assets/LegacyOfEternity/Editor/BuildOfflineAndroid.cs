@@ -19,8 +19,9 @@ namespace LegacyOfEternity.Editor
         public static void Run()
         {
             Debug.Log("LOE_OFFLINE_ANDROID_START");
-            // Always patch empty/broken VFX materials before packaging.
+            // Always patch empty/broken VFX + hero visibility before packaging.
             M053AndroidVfxMaterialsFix.Run();
+            M0511AndroidVisibilityFix.Run();
 
             if (Environment.GetEnvironmentVariable("LOE_SKIP_ANDROID_AUDITS") != "1")
             {
@@ -53,8 +54,8 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.companyName = "Lunex";
             PlayerSettings.productName = "Legacy of Eternity";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.lunex.legacyofeternity");
-            PlayerSettings.bundleVersion = "0.7.0";
-            PlayerSettings.Android.bundleVersionCode = 19;
+            PlayerSettings.bundleVersion = "0.7.1";
+            PlayerSettings.Android.bundleVersionCode = 20;
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.LandscapeLeft;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
@@ -70,7 +71,7 @@ namespace LegacyOfEternity.Editor
             PlayerSettings.Android.useCustomKeystore = false;
             EditorUserBuildSettings.buildAppBundle = false;
 
-            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.7.0-alpha.apk");
+            string output = Path.GetFullPath("../Builds/Android/LegacyOfEternity-0.7.1-alpha.apk");
             Directory.CreateDirectory(Path.GetDirectoryName(output));
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
