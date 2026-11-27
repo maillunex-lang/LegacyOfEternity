@@ -4,7 +4,7 @@
 
 1. Установите Git и Git LFS; `git lfs install`.
 2. `git clone https://github.com/maillunex-lang/LegacyOfEternity.git` и `cd LegacyOfEternity && git lfs pull`.
-3. Установите Unity Editor **6000.3.27f1** и Android Build Support, SDK, NDK, OpenJDK через Unity Hub.
+3. Установите Unity Editor **6000.3.x** (на текущей машине владельца часто `Toolchain\Unity6000.3.29f1`) и Android Build Support, SDK, NDK, OpenJDK. Актуальный план работ: `Docs/ROADMAP.md`.
 4. В Unity Hub откройте `Client/`. Дождитесь первого импорта (создание `Library/`).
 5. Проверьте сцену `Assets/LegacyOfEternity/Scenes/CoastalPrototype.unity`. Для сборки откройте Build Profiles или вызовите editor method `LegacyOfEternity.Editor.AndroidPreviewBuilder.Build`.
 6. Скрипт `AndroidPreviewBuilder.cs` использует SDK/NDK/JDK из Preferences > External Tools. При ограничении Windows MAX_PATH можно установить переменную среды `LOE_ANDROID_TOOLCHAIN_ROOT` на короткий путь к папке, содержащей `SDK`, `NDK` и `OpenJDK`. Переменная необязательна; персональные абсолютные пути не хранятся в Git.
