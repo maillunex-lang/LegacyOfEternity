@@ -209,8 +209,8 @@ namespace LegacyOfEternity.Offline
         }
 
         /// <summary>
-        /// Haitan-style offline chain adapted to CoastalPrototype:
-        /// talk (guide) → gather (beach scrap) → kill x3 coastal monsters.
+        /// Haitan-style offline chain on CoastalPrototype:
+        /// talk (Tias) → gather scrap → kill x3 → turn in to Tias.
         /// </summary>
         public static void ApplyQuestEvent(Hero hero, string type)
         {
@@ -240,10 +240,18 @@ namespace LegacyOfEternity.Offline
                 {
                     hero.experience += 550;
                     hero.money += 1050;
-                    hero.questId = 0;
+                    hero.questId = 1001704;
                     hero.questProgress = 0;
                     hero.questGoalCount = 0;
                 }
+            }
+            else if (hero.questId == 1001704 && type == "turnin")
+            {
+                hero.experience += 800;
+                hero.money += 1200;
+                hero.questId = 0;
+                hero.questProgress = 0;
+                hero.questGoalCount = 0;
             }
             SaveHero(hero);
         }
@@ -252,9 +260,10 @@ namespace LegacyOfEternity.Offline
         {
             switch (questId)
             {
-                case 1001701: return "Знакомство";
-                case 1001702: return "Сбор на берегу";
-                case 1001703: return "Очистка побережья";
+                case 1001701: return "Близкая опасность (1)";
+                case 1001702: return "Близкая опасность (2)";
+                case 1001703: return "Близкая опасность (3)";
+                case 1001704: return "Близкая опасность (итог)";
                 default: return "Нет активного задания";
             }
         }
@@ -263,9 +272,10 @@ namespace LegacyOfEternity.Offline
         {
             switch (questId)
             {
-                case 1001701: return "Поговорить с проводником";
-                case 1001702: return "Собрать прибрежный хлам";
-                case 1001703: return "Убить 3 монстров";
+                case 1001701: return "Поговорите с Тиасом";
+                case 1001702: return "Соберите прибрежный хлам";
+                case 1001703: return "Победите трёх противников";
+                case 1001704: return "Вернитесь к Тиасу и сдайте задание";
                 default: return "Исследуйте побережье";
             }
         }

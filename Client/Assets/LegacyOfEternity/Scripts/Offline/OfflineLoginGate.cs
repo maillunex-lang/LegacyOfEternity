@@ -421,6 +421,10 @@ namespace LegacyOfEternity.Offline
             FreezeGameplay(false);
             if (GetComponent<OfflineQuestHud>() == null)
                 gameObject.AddComponent<OfflineQuestHud>();
+            Transform heroTransform = selector != null ? selector.transform : null;
+            if (heroTransform == null)
+                heroTransform = GameObject.Find("LOE Prototype Hero")?.transform;
+            OfflineWorldBootstrap.Ensure(heroTransform);
             enabled = false;
         }
 

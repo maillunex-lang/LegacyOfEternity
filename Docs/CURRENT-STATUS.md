@@ -2,31 +2,28 @@
 
 ## Продуктовый поворот
 
-Владелец подтвердил: игра **чисто под Android**, наработки брать из **LegacyOfEternity** (`C:\LegacyOfEternity`).  
-`C:\SOURCE\LunexUfa` — эталон/лаборатория Server-Admin, не целевой клиент.
+Владелец: игра **Android-only**, клиент **LegacyOfEternity** (Unity 6).  
+`C:\SOURCE\LunexUfa` — эталон/лаборатория. Codex готовит арт → импорт по команде.  
+Приёмка: APK **после крупных этапов**.
 
 ## Сейчас в коде
 
-- Unity client: CoastalPrototype + локальный PvE (линия 0.5.5).
-- **M05.16**: оффлайн вертикаль
-  - `Scripts/Offline/OfflineDemoStore.cs` — аккаунты/герои/квест JSON
-  - `Scripts/Offline/OfflineLoginGate.cs` — вход до разблокировки боя
-  - `Scripts/Offline/OfflineQuestHud.cs` — talk/gather/kill 1001701–1001703
-  - `CombatEnemy.Killed` → прогресс квеста
-- Дорожная карта переписана: `Docs/ROADMAP.md` (LoE-first).
+- CoastalPrototype + локальный PvE, offline login (красивый splash), VFX magenta fix (0.6.3).
+- **M05.17 (в работе):** мировые интеракты оффлайн-квеста
+  - `OfflineWorldBootstrap` / `OfflineWorldInteractable` — Тиас + gather
+  - `OfflineInteractHud` — кнопка «Поговорить / Собрать / Сдать»
+  - цепочка 1001701→1001702→1001703→1001704 (сдача Тиасу)
 
 ## APK
 
-- **0.6.0 offline login:** `C:\LegacyOfEternity\Builds\Android\LegacyOfEternity-0.6.0-alpha.apk` (~43 MB, Unity 6000.3.29f1, ARM64). Лог: `Builds/Android/Unity-0.6.0-offline-build-6.log` (`LOE APK OK`, 0 errors).
-- Предыдущий CDN без оффлайн-входа: https://rikagro.ru/MMORPG/downloads/LegacyOfEternity-0.5.5-alpha.apk
-
-### Android SDK fix (эта машина)
-
-Unity 6 читал `platform-tools/package.xml` (schema v4) и получал версию **0.0**, затем падал на `Failed to update Android SDK` (ещё и UAC через `RunElevatedCommand.ps1`).  
-Исправление: физический SDK в `C:\asdk\SDK`, у `platform-tools` оставить `source.properties` (`Pkg.Revision=37.0.3`), проблемный `package.xml` убрать/не использовать; `cmdline-tools\latest` = классический 16.0; `LOE_ANDROID_TOOLCHAIN_ROOT=C:\asdk`.
+| Версия | Путь | Заметка |
+| --- | --- | --- |
+| 0.6.3 | `Builds/Android/LegacyOfEternity-0.6.3-alpha.apk` | VFX magenta fix |
+| 0.6.2 | `Builds/Android/LegacyOfEternity-0.6.2-alpha.apk` | Login splash art |
+| 0.7.0 | *(собирается по завершении M05.17)* | Мировой оффлайн-квест |
 
 ## Дальше
 
-1. Собрать 0.6.0 APK и отдать путь.
-2. Проверка на телефоне: регистрация → герой → квест → 3 убийства → перезапуск приложения.
-3. Затем M06 online (не раньше).
+1. Закончить M05.17 и выдать APK 0.7.0 на приёмку.
+2. Следующий крупный этап — по ROADMAP (M05.18 или M06).
+3. Импорт Codex Resources — только по явной команде владельца.
