@@ -54,9 +54,23 @@ namespace LegacyOfEternity.World
                 for (int m = 0; m < mats.Length; m++)
                 {
                     var mat = mats[m];
-                    if (mat == null || mat.shader == null || mat.shader.name == "Hidden/InternalErrorShader")
+                    bool broken = mat == null
+                                  || mat.shader == null
+                                  || mat.shader.name == "Hidden/InternalErrorShader"
+                                  || mat.shader.name.Contains("Error");
+                    if (!broken && mat != null && mat.HasProperty("_MainTex") && mat.mainTexture == null)
                     {
-                        mats[m] = new Material(fallbackShader) { name = "LOE_FallbackMat" };
+                        // Missing texture often renders magenta on mobile; keep shader if possible.
+                        broken = mat.shader.name.StartsWith("Custom/", StringComparison.Ordinal)
+                                 || mat.shader.name.StartsWith("LD_", StringComparison.Ordinal);
+                    }
+                    if (broken)
+                    {
+                        mats[m] = new Material(fallbackShader)
+                        {
+                            name = "LOE_FallbackMat",
+                            color = new Color(0.55f, 0.52f, 0.48f, 1f)
+                        };
                         changed = true;
                     }
                 }

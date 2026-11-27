@@ -170,7 +170,7 @@ namespace LegacyOfEternity.World
 
             foreach (var col in map.collections)
             {
-                string name = col.id == 180 ? "Прибрежный хлам" : ("Сбор " + col.id);
+                string name = OriginalModelCatalog.CollectionName(col.id);
                 var color = new Color(0.72f, 0.55f, 0.28f, 1f);
                 int ignore = 0;
                 var interact = CreateInteractable(

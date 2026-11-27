@@ -28,12 +28,20 @@ namespace LegacyOfEternity.World
     }
 
     [Serializable]
+    public sealed class OriginalCollectionNameEntry
+    {
+        public long id;
+        public string name;
+    }
+
+    [Serializable]
     public sealed class OriginalModelCatalogFile
     {
         public string source;
         public OriginalNpcLookEntry[] npcLooks;
         public OriginalMonsterStatEntry[] monsterStats;
         public OriginalModelEntry[] models;
+        public OriginalCollectionNameEntry[] collectionNames;
     }
 
     public static class OriginalModelCatalog
@@ -52,10 +60,12 @@ namespace LegacyOfEternity.World
             data.npcLooks ??= Array.Empty<OriginalNpcLookEntry>();
             data.monsterStats ??= Array.Empty<OriginalMonsterStatEntry>();
             data.models ??= Array.Empty<OriginalModelEntry>();
+            data.collectionNames ??= Array.Empty<OriginalCollectionNameEntry>();
             loaded = true;
             Debug.Log("LOE_ORIGINAL_MODELS loaded=" + data.models.Length +
                       " npcLooks=" + data.npcLooks.Length +
-                      " monsterStats=" + data.monsterStats.Length);
+                      " monsterStats=" + data.monsterStats.Length +
+                      " collections=" + data.collectionNames.Length);
         }
 
         public static GameObject LoadVisual(long modelId)
@@ -94,6 +104,18 @@ namespace LegacyOfEternity.World
                     !string.IsNullOrEmpty(data.npcLooks[i].name))
                     return data.npcLooks[i].name;
             return "NPC " + npcId;
+        }
+
+        public static string CollectionName(long collectionId)
+        {
+            EnsureLoaded();
+            for (int i = 0; i < data.collectionNames.Length; i++)
+            {
+                var c = data.collectionNames[i];
+                if (c != null && c.id == collectionId && !string.IsNullOrEmpty(c.name))
+                    return c.name;
+            }
+            return collectionId == 180 ? "Прибрежный хлам" : ("Сбор " + collectionId);
         }
 
         public static OriginalMonsterStatEntry MonsterStats(long templateId)

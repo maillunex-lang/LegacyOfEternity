@@ -12,6 +12,15 @@ namespace LegacyOfEternity.World
         public string goalFormat;
         public string goalTarget;
         public int acceptStoryId;
+        public int goingStoryId;
+        public int finishStoryId;
+    }
+
+    public enum QuestTalkMode
+    {
+        Accept = 0,
+        Going = 1,
+        Finish = 2
     }
 
     [Serializable]
@@ -107,6 +116,16 @@ namespace LegacyOfEternity.World
             return d != null ? d.acceptStoryId : 0;
         }
 
+        public static int FinishStoryId(int questId)
+        {
+            var d = QuestDoc(questId);
+            if (d == null)
+                return 0;
+            if (d.finishStoryId != 0)
+                return d.finishStoryId;
+            return d.acceptStoryId;
+        }
+
         public static string[] StoryLines(int storyId)
         {
             EnsureLoaded();
@@ -134,21 +153,45 @@ namespace LegacyOfEternity.World
         }
 
         /// <summary>
-        /// Lines shown when talking to finishNpc for the active quest.
-        /// Prefer acceptStory dialogue; fall back to summary + greeting.
+        /// Lines for accept / going / finish talk. goingTalk ids in t_quest are NPC talk-lists
+        /// (not story packs) — fall back to summary + greeting.
         /// </summary>
-        public static string[] LinesForQuestTalk(int questId, long npcId)
+        public static string[] LinesForQuestTalk(int questId, long npcId, QuestTalkMode mode)
         {
-            int storyId = AcceptStoryId(questId);
+            var d = QuestDoc(questId);
+            int storyId = 0;
+            if (d != null)
+            {
+                switch (mode)
+                {
+                    case QuestTalkMode.Accept:
+                        storyId = d.acceptStoryId != 0 ? d.acceptStoryId : d.finishStoryId;
+                        break;
+                    case QuestTalkMode.Finish:
+                        storyId = d.finishStoryId != 0 ? d.finishStoryId : d.acceptStoryId;
+                        break;
+                    case QuestTalkMode.Going:
+                        storyId = 0; // goingTalk ids are not story packs
+                        break;
+                }
+            }
+
             var lines = StoryLines(storyId);
             if (lines.Length > 0)
                 return lines;
 
             var summary = QuestSummary(questId);
+            if (mode == QuestTalkMode.Going && !string.IsNullOrEmpty(summary))
+                return new[] { summary, NpcGreeting(npcId) };
             if (!string.IsNullOrEmpty(summary))
                 return new[] { summary };
 
             return new[] { NpcGreeting(npcId) };
+        }
+
+        public static string[] LinesForQuestTalk(int questId, long npcId)
+        {
+            return LinesForQuestTalk(questId, npcId, QuestTalkMode.Finish);
         }
     }
 }

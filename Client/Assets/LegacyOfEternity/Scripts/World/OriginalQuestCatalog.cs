@@ -26,6 +26,10 @@ namespace LegacyOfEternity.World
         public int minLevel;
         public int afterQuestId;
         public long finishNpcId;
+        public long acceptNpcId;
+        public int acceptTalkId;
+        public int goingTalkId;
+        public int finishTalkId;
         public string questGoals;
         public long goalId;
         public int goalCount;
@@ -106,7 +110,8 @@ namespace LegacyOfEternity.World
                         ? "Поговорите с " + OriginalModelCatalog.NpcName(q.finishNpcId)
                         : "Продолжайте задание";
                 case OriginalQuestKind.Gather:
-                    return "Соберите объект " + q.goalId + " ×" + q.goalCount;
+                    return "Соберите: " + OriginalModelCatalog.CollectionName(q.goalId)
+                           + " ×" + q.goalCount;
                 case OriginalQuestKind.KillMonster:
                     return "Убейте монстров " + q.goalId + " ×" + q.goalCount
                            + (q.finishNpcId != 0 ? " и сдайте " + OriginalModelCatalog.NpcName(q.finishNpcId) : "");

@@ -247,12 +247,13 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 
 ---
 
-### PORT-07 — Квесты Haitan полный паритет — `Запланировано`
+### PORT-07 — Квесты Haitan полный паритет — `В работе`
 
-- [ ] NPC Тиас и gather-объекты — оригинальные модели/точки из MapData `110200011`  
-- [ ] Диалоги/accept/finish как QuestConfig (не только кнопка)  
-- [ ] Цепочки после 1001703 по конфигу оригинала  
-- [ ] APK  
+- [x] NPC Тиас и gather — точки/modelId из MapData `110200011` + RU имена  
+- [x] Диалоги accept/finish (`finishTalk`/`acceptStory` из t_quest + t_doc) + intro после autoAccept  
+- [x] Цепочки afterQuest `1001701`…`1001799` в runtime  
+- [ ] APK — после приёмки владельца в Editor  
+
 
 ---
 

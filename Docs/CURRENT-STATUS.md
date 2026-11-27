@@ -1,6 +1,6 @@
 ﻿# Фактический статус: 27.11.2026
 
-**APK не собирать** до полной локации Haitan (указание владельца).
+**APK:** код Haitan доведён до offline-паритета цепочки; сборка — после вашей явной команды / приёмки в Editor.
 
 ## Готово в коде
 
@@ -8,16 +8,14 @@
 | --- | --- |
 | Сцена / MapData / modelId | Готово |
 | 99 квестов + RU диалоги + kind 3/7/8/9/14/17 | Готово |
-| Prefab deps (mat/fbx/anim) для Haitan models | Скопированы GUID-safe |
-| Missing scripts на Haitan Animation prefab | Сняты (18 prefab) |
-| Runtime material sanitize | `OriginalVisualSanitize` |
-| Offline fuben kind 14/17 | `OfflineQuestDungeon` + `HaitanDungeons.json` (11/12/22/31/30) |
-| Boss visuals | BOSS_004 / BOSS_008 + modelId 880211004/008 |
-| Collection wuqi/xiakucao | mesh GUID нет в Darklord → fallback `emptything` |
-| APK | Отложен |
+| Accept / finish talk | `acceptStoryId` / `finishStoryId` + intro после autoAccept |
+| Offline fuben 14/17 | `OfflineQuestDungeon` + BOSS_004/008 |
+| NPC / gather имена | RU (`Тиас`, `Оружие по руке`, …) |
+| Prefab deps + strip + sanitize | Готово (+ fallback при null `_MainTex`) |
+| Collection wuqi/xiakucao | mesh GUID нет в источниках → `emptything` |
 
-## Остаток по Haitan
+## Перед APK (приёмка)
 
-- 6 residual unresolved texture/mesh GUID (built-in + отсутствующие в исходниках) — sanitize/fallback
-- Приёмка графики на сцене (Editor/device)
-- APK когда владелец подтвердит полноту локации
+1. Editor Play: вход → Haitan → Тиас → цепочка квестов / данж кнопка.
+2. Визуально: нет критичного magenta на ключевых NPC/мобах.
+3. Ваша команда «собирай APK».

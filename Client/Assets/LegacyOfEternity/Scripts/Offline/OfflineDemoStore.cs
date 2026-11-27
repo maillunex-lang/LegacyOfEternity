@@ -544,6 +544,8 @@ namespace LegacyOfEternity.Offline
                 hero.questGoalCount = nq != null ? Mathf.Max(0, nq.goalCount) : 0;
                 if (nq != null && nq.acceptGetItem != 0)
                     ApplyLoot(hero, nq.acceptGetItem.ToString(), 1);
+                // Auto-accepted next quest: show accept/intro story when available.
+                QueueAcceptIntro(nq);
             }
             else
             {
@@ -552,6 +554,22 @@ namespace LegacyOfEternity.Offline
                 hero.questGoalCount = 0;
             }
             return true;
+        }
+
+        static void QueueAcceptIntro(LegacyOfEternity.World.OriginalQuestDef nq)
+        {
+            if (nq == null)
+                return;
+            int story = LegacyOfEternity.World.OriginalDialogueCatalog.AcceptStoryId(nq.id);
+            if (story == 0)
+                story = LegacyOfEternity.World.OriginalDialogueCatalog.FinishStoryId(nq.id);
+            if (story == 0)
+                return;
+            long npcId = nq.acceptNpcId != 0 ? nq.acceptNpcId : nq.finishNpcId;
+            string speaker = npcId != 0
+                ? LegacyOfEternity.World.OriginalModelCatalog.NpcName(npcId)
+                : LegacyOfEternity.World.OriginalQuestCatalog.Title(nq.id);
+            OfflineDialogueHud.Ensure().OpenAcceptIntro(speaker, npcId, nq.id);
         }
 
         public static string QuestTitle(int questId) =>

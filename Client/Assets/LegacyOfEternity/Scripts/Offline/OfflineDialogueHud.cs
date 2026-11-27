@@ -5,7 +5,8 @@ using UnityEngine;
 namespace LegacyOfEternity.Offline
 {
     /// <summary>
-    /// Modal talk panel: original quest/NPC dialogue (RU), then applies talk/turn-in.
+    /// Modal talk panel: original quest/NPC dialogue (RU).
+    /// Finish mode applies talk/turn-in; Accept/Going are informational.
     /// </summary>
     public sealed class OfflineDialogueHud : MonoBehaviour
     {
@@ -15,14 +16,15 @@ namespace LegacyOfEternity.Offline
         string[] lines = Array.Empty<string>();
         int lineIndex;
         long npcId;
-        bool pendingComplete;
+        bool open;
+        bool applyTalkOnClose;
         GUIStyle boxStyle;
         GUIStyle titleStyle;
         GUIStyle bodyStyle;
         GUIStyle buttonStyle;
         bool stylesReady;
 
-        public static bool IsOpen => instance != null && instance.pendingComplete;
+        public static bool IsOpen => instance != null && instance.open;
 
         public static OfflineDialogueHud Ensure()
         {
@@ -54,13 +56,29 @@ namespace LegacyOfEternity.Offline
 
         public void OpenQuestTalk(string speaker, long talkNpcId, int questId)
         {
+            Open(speaker, talkNpcId, questId, QuestTalkMode.Finish, applyTalk: true);
+        }
+
+        public void OpenQuestTalk(string speaker, long talkNpcId, int questId, QuestTalkMode mode, bool applyTalk)
+        {
+            Open(speaker, talkNpcId, questId, mode, applyTalk);
+        }
+
+        public void OpenAcceptIntro(string speaker, long talkNpcId, int questId)
+        {
+            Open(speaker, talkNpcId, questId, QuestTalkMode.Accept, applyTalk: false);
+        }
+
+        void Open(string speaker, long talkNpcId, int questId, QuestTalkMode mode, bool applyTalk)
+        {
             speakerName = string.IsNullOrEmpty(speaker) ? "NPC" : speaker;
             npcId = talkNpcId;
-            lines = OriginalDialogueCatalog.LinesForQuestTalk(questId, talkNpcId);
+            lines = OriginalDialogueCatalog.LinesForQuestTalk(questId, talkNpcId, mode);
             if (lines == null || lines.Length == 0)
                 lines = new[] { OriginalDialogueCatalog.NpcGreeting(talkNpcId) };
             lineIndex = 0;
-            pendingComplete = true;
+            applyTalkOnClose = applyTalk;
+            open = true;
         }
 
         void EnsureStyles()
@@ -93,7 +111,7 @@ namespace LegacyOfEternity.Offline
 
         void OnGUI()
         {
-            if (!pendingComplete || lines == null || lines.Length == 0)
+            if (!open || lines == null || lines.Length == 0)
                 return;
             EnsureStyles();
             float scale = Mathf.Clamp(Screen.height / 640f, 1.1f, 2.4f);
@@ -125,13 +143,14 @@ namespace LegacyOfEternity.Offline
 
         void Finish()
         {
-            pendingComplete = false;
+            open = false;
             var hero = OfflineSession.Hero;
-            if (hero != null)
+            if (applyTalkOnClose && hero != null)
                 OfflineDemoStore.ApplyQuestEvent(hero, "talk", npcId);
             lines = Array.Empty<string>();
             lineIndex = 0;
             npcId = 0;
+            applyTalkOnClose = false;
         }
     }
 }
