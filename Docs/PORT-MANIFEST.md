@@ -23,8 +23,8 @@
 | PORT-03 VFX | Запланировано | `LegacyOfEternity/Effects/*_Unity6` | Заменить soft-fallback |
 | PORT-04 UI | Запланировано | частично OfflineUI + UIMain icons | Login/Bag/Skill как оригинал |
 | PORT-05 предметы/зелья | Запланировано | offline_* заглушки | PotionIDs 101010001–009 |
-| PORT-06 Haitan map | В работе | `110200011.*`, `OriginalHaitanBootstrap`, сцена `cs_haitan` | modelId meshes next; APK deferred |
-| PORT-07 Haitan quests | В работе | `HaitanQuests.json` (99), `OriginalQuestCatalog` | Stories/item rewards next |
+| PORT-06 Haitan map | В работе | `110200011.*`, `OriginalHaitanBootstrap`, сцена `cs_haitan` | modelId meshes in; APK deferred |
+| PORT-07 Haitan quests | В работе | `HaitanQuests.json` (99), `HaitanDialogues.json` (RU), `OfflineDialogueHud` | Prefab deps / APK after full loc |
 | PORT-08+ maps | Запланировано | — | По t_map |
 
 ## PORT-01 файлы

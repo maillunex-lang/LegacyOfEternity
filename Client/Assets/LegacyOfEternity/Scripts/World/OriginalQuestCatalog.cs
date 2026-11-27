@@ -70,12 +70,18 @@ namespace LegacyOfEternity.World
 
         public static string Title(int questId)
         {
+            var docName = OriginalDialogueCatalog.QuestName(questId);
+            if (!string.IsNullOrEmpty(docName))
+                return docName;
             var q = Get(questId);
             return q != null ? q.name : "Нет активного задания";
         }
 
         public static string Objective(int questId)
         {
+            var docObj = OriginalDialogueCatalog.QuestObjectiveText(questId);
+            if (!string.IsNullOrEmpty(docObj))
+                return docObj;
             var q = Get(questId);
             if (q == null)
                 return "Исследуйте побережье";

@@ -235,11 +235,11 @@ C:\LegacyOfEternity\Client\Assets\OriginalPort\…
 - [x] Kill засчитывает только нужный `templateId`; gather/NPC — по ObjectId  
 - [x] item rewards `prof*` / `otherReward` при CompleteQuest  
 - [x] Модели NPC по look model из t_npc  
-- [ ] Диалоги/stories из оригинала
+- [x] Диалоги/stories: оригинал → RU (`HaitanDialogues.json`, `OfflineDialogueHud`)
 
 ### Changelog PORT-06/07 (27.11.2026)
-- Источник: MapData `110200011.xml` + `QuestConfig.lua`
-- Перенесено: spawn graph + полная квестовая таблица Haitan
+- Источник: MapData `110200011.xml` + `QuestConfig.lua` + `t_doc_quest` / `t_doc_dialogue`
+- Перенесено: spawn graph + полная квестовая таблица Haitan + RU-диалоги (перевод с оригинала)
 - APK: не собираем до готовности локации (owner)
 
 ---

@@ -63,6 +63,9 @@ namespace LegacyOfEternity.Offline
             float height = 84f * scale;
             var rect = new Rect((Screen.width - width) * 0.5f, Screen.height - height - 28f * scale, width, height);
 
+            if (OfflineDialogueHud.IsOpen)
+                return;
+
             if (active != null)
             {
                 if (GUI.Button(rect, active.ActionLabel() + " · " + active.DisplayName, buttonStyle))

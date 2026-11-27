@@ -46,10 +46,16 @@ namespace LegacyOfEternity.World
             int monsters = SpawnMonsters(hero);
             SpawnNpcsAndCollections(hero);
 
+            OriginalDialogueCatalog.EnsureLoaded();
+            OfflineDialogueHud.Ensure();
+
             var hudHost = gameObject.GetComponent<OfflineInteractHud>();
             if (hudHost == null)
                 hudHost = gameObject.AddComponent<OfflineInteractHud>();
             hudHost.Bind(interactables.ToArray());
+            if (gameObject.GetComponent<OfflineDialogueHud>() == null)
+                gameObject.AddComponent<OfflineDialogueHud>();
+
 
             var slabs = GameObject.Find("LOE_Haitan_Walksurface");
             if (slabs != null)

@@ -4,7 +4,7 @@
     "quests":  [
                    {
                        "id":  1001701,
-                       "name":  "Mối Nguy Gần Kề (1)",
+                       "name":  "Надвигающаяся опасность (I)",
                        "kind":  1,
                        "minLevel":  1,
                        "afterQuestId":  1001702,
@@ -23,7 +23,7 @@
                    },
                    {
                        "id":  1001702,
-                       "name":  "Mối Nguy Gần Kề (2)",
+                       "name":  "Надвигающаяся опасность (II)",
                        "kind":  4,
                        "minLevel":  2,
                        "afterQuestId":  1001703,
@@ -42,7 +42,7 @@
                    },
                    {
                        "id":  1001703,
-                       "name":  "Mối Nguy Gần Kề (3)",
+                       "name":  "Надвигающаяся опасность (III)",
                        "kind":  2,
                        "minLevel":  2,
                        "afterQuestId":  1001704,
@@ -61,7 +61,7 @@
                    },
                    {
                        "id":  1001704,
-                       "name":  "Hộ Vệ Bờ Biển (1)",
+                       "name":  "Защита побережья (I)",
                        "kind":  1,
                        "minLevel":  3,
                        "afterQuestId":  1001705,
@@ -80,7 +80,7 @@
                    },
                    {
                        "id":  1001705,
-                       "name":  "Hộ Vệ Bờ Biển (2)",
+                       "name":  "Защита побережья (II)",
                        "kind":  2,
                        "minLevel":  4,
                        "afterQuestId":  1001706,
@@ -99,7 +99,7 @@
                    },
                    {
                        "id":  1001706,
-                       "name":  "Hộ Vệ Bờ Biển (3)",
+                       "name":  "Защита побережья (III)",
                        "kind":  1,
                        "minLevel":  5,
                        "afterQuestId":  1001707,
@@ -118,7 +118,7 @@
                    },
                    {
                        "id":  1001707,
-                       "name":  "Hộ Vệ Bờ Biển (4)",
+                       "name":  "Защита побережья (IV)",
                        "kind":  4,
                        "minLevel":  5,
                        "afterQuestId":  1001708,
@@ -137,7 +137,7 @@
                    },
                    {
                        "id":  1001708,
-                       "name":  "Lửa Thánh (1)",
+                       "name":  "Священное пламя (I)",
                        "kind":  1,
                        "minLevel":  6,
                        "afterQuestId":  1001709,
@@ -156,7 +156,7 @@
                    },
                    {
                        "id":  1001709,
-                       "name":  "Lửa Thánh (2)",
+                       "name":  "Священное пламя (II)",
                        "kind":  3,
                        "minLevel":  7,
                        "afterQuestId":  1001710,
@@ -175,7 +175,7 @@
                    },
                    {
                        "id":  1001710,
-                       "name":  "Lửa Thánh (3)",
+                       "name":  "Священное пламя (III)",
                        "kind":  1,
                        "minLevel":  8,
                        "afterQuestId":  1001711,
@@ -194,7 +194,7 @@
                    },
                    {
                        "id":  1001711,
-                       "name":  "Lửa Thánh (4)",
+                       "name":  "Священное пламя (IV)",
                        "kind":  4,
                        "minLevel":  8,
                        "afterQuestId":  1001712,
@@ -213,7 +213,7 @@
                    },
                    {
                        "id":  1001712,
-                       "name":  "Lửa Thánh (5)",
+                       "name":  "Священное пламя (V)",
                        "kind":  3,
                        "minLevel":  9,
                        "afterQuestId":  1001713,
@@ -232,7 +232,7 @@
                    },
                    {
                        "id":  1001713,
-                       "name":  "Lửa Thánh (6)",
+                       "name":  "Священное пламя (VI)",
                        "kind":  7,
                        "minLevel":  10,
                        "afterQuestId":  1001714,
@@ -251,7 +251,7 @@
                    },
                    {
                        "id":  1001714,
-                       "name":  "Lửa Thánh (7)",
+                       "name":  "Священное пламя (VII)",
                        "kind":  1,
                        "minLevel":  11,
                        "afterQuestId":  1001715,
@@ -270,7 +270,7 @@
                    },
                    {
                        "id":  1001715,
-                       "name":  "Người Cá Tham Lam (1)",
+                       "name":  "Алчные рыболюды (I)",
                        "kind":  2,
                        "minLevel":  11,
                        "afterQuestId":  1001716,
@@ -289,7 +289,7 @@
                    },
                    {
                        "id":  1001716,
-                       "name":  "Người Cá Tham Lam (2)",
+                       "name":  "Алчные рыболюды (II)",
                        "kind":  1,
                        "minLevel":  12,
                        "afterQuestId":  1001717,
@@ -308,7 +308,7 @@
                    },
                    {
                        "id":  1001717,
-                       "name":  "Người Cá Tham Lam (3)",
+                       "name":  "Алчные рыболюды (III)",
                        "kind":  1,
                        "minLevel":  13,
                        "afterQuestId":  1001718,
@@ -327,7 +327,7 @@
                    },
                    {
                        "id":  1001718,
-                       "name":  "Người Cá Tham Lam (4)",
+                       "name":  "Алчные рыболюды (IV)",
                        "kind":  2,
                        "minLevel":  14,
                        "afterQuestId":  1001719,
@@ -346,7 +346,7 @@
                    },
                    {
                        "id":  1001719,
-                       "name":  "Người Cá Tham Lam (5)",
+                       "name":  "Алчные рыболюды (V)",
                        "kind":  4,
                        "minLevel":  14,
                        "afterQuestId":  1001720,
@@ -365,7 +365,7 @@
                    },
                    {
                        "id":  1001720,
-                       "name":  "Khoáng Sản Đáy Biển (1)",
+                       "name":  "Подводные залежи (I)",
                        "kind":  1,
                        "minLevel":  15,
                        "afterQuestId":  1001721,
@@ -384,7 +384,7 @@
                    },
                    {
                        "id":  1001721,
-                       "name":  "Khoáng Sản Đáy Biển (2)",
+                       "name":  "Подводные залежи (II)",
                        "kind":  4,
                        "minLevel":  16,
                        "afterQuestId":  1001722,
@@ -403,7 +403,7 @@
                    },
                    {
                        "id":  1001722,
-                       "name":  "Khoáng Sản Đáy Biển (3)",
+                       "name":  "Подводные залежи (III)",
                        "kind":  1,
                        "minLevel":  17,
                        "afterQuestId":  1001723,
@@ -422,7 +422,7 @@
                    },
                    {
                        "id":  1001723,
-                       "name":  "Khoáng Sản Đáy Biển (4)",
+                       "name":  "Подводные залежи (IV)",
                        "kind":  4,
                        "minLevel":  17,
                        "afterQuestId":  1001724,
@@ -441,7 +441,7 @@
                    },
                    {
                        "id":  1001724,
-                       "name":  "Khoáng Sản Đáy Biển (5)",
+                       "name":  "Подводные залежи (V)",
                        "kind":  2,
                        "minLevel":  18,
                        "afterQuestId":  1001725,
@@ -460,7 +460,7 @@
                    },
                    {
                        "id":  1001725,
-                       "name":  "Gian Thương (1)",
+                       "name":  "Плут (I)",
                        "kind":  1,
                        "minLevel":  19,
                        "afterQuestId":  1001726,
@@ -479,7 +479,7 @@
                    },
                    {
                        "id":  1001726,
-                       "name":  "Gian Thương (2)",
+                       "name":  "Плут (II)",
                        "kind":  2,
                        "minLevel":  20,
                        "afterQuestId":  1001727,
@@ -498,7 +498,7 @@
                    },
                    {
                        "id":  1001727,
-                       "name":  "Gian Thương (3)",
+                       "name":  "Плут (III)",
                        "kind":  2,
                        "minLevel":  20,
                        "afterQuestId":  1001728,
@@ -517,7 +517,7 @@
                    },
                    {
                        "id":  1001728,
-                       "name":  "Gian Thương (4)",
+                       "name":  "Плут (IV)",
                        "kind":  1,
                        "minLevel":  21,
                        "afterQuestId":  1001729,
@@ -536,7 +536,7 @@
                    },
                    {
                        "id":  1001729,
-                       "name":  "Gian Thương (5)",
+                       "name":  "Плут (V)",
                        "kind":  4,
                        "minLevel":  22,
                        "afterQuestId":  1001730,
@@ -555,7 +555,7 @@
                    },
                    {
                        "id":  1001730,
-                       "name":  "Gian Thương (6)",
+                       "name":  "Плут (VI)",
                        "kind":  2,
                        "minLevel":  23,
                        "afterQuestId":  1001731,
@@ -574,7 +574,7 @@
                    },
                    {
                        "id":  1001731,
-                       "name":  "Truyền thuyết Ác Ma",
+                       "name":  "Легенда о демоне",
                        "kind":  4,
                        "minLevel":  23,
                        "afterQuestId":  1001732,
@@ -593,7 +593,7 @@
                    },
                    {
                        "id":  1001732,
-                       "name":  "Hải Tặc (1)",
+                       "name":  "Пираты (I)",
                        "kind":  14,
                        "minLevel":  24,
                        "afterQuestId":  1001733,
@@ -612,7 +612,7 @@
                    },
                    {
                        "id":  1001733,
-                       "name":  "Hải Tặc (2)",
+                       "name":  "Пираты (II)",
                        "kind":  1,
                        "minLevel":  24,
                        "afterQuestId":  1001734,
@@ -631,7 +631,7 @@
                    },
                    {
                        "id":  1001734,
-                       "name":  "Hải Tặc (3)",
+                       "name":  "Пираты (III)",
                        "kind":  4,
                        "minLevel":  25,
                        "afterQuestId":  1001735,
@@ -650,7 +650,7 @@
                    },
                    {
                        "id":  1001735,
-                       "name":  "Hải Tặc (4)",
+                       "name":  "Пираты (IV)",
                        "kind":  1,
                        "minLevel":  25,
                        "afterQuestId":  1001736,
@@ -669,7 +669,7 @@
                    },
                    {
                        "id":  1001736,
-                       "name":  "Hải Tặc (5)",
+                       "name":  "Пираты (V)",
                        "kind":  2,
                        "minLevel":  26,
                        "afterQuestId":  1001737,
@@ -688,7 +688,7 @@
                    },
                    {
                        "id":  1001737,
-                       "name":  "Hải Tặc (6)",
+                       "name":  "Пираты (VI)",
                        "kind":  2,
                        "minLevel":  27,
                        "afterQuestId":  1001738,
@@ -707,7 +707,7 @@
                    },
                    {
                        "id":  1001738,
-                       "name":  "Hải Tặc (7)",
+                       "name":  "Пираты (VII)",
                        "kind":  3,
                        "minLevel":  28,
                        "afterQuestId":  1001739,
@@ -726,7 +726,7 @@
                    },
                    {
                        "id":  1001739,
-                       "name":  "Hải Tặc (8)",
+                       "name":  "Пираты (VIII)",
                        "kind":  7,
                        "minLevel":  28,
                        "afterQuestId":  1001740,
@@ -745,7 +745,7 @@
                    },
                    {
                        "id":  1001740,
-                       "name":  "Bóng Rồng Ác",
+                       "name":  "Тень злого дракона",
                        "kind":  14,
                        "minLevel":  29,
                        "afterQuestId":  1000001,
@@ -764,7 +764,7 @@
                    },
                    {
                        "id":  1001741,
-                       "name":  "Thành Ruen (1)",
+                       "name":  "Город Руун (I)",
                        "kind":  1,
                        "minLevel":  30,
                        "afterQuestId":  1001742,
@@ -783,7 +783,7 @@
                    },
                    {
                        "id":  1001742,
-                       "name":  "Thành Ruen (2)",
+                       "name":  "Город Руун (II)",
                        "kind":  8,
                        "minLevel":  30,
                        "afterQuestId":  1001743,
@@ -802,7 +802,7 @@
                    },
                    {
                        "id":  1001743,
-                       "name":  "Vương Tử Gặp Nguy (1)",
+                       "name":  "Кризис принца (I)",
                        "kind":  1,
                        "minLevel":  31,
                        "afterQuestId":  1001744,
@@ -821,7 +821,7 @@
                    },
                    {
                        "id":  1001744,
-                       "name":  "Vương Tử Gặp Nguy (2)",
+                       "name":  "Кризис принца (II)",
                        "kind":  9,
                        "minLevel":  31,
                        "afterQuestId":  1001745,
@@ -840,7 +840,7 @@
                    },
                    {
                        "id":  1001745,
-                       "name":  "Vương Tử Gặp Nguy (3)",
+                       "name":  "Кризис принца (III)",
                        "kind":  4,
                        "minLevel":  32,
                        "afterQuestId":  1001746,
@@ -859,7 +859,7 @@
                    },
                    {
                        "id":  1001746,
-                       "name":  "Vương Tử Gặp Nguy (4)",
+                       "name":  "Кризис принца (IV)",
                        "kind":  8,
                        "minLevel":  32,
                        "afterQuestId":  1001747,
@@ -878,7 +878,7 @@
                    },
                    {
                        "id":  1001747,
-                       "name":  "Vương Tử Gặp Nguy (5)",
+                       "name":  "Кризис принца (V)",
                        "kind":  8,
                        "minLevel":  33,
                        "afterQuestId":  1001748,
@@ -897,7 +897,7 @@
                    },
                    {
                        "id":  1001748,
-                       "name":  "Giúp Kane",
+                       "name":  "Помощь Кайну",
                        "kind":  4,
                        "minLevel":  33,
                        "afterQuestId":  1001749,
@@ -916,7 +916,7 @@
                    },
                    {
                        "id":  1001749,
-                       "name":  "Bóng Ma Khắp Nơi (1)",
+                       "name":  "Тени демона (I)",
                        "kind":  1,
                        "minLevel":  34,
                        "afterQuestId":  1001750,
@@ -935,7 +935,7 @@
                    },
                    {
                        "id":  1001750,
-                       "name":  "Bóng Ma Khắp Nơi (2)",
+                       "name":  "Тени демона (II)",
                        "kind":  4,
                        "minLevel":  35,
                        "afterQuestId":  1001751,
@@ -954,7 +954,7 @@
                    },
                    {
                        "id":  1001751,
-                       "name":  "Bóng Ma Khắp Nơi (3)",
+                       "name":  "Тени демона (III)",
                        "kind":  1,
                        "minLevel":  36,
                        "afterQuestId":  1001752,
@@ -973,7 +973,7 @@
                    },
                    {
                        "id":  1001752,
-                       "name":  "Bóng Ma Khắp Nơi (4)",
+                       "name":  "Тени демона (IV)",
                        "kind":  1,
                        "minLevel":  36,
                        "afterQuestId":  1001753,
@@ -992,7 +992,7 @@
                    },
                    {
                        "id":  1001753,
-                       "name":  "Bóng Ma Khắp Nơi (5)",
+                       "name":  "Тени демона (V)",
                        "kind":  8,
                        "minLevel":  37,
                        "afterQuestId":  1001754,
@@ -1011,7 +1011,7 @@
                    },
                    {
                        "id":  1001754,
-                       "name":  "Giáo Chủ Sa Đọa (1)",
+                       "name":  "Падший епископ (I)",
                        "kind":  1,
                        "minLevel":  37,
                        "afterQuestId":  1001755,
@@ -1030,7 +1030,7 @@
                    },
                    {
                        "id":  1001755,
-                       "name":  "Giáo Chủ Sa Đọa (2)",
+                       "name":  "Падший епископ (II)",
                        "kind":  4,
                        "minLevel":  38,
                        "afterQuestId":  1001756,
@@ -1049,7 +1049,7 @@
                    },
                    {
                        "id":  1001756,
-                       "name":  "Giáo Chủ Sa Đọa (3)",
+                       "name":  "Падший епископ (III)",
                        "kind":  1,
                        "minLevel":  38,
                        "afterQuestId":  1001757,
@@ -1068,7 +1068,7 @@
                    },
                    {
                        "id":  1001757,
-                       "name":  "Giáo Chủ Sa Đọa (4)",
+                       "name":  "Падший епископ (IV)",
                        "kind":  14,
                        "minLevel":  39,
                        "afterQuestId":  1001758,
@@ -1087,7 +1087,7 @@
                    },
                    {
                        "id":  1001758,
-                       "name":  "Chuyện Xưa",
+                       "name":  "Старые дела",
                        "kind":  1,
                        "minLevel":  39,
                        "afterQuestId":  1100001,
@@ -1106,7 +1106,7 @@
                    },
                    {
                        "id":  1001759,
-                       "name":  "Thương Nhân Nghi Ngờ (1)",
+                       "name":  "Подозрения купца (I)",
                        "kind":  1,
                        "minLevel":  40,
                        "afterQuestId":  1001760,
@@ -1125,7 +1125,7 @@
                    },
                    {
                        "id":  1001760,
-                       "name":  "Thương Nhân Nghi Ngờ (2)",
+                       "name":  "Подозрения купца (II)",
                        "kind":  2,
                        "minLevel":  41,
                        "afterQuestId":  1001761,
@@ -1144,7 +1144,7 @@
                    },
                    {
                        "id":  1001761,
-                       "name":  "Thương Nhân Nghi Ngờ (3)",
+                       "name":  "Подозрения купца (III)",
                        "kind":  1,
                        "minLevel":  42,
                        "afterQuestId":  1001762,
@@ -1163,7 +1163,7 @@
                    },
                    {
                        "id":  1001762,
-                       "name":  "Thương Nhân Nghi Ngờ (4)",
+                       "name":  "Подозрения купца (IV)",
                        "kind":  2,
                        "minLevel":  43,
                        "afterQuestId":  1001763,
@@ -1182,7 +1182,7 @@
                    },
                    {
                        "id":  1001763,
-                       "name":  "Thương Nhân Nghi Ngờ (5)",
+                       "name":  "Подозрения купца (V)",
                        "kind":  2,
                        "minLevel":  44,
                        "afterQuestId":  1001764,
@@ -1201,7 +1201,7 @@
                    },
                    {
                        "id":  1001764,
-                       "name":  "Taylor Kỳ Lạ (1)",
+                       "name":  "Странный Тейлор (I)",
                        "kind":  1,
                        "minLevel":  45,
                        "afterQuestId":  1001765,
@@ -1220,7 +1220,7 @@
                    },
                    {
                        "id":  1001765,
-                       "name":  "Taylor Kỳ Lạ (2)",
+                       "name":  "Странный Тейлор (II)",
                        "kind":  2,
                        "minLevel":  46,
                        "afterQuestId":  1001766,
@@ -1239,7 +1239,7 @@
                    },
                    {
                        "id":  1001766,
-                       "name":  "Taylor Kỳ Lạ (3)",
+                       "name":  "Странный Тейлор (III)",
                        "kind":  4,
                        "minLevel":  47,
                        "afterQuestId":  1001767,
@@ -1258,7 +1258,7 @@
                    },
                    {
                        "id":  1001767,
-                       "name":  "Hối Hận Muộn Màng (1)",
+                       "name":  "Позднее раскаяние (I)",
                        "kind":  1,
                        "minLevel":  48,
                        "afterQuestId":  1001768,
@@ -1277,7 +1277,7 @@
                    },
                    {
                        "id":  1001768,
-                       "name":  "Hối Hận Muộn Màng (2)",
+                       "name":  "Позднее раскаяние (II)",
                        "kind":  2,
                        "minLevel":  48,
                        "afterQuestId":  1001769,
@@ -1296,7 +1296,7 @@
                    },
                    {
                        "id":  1001769,
-                       "name":  "Hối Hận Muộn Màng (3)",
+                       "name":  "Позднее раскаяние (III)",
                        "kind":  1,
                        "minLevel":  49,
                        "afterQuestId":  1001770,
@@ -1315,7 +1315,7 @@
                    },
                    {
                        "id":  1001770,
-                       "name":  "Hối Hận Muộn Màng (4)",
+                       "name":  "Позднее раскаяние (IV)",
                        "kind":  2,
                        "minLevel":  50,
                        "afterQuestId":  1001771,
@@ -1334,7 +1334,7 @@
                    },
                    {
                        "id":  1001771,
-                       "name":  "Hối Hận Muộn Màng (5)",
+                       "name":  "Позднее раскаяние (V)",
                        "kind":  1,
                        "minLevel":  51,
                        "afterQuestId":  1001772,
@@ -1353,7 +1353,7 @@
                    },
                    {
                        "id":  1001772,
-                       "name":  "Hối Hận Muộn Màng (6)",
+                       "name":  "Позднее раскаяние (VI)",
                        "kind":  2,
                        "minLevel":  52,
                        "afterQuestId":  1001773,
@@ -1372,7 +1372,7 @@
                    },
                    {
                        "id":  1001773,
-                       "name":  "Meryl Phẫn Nộ (1)",
+                       "name":  "Гнев Мерил (I)",
                        "kind":  1,
                        "minLevel":  52,
                        "afterQuestId":  1001774,
@@ -1391,7 +1391,7 @@
                    },
                    {
                        "id":  1001774,
-                       "name":  "Meryl Phẫn Nộ (2)",
+                       "name":  "Гнев Мерил (II)",
                        "kind":  4,
                        "minLevel":  52,
                        "afterQuestId":  1001775,
@@ -1410,7 +1410,7 @@
                    },
                    {
                        "id":  1001775,
-                       "name":  "Meryl Phẫn Nộ (3)",
+                       "name":  "Гнев Мерил (III)",
                        "kind":  2,
                        "minLevel":  55,
                        "afterQuestId":  1001776,
@@ -1429,7 +1429,7 @@
                    },
                    {
                        "id":  1001776,
-                       "name":  "Meryl Phẫn Nộ (4)",
+                       "name":  "Гнев Мерил (IV)",
                        "kind":  1,
                        "minLevel":  55,
                        "afterQuestId":  1001777,
@@ -1448,7 +1448,7 @@
                    },
                    {
                        "id":  1001777,
-                       "name":  "Meryl Phẫn Nộ (5)",
+                       "name":  "Гнев Мерил (V)",
                        "kind":  14,
                        "minLevel":  55,
                        "afterQuestId":  1000002,
@@ -1467,7 +1467,7 @@
                    },
                    {
                        "id":  1001778,
-                       "name":  "Bắt Đầu Phản Kích (1)",
+                       "name":  "Начало отпора (I)",
                        "kind":  1,
                        "minLevel":  55,
                        "afterQuestId":  1001779,
@@ -1486,7 +1486,7 @@
                    },
                    {
                        "id":  1001779,
-                       "name":  "Bắt Đầu Phản Kích (2)",
+                       "name":  "Начало отпора (II)",
                        "kind":  2,
                        "minLevel":  55,
                        "afterQuestId":  1001780,
@@ -1505,7 +1505,7 @@
                    },
                    {
                        "id":  1001780,
-                       "name":  "Bắt Đầu Phản Kích (3)",
+                       "name":  "Начало отпора (III)",
                        "kind":  1,
                        "minLevel":  55,
                        "afterQuestId":  1001781,
@@ -1524,7 +1524,7 @@
                    },
                    {
                        "id":  1001781,
-                       "name":  "Bắt Đầu Phản Kích (4)",
+                       "name":  "Начало отпора (IV)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001782,
@@ -1543,7 +1543,7 @@
                    },
                    {
                        "id":  1001782,
-                       "name":  "Bắt Đầu Phản Kích (5)",
+                       "name":  "Начало отпора (V)",
                        "kind":  4,
                        "minLevel":  60,
                        "afterQuestId":  1001783,
@@ -1562,7 +1562,7 @@
                    },
                    {
                        "id":  1001783,
-                       "name":  "Gặp Bạn Cũ (1)",
+                       "name":  "Встреча со старым другом (I)",
                        "kind":  17,
                        "minLevel":  60,
                        "afterQuestId":  1001784,
@@ -1581,7 +1581,7 @@
                    },
                    {
                        "id":  1001784,
-                       "name":  "Gặp Bạn Cũ (2)",
+                       "name":  "Встреча со старым другом (II)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001785,
@@ -1600,7 +1600,7 @@
                    },
                    {
                        "id":  1001785,
-                       "name":  "Gặp Bạn Cũ (3)",
+                       "name":  "Встреча со старым другом (III)",
                        "kind":  1,
                        "minLevel":  60,
                        "afterQuestId":  1001786,
@@ -1619,7 +1619,7 @@
                    },
                    {
                        "id":  1001786,
-                       "name":  "Gặp Bạn Cũ (4)",
+                       "name":  "Встреча со старым другом (IV)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001787,
@@ -1638,7 +1638,7 @@
                    },
                    {
                        "id":  1001787,
-                       "name":  "Gặp Bạn Cũ (5)",
+                       "name":  "Встреча со старым другом (V)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001788,
@@ -1657,7 +1657,7 @@
                    },
                    {
                        "id":  1001788,
-                       "name":  "Bóng Ác Long (1)",
+                       "name":  "Тень злого дракона (I)",
                        "kind":  1,
                        "minLevel":  60,
                        "afterQuestId":  1001789,
@@ -1676,7 +1676,7 @@
                    },
                    {
                        "id":  1001789,
-                       "name":  "Bóng Ác Long (2)",
+                       "name":  "Тень злого дракона (II)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001790,
@@ -1695,7 +1695,7 @@
                    },
                    {
                        "id":  1001790,
-                       "name":  "Bóng Ác Long (3)",
+                       "name":  "Тень злого дракона (III)",
                        "kind":  1,
                        "minLevel":  60,
                        "afterQuestId":  1001791,
@@ -1714,7 +1714,7 @@
                    },
                    {
                        "id":  1001791,
-                       "name":  "Bóng Ác Long (4)",
+                       "name":  "Тень злого дракона (IV)",
                        "kind":  2,
                        "minLevel":  60,
                        "afterQuestId":  1001792,
@@ -1733,7 +1733,7 @@
                    },
                    {
                        "id":  1001792,
-                       "name":  "Bóng Ác Long (5)",
+                       "name":  "Тень злого дракона (V)",
                        "kind":  4,
                        "minLevel":  70,
                        "afterQuestId":  1001793,
@@ -1752,7 +1752,7 @@
                    },
                    {
                        "id":  1001793,
-                       "name":  "Bóng Ác Long (6)",
+                       "name":  "Тень злого дракона (VI)",
                        "kind":  1,
                        "minLevel":  70,
                        "afterQuestId":  1001794,
@@ -1771,7 +1771,7 @@
                    },
                    {
                        "id":  1001794,
-                       "name":  "Bóng Ác Long (7)",
+                       "name":  "Тень злого дракона (VII)",
                        "kind":  2,
                        "minLevel":  70,
                        "afterQuestId":  1001795,
@@ -1790,7 +1790,7 @@
                    },
                    {
                        "id":  1001795,
-                       "name":  "Tình Mến Thương (1)",
+                       "name":  "Отцовская любовь (I)",
                        "kind":  1,
                        "minLevel":  70,
                        "afterQuestId":  1001796,
@@ -1809,7 +1809,7 @@
                    },
                    {
                        "id":  1001796,
-                       "name":  "Tình Mến Thương (2)",
+                       "name":  "Отцовская любовь (II)",
                        "kind":  2,
                        "minLevel":  70,
                        "afterQuestId":  1001797,
@@ -1828,7 +1828,7 @@
                    },
                    {
                        "id":  1001797,
-                       "name":  "Tình Mến Thương (3)",
+                       "name":  "Отцовская любовь (III)",
                        "kind":  1,
                        "minLevel":  70,
                        "afterQuestId":  1001798,
@@ -1847,7 +1847,7 @@
                    },
                    {
                        "id":  1001798,
-                       "name":  "Tình Mến Thương (4)",
+                       "name":  "Отцовская любовь (IV)",
                        "kind":  2,
                        "minLevel":  70,
                        "afterQuestId":  1001799,
@@ -1866,7 +1866,7 @@
                    },
                    {
                        "id":  1001799,
-                       "name":  "Tình Mến Thương (5)",
+                       "name":  "Отцовская любовь (V)",
                        "kind":  1,
                        "minLevel":  70,
                        "afterQuestId":  1001800,

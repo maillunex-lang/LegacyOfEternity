@@ -167,7 +167,8 @@ namespace LegacyOfEternity.Offline
 
             if (q.finishNpcId == ObjectId)
             {
-                OfflineDemoStore.ApplyQuestEvent(heroData, "talk", ObjectId);
+                // Show original dialogue (RU) before completing gossip / turn-in.
+                OfflineDialogueHud.Ensure().OpenQuestTalk(DisplayName, ObjectId, q.id);
                 return true;
             }
 

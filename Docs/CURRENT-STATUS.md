@@ -1,4 +1,4 @@
-# Фактический статус: 27.11.2026
+﻿# Фактический статус: 27.11.2026
 
 **APK не собирать** до полной локации Haitan (указание владельца).
 
@@ -8,12 +8,12 @@
 | --- | --- |
 | Сцена `cs_haitan` / dixing / walksurface / пропы | В `CoastalPrototype` |
 | MapData spawns | `OriginalHaitanBootstrap` |
-| 99 квестов QuestConfig | `HaitanQuests.json` |
+| 99 квестов QuestConfig | `HaitanQuests.json` (имена RU) |
 | modelId визуалы мобов/NPC/gather | `HaitanModels.json` + `Resources/Animation/*` |
 | Item rewards из QuestConfig | CompleteQuest |
-| Диалоги/stories | Ещё нет |
+| Диалоги/stories | `HaitanDialogues.json` (RU перевод с оригинала) + `OfflineDialogueHud` |
 | APK | Отложен |
 
 ## Следующее
 
-Диалоги квестов (accept/finish/submit story) из оригинала; проверить missing-script на импортированных prefab.
+Проверить missing-script на импортированных prefab; довести графику локации; APK только когда Haitan полон.
