@@ -46,6 +46,11 @@ namespace LegacyOfEternity.Combat
             displayName = title;
             maxHealth = Mathf.Max(1, hp);
             attackDamage = Mathf.Max(0, damage);
+            health = maxHealth;
+            home = transform.position;
+            player = hero != null ? hero.GetComponent<PrototypeCombat>() : null;
+            if (character == null)
+                character = GetComponent<CharacterController>();
         }
 
         private void Awake()

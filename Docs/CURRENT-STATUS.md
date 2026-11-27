@@ -1,31 +1,26 @@
 # Фактический статус: 27.11.2026
 
-Канон: **`Docs/ROADMAP.md`** (полный паритет оригинала на Unity 6).  
-Манифест: **`Docs/PORT-MANIFEST.md`**.
-
-## Стратегия
-
-Переносим из оригинала / `C:\Source\Resources` **всё**: механики, графику, текстуры, объекты, анимации, VFX, UI, локации, квесты, предметы.  
-Оффлайн 0.6–0.8 — временные леса.
+Канон: **`Docs/ROADMAP.md`**. Запрет новых демо-раскладок — только оригинал 1:1.
 
 ## Срезы
 
 | Срез | Статус |
 | --- | --- |
 | PORT-00 пайплайн | Готово |
-| PORT-01 Custom/Character + CustomLight | Готово (0.9.0) — ждёт приёмку на телефоне |
-| PORT-02… | P0 следующий |
+| PORT-01 Custom/Character | Готово (0.9.0) |
+| PORT-06 Haitan MapData start | В работе → APK **0.10.0** |
 
 ## APK
 
-| Версия | Путь | Примечание |
-| --- | --- | --- |
-| **0.9.0** | `Builds/Android/LegacyOfEternity-0.9.0-alpha.apk` | Custom/Character; ~45 MB |
-| 0.8.0 | `Builds/Android/LegacyOfEternity-0.8.0-alpha.apk` | scaffold loot/bag |
+| Версия | Путь |
+| --- | --- |
+| **0.10.0** | `Builds/Android/LegacyOfEternity-0.10.0-alpha.apk` |
+| 0.9.0 | `Builds/Android/LegacyOfEternity-0.9.0-alpha.apk` |
 
-Build log: `LOE_M0511_HERO_SHADER=Custom/Character`, `result=Succeeded`.
+## Что меняется в 0.10.0
 
-## P0 сейчас
+После логина герой на **оригинальной birth** `(11, 50.03, 58)`, Тиас/gather/мобы с **точек MapData 110200011**. Демо-куча мобов у респауна снесена.
 
-1. Приёмка 0.9.0 на телефоне (читаемость 4 классов).  
-2. **PORT-02** — полный перенос персонажей/анимаций/оружия.
+## P0
+
+Добить visual `cs_yw_haitan01` + modelId; затем PORT-07.

@@ -23,7 +23,7 @@
 | PORT-03 VFX | Запланировано | `LegacyOfEternity/Effects/*_Unity6` | Заменить soft-fallback |
 | PORT-04 UI | Запланировано | частично OfflineUI + UIMain icons | Login/Bag/Skill как оригинал |
 | PORT-05 предметы/зелья | Запланировано | offline_* заглушки | PotionIDs 101010001–009 |
-| PORT-06 Haitan map | Запланировано | CoastalPrototype | Полный паритет карты |
+| PORT-06 Haitan map | В работе (0.10.0) | `Resources/OriginalMap/110200011.*`, `OriginalHaitanBootstrap` | MapData spawns live; scene mesh next |
 | PORT-07 Haitan quests | Запланировано | offline quest chain | Диалоги/NPC/gather originals |
 | PORT-08+ maps | Запланировано | — | По t_map |
 

@@ -5,7 +5,9 @@ namespace LegacyOfEternity.Offline
     public enum OfflineInteractKind
     {
         Guide,
-        GatherScrap
+        GatherScrap,
+        /// <summary>Original-map prop/NPC placed for parity; not part of the active quest actions.</summary>
+        WorldProp
     }
 
     /// <summary>World NPC / gather point for the offline Haitan quest loop.</summary>
@@ -31,15 +33,14 @@ namespace LegacyOfEternity.Offline
 
         void BuildVisual(Color color)
         {
-            body = GameObject.CreatePrimitive(Kind == OfflineInteractKind.GatherScrap
-                ? PrimitiveType.Cube
-                : PrimitiveType.Capsule);
+            bool gather = Kind == OfflineInteractKind.GatherScrap;
+            body = GameObject.CreatePrimitive(gather ? PrimitiveType.Cube : PrimitiveType.Capsule);
             body.name = "Body";
             body.transform.SetParent(transform, false);
-            body.transform.localScale = Kind == OfflineInteractKind.GatherScrap
+            body.transform.localScale = gather
                 ? new Vector3(0.85f, 0.45f, 0.85f)
                 : new Vector3(0.85f, 1.0f, 0.85f);
-            body.transform.localPosition = Kind == OfflineInteractKind.GatherScrap
+            body.transform.localPosition = gather
                 ? Vector3.up * 0.25f
                 : Vector3.up * 1.0f;
             Object.Destroy(body.GetComponent<Collider>());
@@ -94,6 +95,8 @@ namespace LegacyOfEternity.Offline
             if (!OfflineSession.Ready || OfflineSession.Hero == null || Consumed)
                 return false;
             int q = OfflineSession.Hero.questId;
+            if (Kind == OfflineInteractKind.WorldProp)
+                return false;
             if (Kind == OfflineInteractKind.Guide)
                 return q == 1001701 || q == 1001704;
             if (Kind == OfflineInteractKind.GatherScrap)
